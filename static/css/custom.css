@@ -54,20 +54,27 @@ html, body {
 .mid h1 {
     color: white;
 }
+.mid h2 {
+    color: white;
+}
+.mid h3 {
+    color: white;
+}
+
 
 
 .foot {
-    background: url(static/img/white.png);
+    background: url(../img/black.jpg);
     position: relative;
     width: 100%;
 }
 .foot p {
     font-size: 15px;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .sep {
-    background: url(../img/White.png);
+    background: url(../img/white.png);
     position: relative;
     width: 100%;
 }
