@@ -40,6 +40,21 @@ html, body {
     color: white;
 }
 
+.mid {
+    background: url(../img/Blueprint-Background.jpg) no-repeat center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.mid h1 {
+    color: white;
+}
+
 .sep {
     background: url(../img/White.png);
     position: relative;
