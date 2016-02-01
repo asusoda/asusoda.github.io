@@ -1,0 +1,8 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.img-container {
+    position:relative;
+    padding-top:100%;
+}
