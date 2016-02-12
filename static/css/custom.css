@@ -3,6 +3,7 @@ html, body {
     width: 100%;
     font-family: 'myFont'
 }
+
 /* font */
 @font-face {
     font-family: 'myFont';
@@ -44,7 +45,7 @@ html, body {
 }
 
 .mid {
-    background: url(../img/Blueprint-Background.jpg) no-repeat center fixed;
+    background: url(../img/geoblue.jpg) no-repeat center fixed;
     display: table;
     height: 100%;
     position: relative;
@@ -77,7 +78,7 @@ html, body {
 }
 
 .sep {
-    background: url(../img/offwhite.jpg);
+    background: url(../img/white.png);
     position: relative;
     width: 100%;
 }
