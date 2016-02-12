@@ -77,9 +77,25 @@ html, body {
 }
 
 .sep {
-    background: url(../img/white.png);
+    background: url(../img/offwhite.jpg);
     position: relative;
     width: 100%;
+}
+.sep hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:#cccccc;
+    height: 1px;
+    margin-top:15px;
+}
+.sep h4 {
+    color: #777777;
+}
+.sep h5{
+    margin:0;
+    padding-top:30px;
 }
 
 /*

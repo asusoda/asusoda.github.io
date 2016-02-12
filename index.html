@@ -41,20 +41,30 @@
             </div>
             <div class="collapse navbar-collapse" id="foo">
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#team" data-target="tea,">Sponsors</a></li>
+                    <li>
+                        <a href="#about" data-target="about" class="scroll">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#meetings" data-target="meetings" class="scroll">Meetings</a>
+                    </li>
+                    <li>
+                        <a href="#sponsors" data-target="sponsors" class="scroll">Sponsors</a>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#mocks" data-target="mocks">Getting Involved</a>
+                        <a href="https://calendar.google.com/calendar/embed?src=cDNkcmR1azUzbGszaGxrdDVkcjA0bW91aTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#">Getting Involved</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
-    <div class="para-section top">
+    <!--Header-->
+    <div class="para-section top" id="header">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12 col-centered">
@@ -68,71 +78,66 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-8 col-centered">
-                    <button class="btn btn-md btn-block btn-default col-centered scroll" style="margin-top: 50px" href="#mocks" data-target="mocks">Learn More</button>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-2 col-xs-3 col-centered">
-                    <img class="img img-responsive center-block" src="static/img/down_arrow.png" href="#down">
+                    <button class="btn btn-md btn-block btn-default col-centered scroll" id="fuck" style="margin-top: 50px" href="#about" data-target="about">Learn More</button>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <div class="para-section sep">
+    <!--About Us-->
+    <div class="para-section sep" id="about">
         <div class="container" style="margin-bottom: 50px">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-center">About Us<h1>
-                            <hr>
-                            <div class="visible-xs-block">
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2">
-                                        <div class="row">
-                                            <div class="col-xs-8 col-xs-offset-2">
-                                                <img class="img-responsive center-block" style="margin-top:30px" src="static/img/experience.png"/>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <h2 class="text-center">EXPERIENCE<h2>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-8 col-xs-offset-2">
-                                                <h3 class="text-center">Empower yourself with a variety of collegiate and industry-run tech talks.</h3>
-                                            </div>
+                    <h1 class="text-center">About Us</h1>
+                        <hr>
+                        <div class="visible-xs-block">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2">
+                                    <div class="row">
+                                        <div class="col-xs-8 col-xs-offset-2">
+                                            <img class="img-responsive center-block" style="margin-top:30px" src="static/img/experience.png"/>
                                         </div>
                                     </div>
-                                    <div class="col-xs-8 col-xs-offset-2">
-                                        <div class="row">
-                                            <div class="col-xs-8 col-xs-offset-2">
-                                                <img class="img-responsive center-block" style="margin-top:30px" src="static/img/projects.png"/>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <h2 class="text-center">PROJECTS<h2>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-10 col-md-offset-1">
-                                                <h3 class="text-center">Showcase and develop your skills. Participate in a multitude of member-run projects.</h3>
-                                            </div>
+                                    <div class="row">
+                                        <h2 class="text-center">EXPERIENCE</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-8 col-xs-offset-2">
+                                            <h3 class="text-center">Empower yourself with a variety of collegiate and industry-run tech talks.</h3>
                                         </div>
                                     </div>
-                                    <div class="col-xs-8 col-xs-offset-2">
-                                        <div class="row">
-                                            <div class="col-xs-8 col-xs-offset-2">
-                                                <img class="img-responsive center-block" style="margin-top:30px" src="static/img/community.png"/>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <h2 class="text-center">COMMUNITY<h2>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-10 col-md-offset-1">
-                                                <h3 class="text-center">Meet and network with a community of passionate and dedicated student developers.</h3>
-                                            </div>
+                                </div>
+                                <div class="col-xs-8 col-xs-offset-2">
+                                    <div class="row">
+                                        <div class="col-xs-8 col-xs-offset-2">
+                                            <img class="img-responsive center-block" style="margin-top:30px" src="static/img/projects.png"/>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <h2 class="text-center">PROJECTS</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <h3 class="text-center">Showcase and develop your skills. Participate in a multitude of member-run projects.</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-xs-offset-2">
+                                    <div class="row">
+                                        <div class="col-xs-8 col-xs-offset-2">
+                                            <img class="img-responsive center-block" style="margin-top:30px" src="static/img/community.png"/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <h2 class="text-center">COMMUNITY</h2>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10 col-md-offset-1">
+                                            <h3 class="text-center">Meet and network with a community of passionate and dedicated student developers.</h3>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="hidden-xs">
@@ -144,7 +149,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <h2 class="text-center">EXPERIENCE<h2>
+                                        <h2 class="text-center">EXPERIENCE</h2>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-10 col-md-offset-1">
@@ -159,7 +164,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <h2 class="text-center">PROJECTS<h2>
+                                        <h2 class="text-center">PROJECTS</h2>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-10 col-md-offset-1">
@@ -174,7 +179,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <h2 class="text-center">COMMUNITY<h2>
+                                        <h2 class="text-center">COMMUNITY</h2>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-10 col-md-offset-1">
@@ -189,40 +194,40 @@
             </div>
         </div>
 
-
-        <div class="para-section mid">
+        <!--Meetings-->
+        <div class="para-section mid" id="meetings">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                            <h1 class="text-center">Location<h1>
+                            <h1 class="text-center">Meetings</h1>
                             <hr>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <h2 class="text-center"> When </h2>
-                        <div class="col-md-10 col-md-offset-2 text-md-left text-xs-center">
-                            <h3> Tuesday: 6:30 - 8:30 pm </h3>
-                            <h3> Thursday: 6:30 - 8:30 pm </h3>
-                            <h3> Dinner is available at every meeting thanks to our great industry sponsors. </h3>
-                            <h3> (Vegitarian options always available) </h3>
-                        </div>
+                <div class="row text-center">
+                    <div class="col-md-6 col-sm-12 col-centered">
+                        <h2 class="text-center"> Where: </h2>
+                        <h3>Brickyard Artisan Court room 150</h3>
+                        <iframe class="frame-md-normal frame-xs-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.990847106006!2d-111.94116478519247!3d33.423482980781756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08d9ca9a9e99%3A0xc53d69bc77ce803a!2sArtisan+Court+at+the+Brickyard%2C+30+E+7th+St%2C+Tempe%2C+AZ+85287!5e0!3m2!1sen!2sus!4v1454310510530" width="400" height="300" frameborder="0" style="border:0" ></iframe>
                     </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="col-sm-12 text-md-left text-xs-center">
-                            <h3> BYAC 150 </h3>
-                        </div>
-                        <iframe class="frame-md-normal frame-xs-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.990847106006!2d-111.94116478519247!3d33.423482980781756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08d9ca9a9e99%3A0xc53d69bc77ce803a!2sArtisan+Court+at+the+Brickyard%2C+30+E+7th+St%2C+Tempe%2C+AZ+85287!5e0!3m2!1sen!2sus!4v1454310510530" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-6 col-sm-12 col-centered">
+                        <h2 class="text-center"> When: </h2>
+                        <h3> Tuesday: 6:30 - 8:30 pm </h3>
+                        <h3> Thursday: 6:30 - 8:30 pm </h3>
+                        <h3> Dinner is available at every meeting thanks to our great industry sponsors. </h3>
+                        <h3> (Vegitarian options always available) </h3>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="para-section sep">
+        <!--Sponsors-->
+        <div class="para-section sep" id="sponsors">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h1 class="text-center">Sponsors<h1>
+                        <h1 class="text-center">Sponsors</h1>
                     </div>
                 </div>
                 <div class="visible-xs-block">
@@ -265,7 +270,7 @@
                         </div>
                     </div>
                     <div class="row text-center">
-                        <a class="text-center" href="#sponsorinfo">Learn more about sponsoring SoDA<a>
+                        <a class="text-center" href="sponsoring-SoDA.html">Learn more about sponsoring SoDA<a>
                     </div>
                 </div>
             </div>
@@ -313,8 +318,8 @@
                         </div>
                     <div class="row text-center">
                         <p>
-                            <a href="#">Frequently Asked Questions</a> |
-                            <a href="#">Contact Us</a>
+                            <a href="faq.html">Frequently Asked Questions</a> |
+                            <a href="contact-us.html">Contact Us</a>
                         </p>
                     </div>
                         <div class="row">
@@ -324,7 +329,23 @@
                 </div>
             </div>
         </div>
+        
         <script type="text/javascript" src="static/js/jquery.js"></script>
         <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        
+        <!-- Scroll Shizz -->
+        
+        <script type="text/javascript" src="jquery.localscroll-1.2.7-min.js"></script>
+        <script type="text/javascript" src="jquery.scrollTo-1.4.2-min.js"></script>
+        <script type="text/javascript">
+        jQuery(document).ready(function($) {
+                $(".scroll").click(function(event) {
+                    event.preventDefault();
+                    $('html,body').animate( { scrollTop:$($(this).attr("href")).offset().top } , 1000);
+                    $(this).blur();                    
+                } );
+        } );
+        </script>
     </body>
 </html>
