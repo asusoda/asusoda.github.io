@@ -45,7 +45,7 @@ html, body {
 }
 
 .mid {
-    background: url(../img/geoblue.jpg) no-repeat center fixed;
+    background: url(../img/world_map.jpg) no-repeat center fixed;
     display: table;
     height: 100%;
     position: relative;
