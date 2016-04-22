@@ -1,0 +1,257 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.btn-md.round {
+    border-radius: 20px;
+}
+.btn-lg.round {
+    border-radius: 24px;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'expressway';
+    src: url(../expressway.ttf);
+}
+
+
+/* generic parallax styles */
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.parallax__group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.parallax__layer--base {
+    transform: translateZ(0);
+    z-index: 3;
+}
+.parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+    z-index: 4;
+}
+
+
+
+/* -----------------------------------top styles--------------------------------------- */
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .parallax__group.top { 
+        height: 700px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .parallax__group.top { 
+        height: 800px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .parallax__group.top { 
+        height: 1000px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .parallax__group.top { 
+        height: 1200px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .parallax__group.top { 
+        height: 100%;
+    }
+}
+.parallax__layer--base.top h3 {
+    color: white;
+}
+.parallax__layer--back.top {
+    background: url(../img/geometry_.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+
+
+/* -----------------------------------what we offer styles--------------------------------------- */
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .parallax__group.about_us { 
+        height: 1500px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .parallax__group.about_us { 
+        height: 1675px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .parallax__group.about_us { 
+        height: 690px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .parallax__group.about_us { 
+        height: 590px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .parallax__group.about_us { 
+        height: 580px;
+    }
+}
+.parallax__layer--base.about_us {
+    background: white;
+}
+
+
+
+/* -----------------------------------newsletter banner styles--------------------------------------- */
+
+.parallax__group.newsletter { 
+    background: url(../img/newsletter_banner.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .parallax__group.newsletter { 
+        height: 350px;
+    }
+    .col-centered.newsletter{
+        padding-top: 50px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .parallax__group.newsletter { 
+        height: 350px;
+    }
+    .col-centered.newsletter{
+        padding-top: 75px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .parallax__group.newsletter { 
+        height: 400px;
+    }
+    .col-centered.newsletter{
+        padding-top: 110px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .parallax__group.newsletter { 
+        height: 500px;
+    }
+    .col-centered.newsletter{
+        padding-top: 175px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .parallax__group.newsletter { 
+        height: 550px;
+    }
+    .col-centered.newsletter{
+        padding-top: 200px;
+    }
+}
+
+.parallax__layer--base.newsletter {
+    
+}
+.parallax__layer--base.newsletter h3 {
+    color: white;
+    font-family: expressway;
+}
+
+
+
+/* -----------------------------------meetings styles--------------------------------------- */
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .parallax__group.meetings { 
+        height: 1120px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .parallax__group.meetings { 
+        height: 1250px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .parallax__group.meetings { 
+        height: 760px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .parallax__group.meetings { 
+        height: 660px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .parallax__group.meetings { 
+        height: 700px;
+    }
+}
+.parallax__layer--base.meetings {
+    background: white;
+}
+
+.parallax__layer--base.newsletter h5 {
+    color: dodgerblue;
+    font-family: expressway;
+}
+
+
+
+/* -----------------------------------meetings styles--------------------------------------- */
