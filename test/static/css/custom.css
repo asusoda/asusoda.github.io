@@ -37,16 +37,29 @@
 }
 .parallax__layer--base {
     transform: translateZ(0);
-    z-index: 3;
 }
 .parallax__layer--back {
     transform: translateZ(-1px) scale(2);
-    z-index: 4;
 }
 
 
 
 /* -----------------------------------top styles--------------------------------------- */
+.parallax__group.top {
+    z-index: -1;
+}
+.parallax__layer--base.top h3 {
+    color: white;
+    font-family: expressway;
+}
+.parallax__layer--back.top {
+    background: url(../img/geometry_.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
@@ -97,22 +110,17 @@
         font-size: 1.8em;
     }
 }
-.parallax__layer--base.top h3 {
-    color: white;
-    font-family: expressway;
-}
-.parallax__layer--back.top {
-    background: url(../img/geometry_.jpg) no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-}
+
 
 
 
 /* -----------------------------------what we offer styles--------------------------------------- */
+.parallax__group.about_us {
+    z-index: 1;
+}
+.parallax__layer--base.about_us {
+    background: white;
+}
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
@@ -164,14 +172,13 @@
     }
 }
 
-.parallax__layer--base.about_us {
-    background: white;
-}
 
 
 
 /* -----------------------------------newsletter banner styles--------------------------------------- */
-
+.parallax__group.newsletter {
+    z-index: 2;
+}
 .parallax__group.newsletter { 
     background: url(../img/newsletter_banner.jpg);
     -webkit-background-size: cover;
@@ -183,6 +190,10 @@
     color: white;
     font-family: expressway;
 }
+.parallax__layer--base.newsletter {
+    
+}
+
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
     .parallax__group.newsletter { 
@@ -245,13 +256,21 @@
     }
 }
 
-.parallax__layer--base.newsletter {
-    
-}
 
 
 
 /* -----------------------------------meetings styles--------------------------------------- */
+.parallax__group.meetings {
+    z-index: 3;
+}
+.parallax__layer--base.meetings {
+    background: white;
+}
+
+.parallax__layer--base.meetings h5 {
+    color: dodgerblue;
+    font-family: expressway;
+}
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
@@ -302,15 +321,178 @@
         font-size: 1.8em;
     }
 }
-.parallax__layer--base.meetings {
+
+
+
+
+/* -----------------------------------social media styles--------------------------------------- */
+.parallax__group.social_media {
+    z-index: -2;
+}
+.parallax__layer--back.social_media {
+    background: url(../img/social_media.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.3);
+    height: 150%;
+}
+.parallax__layer--base.social_media h3 {
+    color: white;
+    font-family: expressway;
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .parallax__group.social_media { 
+        height: 500px;
+    }
+    .col-centered.social_media {
+        padding-top: 50px;
+    }
+    .parallax__layer--base.social_media h3 {
+        font-size: 1.3em;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .parallax__group.social_media { 
+        height: 550px;
+    }
+    .col-centered.social_media {
+        padding-top: 75px;
+    }
+    .parallax__layer--base.social_media h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .parallax__group.social_media { 
+        height: 400px;
+    }
+    .col-centered.social_media {
+        padding-top: 110px;
+    }
+    .parallax__layer--base.social_media h3 {
+        font-size: 1.6em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .parallax__group.social_media { 
+        height: 500px;
+    }
+    .col-centered.social_media {
+        padding-top: 175px;
+    }
+    .parallax__layer--base.social_media h3 {
+        font-size: 1.7em;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .parallax__group.social_media { 
+        height: 550px;
+    }
+    .col-centered.social_media {
+        padding-top: 200px;
+    }
+}
+
+
+
+
+/* -----------------------------------sponsors styles--------------------------------------- */
+.parallax__group.sponsors {
+    z-index: 4;
+}
+.parallax__layer--base.sponsors {
     background: white;
 }
 
-.parallax__layer--base.meetings h5 {
-    color: dodgerblue;
-    font-family: expressway;
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .parallax__group.sponsors { 
+        height: 550px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .parallax__group.sponsors { 
+        height: 780px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .parallax__group.sponsors { 
+        height: 540px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .parallax__group.sponsors { 
+        height: 600px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .parallax__group.sponsors { 
+        height: 720px;
+    }
 }
 
 
 
-/* -----------------------------------meetings styles--------------------------------------- */
+
+/* -----------------------------------footer styles--------------------------------------- */
+.parallax__group.footer {
+    z-index: 5;
+    background: black;
+}
+.parallax__layer--base.footer {
+    background: black;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .parallax__group.footer { 
+        height: 225px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .parallax__group.footer { 
+        height: 225px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .parallax__group.footer { 
+        height: 225px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .parallax__group.footer { 
+        height: 225px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .parallax__group.footer { 
+        height: 225px;
+    }
+}
