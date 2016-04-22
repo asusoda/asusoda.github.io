@@ -53,12 +53,18 @@
     .parallax__group.top { 
         height: 700px;
     }
+    .parallax__layer--base.top h3 {
+        font-size: 1.3em;
+    }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
     .parallax__group.top { 
         height: 800px;
+    }
+    .parallax__layer--base.top h3 {
+        font-size: 1.3em;
     }
 }
 
@@ -67,12 +73,18 @@
     .parallax__group.top { 
         height: 1000px;
     }
+    .parallax__layer--base.top h3 {
+        font-size: 1.5em;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .parallax__group.top { 
         height: 1200px;
+    }
+    .parallax__layer--base.top h3 {
+        font-size: 1.6em;
     }
 }
 
@@ -81,9 +93,13 @@
     .parallax__group.top { 
         height: 100%;
     }
+    .parallax__layer--base.top h3 {
+        font-size: 1.8em;
+    }
 }
 .parallax__layer--base.top h3 {
     color: white;
+    font-family: expressway;
 }
 .parallax__layer--back.top {
     background: url(../img/geometry_.jpg) no-repeat center;
@@ -115,14 +131,26 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .parallax__group.about_us { 
-        height: 690px;
+        height: 600px;
+    }
+    .parallax__layer--base.about_us h2 {
+        font-size: 2em;
+    }
+    .parallax__layer--base.about_us h3 {
+        font-size: 1.5em;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .parallax__group.about_us { 
-        height: 590px;
+        height: 530px;
+    }
+    .parallax__layer--base.about_us h2 {
+        font-size: 2em;
+    }
+    .parallax__layer--base.about_us h3 {
+        font-size: 1.5em;
     }
 }
 
@@ -131,7 +159,11 @@
     .parallax__group.about_us { 
         height: 580px;
     }
+    .parallax__layer--base.about_us h3 {
+        font-size: 1.8em;
+    }
 }
+
 .parallax__layer--base.about_us {
     background: white;
 }
@@ -147,13 +179,20 @@
     -o-background-size: cover;
     background-size: cover;
 }
+.parallax__layer--base.newsletter h3 {
+    color: white;
+    font-family: expressway;
+}
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
     .parallax__group.newsletter { 
         height: 350px;
     }
-    .col-centered.newsletter{
+    .col-centered.newsletter {
         padding-top: 50px;
+    }
+    .parallax__layer--base.newsletter h3 {
+        font-size: 1.3em;
     }
 }
 
@@ -162,8 +201,11 @@
     .parallax__group.newsletter { 
         height: 350px;
     }
-    .col-centered.newsletter{
+    .col-centered.newsletter {
         padding-top: 75px;
+    }
+    .parallax__layer--base.newsletter h3 {
+        font-size: 1.5em;
     }
 }
 
@@ -172,8 +214,11 @@
     .parallax__group.newsletter { 
         height: 400px;
     }
-    .col-centered.newsletter{
+    .col-centered.newsletter {
         padding-top: 110px;
+    }
+    .parallax__layer--base.newsletter h3 {
+        font-size: 1.6em;
     }
 }
 
@@ -182,8 +227,11 @@
     .parallax__group.newsletter { 
         height: 500px;
     }
-    .col-centered.newsletter{
+    .col-centered.newsletter {
         padding-top: 175px;
+    }
+    .parallax__layer--base.newsletter h3 {
+        font-size: 1.7em;
     }
 }
 
@@ -192,17 +240,13 @@
     .parallax__group.newsletter { 
         height: 550px;
     }
-    .col-centered.newsletter{
+    .col-centered.newsletter {
         padding-top: 200px;
     }
 }
 
 .parallax__layer--base.newsletter {
     
-}
-.parallax__layer--base.newsletter h3 {
-    color: white;
-    font-family: expressway;
 }
 
 
@@ -226,28 +270,43 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .parallax__group.meetings { 
-        height: 760px;
+        height: 640px;
+    }
+    .parallax__layer--base.meetings h2 {
+        font-size: 2em;
+    }
+    .parallax__layer--base.meetings h3 {
+        font-size: 1.5em;
     }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     .parallax__group.meetings { 
-        height: 660px;
+        height: 600px;
+    }
+    .parallax__layer--base.meetings h2 {
+        font-size: 2em;
+    }
+    .parallax__layer--base.meetings h3 {
+        font-size: 1.5em;
     }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
     .parallax__group.meetings { 
-        height: 700px;
+        height: 720px;
+    }
+    .parallax__layer--base.meetings h3 {
+        font-size: 1.8em;
     }
 }
 .parallax__layer--base.meetings {
     background: white;
 }
 
-.parallax__layer--base.newsletter h5 {
+.parallax__layer--base.meetings h5 {
     color: dodgerblue;
     font-family: expressway;
 }
