@@ -16,7 +16,6 @@
         <link href='static/css/bootstrap.min.css' rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link href='static/css/2-col-portfolio.css' rel="stylesheet">
         <link href='static/css/custom.css' rel="stylesheet">
 
         <!-- Custom font -->
@@ -27,7 +26,7 @@
     <body>
         
         <!--Nav bar-->
-        <nav class="navbar navbar-default navbar-fixed-top main-nav" role="navigation">
+        <nav class="nav navbar navbar-default navbar-fixed-top main-nav" role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#foo" aria-expanded="false">
@@ -36,20 +35,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" rel="home" title="SoDA" href="">
-                        <img alt="SoDA" style="height: 20px;" src="static/img/brand.png">
+                    <a class="navbar-brand smooth-scroll" rel="home" title="SoDA" style="padding-top:23px" href="#header">
+                        <img alt="SoDA" style="height: 27px;" src="static/img/dot_slash_SoDA.png">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="foo">
                     <ul class="nav navbar-nav navbar-left">
                         <li>
-                            <a href="#about" data-target="about" class="scroll">What we offer</a>
+                            <a href="#about" data-target="about" class="smooth-scroll">What we offer</a>
                         </li>
                         <li>
-                            <a href="#meetings" data-target="meetings" class="scroll">Meetings</a>
+                            <a href="#meetings" data-target="meetings" class="smooth-scroll">Meetings</a>
                         </li>
                         <li>
-                            <a href="#sponsors" data-target="sponsors" class="scroll">Sponsors</a>
+                            <a href="#sponsors" data-target="sponsors" class="smooth-scroll">Sponsors</a>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -69,7 +68,7 @@
         
         
         <!-- paralax content -->
-        <div class="parallax">
+        <div class="parallax" id="main-parallax">
             <!-- top -->
             <div id="header" class="parallax__group top">
                 <!-- top background -->
@@ -89,7 +88,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-3 col-sm-4 col-xs-6 col-centered">
-                                <button class="btn btn-md btn-block btn-default col-centered scroll" id="fuck" style="margin-top: 50px" href="#about" data-target="about">Learn More</button>
+                                <button class="btn btn-md btn-block btn-default col-centered smooth-scroll" id="fuck" style="margin-top: 50px" href="#about" data-target="about">Learn More</button>
                             </div>
                         </div>
                     </div>
@@ -216,7 +215,7 @@
                             <h3 class="text-center">Join our monthly newsletter to receive detailed event information with plenty of time to plan to attend!</h3>
                         </div>
                         <div class="col-md-2 col-sm-4 col-xs-6 col-centered" style="margin-top: 55px">
-                            <a class="btn btn-md round btn-block btn-danger col-centered scroll" id="newsletter_button" href="http://asusoda.us11.list-manage1.com/subscribe?u=9768adfb71d653526e2b35d37&id=b4ab6913d5">Subscribe!</a>
+                            <a class="btn btn-md round btn-block btn-danger col-centered smooth-scroll" id="newsletter_button" href="http://asusoda.us11.list-manage1.com/subscribe?u=9768adfb71d653526e2b35d37&id=b4ab6913d5">Subscribe!</a>
                         </div>
                     </div>
                 </div>
@@ -318,7 +317,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-5 col-sm-6 col-xs-5 col-centered" style="padding-top: 55px">
-                                    <a class="btn btn-md round btn-block btn-primary col-centered scroll" id="newsletter_button" href="https://www.facebook.com/sodaasu/">Like our page!</a>
+                                    <a class="btn btn-md round btn-block btn-primary col-centered smooth-scroll" id="newsletter_button" href="https://www.facebook.com/sodaasu/">Like our page!</a>
                                 </div>
                             </div>
                         </div>
@@ -330,7 +329,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-5 col-sm-6 col-xs-5 col-centered" style="padding-top: 55px">
-                                    <a class="btn btn-md round btn-block btn-info col-centered scroll" id="newsletter_button" href="https://twitter.com/asu_soda">Follow @asu_soda!</a>
+                                    <a class="btn btn-md round btn-block btn-info col-centered smooth-scroll" id="newsletter_button" href="https://twitter.com/asu_soda">Follow @asu_soda!</a>
                                 </div>
                             </div>
                         </div>
@@ -463,7 +462,19 @@
 
         <script type="text/javascript" src="static/js/jquery.js"></script>
         <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+        
+        <!-- scroll scripts -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $(".smooth-scroll").click(function(event) {
+                    var target = $(this).attr("href");
+                    var main = $("#main-parallax:not(:animated)");
+                    var destination = $(target).offset().top + main.scrollTop();
+                    main.animate({scrollTop: destination}, 1000);
+                    $(this).blur();
+                    return false;
+                } );
+            } );
+        </script>
     </body>
 </html>

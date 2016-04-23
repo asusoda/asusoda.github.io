@@ -15,6 +15,22 @@
     src: url(../expressway.ttf);
 }
 
+/* navbar styles */
+.navbar-default {
+    color: black;
+    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.6), rgba(0,0,0,.4),rgba(0,0,0,0));
+    border: 0;
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 75px;
+    height: 75px;
+    padding-top: 0;
+}
+.navbar-default .navbar-nav > li > a {
+    font-family: expressway;
+    color: whitesmoke; /*Change active text color here*/
+}
 
 /* generic parallax styles */
 .parallax {
@@ -69,6 +85,9 @@
     .parallax__layer--base.top h3 {
         font-size: 1.3em;
     }
+    .parallax__layer--back.top {
+        transform: translateZ(-1px) scale(2.5);
+    }
 }
 
 /* Extra Small Devices, Phones */ 
@@ -78,6 +97,9 @@
     }
     .parallax__layer--base.top h3 {
         font-size: 1.3em;
+    }
+    .parallax__layer--back.top {
+        transform: translateZ(-1px) scale(2.5);
     }
 }
 
@@ -89,6 +111,9 @@
     .parallax__layer--base.top h3 {
         font-size: 1.5em;
     }
+    .parallax__layer--back.top {
+        transform: translateZ(-1px) scale(2.5);
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -98,6 +123,9 @@
     }
     .parallax__layer--base.top h3 {
         font-size: 1.6em;
+    }
+    .parallax__layer--back.top {
+        transform: translateZ(-1px) scale(2);
     }
 }
 
