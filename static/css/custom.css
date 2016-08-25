@@ -446,14 +446,44 @@
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
     .parallax__group.sponsors { 
-        height: 550px;
+        height: 950px;
+    }
+    .gold {
+        max-height: 130px;
+        max-width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .silver {
+        max-height: 100px;
+        max-width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bronze {
+        max-height: 40px;
+        max-width: 150px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
     .parallax__group.sponsors { 
-        height: 780px;
+        height: 1000px;
+    }
+    .gold {
+        
+    }
+    .silver {
+        
+    }
+    .bronze {
+        
     }
 }
 
@@ -462,6 +492,15 @@
     .parallax__group.sponsors { 
         height: 540px;
     }
+    .gold {
+        
+    }
+    .silver {
+        
+    }
+    .bronze {
+        
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -469,12 +508,30 @@
     .parallax__group.sponsors { 
         height: 600px;
     }
+    .gold {
+        
+    }
+    .silver {
+        
+    }
+    .bronze {
+        
+    }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
     .parallax__group.sponsors { 
         height: 720px;
+    }
+    .gold {
+        
+    }
+    .silver {
+        
+    }
+    .bronze {
+        
     }
 }
 
