@@ -1,522 +1,1185 @@
 <!DOCTYPE html>
-<!--suppress HtmlUnknownTarget -->
 <html lang="en">
 
-    <head>
+<head>
+	<title>SoDA</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script>
+	<script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+	<script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="tab icon" href="static/img/SoDA_ico.ico">
-        <title>SoDA</title>
 
-        <!-- Bootstrap Core CSS -->
-        <link href='static/css/bootstrap.min.css' rel="stylesheet">
+	<style>
+		#container {
+            margin: 0;
+            padding: 0;
+			background-color: #000;
+		}
+        @font-face {
+            font-family: "RopaSans-Regular";
+            src: url("fonts/RopaSansProFontFamily/RopaSans-Regular.ttf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-Black";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-Black.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-BlackItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-BlackItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-Bold";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-Bold.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-BoldItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-BoldItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-ExtraBold";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-Black.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-ExtraBoldItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-ExtraBoldItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-ExtraLight";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-ExtraLight.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-ExtraLightItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-ExtraLightItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-Italic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-Italic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-Light";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-Light.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-LightItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-LightItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-Medium";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-Medium.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-MediumItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-MediumItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-Regular";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-Regular.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-Thin";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-Thin.otf");
+        }
+        @font-face {
+            font-family: "RopaSansPro-ThinItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansPro-ThinItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-Black";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-Black.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-BlackItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-BlackItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-Bold";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-Bold.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-BoldItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-BoldItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-ExtraBold";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-ExtraBold.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-ExtraBoldItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-ExtraBoldItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-ExtraLight";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-ExtraLight.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-ExtraLightItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-ExtraLightItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-Italic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-Italic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-Light";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-Light.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-LightItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-LightItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-Medium";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-Medium.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-MediumItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-MediumItalic.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-Regular";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-Regular.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-Thin";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-Thin.otf");
+        }
+        @font-face {
+            font-family: "RopaSansSCPro-ThinItalic";
+            src: url("fonts/RopaSansProFontFamily/RopaSansSCPro-ThinItalic.otf");
+        }
+	</style>
 
-        <!-- Custom CSS -->
-        <link href='static/css/custom.css' rel="stylesheet">
+</head>
+    
+<body>
+    <div id="container"></div>
 
-    </head>
+    <script type="text/babel">
+        const NAV_BAR_HEIGHT = 45;
+        const MIN_DESKTOP_WIDTH = 1100;
 
-    <body>
+        const SodaLogo = ({height}) => {return <a href="#"><img src="images/dot_slash_white.png" style={{height: height, position: "relative", right: 15}}/></a>};
 
-        <!--Nav bar-->
-        <nav class="nav navbar navbar-default navbar-fixed-top main-nav" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#foo" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand smooth-scroll" rel="home" title="SoDA" style="padding-top:23px" href="#header">
-                        <img alt="SoDA" style="height: 27px;" src="static/img/dot_slash_SoDA.png">
+        const BlackSodaLogo = ({height}) => {return <img src="images/dot_slash_black.png" style={{height: height}}/>};
+
+        var ChatBox = React.createClass({
+            render: function() {
+                return (
+                    <div></div>
+                );
+            }
+        });
+
+        var Card = React.createClass({
+            render: function() {
+                var cardStyle = {
+                    WebkitFilter: "drop-shadow(0px 0px 5px #666)",
+					filter: "drop-shadow(0px 5px 5px #666)",
+                    ...this.props.styling
+                };
+                return (
+                    <div style={cardStyle} onMouseOut={this.props.onMouseOut}>
+                        {this.props.children}
+                    </div>
+                );
+            }
+        });
+              
+        var DesktopNavigationBarItemSubMenu = React.createClass({
+            render: function() {
+                var subMenuStyle = {
+                    backgroundColor: "#FFF",
+                    color: "#000",
+                    display: "inline-block",
+                    height: "auto",
+                    fontFamily: "sans-serif",
+                    fontSize: 25,
+                    left: this.props.left,
+                    position: "relative",
+                    WebkitFilter: "drop-shadow(0px 0px 0px #666)",
+					filter: "drop-shadow(0px 0px 0px #666)",
+                    fontSize: 22
+                }
+                return (
+                    <Card styling={subMenuStyle} onMouseOut={this.props.onMouseOut}>
+                        {this.props.children}
+                    </Card>
+                );
+            }
+        });
+
+        var ColorSwitchingButton = React.createClass({
+            getInitialState: function() {
+                return {
+                    color: "#000",
+                    backgroundColor: "#FFF"
+                }  
+            },
+            render: function() {
+                return ( 
+                    <div style={{...this.props.style, textDecoration: "none", backgroundColor:this.state.backgroundColor, color:this.state.color}} onMouseOver={() => this.setState({color: "#FFF", backgroundColor: "#000"})} onMouseOut={() => this.setState({color: "#000", backgroundColor: "#FFF"})}>
+                        <a href={this.props.link} style={{textDecoration: "none", backgroundColor:this.state.backgroundColor, color:this.state.color}}>{this.props.children}</a>
+                    </div>
+                );
+            }
+        });
+              
+        var DesktopNavigationBarItem = React.createClass({
+            getInitialState: function() {
+                return {
+                    width: 0,
+                    height: 0,
+                    left: 0,
+                    divElement: null,
+                }
+            },
+
+            render: function() {
+                var textStyle = {
+                    color: "#FFF",
+                    fontSize: 25,
+                    textDecoration: "none",
+                    fontFamily: "sans-serif",
+                    fontWeight: "bold",
+                    display: "inline-block",
+                    verticalAlign: 11,    
+                    position: "relative",
+                    paddingLeft: 15,
+                    paddingRight: 15,
+                };
+                // LEAVE FUNCTIONS IN THIS FORM - ARROW (ANONYMOUS) FUNCTIONS CAUSE MEMORY LEAKS
+                var onMouseOver = () => 
+                {
+                    this.props.updateRedMarker(this.state.divElement.clientWidth - (textStyle.paddingLeft+textStyle.paddingRight), this.state.divElement.offsetLeft + textStyle.paddingLeft);
+                }
+                var ref = (input) => {
+                    if (input != null) {
+                        this.state.divElement = input;    
+                    }
+                }
+                
+                return (
+                    <a onClick={this.props.onClick} style={textStyle} href={this.props.link} ref={ref} onMouseOver={onMouseOver} onMouseOut={this.props.onMouseOut}>
+                        <div style={{fontFamily: "RopaSansPro-Bold"}}>{this.props.children}</div>
                     </a>
-                </div>
-                <div class="collapse navbar-collapse" id="foo">
-                    <ul class="nav navbar-nav navbar-left">
-                        <li>
-                            <a href="#about" data-target="about" class="smooth-scroll">What we offer</a>
-                        </li>
-                        <li>
-                            <a href="#meetings" data-target="meetings" class="smooth-scroll">Meetings</a>
-                        </li>
-                        <li>
-                            <a href="#sponsors" data-target="sponsors" class="smooth-scroll">Sponsors</a>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="https://calendar.google.com/calendar/embed?src=cDNkcmR1azUzbGszaGxrdDVkcjA0bW91aTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Calendar</a>
-                        </li>
-                        <li>
-                            <a href="getting-involved.html">Getting Involved</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                );
+            }
+        });
+    
+        var DesktopNavigationBar = React.createClass({
+            getInitialState: function() {
+                return {
+                    redMarkerWidth: 0,
+                    redMarkerLeft: 0,
+                    currentItemLeft: 0,
+                    currentItemWidth: 0,
+                    showRedMarker: false,
+                    showSubMenu: false,
+                    subMenuText: <div></div>,
+                }
+            },
+            
+            componentDidMount: function () {
+                window.addEventListener("resize", this.removeRedMarker);
+            },
+            componentWillUnmount: function() {
+                window.removeEventListener("resize", this.removeRedMarker);
+            },
+            removeRedMarker: function() {
+                this.setState({...this.state, showRedMarker: false, showSubMenu: false});    
+            },
 
-
-
-
-
-        <!-- paralax content -->
-        <div class="parallax" id="main-parallax">
-
-
-            <!-- *********************************** splash *********************************** -->
-
-
-            <div id="header" class="parallax__group splash">
-                <!-- splash background -->
-                <div class="parallax__layer parallax__layer--back splash"></div>
-                <!-- splash content -->
-                <div class="parallax__layer parallax__layer--base splash">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-7 col-md-7 col-sm-10 col-xs-10 col-centered">
-                                <img class="img img-responsive center-block" style="margin-top: 200px" src="static/img/dot_slash_SoDA.png"/>
+            render: function() {
+                var navigationBarStyle = {
+                    backgroundColor: "#000",
+                    width: this.props.width,
+                    height: this.props.height,
+                    padding: 10,
+                    display: "inline-block",
+                    textAlign: "center"
+                }
+                
+                var redMarkerStyle = {
+                    backgroundColor: "#ff0000",
+                    width: this.state.redMarkerWidth,
+                    left: this.state.redMarkerLeft,
+                    position: "absolute",
+                    height: 15,
+                }
+                const NavBarItemSubMenu = ({left}) => {
+                    if (this.state.showSubMenu) {
+                        return (
+                            <DesktopNavigationBarItemSubMenu left={left}>
+                                {this.state.subMenuText}
+                            </DesktopNavigationBarItemSubMenu>);
+                    } else {
+                        return null;
+                    }
+                }
+                const RedMarker = () => {
+                    if (this.state.showRedMarker) {
+                        return <div style={redMarkerStyle}/>
+                    } else {
+                        return null;
+                    }
+                }
+                
+                var props = {
+                    onClick: () => this.setState({...this.state, showRedMarker: true, redMarkerLeft: this.state.currentItemLeft, redMarkerWidth: this.state.currentItemWidth})
+                }
+                var noSubMenuText = (width, left) => {
+                    this.setState({...this.state, currentItemWidth: width, currentItemLeft: left, showSubMenu: false
+                    });
+                }
+                var communitySubMenuText = (width, left) => {
+                    this.setState({...this.state, currentItemWidth: width, currentItemLeft: left, showSubMenu: true, subMenuText:
+                        <ColorSwitchingButton style={{fontFamily: "RopaSans-Regular", padding: 10}} link="#sunhacks">Sun Hacks 2017</ColorSwitchingButton>
+                    });
+                }
+                var hackathonSubMenuText = (width, left) => {
+                    this.setState({...this.state, currentItemWidth: width, currentItemLeft: left, showSubMenu: true, subMenuText:
+                        <div style={{fontFamily: "RopaSans-Regular"}}>
+                            <ColorSwitchingButton style={{paddingTop: 5, padding: 10}} link="#group_projects">Group Projects</ColorSwitchingButton>
+                            <ColorSwitchingButton style={{paddingTop: 10, padding: 10}} link="#mentorship">Mentorship Program</ColorSwitchingButton>
+                            <ColorSwitchingButton style={{paddingBottom: 5, paddingTop: 10, padding: 10}} link="#distinguished">Distinguished SoDA membership</ColorSwitchingButton>
+                        </div>});
+                }
+                var projectSubMenuText = (width, left) => {
+                    this.setState({...this.state, currentItemWidth: width, currentItemLeft: left, showSubMenu: true, subMenuText:
+                        <div style={{fontFamily: "RopaSans-Regular"}}>
+                            <ColorSwitchingButton style={{paddingTop: 5, padding: 10}} link="#contacts">Officers</ColorSwitchingButton>
+                            <ColorSwitchingButton style={{paddingTop: 10, paddingBottom: 5, padding: 10}} link="#contacts">Sponsors</ColorSwitchingButton>
+                        </div>});
+                }
+				return (
+                    <div style={{position: "fixed", top:0, left: 0, right: 0, zIndex: 100}} onMouseLeave={() => this.setState({...this.state, showSubMenu: false})}>
+                        <div style={navigationBarStyle}>
+                            <SodaLogo height={NAV_BAR_HEIGHT}/>
+                            <DesktopNavigationBarItem link="#about" {...props} updateRedMarker={noSubMenuText}>About</DesktopNavigationBarItem>
+                            <DesktopNavigationBarItem link="#events" {...props} updateRedMarker={noSubMenuText}>Events</DesktopNavigationBarItem>
+                            <DesktopNavigationBarItem link="#careers" {...props} updateRedMarker={noSubMenuText}>Careers</DesktopNavigationBarItem>
+                            <DesktopNavigationBarItem link="#hackathon" {...props} updateRedMarker={communitySubMenuText}>Hackathon</DesktopNavigationBarItem>
+                            <DesktopNavigationBarItem link="#community" {...props} updateRedMarker={hackathonSubMenuText}>Community</DesktopNavigationBarItem>
+                            <DesktopNavigationBarItem link="#contacts" {...props} updateRedMarker={projectSubMenuText}>Contact Us</DesktopNavigationBarItem>
+                            <a href="https://sodaasu.slack.com" target="_blank"><img src="images/Chat_icon_white_tr.png" style={{height: NAV_BAR_HEIGHT-10, left: 15, position: "relative"}}/></a>
+                        </div>
+                        <div style={{backgroundColor: "#0000ff",width: this.props.width,height: 15,WebkitFilter: "drop-shadow(0px 0px 5px #666)",filter: "drop-shadow(0px 5px 5px #666)"}}>
+                            <RedMarker/>
+                            <div>
+                                <NavBarItemSubMenu left={this.state.currentItemLeft}/>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-7 col-md-8 col-sm-9 col-xs-10 col-centered">
-                                <h3 class="text-center">The Software Developers Association is the premiere software development club for university students.</h3>
+                        
+                    </div>
+                );
+            },
+        });
+
+        var MobileNavigationBar = React.createClass({
+            getInitialState: function() {
+                return {}
+            },
+            render: function() {
+                var navigationBarStyle = {
+                    backgroundColor: "#000",
+                    width: this.props.width,
+                    height: this.props.height,
+                    position: "fixed",
+                    padding: 5,
+                }
+				return (	
+                    <div style={{position: "fixed", top:0, left: 0, right: 0, textAlign: "center"}}>
+                        <div style={navigationBarStyle}>
+                            <SodaLogo height={NAV_BAR_HEIGHT}/>
+                        </div>
+                    </div>
+                );
+            },
+        });
+
+        var Palette = React.createClass({
+            render: function() {
+                return (
+                    <div style={{...this.props.styling, display: "inline-block", margin: 40, verticalAlign: "top"}}>
+                        <div style={{textAlign: this.props.titleAlign}}>
+                            <Card styling={{backgroundColor: "#000", color:"#FFF", display: "inline-block", padding: 10, fontSize: 30, fontFamily: "RopaSansPro-ExtraBold", position: "relative", bottom: -30, zIndex: 1, paddingLeft: 18, paddingRight: 18}}>{this.props.title}</Card>
+                        </div>
+                        <Card styling={{backgroundColor: "#F4F4F4", display: "inline-block", width: this.props.width, padding: 25, borderRadius: 10, textAlign: this.props.contentAlign}}>
+                            <br/>
+                            {this.props.children}
+                        </Card>
+                    </div>
+                );
+            }
+        });
+
+        var DesktopWebsiteHeader = React.createClass({
+            getInitialState: function() {
+                return {
+                    markerColor: "#0000ff",
+                    currentItemWidth: 0,
+                    currentItemLeft: 0,
+                }
+            },
+            
+            render: function() {
+                var props = {
+                    onClick: () => {},
+                    onMouseOut: () => this.setState({...this.state, markerColor: "#0000ff"})
+                }
+                var showRedMarker = () => {
+                    this.setState({...this.state, markerColor: "#ff0000"});
+                }
+                var markerStyle = {
+                    backgroundColor: this.state.markerColor,
+                    width: 87,
+                    position: "absolute",
+                    height: 15,
+                    bottom: -15,
+                    WebkitFilter: "drop-shadow(0px 0px 10px #000)",
+					filter: "drop-shadow(5px 5px 5px 5px #666)",
+                }
+                return (
+                    <div style={{backgroundColor: "#F6F3F4", height: this.props.height, maxWidth:this.props.width, top:NAV_BAR_HEIGHT+35, position:"relative", padding: 40, textAlign: "center"}}>
+                        <div style={{textAlign: "left", display: "inline-block"}}>
+                            <BlackSodaLogo height={150}/>
+                            <div style={{fontSize: 40, fontFamily: "RopaSansPro-Medium"}}>The Software Developers Association</div>
+                            <div style={{fontSize: 40, fontFamily: "RopaSansPro-Light"}}>is the premiere software development club<br/>for university students.</div>
+                        </div>
+                        <div style={{position: "absolute", display: "inline-block", bottom: 0, textAlign: "center", left:this.props.width/2 - 152, zIndex: 2}}>
+                            <div style={{backgroundColor: "#000", textAlign: "center", display: "inline-block", padding: 20, paddingTop: 26, paddingRight: 22}}>
+                                <DesktopNavigationBarItem link="#about" {...props} updateRedMarker={showRedMarker}>About</DesktopNavigationBarItem>
+                                <div style={markerStyle}/>
+                            </div>
+                            <div style={{fontSize: 25, fontFamily:"RopaSansPro-Regular", color:"#808080", display: "inline-block", textAlign: "left", left: 10, position: "relative", top: 5}}>
+                                Learn more about<br/>SoDA
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-3 col-sm-4 col-xs-6 col-centered">
-                                <button class="btn btn-md btn-block btn-default col-centered smooth-scroll" style="margin-top: 50px" href="#about" data-target="about">Learn More</button>
-                            </div>
-                        </div>
+                        
+                    </div>
+                );
+            }
+        });
+
+        const GoogleGetDirections = ({link}) => {
+            return (
+                <div style={{display:"inline-block"}}>
+                    <a href={link} target= "_blank" style={{textDecoration: "none"}}><img src="images/google_map_icon.png" style={{height: 50, width: "auto", overflow: "hidden", paddingRight: 10}}/></a>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Get direction.</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href={link} target= "_blank">Google Maps</a>
                     </div>
                 </div>
-            </div>
+            );  
+        };
 
-
-            <!-- *********************************** about us *********************************** -->
-            <div id="about" class="about_us">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="text-center">What we offer</h1>
-                            <hr>
-                        </div>
-                    </div>
-                    <!--test-->
-                    <!-- mobile markup -->
-                    <div class="visible-xs-block">
-                        <div class="row">
-                            <div class="col-xs-8 col-xs-offset-2">
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2">
-                                        <img class="img-responsive center-block" style="margin-top:30px" src="static/img/experience.png"/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <h2 class="text-center">EXPERIENCE</h2>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2">
-                                        <h3 class="text-center">Empower yourself with a variety of collegiate and industry-run tech talks.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-8 col-xs-offset-2">
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2">
-                                        <img class="img-responsive center-block" style="margin-top:30px" src="static/img/projects.png"/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <h2 class="text-center">PROJECTS</h2>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <h3 class="text-center">Showcase and develop your skills. Participate in a multitude of member-run projects.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xs-8 col-xs-offset-2">
-                                <div class="row">
-                                    <div class="col-xs-8 col-xs-offset-2">
-                                        <img class="img-responsive center-block" style="margin-top:30px" src="static/img/community.png"/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <h2 class="text-center">COMMUNITY</h2>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <h3 class="text-center">Meet and network with a community of passionate and dedicated student developers.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- pc markup -->
-                    <div class="hidden-xs">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-10 col-centered">
-                                        <img class="img-responsive center-block" style="margin-top:30px" src="static/img/experience.png"/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <h2 class="text-center">EXPERIENCE</h2>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <h3 class="text-center">Empower yourself with a variety of collegiate and industry-run tech talks.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-10 col-centered">
-                                        <img class="img-responsive center-block" style="margin-top:30px" src="static/img/projects.png"/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <h2 class="text-center">PROJECTS</h2>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <h3 class="text-center">Showcase and develop your skills. Participate in a multitude of member-run projects.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-10 col-centered">
-                                        <img class="img-responsive center-block" style="margin-top:30px" src="static/img/community.png"/>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <h2 class="text-center">COMMUNITY</h2>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <h3 class="text-center">Meet and network with a community of passionate and dedicated student developers.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        const GoogleForms = ({link}) => {
+            return (
+                <div>
+                    <a href={link} target= "_blank" style={{textDecoration: "none"}}><img src="images/google_form_icon.png" style={{height: 50, width: "auto", paddingRight: 15}}/></a>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>RSVP Now.</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href={link} target= "_blank">Google Forms</a>
                     </div>
                 </div>
-            </div>
+            );  
+        };
 
-
-            <!-- *********************************** newsletter banner *********************************** -->
-
-
-            <div id="newsletter" class="parallax__group newsletter">
-                <div class="parallax__layer parallax__layer--base newsletter">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 col-centered newsletter">
-                            <h3 class="text-center">Join our monthly newsletter to receive detailed event information with plenty of time to plan to attend!</h3>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6 col-centered" style="margin-top: 55px">
-                            <a class="btn btn-md round btn-block btn-danger col-centered smooth-scroll" id="newsletter_button" href="http://asusoda.us11.list-manage1.com/subscribe?u=9768adfb71d653526e2b35d37&id=b4ab6913d5">Subscribe!</a>
-                        </div>
+        const FavoriteWebsite = ({}) => {
+            return (
+                <div>
+                    <img src="images/black_star_icon.png" style={{height: 50, width: "auto", paddingRight: 15}}/>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Add our website to favorite.</div>
+                        <div style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080"}}>Dialog from your browser</div>
                     </div>
                 </div>
-            </div>
+            );  
+        };
 
-
-            <!-- *********************************** meetings *********************************** -->
-
-
-            <div id="meetings" class="meetings">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="text-center">Meetings</h1>
-                        <hr>
+        const FacebookPage = ({}) => {
+            return (
+                <div>
+                    <a href="https://www.facebook.com/SoDAASU/" target= "_blank" style={{textDecoration: "none"}}><img src="images/facebook_icon.png" style={{height: 50, width: "auto", paddingRight: 15}}/></a>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Follow our Facebook page.</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href="https://www.facebook.com/SoDAASU/" target= "_blank">facebook.com/SoDAASU/</a>
                     </div>
                 </div>
-                <!-- mobile markup -->
-                <div class="visible-xs-block">
-                    <div class="row">
-                        <div class="col-xs-8 col-centered">
-                            <div class="row">
-                                <div class="col-xs-8 col-xs-offset-2">
-                                    <img class="img-responsive center-block" style="margin-top:30px" src="static/img/location.png"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h2 class="text-center">LOCATION</h2>
-                            </div>
-                            <div class="row">
-                                <h3 class="text-center">SODA has events and meetings at PSH 150 unless otherwise stated. Be sure to check our social media for updates.</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-8 col-centered">
-                            <div class="row">
-                                <div class="col-xs-8 col-xs-offset-2">
-                                    <img class="img-responsive center-block" style="margin-top:30px" src="static/img/time.png"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h2 class="text-center">TIME</h2>
-                            </div>
-                            <div class="row">
-                                <h3 class="text-center">Events and meetings start at 6:30pm and end at 8:30pm unless mentioned otherwise.</h3>
-                            </div>
-                        </div>
+            );  
+        };
+
+        const FacebookGroup = ({}) => {
+            return (
+                <div>
+                    <img src="images/facebook.png" style={{height: 50, width: "auto", paddingRight: 15}}/>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Join our Facebook Group</div>
+                        <div style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080"}}>facebook.com/groups/asusoda</div>
                     </div>
                 </div>
-                <!-- pc markup -->
-                <div class="hidden-xs">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-md-offset-2 col-sm-offset-2">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-8 col-centered">
-                                    <img class="img-responsive center-block" style="margin-top:30px" src="static/img/location.png"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h2 class="text-center">LOCATION</h2>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-11 col-sm-12 col-centered">
-                                    <h3 class="text-center">SoDA has events and meetings at PSH 150 unless otherwise stated. Be sure to check our social media for updates.</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4 col-md-offset-0 col-sm-offset-0">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-8 col-centered">
-                                    <img class="img-responsive center-block" style="margin-top:30px" src="static/img/time.png"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <h2 class="text-center">TIME</h2>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-11 col-sm-12 col-centered">
-                                    <h3 class="text-center">Events and meetings start at 6:30pm and end at 8:30pm unless mentioned otherwise.</h3>
-                                </div>
-                            </div>
-                        </div>
+            );  
+        };
+
+        const GoogleCalendar = ({}) => {
+            return (
+                <div>
+                    <a href="https://calendar.google.com/calendar/embed?src=cDNkcmR1azUzbGszaGxrdDVkcjA0bW91aTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="_blank"><img src="images/google_calendar_icon.png" style={{height: 50, width: "auto", paddingRight: 15}}/></a>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>View our weekly calendar.</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href="https://calendar.google.com/calendar/embed?src=cDNkcmR1azUzbGszaGxrdDVkcjA0bW91aTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="_blank">Google Calendar</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h5 class="text-center" style="padding-top: 30px">* food is always provided</h5>
+            );  
+        };
+
+        const NewsLetter = ({}) => {
+            return (
+                <div>
+                    <a href="http://tinyurl.com/sodanews" target="_blank"><img src="images/newsletter_icon.png" style={{height: 50, width: "auto", paddingRight: 15}}/></a>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Subscribe to our newsletter.</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href="http://tinyurl.com/sodanews" target="_blank"> tinyurl.com/sodanews</a>
                     </div>
                 </div>
-            </div>
+            );  
+        };
 
-
-            <!-- *********************************** social media *********************************** -->
-
-
-            <div id="social_media" class="parallax__group social_media">
-                <div class="parallax__layer parallax__layer--back social_media"></div>
-                <div class="parallax__layer parallax__layer--base social_media">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs 12">
-                            <div class="row">
-                                <div class="col-md-8 col-centered social_media" style="padding">
-                                    <h3 class="text-center">Like us on Facebook</h3>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-5 col-sm-6 col-xs-5 col-centered" style="padding-top: 55px">
-                                    <a class="btn btn-md round btn-block btn-primary col-centered smooth-scroll" id="newsletter_button" href="https://www.facebook.com/sodaasu/">Like our page!</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs 12">
-                            <div class="row">
-                                <div class="col-md-8 col-centered social_media" style="padding">
-                                    <h3 class="text-center">Follow us on Twitter!</h3>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-5 col-sm-6 col-xs-5 col-centered" style="padding-top: 55px">
-                                    <a class="btn btn-md round btn-block btn-info col-centered smooth-scroll" id="newsletter_button" href="https://twitter.com/asu_soda">Follow @asu_soda!</a>
-                                </div>
-                            </div>
-                        </div>
+        const TwitterPage = ({}) => {
+            return (
+                <div>
+                    <a href="https://www.twitter.com/asu_soda" target= "_blank" style={{textDecoration: "none"}}><img src="images/twitter.png" style={{height: 50, width: "auto", paddingRight: 15}}/></a>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Follow us on Twitter</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href="https://www.twitter.com/asu_soda" target= "_blank">twitter.com/asu_soda</a>
                     </div>
                 </div>
-            </div>
+            );  
+        };
 
-
-            <!-- *********************************** sponsors *********************************** -->
-
-
-            <div id="sponsors" class="sponsors">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h1 class="text-center">Sponsors</h1>
-                        </div>
-                    </div>
-                    <!-- mobile markup -->
-                    <div class="visible-xs-block">
-                        <div class="row">
-                          <div class="col-centered" style="margin-bottom: 30px">
-                              <img class="img-responsive gold" src="static/img/AllState2017.png"/>
-                          </div>
-                          <div class="col-centered" style="margin-bottom: 30px">
-                              <img class="img-responsive gold" src="static/img/Amazon.jpg"/>
-                          </div>
-                          <div class="col-centered" style="margin-bottom: 30px">
-                              <img class="img-responsive gold" src="static/img/AmericanExpress.png"/>
-                          </div>
-                          <div class="col-centered" style="margin-bottom: 30px">
-                              <img class="img-responsive gold" src="static/img/starbucks.jpg"/>
-                          </div>
-                          <div class="col-centered" style="margin-bottom: 30px">
-                              <img class="img-responsive gold" src="static/img/Workiva.png"/>
-                          </div>
-                            <div class="col-lg-12 col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive silver" src="static/img/GoDaddy.png"/>
-                            </div>
-                            <div class="col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive silver" src="static/img/Statefarm_logo.png"/>
-                            </div>
-                            <div class="col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive bronze" src="static/img/Connexta.jpg"/>
-                            </div>
-                            <div class="col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive bronze" src="static/img/GoldmanSachs.jpg"/>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <h5 class="text-center"><a href="sponsoring-SoDA.html">Learn more about sponsoring SoDA></a></h5>
-                        </div>
-                    </div>
-                    <!-- pc markup -->
-                    <div class="hidden-xs">
-                        <div class="row" style="margin-bottom: 30px">
-                            <div class="col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive gold" src="static/img/AllState2017.png"/>
-                            </div>
-                            <div class="col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive gold" src="static/img/Amazon.jpg"/>
-                            </div>
-                            <div class="col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive gold" src="static/img/AmericanExpress.png"/>
-                            </div>
-                            <div class="col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive gold" src="static/img/starbucks.jpg"/>
-                            </div>
-                            <div class="col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive gold" src="static/img/Workiva.png"/>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-bottom: 30px">
-                            <div class="col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive silver" src="static/img/GoDaddy.png"/>
-                            </div>
-                            <div class="col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive silver" src="static/img/Statefarm_logo.png"/>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-bottom: 30px">
-                           <div class="col-centered" style="margin-bottom: 30px">
-                              <img class="img-responsive bronze" src="static/img/Connexta.jpg"/>
-                           </div>
-                            <div class="col-lg-4 col-padding-lg-2 col-centered" style="margin-bottom: 30px">
-                                <img class="img-responsive bronze" src="static/img/GoldmanSachs.jpg"/>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <h5 class="text-center"><a href="sponsoring-SoDA.html">Learn more about sponsoring SoDA</a></h5>
-                        </div>
+        const InstagramPage = ({}) => {
+            return (
+                <div>
+                    <a href="https://www.instagram.com/asu_soda/" target="_blank" style={{textDecoration: "none"}}><img src="images/instagram_old.png" style={{height: 50, width: "auto", paddingRight: 15}}/></a>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Follow us on Instagram</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href="https://www.instagram.com/asu_soda/" target="_blank">instagram.com/asu_soda/</a>
                     </div>
                 </div>
-            </div>
+            );  
+        };
 
+        const YoutubeChannel = ({}) => {
+            return (
+                <div>
+                    <a href="https://www.youtube.com/sodaasu" target="_blank" style={{textDecoration: "none"}}><img src="images/youtube.png" style={{height: 50, width: "auto", paddingRight: 15}}/></a>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Subscribe to our Youtube Channel</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href="https://www.youtube.com/sodaasu" target="_blank">youtube.com/sodaasu</a>
+                    </div>
+                </div>
+            );  
+        };
 
-            <!-- *********************************** footer *********************************** -->
+        const SlackTeam = ({}) => {
+            return (
+                <div>
+                    <a href="https://sodaasu.slack.com" target="_blank"><img src="images/slack.png" style={{height: 50, width: "auto", paddingRight: 15}}/></a>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Join our Slack team</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href="https://sodaasu.slack.com" target="_blank">sodaasu.slack.com</a>
+                    </div>
+                </div>
+            );  
+        };
 
+        const GithubProjects = ({}) => {
+            return (
+                <div>
+                    <a href="https://www.github.com/asusoda" target="_blank"><img src="images/github_icon.png" style={{height: 50, width: "auto", paddingRight: 15}}/></a>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>See all SoDer's Projects on Github.</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href="https://www.github.com/asusoda" target="_blank">github.com/asusoda</a>
+                    </div>
+                </div>
+            );  
+        };
 
-            <div id="footer" class="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="row" style="margin-bottom: 20px; padding-top:55px">
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3" >
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
-                                            <div class="row text-center">
-                                                <a href="https://www.facebook.com/sodaasu/" >
-                                                    <img src="static/img/facebook-128.png" alt="Facebook"
-                                                        style="width:48px;height:48px">
-                                                </a>
+        const OrgSync = ({}) => {
+            return (
+                <div>
+                    <img src="" style={{height: 20, width: "auto", paddingRight: 10}}/>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Register as a Soder on OrgSync.</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href="https://orgsync.com/12637/chapter" target="_blank">orgsync.com/12637/chapter</a>
+                    </div>
+                </div>
+            );  
+        };
+
+        const Wikipedia = ({}) => {
+            return (
+                <div>
+                    <img src="images/wikipedia_icon.png" style={{height: 45, width: "auto", paddingRight: 20}}/>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Learn more.</div>
+                        <div style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080"}}>Wikipedia</div>
+                    </div>
+                </div>
+            );
+        };
+
+        const SunHacks = ({}) => {
+            return (
+                <div>
+                    <img src="" style={{height: 45, width: "auto", paddingRight: 20}}/>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Sign up to be an organizer.</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href="http://bit.ly/sunhacks-form" target="_blank">bit.ly/sunhacks-form</a>
+                    </div>
+                </div>
+            );
+        };
+
+        const LearnMore = ({}) => {
+            return (
+                <div>
+                    <img src="" style={{height: 45, width: "auto", paddingRight: 20}}/>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Learn more.</div>
+                        <div style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080"}}>whattheheck.io</div>
+                    </div>
+                </div>
+            );
+        };
+
+        const ReserveBus = ({}) => {
+            return (
+                <div>
+                    <img src="" style={{height: 45, width: "auto", paddingRight: 20}}/>
+                    <div style={{display:"inline-block", verticalAlign:4}}>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Reserve a bus.</div>
+                        <div style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080"}}>Google Forms</div>
+                    </div>
+                </div>
+            );
+        };
+
+        var DesktopWebsiteAboutUs = React.createClass({
+            getInitialState: function() {
+                return {
+                    markerColor: "#0000ff",
+                    answerColor: "#0000ff",
+                    answerText: "Show answer",
+                    currentItemWidth: 0,
+                    currentItemLeft: 0,
+                }
+            },
+            
+            render: function() {
+                var width = this.props.width;
+                var height = this.props.height;
+                var props = {
+                    onClick: () => {},
+                    onMouseOut: () => this.setState({...this.state, markerColor: "#0000ff"})
+                }
+                var showRedMarker = () => {
+                    this.setState({...this.state, markerColor: "#ff0000"});
+                }
+                var markerStyle = {
+                    backgroundColor: this.state.markerColor,
+                    width: 93,
+                    position: "absolute",
+                    height: 15,
+                    bottom: -15,
+                    WebkitFilter: "drop-shadow(0px 0px 10px #000)",
+					filter: "drop-shadow(5px 5px 5px 5px #666)",
+                }
+                return (
+                    <div style={{width: width, overflow: "hidden", textAlign: "center", display:"inline-block", position: "relative", top:80}}>
+                        <div style={{position: "absolute", textAlign: "center", width: width}}>
+                            <div style={{display: "inline-block"}}>
+                                <div style={{display: "inline-block"}}>
+                                    <Palette title="UPCOMING EVENT" titleAlign= "left" contentAlign= "left" width={400}>
+                                        <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Land a Top Tier<br/>Job or Internship</div>
+                                        <br/>
+                                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, August 31st, 2017<br/>7:00 pm ~ 9:00 pm</div>
+                                        <br/>
+                                        <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Come learn what you need to be doing in order to land an amazing job or internship at a top tier company! This meeting will be focused on preparing for applying/interviewing at tech companies and is a great way to get ready for the career fair and your upcoming interviews, see you there!</div>
+                                        <br/>
+                                        <br/>
+                                        <div style={{display: "inline-block"}}>
+                                            <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
+                                            <div style={{position: "relative", left: 10}}>
+                                                <GoogleForms link="http://asusoda.us11.list-manage2.com/track/click?u=9768adfb71d653526e2b35d37&id=7bb41148a2&e=7ff640145c"/>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
-                                            <div class="row text-center">
-                                                <a href="https://twitter.com/asu_soda">
-                                                    <img src="static/img/twitter-128.png" alt="Twitter"
-                                                        style="width:48px;height:48px">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </Palette>
                                 </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" >
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                                            <div class="row text-center">
-                                                <a href="https://github.com/asusoda">
-                                                    <img src="static/img/github-128.png" alt="GitHub"
-                                                        style="width:48px;height:48px">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
-                                            <div class="row text-center">
-                                                <a href="https://orgsync.com/12637/chapter">
-                                                    <img src="static/img/orgsync-128.png" alt="OrgSync"
-                                                        style="width:48px;height:48px">
-                                                </a>
-                                            </div>
-                                        </div>
+                                
+                                <Palette title="NEW TO SoDA?" titleAlign= "left" contentAlign= "left" width={400} styling={{zIndex: 10, position: "relative"}}>
+                                    <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Checklist.</div>
+                                    <br/>
+                                    <FacebookPage/>
+                                    <br/>
+                                    <TwitterPage/>
+                                    <br/>
+                                    <InstagramPage/>
+                                    <br/>
+                                    <GoogleCalendar/>
+                                    <br/>
+                                    <SlackTeam/>
+                                    <br/>
+                                    <YoutubeChannel/>
+                                    <br/>
+                                    <GithubProjects/>
+                                    <br/>
+                                    <NewsLetter/>
+                                    <br/>
+                                    <div style={{position: "relative", left: 55}}>
+                                        <OrgSync/>
                                     </div>
+                                </Palette>
+                                <div style={{textAlign: "left", position: "relative", top: -100}}>
+                                    <Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={400}>
+                                        <br/>
+                                        <div style={{fontFamily: "RopaSans-Regular", fontSize: 24}}>What is the only state in America that can be typed on one row of a traditional English QWERTY keyboard?</div>
+                                        <br/>
+                                        
+                                        <div style={{textAlign: "right"}}>
+                                            <div style={{backgroundColor: this.state.answerColor, display: "inline-block", width: 150, textAlign: "center", fontFamily: "RopaSansPro-Medium", fontSize: 25, color:"#FFF", padding: 5, paddingRight: 20, paddingLeft: 20, WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 2px 5px #666)", position: "relative", right: 80}} onMouseOver={() => this.setState({...this.state, answerColor: "#ff0000", answerText: "Alaska"})} onMouseOut={() => this.setState({...this.state, answerColor: "#0000ff", answerText: "Show answer"})}>{this.state.answerText}</div>
+                                        </div>
+                                        
+                                    </Palette>
                                 </div>
                             </div>
-                        <div class="row text-center">
-                            <p>
-                                <a href="faq.html">Frequently Asked Questions</a> |
-                                <a href="contact-us.html">Contact Us</a>
-                            </p>
                         </div>
-                            <div class="row">
-                                <p class="text-center">Copyright © 2017 The Software Developers Association</p>
+                        <img src="images/geometry_white.jpg" />
+                    </div>
+                );
+            }
+        });
+
+        const AboutPage = ({width, height}) => {
+            return (
+                <div style={{display: "inline-block", verticalAlign: "top", textAlign: "center"}} id="about">
+                    <div style={{textAlign: "center"}}>
+                        <Card styling={{backgroundColor: "#000", color:"#FFF", display: "inline-block", padding: 10, fontSize: 50, fontFamily: "RopaSansPro-ExtraBold", position: "relative", bottom: -30, zIndex: 1, paddingLeft: 18, paddingRight: 18}}>ABOUT US</Card>
+                    </div>
+                    <div style={{backgroundColor: "#F4F4F4", display: "inline-block", width: width, textAlign: "center"}}>
+                        <br/>
+                        <div style={{padding: 40, paddingLeft: 100, textAlign: "left", display: "inline-block"}}>
+                            <div>
+                                <BlackSodaLogo height={180}/>
+                                <div style={{fontSize: 90, fontWeight: "bold", display: "inline-block", verticalAlign: 45, position: "relative", fontFamily: "RopaSansPro-Bold"}}>,</div>
+                            </div>
+                            <div style={{position: "relative"}}>
+                                <div style={{fontFamily: "RopaSansPro-ExtraLightItalic", fontSize: 100}}>
+                                    a.k.a.
+                                </div>
+                                <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 50}}>
+                                    The Software Developers Association,
+                                </div>
+                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>
+                                    is the premiere software development<br/> club for university students.
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            );  
+        };
 
-        <script type="text/javascript" src="static/js/jquery.js"></script>
-        <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+        const EventPage = ({width, height}) => {
+            return (
+            <div style={{width: width, backgroundColor: "#F6F3F4", id:"events"}}>
+                <div style={{padding: 40, paddingLeft: 40}}>
+                    <div style={{fontSize: 150, fontFamily: "RopaSansPro-Thin"}}>Events.</div>
+                    <br/>
+                    <div style={{display: "inline-block", width: "100%"}}>
+                        <div style={{display: "inline-block", width: width/2 - 100, float: "left"}}>
+                            <div style={{fontSize: 40, fontFamily: "RopaSansPro-Medium", color:"#808080"}}>SoDA has events and meetings at the <span style={{color: "#000"}}>Physical Science building F wing (PSF),</span> room 150 unless otherwise stated.</div>
+                            <div style={{position: "relative", top: 50}}>
+                                <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
+                            </div>
+                        </div>
+                        <div style={{display: "inline-block", verticalAlign: "top", fontFamily: "RopaSansPro-Medium", width: width/2 - 100, float: "right"}}>
+                            <div style={{fontSize: 40, color:"#808080", display: "inline-block"}}>Events and meetings <span style={{color: "#000"}}>start at 6:30 pm and end at 8:30 pm</span> unless mentioned otherwise.</div>
+                            <div style={{position: "relative", top: 50}}>
+                                <GoogleCalendar/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div style={{height: height, overflow: "hidden", textAlign: "center", display:"inline-block", position: "relative", top:80}}>
+                    <div style={{position: "absolute", textAlign: "center", width: width}}>
+                        <div style={{display: "inline-block"}}>
+                            
+                            <div style={{display: "inline-block"}}>
+                                <Palette title="UPCOMING EVENT" titleAlign= "left" contentAlign= "left" width={400}>
+                                    <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Land a Top Tier<br/>Job or Internship</div>
+                                    <br/>
+                                    <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, August 31st, 2017<br/>7:00 pm ~ 9:00 pm</div>
+                                    <br/>
+                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Come learn what you need to be doing in order to land an amazing job or internship at a top tier company! This meeting will be focused on preparing for applying/interviewing at tech companies and is a great way to get ready for the career fair and your upcoming interviews, see you there!</div>
+                                    <br/>
+                                    <br/>
+                                    <div style={{display: "inline-block"}}>
+                                        <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
+                                        <div style={{position: "relative", left: 10}}>
+                                            <GoogleForms link="http://asusoda.us11.list-manage2.com/track/click?u=9768adfb71d653526e2b35d37&id=7bb41148a2&e=7ff640145c"/>
+                                        </div>
+                                    </div>
+                                </Palette>
+                            </div>
+                            
+                            <div style={{display: "inline-block"}}>
+                                <Palette title="SNEAK PEEK" titleAlign= "left" contentAlign= "left" width={400}>
+                                    <div style={{}}>
+                                        <iframe width="400" height="300" src="https://www.youtube.com/embed/oyejM9R2w6U" frameBorder="0" allowFullScreen></iframe>
+                                    </div>
+                                    <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>SoDA Social Fall 2016 Compilation</div>
+                                    <br/>
+                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>It&apos;s always a good time. SoDers always have fun in this room. Watch our previous SoDA social event and see how SoDers get involved.</div>
+                                    <br/>
+                                    <YoutubeChannel/>
+                                    <br/>
+                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 17}}>Watch more events and hackathon videos from SoDA.</div>
+                                </Palette>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/asu_geometry_soda_white.jpg" style={{width: width, overflow: "hidden", height: height}}/>
+                </div>
+            </div>);  
+        };
 
-        <!-- scroll scripts -->
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $(".smooth-scroll").click(function(event) {
-                    var target = $(this).attr("href");
-                    var main = $("#main-parallax:not(:animated)");
-                    var destination = $(target).offset().top + main.scrollTop();
-                    main.animate({scrollTop: destination}, 1000);
-                    $(this).blur();
-                    return false;
-                } );
-            } );
-        </script>
-    </body>
-</html>
+        const CareersPage = ({width, height}) => {
+            return (
+            <div>
+                <div style={{width: width, backgroundColor: "#F6F3F4", id:"careers", paddingBottom: 40}}>
+                    <div style={{padding: 40, paddingLeft: 40}}>
+                        <div style={{fontSize: 150, fontFamily: "RopaSansPro-Thin"}}>Careers.</div>
+                        <br/>
+                        <div style={{display: "inline-block", width: "100%"}}>
+                            <div style={{display: "inline-block", width: width/2 - 100, float: "left"}}>
+                                <div style={{fontSize: 40, fontFamily: "RopaSansPro-Medium", color:"#808080"}}>Lorem ipsum dolor sit amet a lazy dog. Lorem ipsum dolor sit amet a lazy dog. Lorem ipsum dolor sit amet a lazy dog.</div>
+                                <div style={{position: "relative", top: 50}}>
+                                    <GoogleGetDirections/>
+                                </div>
+                            </div>
+                            <div style={{display: "inline-block", verticalAlign: "top", fontFamily: "RopaSansPro-Medium", width: width/2 - 100, float: "right"}}>
+                                <div style={{fontSize: 40, color:"#808080", display: "inline-block"}}>Lorem ipsum dolor sit amet a lazy dog. Lorem ipsum dolor sit amet a lazy dog. Lorem ipsum dolor sit amet a lazy dog.</div>
+                                <div style={{position: "relative", top: 50}}>
+                                    <GoogleCalendar/>
+                                </div>
+                            </div>
+                        </div>
+</div>
+                </div>
+                <div style={{textAlign: "center", height: 150}}>
+                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 50, marginTop: 40}}>Coming soon...</div>
+                </div>
+            </div>);  
+        };
+
+        const HackathonPage = ({width, height}) => {
+            return (
+            <div style={{height: height}}>
+                <div style={{width: width, backgroundColor: "#F6F3F4", id:"hackathon"}}>
+                    <div style={{padding: 40, paddingLeft: 40}}>
+                        <div style={{fontSize: 150, fontFamily: "RopaSansPro-Thin"}}>Hackathon.</div>
+                        <br/>
+                        <div style={{display: "inline-block", width: "100%"}}>
+                            <div style={{display: "inline-block"}}>
+                                <div style={{fontSize: 40, fontFamily: "RopaSansPro-Regular", color:"#808080"}}>A <span style={{color: "#000"}}>hackathon</span> is a design sprint-like event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, and others, often including subject-matter-experts, collaborate intensively on software projects.</div>
+                            </div>
+
+                            <div style={{display: "inline-block", width: "100%", position: "relative", top: 30}}>
+                                <div style={{float: "left", position: "relative", left: 200}}>
+                                    <Wikipedia/>
+                                </div>
+                                <div style={{float: "right", position: "relative", right: 200}}>
+                                    <GoogleCalendar/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div style={{padding: 20,textAlign: "center"}}>
+                    <Card styling={{backgroundColor: "#000", height: 60, textAlign: "center", width: 550, display: "inline-block", margin: 20}}>
+                        <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>UPCOMING HACKATHONS</b>
+                    </Card>
+                    <div style={{color: "#000", fontSize: 30, fontFamily: "RopaSansPro-Medium"}}>
+                        in Arizona, 2017~2018 academic year
+                    </div>
+                    <br/>
+                    
+                    <div style={{display: "inline-block"}} id="sunhacks">
+                        <Palette title="Sun Hacks" titleAlign= "left" contentAlign= "left" width={800}>
+                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Sun Hacks Hackathon</div>
+                            <br/>
+                            <br/>
+                            <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Have you ever wanted to get more involved in the tech community and work personally with some of the top tech companies in the nation such as Amazon, Google, and Uber (just to name off a few of our partners from last year)? Well you can by becoming an organizer for SunHacks! Sunhacks is a collaboration of DesertHacks, SWHacks, and Emergentech to create one of the largest hackathons in the nation at ASU. Hackathons in short are magical events where students can learn about the latest things in the world of technology, network with top tech companies, and build amazing projects. This bold vision will require a significant amount of human capital. We are currently looking for people that are passionate about technology to help organize such a large event. There is no experience required and every major is allowed to apply! Fill out this <a href="https://goo.gl/forms/AhHEp8PLJ54FqN3n2" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a> if you are interested and we will be in touch!</div>
+                            <br/>
+                            <br/>
+                            <div style={{display: "inline-block"}}>
+                                <SunHacks/>
+                            </div>
+                        </Palette>
+                    </div>
+                    
+                    <div style={{textAlign: "center", height: 150}}>
+                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 50, marginTop: 40}}>More coming soon...</div>
+                    </div>
+                    
+                </div>
+                    
+            </div>);  
+        };
+
+//<div style={{position: "relative", top: 50}}>
+//                        <Card styling={{backgroundColor: "#FFF", padding: 30, textAlign: "left", display: "inline-block", borderRadius: 10}}>
+//                            <div style={{fontSize: 100, fontFamily: "RopaSansPro-Light"}}><span style={{fontFamily: "RopaSansPro-ExtraBold"}}>WTH</span>ecks</div>
+//                            <div style={{fontSize: 50, fontFamily: "RopaSansPro-Light", position: "relative", top: -30}}>2017</div>
+//                            <div style={{fontSize: 300, fontFamily: "RopaSansPro-Light", position: "absolute", textAlign: "center", color: "#E4E4E4", zIndex: -1, top: -60, marginLeft: 50}}>W</div>
+//                            <div style={{textAlign: "center", fontSize: 25}}>
+//                                <div style={{fontFamily: "RopaSansPro-Bold"}}>September 8~10, 2017</div>
+//                                <div style={{fontFamily: "RopaSansPro-Regular"}}>What University<br/>Surprise, AZ</div>
+//                            </div>
+//                            <br/>
+//                            <LearnMore/>
+//                            <br/>
+//                            <ReserveBus/>
+//                        </Card>
+//                        
+//                        <Card styling={{backgroundColor: "#FFF", padding: 30, textAlign: "left", display: "inline-block", borderRadius: 10, verticalAlign: "top", marginLeft: 130, height: 475}}>
+//                            <div style={{color: "#E4E4E4", fontSize: 100, fontFamily: "RopaSansPro-Medium", textAlign: "center"}}>coLd</div>
+//                            <div style={{fontSize: 100, position: "relative", top: -50, fontFamily: "RopaSansPro-Medium"}}>coco 2017</div>
+//                            <div style={{color: "#E4E4E4", fontSize: 100, position: "relative", top: -90, fontFamily: "RopaSansPro-Medium", textAlign: "center"}}>codE</div>
+//                            <div style={{position: "relative", top: -100}}>
+//                                <div style={{textAlign: "center", fontSize: 25}}>
+//                                    <div style={{fontFamily: "RopaSansPro-Bold"}}>September 8~10, 2017</div>
+//                                    <div style={{fontFamily: "RopaSansPro-Regular"}}>Cool University<br/>Glendale, AZ</div>
+//                                </div>
+//                                <br/>
+//                                <LearnMore/>
+//                            </div>
+//                        </Card>
+//                        <br/>
+//                    </div>
+
+        const MembershipCard = ({title, name, email}) => {
+            return (
+                <Card styling={{backgroundColor: "#F6F3F4", width: 500, textAlign: "left", borderRadius: 10, padding: 20, margin: 40, display: "inline-block", marginBottom: 20}}>
+                    <div style={{fontFamily: "RopaSansSCPro-Regular", fontSize: 25}}>{title}</div>
+                    <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 40}}>{name}</div>
+                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 25}}>{email}</div>
+                </Card>
+            );  
+        };
+
+        const CommunityPage = ({width, height}) => {
+            return (
+            <div>
+                <div style={{width: width, backgroundColor: "#F6F3F4", id:"hackathon"}}>
+                    <div style={{padding: 40, paddingLeft: 40}}>
+                        <div style={{fontSize: 150, fontFamily: "RopaSansPro-Thin"}}>Community.</div>
+                        <br/>
+                        <div style={{display: "inline-block", width: "100%"}}>
+                            <div style={{display: "inline-block"}}>
+                                <div style={{fontSize: 40, fontFamily: "RopaSansPro-Medium", color:"#808080"}}> One of SoDA&apos;s missions is to foster a sense of community and create a support network within its members. This year we are introducing the Group Projects initiative, Mentorship Program, and Distinguished SoDA membership. They all align with the goals of providing further career development opportunities for our members and encourage more familiarity and collaboration within the club.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div style={{padding: 20,textAlign: "center"}}>
+                    <div id="group_projects"></div>
+                    <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
+                        <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>Group Projects</b>
+                    </Card>
+                    
+                    <div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, display: "inline-block", backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20}}>
+                        Students of computer science are often prompted to experiment with project-based learning because it gives the opportunity to focus on solving a bigger-picture problem than most school assignments. Working on extracurricular projects gives valuable skills, experience, an attractive interview topic, and an entry in one&apos;s repertoire.  
+                        <br/>
+                        Our new Group Project initiative is an effort to create a supportive community for students interested in pursuing extracurricular projects. It is open to all students at any time. We will meet once a month to discuss big-picture challenges, solutions, and successes, with a focus on how to make success contagious. At the end of the year, Group Projects will conclude with Demo Day, where groups will show off their outcomes and receive prizes voted on by the community.
+                        <br/>
+                        <br/>
+                        If you are interested in participating in group projects, fill out the following <a href="http://tinyurl.com/sodagroupprojects17" target="_blank" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}}>form</a>
+                    </div>
+                    
+                    <div id="mentorship"></div>
+                    <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
+                        <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>MENTORSHIP PROGRAM</b>
+                    </Card>
+                    
+                    <div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, display: "inline-block", backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20}}>
+                        For many individuals, mentorship is an important part of of their professional and individual growth. There is a lot of benefit in having a mentor within one's field of study. With our Mentorship Program, we aim to provide a platform for mentees interested with mentorship opportunities to engage with mentors within the ASU community. With this we hope that there will always be someone within SoDA that students can go to when they have questions or need someone to talk to.
+                        <br/>
+                        <br/>
+                        If you are interested in becoming a mentor, fill out the following <a href="http://tinyurl.com/sodamentor17" target="_blank" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}}>form</a>
+                        <br/>
+                        If you are interested in becoming a mentee, fill out the following <a href="http://tinyurl.com/sodamentee17" target="_blank" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}}>form</a>
+                    </div>
+                    
+                    <div id="distinguished"></div>
+                    <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
+                        <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>DISTINGUISHED SoDA MEMBERSHIP</b>
+                    </Card>
+                    
+                    <div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, display: "inline-block", backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20}}>
+                        SoDA's Distinguished Member Program is an initiative created with the intention of recognizing students who are highly involved in SoDA's activities and community. Admission into the distinguished member program is based on a point system from attendance and participation in SoDA activities including the other initiatives. Perks include an invitation to SoDA's linkedin alumni group, distinguished member resume books given to our industry partners, and giveaways exclusive to distinguished members. Once a Distinguished SoDA member, you are eligible to get personal one-on-one resume reviews from one of our officers to make sure it is high quality.
+                        <br/>
+                        <br/>
+                        You can become a Distinguished SoDA member by earning 12 points. You can earn points as follows:
+                        <br/>
+                        1 point per meeting you attend
+                        <br/>
+                        3 points for being a mentor
+                        <br/>
+                        2 points for every group projects meeting attended
+                        <br/>
+                        2 points for every mentorship meeting attended
+                        <br/>
+                        3 points for volunteering at a Dean's Funding event for SoDA
+                        <br/>
+                        3 points for leading a workshop
+                        <br/>
+                        <br/>
+                        If you become a Distinguished SoDA member in the Fall, you only need to earn 6 points by the end of February to keep your Distinguished membership
+                    </div>
+                    
+                </div>
+                    
+            </div>);  
+        };
+
+        const IdentityCard = ({title, name, email}) => {
+            return (
+                <Card styling={{width: 300}}>
+                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 25}}>{title}</div>
+                    <div style={{fontFamily: "RopaSansPro-Bold", fontSize: 35}}>{name}</div>
+                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 20}}>{email}</div>
+                </Card>
+            );
+        };
+
+        const ContactPage = ({width, height}) => {
+            return (
+            <div>
+                <div style={{width: width, backgroundColor: "#F6F3F4", id:"hackathon"}}>
+                    <div style={{padding: 40, paddingLeft: 40}}>
+                        <div style={{fontSize: 150, fontFamily: "RopaSansPro-Thin"}}>Contact us.</div>
+                        <br/>
+                        <div style={{display: "inline-block", width: "100%"}}>
+                            <div style={{display: "inline-block"}}>
+                                <div style={{fontSize: 40, fontFamily: "RopaSansPro-Medium", color:"#808080"}}> SoDA officers are here to help you. Please feel free to reach out to any of us by e-mail, slack, or social media. We want to help and would be happy to answer any questions you have.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div style={{textAlign: "center", position: "relative", top: 50}}>
+                    <MembershipCard title="President" name="Michelle Capriles-Escobedo" email="mcaprile@asu.edu"/>
+                    <MembershipCard title="Vice President" name="Daniel Baird" email="jamesdanielbaird@gmail.com"/>
+                    <MembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu"/>
+                    <MembershipCard title="Secretary" name="Alex Geschardt" email="ageschar@asu.edu"/>
+                    <MembershipCard title="USG Liaison" name="Lilian Ngweta" email="lngweta@asu.edu"/>
+                    <MembershipCard title="Industry Outreach Chair - Event Planning Lead" name="Chris Warren" email="cawarre6@asu.edu"/>
+                    <MembershipCard title="Director of Group Projects" name="Steven King Jr." email="stevekx86@gmail.com"/>
+                    <MembershipCard title="Director of Career Development" name="Nikola Uzelac" email="nuzelac@asu.edu"/>
+                    <MembershipCard title="Industry Outreach Chair" name="Andrew Phillips" email="aphill23@asu.edu"/>
+                    <MembershipCard title="Director of Operations" name="Sagarika Pannase" email="spannase@gmail.com"/>
+                    <MembershipCard title="Lead Development Director" name="Vacant" email=""/>
+                    <MembershipCard title="Social Chair" name="Lukas Zygas" email="lzygas@asu.edu"/>
+                    <MembershipCard title="Community Outreach Chair" name="Devyash Lodha" email="dlodha@asu.edu"/>
+                    <MembershipCard title="Director of Marketing - Marketing Lead" name="Michael Rojas" email="mikerojaswa@gmail.com"/>
+                    <MembershipCard title="Director of Communications" name="Raffi Shabazian" email="raffi.p.shahbazian@gmail.com"/>
+                    <MembershipCard title="Director of Digital Media" name="Junshu Liu" email="jliu237@asu.edu"/>
+                    <MembershipCard title="Public Engagement Chair" name="VACANT" email=""/>
+                    <MembershipCard title="Webmaster" name="Vincent Truong" email="vincenttruong96@gmail.com, vntruon1@asu.edu"/>
+                    <MembershipCard title="Web Developer" name="Azaldin freidoon" email="azaldin123@yahoo.com"/>
+                    <MembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu"/>
+                </div>
+            </div>);  
+        };
+
+        var App = React.createClass({
+            getInitialState: function() {
+                return {
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                }
+            },
+            componentDidMount: function () {
+                window.addEventListener("resize", this.updateWindowDimensions);
+            },
+            componentWillUnmount: function() {
+                window.removeEventListener("resize", this.updateWindowDimensions);
+            },
+            updateWindowDimensions: function() {
+                this.setState({...this.state, width: window.innerWidth});    
+            },
+            render: function() {
+                if (window.innerWidth >= 1100) {
+                    return <div>
+                        <DesktopWebsiteHeader width= {this.state.width} height={400}/>
+                        <DesktopWebsiteAboutUs width= {this.state.width}/>
+                        <div style={{top: 80, position: "relative", textAlign: "center"}}>
+                            <AboutPage width={this.state.width}/>
+                        </div>
+                        <div style={{top: 150, position: "relative"}} id="events">
+                            <EventPage width={this.state.width} height={1000}/>
+                        </div>
+                        <div style={{top: 150, position: "relative"}} id="careers">
+                            <CareersPage width={this.state.width} height={1500}/>
+                        </div>
+                        <div style={{top: 150, position: "relative"}} id="hackathon">
+                            <HackathonPage width={this.state.width} height={1800}/>
+                        </div>
+                        <div style={{top: 150, position: "relative"}} id="community">
+                            <CommunityPage width={this.state.width} height={1300}/>
+                        </div>
+                        <div style={{top: 250, position: "relative"}} id="contacts">
+                            <ContactPage width={this.state.width} height={1500}/>
+                        </div>
+                        <DesktopNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
+                    </div>;
+                } else {
+                    return <div>
+                        <DesktopWebsiteHeader width= {this.state.width} height={400}/>
+                        <DesktopWebsiteAboutUs width= {this.state.width}/>
+                        <div style={{top: 80, position: "relative", textAlign: "center"}}>
+                            <AboutPage width={this.state.width}/>
+                        </div>
+                        <div style={{top: 150, position: "relative"}} id="events">
+                            <EventPage width={this.state.width} height={1000}/>
+                        </div>
+                        <div style={{top: 150, position: "relative"}} id="careers">
+                            <CareersPage width={this.state.width} height={1500}/>
+                        </div>
+                        <div style={{top: 150, position: "relative"}} id="hackathon">
+                            <HackathonPage width={this.state.width} height={1800}/>
+                        </div>
+                        <div style={{top: 150, position: "relative"}} id="community">
+                            <CommunityPage width={this.state.width} height={1300}/>
+                        </div>
+                        <div style={{top: 250, position: "relative"}} id="contacts">
+                            <ContactPage width={this.state.width} height={1500}/>
+                        </div>
+                        <MobileNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
+                    </div>;
+                }
+            }
+        });
+        
+        ReactDOM.render(
+            <div style={{position: "absolute",left: 0,right: 0,top: 0,bottom: 0}}>
+                <App/>
+            </div>,
+            document.querySelector("#container"));
+    </script>
+</body>
