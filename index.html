@@ -898,6 +898,35 @@
             );  
         };
 
+        const MobileAboutPage = ({width, height}) => {
+            return (
+                <div style={{display: "inline-block", verticalAlign: "top", textAlign: "center"}} id="about">
+                    <div style={{textAlign: "center"}}>
+                        <Card styling={{backgroundColor: "#000", color:"#FFF", display: "inline-block", padding: 10, fontSize: width/15 < 35 ? width/15 : 35, fontFamily: "RopaSansPro-ExtraBold", position: "relative", bottom: -30, zIndex: 1, paddingLeft: 18, paddingRight: 18}}>ABOUT US</Card>
+                    </div>
+                    <div style={{backgroundColor: "#F4F4F4", display: "inline-block", width: width, textAlign: "center"}}>
+                        <br/>
+                        <div style={{padding: 40, textAlign: "center", display: "inline-block"}}>
+                            <div>
+                                <BlackSodaLogo height={width/5 < 120 ? width/5 : 120}/>
+                            </div>
+                            <div >
+                                <div style={{fontFamily: "RopaSansPro-ExtraLightItalic", fontSize: width/10 < 70 ? width/10 : 70}}>
+                                    a.k.a.
+                                </div>
+                                <div style={{fontFamily: "RopaSansPro-Medium", fontSize: width/14 < 50 ? width/14 : 50, textAlign: "center"}}>
+                                    The Software Developers Association,
+                                </div>
+                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/14 < 50 ? width/14 : 50}}>
+                                    is the premiere software development<br/> club for university students.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );  
+        };
+
         const EventPage = ({width, height}) => {
             return (
             <div style={{width: width, backgroundColor: "#F6F3F4", id:"events"}}>
@@ -954,6 +983,72 @@
                                     <YoutubeChannel/>
                                     <br/>
                                     <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 17}}>Watch more events and hackathon videos from SoDA.</div>
+                                </Palette>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="images/asu_geometry_soda_white.jpg" style={{width: width, overflow: "hidden", height: height}}/>
+                </div>
+            </div>);  
+        };
+
+        const MobileEventPage = ({width, height}) => {
+            return (
+            <div style={{width: width, backgroundColor: "#F6F3F4", id:"events", height: height}}>
+                <div style={{padding: 40, paddingLeft: 40}}>
+                    <div style={{fontSize: width/5 < 100 ? width/5 : 100, fontFamily: "RopaSansPro-Thin"}}>Events.</div>
+                    <br/>
+                    <div style={{display: "inline-block", width: "100%"}}>
+                        <div style={{}}>
+                            <div style={{fontSize: width/20 < 30 ? width/20 : 30, fontFamily: "RopaSansPro-Medium", color:"#808080"}}>SoDA has events and meetings at the <span style={{color: "#000"}}>Physical Science building H wing (PSH),</span> room 150 unless otherwise stated.</div>
+                            <br/>
+                            <div style={{position: "relative"}}>
+                                <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496" size={width/12 < 35 ? width/12 : 35}/>
+                            </div>
+                        </div>
+                        <br/>
+                        <div style={{fontFamily: "RopaSansPro-Medium"}}>
+                            <div style={{fontSize: width/20 < 30 ? width/20 : 30, color:"#808080", display: "inline-block"}}>Events and meetings <span style={{color: "#000"}}>start at 6:30 pm and end at 8:30 pm</span> unless mentioned otherwise.</div>
+                            <div style={{position: "relative", top: 15}}>
+                                <GoogleCalendar size={width/12 < 35 ? width/12 : 35}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div style={{height: height, overflow: "hidden", textAlign: "center", display:"inline-block", position: "relative", top:80}}>
+                    <div style={{position: "absolute", textAlign: "center", width: width}}>
+                        <div style={{display: "inline-block"}}>
+                            
+                            <div>
+                                <Palette title="EVENTS THIS WEEK" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30}>
+                                        <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/20 < 35 ? width/20 : 35}}>Land a Top Tier<br/>Job or Internship</div>
+                                        <br/>
+                                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: width/25 < 25 ? width/25 : 25}}>PSH 150<br/>Thursday, August 31st, 2017<br/>7:00 pm ~ 9:00 pm</div>
+                                        <br/>
+                                        <div style={{fontFamily: "RopaSansPro-Regular", fontSize: width/30 +2 < 20 ? width/30 + 2 : 20}}>Come learn what you need to be doing in order to land an amazing job or internship at a top tier company! This meeting will be focused on preparing for applying/interviewing at tech companies and is a great way to get ready for the career fair and your upcoming interviews, see you there!</div>
+                                        <br/>
+                                        <div style={{display: "inline-block"}}>
+                                            <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496" size={width/15 < 35 ? width/15 : 35}/>
+                                            <div style={{position: "relative", left: 10}}>
+                                                <GoogleForms link="http://asusoda.us11.list-manage2.com/track/click?u=9768adfb71d653526e2b35d37&id=7bb41148a2&e=7ff640145c" size={width/15 < 35 ? width/15 : 35}/>
+                                            </div>
+                                        </div>
+                                    </Palette>
+                            </div>
+                            
+                            <div>
+                                <Palette title="SNEAK PEEK" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30}>
+                                    <div style={{}}>
+                                        <iframe width={width/1.7 < 400 ? width/1.7 : 400} height={width/2.5 < 300 ? width/2.5 : 300} src = "https://www.youtube.com/embed/oyejM9R2w6U" frameBorder="0" allowFullScreen></iframe>
+                                    </div>
+                                    <div style={{fontFamily: "RopaSansPro-Medium", fontSize: width/25 < 30 ? width/25 : 30}}>SoDA Social Fall 2016 Compilation</div>
+                                    <br/>
+                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: width/30 +2 < 20 ? width/30 + 2 : 20}}>It&apos;s always a good time. SoDers always have fun in this room. Watch our previous SoDA social event and see how SoDers get involved.</div>
+                                    <br/>
+                                    <YoutubeChannel size={width/15 < 35 ? width/15 : 35}/>
+                                    <br/>
+                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: width/35 < 17 ? width/35 : 17}}>Watch more events and hackathon videos from SoDA.</div>
                                 </Palette>
                             </div>
                         </div>
@@ -1262,6 +1357,13 @@
                     return <div>
                         <MobileWebsiteHeader width= {this.state.width} height={this.state.width/2 < 300 ? this.state.width/2 : 300}/>
                         <MobileWebsiteAboutUs width= {this.state.width} height={3.5*this.state.width < 1800 ? 3.5*this.state.width : 1800}/>
+                        <div style={{top: 40, position: "relative", textAlign: "center"}}>
+                            <MobileAboutPage width={this.state.width}/>
+                        </div>
+                        <div style={{top: 150, position: "relative"}} id="events">
+                            <MobileEventPage width={this.state.width} height={3*this.state.width < 1600 ? 3*this.state.width : 1600}/>
+                        </div>
+                        
                         
                         <MobileNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
                     </div>;
