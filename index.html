@@ -651,13 +651,13 @@
             );
         };
 
-        const SunHacks = ({}) => {
+        const SunHacks = ({size}) => {
             return (
                 <div>
-                    <img src="" style={{height: 45, width: "auto", paddingRight: 20}}/>
+                    <img src="" style={{height: size + 10 || 50, width: "auto", paddingRight: 20}}/>
                     <div style={{display:"inline-block", verticalAlign:4}}>
-                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 25}}>Sign up to be an organizer.</div>
-                        <a style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080", textDecoration: "none"}} href="http://bit.ly/sunhacks-form" target="_blank">bit.ly/sunhacks-form</a>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: size/2 || 25}}>Sign up to be an organizer.</div>
+                        <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="http://bit.ly/sunhacks-form" target="_blank">bit.ly/sunhacks-form</a>
                     </div>
                 </div>
             );
@@ -1111,7 +1111,7 @@
                     </div>
                 </div>
                 <div style={{textAlign: "center", height: 150}}>
-                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 50, marginTop: 40}}>Coming soon...</div>
+                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: width/10 < 50 ? width/10 : 50, marginTop: 40}}>Coming soon...</div>
                 </div>
             </div>);  
         };
@@ -1165,6 +1165,56 @@
                     
                     <div style={{textAlign: "center", height: 150}}>
                     <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 50, marginTop: 40}}>More coming soon...</div>
+                    </div>
+                    
+                </div>
+                    
+            </div>);  
+        };
+
+        const MobileHackathonPage = ({width, height}) => {
+            return (
+            <div style={{height: height}}>
+                <div style={{width: width, backgroundColor: "#F6F3F4", id:"careers", paddingBottom: 40}}>
+                    <div style={{padding: 40, paddingLeft: 40}}>
+                        <div style={{fontSize: width/5 < 100 ? width/5 : 100, fontFamily: "RopaSansPro-Thin"}}>Hackathon.</div>
+                        <br/>
+                        <div style={{display: "inline-block", width: "100%"}}>
+                            <div style={{}}>
+                                <div style={{fontSize: width/20 < 25 ? width/20 : 25, fontFamily: "RopaSansPro-Light", color:"#000"}}>A hackathon is a design sprint-like event in which computer programmers and others involved in software development, including graphic designers, interface designers, project managers, and others, often including subject-matter-experts, collaborate intensively on software projects.</div>
+                                <br/>
+                            </div>
+                            <div style={{position: "relative", top: 15}}>
+                                <GoogleCalendar size={width/12 < 35 ? width/12 : 35}/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div style={{padding: 20,textAlign: "center"}}>
+                    <div style={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, paddingLeft: 20, paddingRight: 20}}>
+                        <b style={{color: "#FFF", fontSize: width/20 < 35 ? width/20 : 35, lineHeight: "60px", fontFamily: "RopaSansPro-Extrabold"}}>UPCOMING HACKATHONS</b>
+                    </div>
+                    <div style={{color: "#000", fontSize: width/20 < 30 ? width/20 : 30, fontFamily: "RopaSansPro-Medium"}}>
+                        in Arizona, 2017~2018 academic year
+                    </div>
+                    <br/>
+                    
+                    <div style={{display: "inline-block"}} id="sunhacks">
+                        <Palette title="Sun Hacks" titleAlign= "left" contentAlign= "left" width={width - 100 < 700 ? width- 100 : 700}>
+                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/11 < 45 ? width/11 : 45}}>Sun Hacks Hackathon</div>
+                            <br/>
+                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/25 < 24 ? width/25 : 24}}>Have you ever wanted to get more involved in the tech community and work personally with some of the top tech companies in the nation such as Amazon, Google, and Uber (just to name off a few of our partners from last year)? Well you can by becoming an organizer for SunHacks! Sunhacks is a collaboration of DesertHacks, SWHacks, and Emergentech to create one of the largest hackathons in the nation at ASU. Hackathons in short are magical events where students can learn about the latest things in the world of technology, network with top tech companies, and build amazing projects. This bold vision will require a significant amount of human capital. We are currently looking for people that are passionate about technology to help organize such a large event. There is no experience required and every major is allowed to apply! Fill out this <a href="https://goo.gl/forms/AhHEp8PLJ54FqN3n2" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a> if you are interested and we will be in touch!</div>
+                            <br/>
+                            <br/>
+                            <div style={{display: "inline-block"}}>
+                                <SunHacks size={width/12 < 45 ? width/12 : 45}/>
+                            </div>
+                        </Palette>
+                    </div>
+                    
+                    <div style={{textAlign: "center", height: 150}}>
+                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: width/10 < 50 ? width/10 : 50, marginTop: 40}}>More coming soon...</div>
                     </div>
                     
                 </div>
@@ -1394,6 +1444,9 @@
                         </div>
                         <div style={{top: 650, position: "relative"}} id="careers">
                             <MobileCareersPage width={this.state.width} height={1500}/>
+                        </div>
+                        <div style={{top: 650, position: "relative"}} id="hackathon">
+                            <MobileHackathonPage width={this.state.width} height={3*this.state.width < 1600 ? 3*this.state.width : 1600}/>
                         </div>
                         
                         <MobileNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
