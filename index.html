@@ -1263,6 +1263,16 @@
             );  
         };
 
+        const MobileMembershipCard = ({title, name, email, width}) => {
+            return (
+                <Card styling={{backgroundColor: "#F6F3F4", width: (width - 100 < 500 ? width - 100: 500) || 500, textAlign: "left", borderRadius: 10, padding: 20, display: "inline-block", marginBottom: 40}}>
+                    <div style={{fontFamily: "RopaSansSCPro-Regular", fontSize: width/20 < 25 ? width/20 : 25}}>{title}</div>
+                    <div style={{fontFamily: "RopaSansSCPro-Bold", fontSize: width/20 < 25 ? width/20 : 25}}>{name}</div>
+                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: width/20 < 25 ? width/20 : 25}}>{email}</div>
+                </Card>
+            );  
+        };
+
         const CommunityPage = ({width, height}) => {
             return (
             <div>
@@ -1368,7 +1378,7 @@
                     <div style={{display: "inline-block"}} id="sunhacks">
                         <Palette title="Mentorship Program" titleAlign= "left" contentAlign= "left" width={width - 100 < 700 ? width- 100 : 700}>
                             <br/>
-                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/25 < 24 ? width/25 : 24}}>For many individuals, mentorship is an important part of of their professional and individual growth. There is a lot of benefit in having a mentor within one's field of study. With our Mentorship Program, we aim to provide a platform for mentees interested with mentorship opportunities to engage with mentors within the ASU community. With this we hope that there will always be someone within SoDA that students can go to when they have questions or need someone to talk to.<br/><br/>If you are interested fill out this <a href="http://tinyurl.com/sodamentor17" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a><br/><br/>If you are interested fill out this <a href= "http://tinyurl.com/sodamentee17" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a></div>
+                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/25 < 24 ? width/25 : 24}}>For many individuals, mentorship is an important part of of their professional and individual growth. There is a lot of benefit in having a mentor within one's field of study. With our Mentorship Program, we aim to provide a platform for mentees interested with mentorship opportunities to engage with mentors within the ASU community. With this we hope that there will always be someone within SoDA that students can go to when they have questions or need someone to talk to.<br/><br/>If you are interested fill out this <a href="http://tinyurl.com/sodamentor17" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a><br/>If you are interested fill out this <a href= "http://tinyurl.com/sodamentee17" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a></div>
                         </Palette>
                     </div>
                     
@@ -1400,16 +1410,6 @@
                 </div>
                     
             </div>);  
-        };
-
-        const IdentityCard = ({title, name, email}) => {
-            return (
-                <Card styling={{width: 300}}>
-                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 25}}>{title}</div>
-                    <div style={{fontFamily: "RopaSansPro-Bold", fontSize: 35}}>{name}</div>
-                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 20}}>{email}</div>
-                </Card>
-            );
         };
 
         const ContactPage = ({width, height}) => {
@@ -1448,6 +1448,47 @@
                     <MembershipCard title="Webmaster" name="Vincent Truong" email="vincenttruong96@gmail.com, vntruon1@asu.edu"/>
                     <MembershipCard title="Web Developer" name="Azaldin Freidoon" email="azaldin123@yahoo.com"/>
                     <MembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu"/>
+                </div>
+            </div>);  
+        };
+
+        const MobileContactPage = ({width, height}) => {
+            return (
+            <div>
+                <div style={{width: width, backgroundColor: "#F6F3F4", id:"hackathon"}}>
+                    <div style={{padding: 40, paddingLeft: 40}}>
+                        <div style={{fontSize: width/5.5 < 100 ? width/5.5 : 100, fontFamily: "RopaSansPro-Thin"}}>Contact us.</div>
+                        <br/>
+                        <div style={{display: "inline-block", width: "100%"}}>
+                            <div style={{}}>
+                                <div style={{fontSize: width/20 < 25 ? width/20 : 25, fontFamily: "RopaSansPro-Light", color:"#000"}}>SoDA officers are here to help you. Please feel free to reach out to any of us by e-mail, slack, or social media. We want to help and would be happy to answer any questions you have.</div>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div style={{textAlign: "center", position: "relative", top: 50}}>
+                    <MobileMembershipCard title="President" name="Michelle Capriles-Escobedo" email="mcaprile@asu.edu" width={width}/>
+                    <MobileMembershipCard title="Vice President" name="Daniel Baird" email="jamesdanielbaird@gmail.com" width={width}/>
+                    <MobileMembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu" width={width}/>
+                    <MobileMembershipCard title="Secretary" name="Alex Geschardt" email="ageschar@asu.edu" width={width}/>
+                    <MobileMembershipCard title="USG Liaison" name="Lilian Ngweta" email="lngweta@asu.edu" width={width}/>
+                    <MobileMembershipCard title="Industry Outreach Chair - Event Planning Lead" name="Chris Warren" email="cawarre6@asu.edu" width={width}/>
+                    <MobileMembershipCard title="Director of Group Projects" name="Steven King Jr." email="stevekx86@gmail.com" width={width}/>
+                    <MobileMembershipCard title="Director of Career Development" name="Nikola Uzelac" email="nuzelac@asu.edu" width={width}/>
+                    <MobileMembershipCard title="Industry Outreach Chair" name="Andrew Phillips" email="aphill23@asu.edu" width={width}/>
+                    <MobileMembershipCard title="Director of Operations" name="Sagarika Pannase" email="spannase@gmail.com" width={width}/>
+                    <MobileMembershipCard title="Lead Development Director" name="VACANT" email="" width={width}/>
+                    <MobileMembershipCard title="Social Chair" name="Lukas Zygas" email="lzygas@asu.edu" width={width}/>
+                    <MobileMembershipCard title="Community Outreach Chair" name="Devyash Lodha" email="dlodha@asu.edu" width={width}/>
+                    <MobileMembershipCard title="Director of Marketing - Marketing Lead" name="Michael Rojas" email="mikerojaswa@gmail.com" width={width}/>
+                    <MobileMembershipCard title="Director of Communications" name="Raffi Shabazian" email="raffi.p.shahbazian@gmail.com" width={width}/>
+                    <MobileMembershipCard title="Director of Digital Media" name="Junshu Liu" email="jliu237@asu.edu" width={width}/>
+                    <MobileMembershipCard title="Public Engagement Chair" name="VACANT" email="" width={width}/>
+                    <MobileMembershipCard title="Webmaster" name="Vincent Truong" email="vincenttruong96@gmail.com, vntruon1@asu.edu" width={width}/>
+                    <MobileMembershipCard title="Web Developer" name="Azaldin Freidoon" email="azaldin123@yahoo.com" width={width}/>
+                    <MobileMembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu" width={width}/>
                 </div>
             </div>);  
         };
@@ -1511,6 +1552,9 @@
                         </div>
                         <div style={{top: 650, position: "relative"}} id="community">
                             <MobileCommunityPage width={this.state.width} height={1300}/>
+                        </div>
+                        <div style={{top: 750, position: "relative"}} id="contacts">
+                            <MobileContactPage width={this.state.width} height={1500}/>
                         </div>
                         
                         <MobileNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
