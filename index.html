@@ -1087,6 +1087,35 @@
             </div>);  
         };
 
+        const MobileCareersPage = ({width, height}) => {
+            return (
+            <div>
+                <div style={{width: width, backgroundColor: "#F6F3F4", id:"careers", paddingBottom: 40}}>
+                    <div style={{padding: 40, paddingLeft: 40}}>
+                        <div style={{fontSize: width/5 < 100 ? width/5 : 100, fontFamily: "RopaSansPro-Thin"}}>Careers.</div>
+                        <br/>
+                        <div style={{display: "inline-block", width: "100%"}}>
+                            <div style={{}}>
+                                <div style={{fontSize: width/20 < 25 ? width/20 : 25, fontFamily: "RopaSansPro-Light", color:"#000"}}>One thing that is deeply rooted is SoDA is helping its fellow members get their foot in the door with industry. We want students to become familiar with industry by helping them prepare for technical interview, and showing them how and when to apply. Students who think and prepare sooner have a much easier time landing a job, and are much more successful during the job hunt itself.</div>
+                                <br/>
+                            </div>
+                            <br/>
+                            <br/>
+                            <div style={{fontFamily: "RopaSansPro-Light"}}>
+                                <div style={{fontSize: width/20 < 25 ? width/20 : 25, color:"#000", display: "inline-block"}}>SoDA has a few ways it plan to execute this goal. First are mock interviews. Mock interviews are one of the greatest ways to understand how companies test candidates before they hire. It gives you a chance to be put in that very important setting without all the pressure. You are able to understand what and how you will be tested, improving your chances to pass your interview. Next are the SoDA initiatives we put together. One of the strongest initiatives we've devised to help meet our goal are group projects. This gives students a chance to work on a technical team, much like the one they would work on at an internship and full time, and produce a viable product! This increases the technical skill set of the candidate all while improving their resume. <br/><br/>All in all SoDA is here for you and your career questions/concerns.</div>
+                                <div style={{position: "relative", top: 15}}>
+                                    <GoogleCalendar size={width/12 < 35 ? width/12 : 35}/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{textAlign: "center", height: 150}}>
+                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 50, marginTop: 40}}>Coming soon...</div>
+                </div>
+            </div>);  
+        };
+
         const HackathonPage = ({width, height}) => {
             return (
             <div style={{height: height}}>
@@ -1363,7 +1392,9 @@
                         <div style={{top: 150, position: "relative"}} id="events">
                             <MobileEventPage width={this.state.width} height={3*this.state.width < 1600 ? 3*this.state.width : 1600}/>
                         </div>
-                        
+                        <div style={{top: 650, position: "relative"}} id="careers">
+                            <MobileCareersPage width={this.state.width} height={1500}/>
+                        </div>
                         
                         <MobileNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
                     </div>;
