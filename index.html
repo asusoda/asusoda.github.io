@@ -1341,6 +1341,67 @@
             </div>);  
         };
 
+        const MobileCommunityPage = ({width, height}) => {
+            return (
+            <div>
+                <div style={{width: width, backgroundColor: "#F6F3F4", id:"careers", paddingBottom: 40}}>
+                    <div style={{padding: 40, paddingLeft: 40}}>
+                        <div style={{fontSize: width/5 < 100 ? width/5 : 100, fontFamily: "RopaSansPro-Thin"}}>Community.</div>
+                        <br/>
+                        <div style={{display: "inline-block", width: "100%"}}>
+                            <div style={{}}>
+                                <div style={{fontSize: width/20 < 25 ? width/20 : 25, fontFamily: "RopaSansPro-Light", color:"#000"}}>One of SoDA&apos;s missions is to foster a sense of community and create a support network within its members. This year we are introducing the Group Projects initiative, Mentorship Program, and Distinguished SoDA membership. They all align with the goals of providing further career development opportunities for our members and encourage more familiarity and collaboration within the club.</div>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div style={{padding: 20,textAlign: "center"}}>
+                    <div style={{display: "inline-block"}} id="sunhacks">
+                        <Palette title="Group Projects" titleAlign= "left" contentAlign= "left" width={width - 100 < 700 ? width- 100 : 700}>
+                            <br/>
+                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/25 < 24 ? width/25 : 24}}>Students of computer science are often prompted to experiment with project-based learning because it gives the opportunity to focus on solving a bigger-picture problem than most school assignments. Working on extracurricular projects gives valuable skills, experience, an attractive interview topic, and an entry in one's repertoire. Our new Group Project initiative is an effort to create a supportive community for students interested in pursuing extracurricular projects. It is open to all students at any time.<br/><br/>We will meet once a month to discuss big-picture challenges, solutions, and successes, with a focus on how to make success contagious. At the end of the year, Group Projects will conclude with Demo Day, where groups will show off their outcomes and receive prizes voted on by the community.<br/><br/>If you are interested fill out this <a href="http://tinyurl.com/sodagroupprojects17" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a></div>
+                        </Palette>
+                    </div>
+                    <br/>
+                    <div style={{display: "inline-block"}} id="sunhacks">
+                        <Palette title="Mentorship Program" titleAlign= "left" contentAlign= "left" width={width - 100 < 700 ? width- 100 : 700}>
+                            <br/>
+                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/25 < 24 ? width/25 : 24}}>For many individuals, mentorship is an important part of of their professional and individual growth. There is a lot of benefit in having a mentor within one's field of study. With our Mentorship Program, we aim to provide a platform for mentees interested with mentorship opportunities to engage with mentors within the ASU community. With this we hope that there will always be someone within SoDA that students can go to when they have questions or need someone to talk to.<br/><br/>If you are interested fill out this <a href="http://tinyurl.com/sodamentor17" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a><br/><br/>If you are interested fill out this <a href= "http://tinyurl.com/sodamentee17" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a></div>
+                        </Palette>
+                    </div>
+                    
+                    <div style={{display: "inline-block"}} id="sunhacks">
+                        <Palette title="Distinguished SoDA Membership Program" titleAlign= "left" contentAlign= "left" width={width - 100 < 700 ? width- 100 : 700}>
+                            <br/>
+                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/25 < 24 ? width/25 : 24}}>SoDA's Distinguished Member Program is an initiative created with the intention of recognizing students who are highly involved in SoDA's activities and community. Admission into the distinguished member program is based on a point system from attendance and participation in SoDA activities including the other initiatives. Perks include an invitation to SoDA's linkedin alumni group, distinguished member resume books given to our industry partners, and giveaways exclusive to distinguished members. Once a Distinguished SoDA member, you are eligible to get personal one-on-one resume reviews from one of our officers to make sure it is high quality.
+                            <br/>
+                            <br/>
+                            You can become a Distinguished SoDA member by earning 12 points. You can earn points as follows:
+                            <br/>
+                            1 point per meeting you attend
+                            <br/>
+                            3 points for being a mentor
+                            <br/>
+                            2 points for every group projects meeting attended
+                            <br/>
+                            2 points for every mentorship meeting attended
+                            <br/>
+                            3 points for volunteering at a Dean's Funding event for SoDA
+                            <br/>
+                            3 points for leading a workshop
+                            <br/>
+                            <br/>
+                            If you become a Distinguished SoDA member in the Fall, you only need to earn 6 points by the end of February to keep your Distinguished membership</div>
+                        </Palette>
+                    </div>
+                    
+                </div>
+                    
+            </div>);  
+        };
+
         const IdentityCard = ({title, name, email}) => {
             return (
                 <Card styling={{width: 300}}>
@@ -1447,6 +1508,9 @@
                         </div>
                         <div style={{top: 650, position: "relative"}} id="hackathon">
                             <MobileHackathonPage width={this.state.width} height={3*this.state.width < 1600 ? 3*this.state.width : 1600}/>
+                        </div>
+                        <div style={{top: 650, position: "relative"}} id="community">
+                            <MobileCommunityPage width={this.state.width} height={1300}/>
                         </div>
                         
                         <MobileNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
