@@ -347,8 +347,8 @@
                 var projectSubMenuText = (width, left) => {
                     this.setState({...this.state, currentItemWidth: width, currentItemLeft: left, showSubMenu: true, subMenuText:
                         <div style={{fontFamily: "RopaSans-Regular"}}>
-                            <ColorSwitchingButton style={{paddingTop: 5, padding: 10}} link="#contacts">Officers</ColorSwitchingButton>
-                            <ColorSwitchingButton style={{paddingTop: 10, paddingBottom: 5, padding: 10}} link="#contacts">Sponsors</ColorSwitchingButton>
+                            <ColorSwitchingButton style={{paddingTop: 5, padding: 10}} link="#officers">Officers</ColorSwitchingButton>
+                            <ColorSwitchingButton style={{paddingTop: 10, paddingBottom: 5, padding: 10}} link="#sponsors">Sponsors</ColorSwitchingButton>
                         </div>});
                 }
 				return (
@@ -1437,7 +1437,7 @@
                     </div>
                 </div>
                     
-                <div style={{textAlign: "center", position: "relative", top: 50}}>
+                <div style={{textAlign: "center", position: "relative", top: 50}} id="officers">
                     <MembershipCard title="President" name="Michelle Capriles-Escobedo" email="mcaprile@asu.edu"/>
                     <MembershipCard title="Vice President" name="Daniel Baird" email="jamesdanielbaird@gmail.com"/>
                     <MembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu"/>
@@ -1460,7 +1460,7 @@
                     <MembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu"/>
                 </div>
                     
-                <div style={{textAlign: "center", position: "relative", top: 150}}>
+                <div style={{textAlign: "center", position: "relative", top: 150}} id="sponsors">
         
                     <div id="group_projects"></div>
                     <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
