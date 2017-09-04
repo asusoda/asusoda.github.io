@@ -402,9 +402,9 @@
                 return (
                     <div style={{display: "inline-block", margin: this.props.margin, verticalAlign: "top", ...this.props.styling}}>
                         <div style={{textAlign: this.props.titleAlign}}>
-                            <Card styling={{backgroundColor: "#000", color:"#FFF", display: "inline-block", padding: 10, fontSize: this.props.fontSize || 30, fontFamily: "RopaSansPro-ExtraBold", position: "relative", bottom: -30, zIndex: 1, paddingLeft: 18, paddingRight: 18}}>{this.props.title}</Card>
+                            <Card styling={{backgroundColor: this.props.titleBackgroundColor || "#000", color:this.props.titleColor || "#FFF", display: "inline-block", padding: 10, fontSize: this.props.fontSize || 30, fontFamily: "RopaSansPro-ExtraBold", position: "relative", bottom: -30, zIndex: 1, paddingLeft: 18, paddingRight: 18}}>{this.props.title}</Card>
                         </div>
-                        <Card styling={{backgroundColor: "#F4F4F4", display: "inline-block", width: this.props.width, padding: 25, borderRadius: 10, textAlign: this.props.contentAlign}}>
+                        <Card styling={{backgroundColor: this.props.contentColor || "#F4F4F4", display: "inline-block", width: this.props.width, padding: 25, borderRadius: 10, textAlign: this.props.contentAlign}}>
                             <br/>
                             {this.props.children}
                         </Card>
@@ -1454,10 +1454,47 @@
                     <MembershipCard title="Director of Marketing - Marketing Lead" name="Michael Rojas" email="mikerojaswa@gmail.com"/>
                     <MembershipCard title="Director of Communications" name="Raffi Shabazian" email="raffi.p.shahbazian@gmail.com"/>
                     <MembershipCard title="Director of Digital Media" name="Junshu Liu" email="jliu237@asu.edu"/>
-                    <MembershipCard title="Public Engagement Chair" name="VACANT" email=""/>
+                    <MembershipCard title="Public Engagement Chair" name="Justin Dierken" email="jdierken@asu.edu"/>
                     <MembershipCard title="Webmaster" name="Vincent Truong" email="vincenttruong96@gmail.com, vntruon1@asu.edu"/>
                     <MembershipCard title="Web Developer" name="Azaldin Freidoon" email="azaldin123@yahoo.com"/>
                     <MembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu"/>
+                </div>
+                    
+                <div style={{textAlign: "center", position: "relative", top: 150}}>
+        
+                    <div id="group_projects"></div>
+                    <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
+                        <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>Sponsors</b>
+                    </Card>
+                    
+                    <div>
+                        <Palette title="Gold" titleAlign= "center" contentAlign= "center" width={600} titleColor="#000" titleBackgroundColor="#FFDF00" contentColor="#FFF" fontSize={50}>
+                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Gold Tier Sponsors</div>
+                            <div style={{marginBottom: 50}}><img src="images/AllState2017_logo.png" width={500}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/Amazon_logo.jpg" width={500}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/AmericanExpress_logo.png" width={500}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/starbucks_logo.jpg" width={250}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/Workiva_logo.png" width={500}/></div>
+                        </Palette>
+                    </div>
+                    
+                    <div>
+                        <Palette title="Silver" titleAlign= "center" contentAlign= "center" width={600} titleColor="#000" titleBackgroundColor="#C0C0C0" contentColor="#FFF" fontSize={50}>
+                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Silver Tier Sponsors</div>
+                            <div style={{marginBottom: 50}}><img src="images/GoDaddy_logo.png" width={500}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/Statefarm_logo.png" width={500}/></div>
+                        </Palette>
+                    </div>
+                    
+                    <div>
+                        <Palette title="Bronze" titleAlign= "center" contentAlign= "center" width={600} titleColor="#000" titleBackgroundColor="#cd7f32" contentColor="#FFF" fontSize={50}>
+                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Bronze Tier Sponsors</div>
+                            <div style={{marginBottom: 50}}><img src="images/Connexta_logo.jpg" width={500}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/GoldmanSachs_logo.jpg" width={500}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/google_logo.png" width={500}/></div>
+                        </Palette>
+                    </div>
+                    
                 </div>
             </div>);  
         };
@@ -1520,7 +1557,7 @@
                 this.setState({...this.state, width: window.innerWidth});    
             },
             render: function() {
-                if (window.innerWidth >= 1100) {
+                if (window.innerWidth >= 1075) {
                     return <div>
                         <DesktopWebsiteHeader width= {this.state.width} height={400}/>
                         <DesktopWebsiteAboutUs width= {this.state.width}/>
