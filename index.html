@@ -150,11 +150,12 @@
 	</style>
 
 </head>
-    
+
 <body>
     <div id="container"></div>
 
-    <script type="text/babel">
+    <script type="text/babel"> 
+				//Test
         const NAV_BAR_HEIGHT = 45;
         const MIN_DESKTOP_WIDTH = 1100;
 
@@ -184,7 +185,7 @@
                 );
             }
         });
-              
+
         var DesktopNavigationBarItemSubMenu = React.createClass({
             render: function() {
                 var subMenuStyle = {
@@ -213,17 +214,17 @@
                 return {
                     color: "#000",
                     backgroundColor: "#FFF"
-                }  
+                }
             },
             render: function() {
-                return ( 
+                return (
                     <div style={{...this.props.style, textDecoration: "none", backgroundColor:this.state.backgroundColor, color:this.state.color}} onMouseOver={() => this.setState({color: "#FFF", backgroundColor: "#000"})} onMouseOut={() => this.setState({color: "#000", backgroundColor: "#FFF"})}>
                         <a href={this.props.link} style={{textDecoration: "none", backgroundColor:this.state.backgroundColor, color:this.state.color}}>{this.props.children}</a>
                     </div>
                 );
             }
         });
-              
+
         var DesktopNavigationBarItem = React.createClass({
             getInitialState: function() {
                 return {
@@ -242,22 +243,22 @@
                     fontFamily: "sans-serif",
                     fontWeight: "bold",
                     display: "inline-block",
-                    verticalAlign: 11,    
+                    verticalAlign: 11,
                     position: "relative",
                     paddingLeft: 15,
                     paddingRight: 15,
                 };
                 // LEAVE FUNCTIONS IN THIS FORM - ARROW (ANONYMOUS) FUNCTIONS CAUSE MEMORY LEAKS
-                var onMouseOver = () => 
+                var onMouseOver = () =>
                 {
                     this.props.updateRedMarker(this.state.divElement.clientWidth - (textStyle.paddingLeft+textStyle.paddingRight), this.state.divElement.offsetLeft + textStyle.paddingLeft);
                 }
                 var ref = (input) => {
                     if (input != null) {
-                        this.state.divElement = input;    
+                        this.state.divElement = input;
                     }
                 }
-                
+
                 return (
                     <a onClick={this.props.onClick} style={textStyle} href={this.props.link} ref={ref} onMouseOver={onMouseOver} onMouseOut={this.props.onMouseOut}>
                         <div style={{fontFamily: "RopaSansPro-Bold"}}>{this.props.children}</div>
@@ -265,7 +266,7 @@
                 );
             }
         });
-    
+
         var DesktopNavigationBar = React.createClass({
             getInitialState: function() {
                 return {
@@ -278,7 +279,7 @@
                     subMenuText: <div></div>,
                 }
             },
-            
+
             componentDidMount: function () {
                 window.addEventListener("resize", this.removeRedMarker);
             },
@@ -286,7 +287,7 @@
                 window.removeEventListener("resize", this.removeRedMarker);
             },
             removeRedMarker: function() {
-                this.setState({...this.state, showRedMarker: false, showSubMenu: false});    
+                this.setState({...this.state, showRedMarker: false, showSubMenu: false});
             },
 
             render: function() {
@@ -298,7 +299,7 @@
                     display: "inline-block",
                     textAlign: "center"
                 }
-                
+
                 var redMarkerStyle = {
                     backgroundColor: "#ff0000",
                     width: this.state.redMarkerWidth,
@@ -323,7 +324,7 @@
                         return null;
                     }
                 }
-                
+
                 var props = {
                     onClick: () => this.setState({...this.state, showRedMarker: true, redMarkerLeft: this.state.currentItemLeft, redMarkerWidth: this.state.currentItemWidth})
                 }
@@ -369,7 +370,7 @@
                                 <NavBarItemSubMenu left={this.state.currentItemLeft}/>
                             </div>
                         </div>
-                        
+
                     </div>
                 );
             },
@@ -387,7 +388,7 @@
                     position: "fixed",
                     padding: 5,
                 }
-				return (	
+				return (
                     <div style={{position: "fixed", top:0, left: 0, right: 0, textAlign: "center", zIndex: 100}}>
                         <div style={navigationBarStyle}>
                             <SodaLogo height={NAV_BAR_HEIGHT}/>
@@ -421,7 +422,7 @@
                     currentItemLeft: 0,
                 }
             },
-            
+
             render: function() {
                 var props = {
                     onClick: () => {},
@@ -455,7 +456,7 @@
                                 Learn more about<br/>SoDA
                             </div>
                         </div>
-                        
+
                     </div>
                 );
             }
@@ -469,7 +470,7 @@
                     currentItemLeft: 0,
                 }
             },
-            
+
             render: function() {
                 return (
                     <div style={{backgroundColor: "#F6F3F4", height: this.props.height, maxWidth:this.props.width, top:NAV_BAR_HEIGHT, position:"relative", textAlign: "center", paddingTop: 40}}>
@@ -492,7 +493,7 @@
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href={link} target= "_blank">Google Maps</a>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const GoogleForms = ({link, size}) => {
@@ -504,7 +505,7 @@
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href={link} target= "_blank">Google Forms</a>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const FavoriteWebsite = ({}) => {
@@ -516,7 +517,7 @@
                         <div style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080"}}>Dialog from your browser</div>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const FacebookPage = ({size}) => {
@@ -528,7 +529,7 @@
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="https://www.facebook.com/SoDAASU/" target= "_blank">facebook.com/SoDAASU/</a>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const FacebookGroup = ({}) => {
@@ -540,7 +541,7 @@
                         <div style={{fontFamily: "RopaSans-Regular", fontSize: 18, color: "#808080"}}>facebook.com/groups/asusoda</div>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const GoogleCalendar = ({size}) => {
@@ -552,7 +553,7 @@
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="https://calendar.google.com/calendar/embed?src=cDNkcmR1azUzbGszaGxrdDVkcjA0bW91aTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="_blank">Google Calendar</a>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const NewsLetter = ({size}) => {
@@ -564,7 +565,7 @@
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="http://tinyurl.com/sodanews" target="_blank"> tinyurl.com/sodanews</a>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const TwitterPage = ({size}) => {
@@ -576,7 +577,7 @@
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="https://www.twitter.com/asu_soda" target= "_blank">twitter.com/asu_soda</a>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const InstagramPage = ({size}) => {
@@ -588,7 +589,7 @@
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="https://www.instagram.com/asu_soda/" target="_blank">instagram.com/asu_soda/</a>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const YoutubeChannel = ({size}) => {
@@ -600,7 +601,7 @@
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="https://www.youtube.com/sodaasu" target="_blank">youtube.com/sodaasu</a>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const SlackTeam = ({size}) => {
@@ -612,7 +613,7 @@
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="https://sodaasu.slack.com" target="_blank">sodaasu.slack.com</a>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const GithubProjects = ({size}) => {
@@ -624,7 +625,7 @@
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="https://www.github.com/asusoda" target="_blank">github.com/asusoda</a>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const OrgSync = ({size}) => {
@@ -636,7 +637,7 @@
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="https://orgsync.com/12637/chapter" target="_blank">orgsync.com/12637/chapter</a>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const Wikipedia = ({}) => {
@@ -697,7 +698,7 @@
                     currentItemLeft: 0,
                 }
             },
-            
+
             render: function() {
                 var width = this.props.width;
                 var height = this.props.height;
@@ -738,7 +739,7 @@
                                         </div>
                                     </Palette>
                                 </div>
-                                
+
                                 <Palette title="NEW TO SoDA?" titleAlign= "left" contentAlign= "left" width={400} styling={{zIndex: 10, position: "relative"}} margin={40}>
                                     <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Checklist.</div>
                                     <br/>
@@ -767,11 +768,11 @@
                                         <br/>
                                         <div style={{fontFamily: "RopaSans-Regular", fontSize: 24}}>What is the only state in America that can be typed on one row of a traditional English QWERTY keyboard?</div>
                                         <br/>
-                                        
+
                                         <div style={{textAlign: "right"}}>
                                             <div style={{backgroundColor: this.state.answerColor, display: "inline-block", width: 150, textAlign: "center", fontFamily: "RopaSansPro-Medium", fontSize: 25, color:"#FFF", padding: 5, paddingRight: 20, paddingLeft: 20, WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 2px 5px #666)", position: "relative", right: 80}} onMouseOver={() => this.setState({...this.state, answerColor: "#ff0000", answerText: "Alaska"})} onMouseOut={() => this.setState({...this.state, answerColor: "#0000ff", answerText: "Show answer"})}>{this.state.answerText}</div>
                                         </div>
-                                        
+
                                     </Palette>
                                 </div>
                             </div>
@@ -792,7 +793,7 @@
                     currentItemLeft: 0,
                 }
             },
-            
+
             render: function() {
                 var width = this.props.width;
                 var height = this.props.height;
@@ -832,7 +833,7 @@
                                         </div>
                                     </Palette>
                                 </div>
-                                
+
                                 <Palette title="NEW TO SoDA?" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30} styling={{top: 50, position: "relative"}}>
                                     <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/20 < 35 ? width/20 : 35}}>Checklist.</div>
                                     <br/>
@@ -853,11 +854,11 @@
                                         <br/>
                                         <div style={{fontFamily: "RopaSans-Regular", fontSize: width/25 < 20 ? width/25 : 20}}>What is the only state in America that can be typed on one row of a traditional English QWERTY keyboard?</div>
                                         <br/>
-                                        
+
                                         <div style={{textAlign: "center"}}>
                                             <div style={{backgroundColor: this.state.answerColor, display: "inline-block", width: 150, textAlign: "center", fontFamily: "RopaSansPro-Medium", fontSize: width/25 < 25 ? width/25 : 25, color:"#FFF", padding: 5, paddingRight: 20, paddingLeft: 20, WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 2px 5px #666)"}} onMouseOver={() => this.setState({...this.state, answerColor: "#ff0000", answerText: "Alaska"})} onMouseOut={() => this.setState({...this.state, answerColor: "#0000ff", answerText: "Show answer"})}>{this.state.answerText}</div>
                                         </div>
-                                        
+
                                     </Palette>
                                 </div>
                             </div>
@@ -895,7 +896,7 @@
                         </div>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const MobileAboutPage = ({width, height}) => {
@@ -924,7 +925,7 @@
                         </div>
                     </div>
                 </div>
-            );  
+            );
         };
 
         const EventPage = ({width, height}) => {
@@ -948,11 +949,11 @@
                         </div>
                     </div>
                 </div>
-                    
+
                 <div style={{height: height, overflow: "hidden", textAlign: "center", display:"inline-block", position: "relative", top:80}}>
                     <div style={{position: "absolute", textAlign: "center", width: width}}>
                         <div style={{display: "inline-block"}}>
-                            
+
                             <div style={{display: "inline-block"}}>
                                 <Palette title="EVENTS THIS WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
                                     <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>America Express Presentation</div>
@@ -970,7 +971,7 @@
                                     </div>
                                 </Palette>
                             </div>
-                            
+
                             <div style={{display: "inline-block"}}>
                                 <Palette title="SNEAK PEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
                                     <div style={{}}>
@@ -989,7 +990,7 @@
                     </div>
                     <img src="images/asu_geometry_soda_white.jpg" style={{width: width, overflow: "hidden", height: height}}/>
                 </div>
-            </div>);  
+            </div>);
         };
 
         const MobileEventPage = ({width, height}) => {
@@ -1015,11 +1016,11 @@
                         </div>
                     </div>
                 </div>
-                    
+
                 <div style={{height: height, overflow: "hidden", textAlign: "center", display:"inline-block", position: "relative", top:80}}>
                     <div style={{position: "absolute", textAlign: "center", width: width}}>
                         <div style={{display: "inline-block"}}>
-                            
+
                             <div>
                                 <Palette title="EVENTS THIS WEEK" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30}>
                                         <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/20 < 35 ? width/20 : 35}}>American Express Presentation</div>
@@ -1036,7 +1037,7 @@
                                         </div>
                                     </Palette>
                             </div>
-                            
+
                             <div>
                                 <Palette title="SNEAK PEEK" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30}>
                                     <div style={{}}>
@@ -1055,7 +1056,7 @@
                     </div>
                     <img src="images/asu_geometry_soda_white.jpg" style={{width: width, overflow: "hidden", height: height}}/>
                 </div>
-            </div>);  
+            </div>);
         };
 
         const CareersPage = ({width, height}) => {
@@ -1069,7 +1070,7 @@
                             <div>
                                 <div style={{fontSize: 40, fontFamily: "RopaSansPro-Regular", color:"#808080"}}>One thing that is deeply rooted is SoDA is helping its fellow members get their foot in the door with industry. We want students to become familiar with industry by helping them prepare for technical interview, and showing them how and when to apply. Students who think and prepare sooner have a much easier time landing a job, and are much more successful during the job hunt itself.</div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -1088,11 +1089,11 @@
                             </div>
                     </Card>
                 </div>
-                    
+
                 <div style={{textAlign: "center", height: 150}}>
                     <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 50, marginTop: 40}}>More coming soon...</div>
                 </div>
-            </div>);  
+            </div>);
         };
 
         const MobileCareersPage = ({width, height}) => {
@@ -1121,7 +1122,7 @@
                 <div style={{textAlign: "center", height: 150}}>
                     <div style={{fontFamily: "RopaSansPro-Regular", fontSize: width/10 < 50 ? width/10 : 50, marginTop: 40}}>Coming soon...</div>
                 </div>
-            </div>);  
+            </div>);
         };
 
         const HackathonPage = ({width, height}) => {
@@ -1147,7 +1148,7 @@
                         </div>
                     </div>
                 </div>
-                    
+
                 <div style={{padding: 20,textAlign: "center"}}>
                     <Card styling={{backgroundColor: "#000", height: 60, textAlign: "center", width: 550, display: "inline-block", margin: 20}}>
                         <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>UPCOMING HACKATHONS</b>
@@ -1156,7 +1157,7 @@
                         in Arizona, 2017~2018 academic year
                     </div>
                     <br/>
-                    
+
                     <div style={{display: "inline-block"}} id="sunhacks">
                         <Palette title="Sun Hacks" titleAlign= "left" contentAlign= "left" width={800}>
                             <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Sun Hacks Hackathon</div>
@@ -1170,14 +1171,14 @@
                             </div>
                         </Palette>
                     </div>
-                    
+
                     <div style={{textAlign: "center", height: 150}}>
                     <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 50, marginTop: 40}}>More coming soon...</div>
                     </div>
-                    
+
                 </div>
-                    
-            </div>);  
+
+            </div>);
         };
 
         const MobileHackathonPage = ({width, height}) => {
@@ -1198,7 +1199,7 @@
                         </div>
                     </div>
                 </div>
-                    
+
                 <div style={{padding: 20,textAlign: "center"}}>
                     <div style={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, paddingLeft: 20, paddingRight: 20}}>
                         <b style={{color: "#FFF", fontSize: width/20 < 35 ? width/20 : 35, lineHeight: "60px", fontFamily: "RopaSansPro-Extrabold"}}>UPCOMING HACKATHONS</b>
@@ -1207,7 +1208,7 @@
                         in Arizona, 2017~2018 academic year
                     </div>
                     <br/>
-                    
+
                     <div style={{display: "inline-block"}} id="sunhacks">
                         <Palette title="Sun Hacks" titleAlign= "left" contentAlign= "left" width={width - 100 < 700 ? width- 100 : 700}>
                             <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/11 < 45 ? width/11 : 45}}>Sun Hacks Hackathon</div>
@@ -1220,14 +1221,14 @@
                             </div>
                         </Palette>
                     </div>
-                    
+
                     <div style={{textAlign: "center", height: 150}}>
                     <div style={{fontFamily: "RopaSansPro-Regular", fontSize: width/10 < 50 ? width/10 : 50, marginTop: 40}}>More coming soon...</div>
                     </div>
-                    
+
                 </div>
-                    
-            </div>);  
+
+            </div>);
         };
 
 /*
@@ -1245,7 +1246,7 @@
                             <br/>
                             <ReserveBus/>
                         </Card>
-                        
+
                         <Card styling={{backgroundColor: "#FFF", padding: 30, textAlign: "left", display: "inline-block", borderRadius: 10, verticalAlign: "top", marginLeft: 130, height: 475}}>
                             <div style={{color: "#E4E4E4", fontSize: 100, fontFamily: "RopaSansPro-Medium", textAlign: "center"}}>coLd</div>
                             <div style={{fontSize: 100, position: "relative", top: -50, fontFamily: "RopaSansPro-Medium"}}>coco 2017</div>
@@ -1270,7 +1271,7 @@
                     <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 40}}>{name}</div>
                     <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 25}}>{email}</div>
                 </Card>
-            );  
+            );
         };
 
         const MobileMembershipCard = ({title, name, email, width}) => {
@@ -1280,7 +1281,7 @@
                     <div style={{fontFamily: "RopaSansSCPro-Bold", fontSize: width/20 < 25 ? width/20 : 25}}>{name}</div>
                     <div style={{fontFamily: "RopaSansPro-Regular", fontSize: width/20 < 25 ? width/20 : 25}}>{email}</div>
                 </Card>
-            );  
+            );
         };
 
         const CommunityPage = ({width, height}) => {
@@ -1297,29 +1298,29 @@
                         </div>
                     </div>
                 </div>
-                    
+
                 <div style={{padding: 20,textAlign: "center"}}>
                     <div id="group_projects"></div>
                     <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
                         <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>Group Projects</b>
                     </Card>
-                    
+
                     <div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, display: "inline-block", backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20}}>
-                        Students of computer science are often prompted to experiment with project-based learning because it gives the opportunity to focus on solving a bigger-picture problem than most school assignments. Working on extracurricular projects gives valuable skills, experience, an attractive interview topic, and an entry in one&apos;s repertoire.  
+                        Students of computer science are often prompted to experiment with project-based learning because it gives the opportunity to focus on solving a bigger-picture problem than most school assignments. Working on extracurricular projects gives valuable skills, experience, an attractive interview topic, and an entry in one&apos;s repertoire.
                         <br/>
-                        Our new Group Project initiative is an effort to create a supportive community for students interested in pursuing extracurricular projects. It is open to all students at any time. 
+                        Our new Group Project initiative is an effort to create a supportive community for students interested in pursuing extracurricular projects. It is open to all students at any time.
                         <br/>
                         We will meet once a month to discuss big-picture challenges, solutions, and successes, with a focus on how to make success contagious. At the end of the year, Group Projects will conclude with Demo Day, where groups will show off their outcomes and receive prizes voted on by the community.
                         <br/>
                         <br/>
                         If you are interested in participating in group projects, fill out the following <a href="http://tinyurl.com/sodagroupprojects17" target="_blank" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}}>form</a>
                     </div>
-                    
+
                     <div id="mentorship"></div>
                     <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
                         <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>MENTORSHIP PROGRAM</b>
                     </Card>
-                    
+
                     <div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, display: "inline-block", backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20}}>
                         For many individuals, mentorship is an important part of of their professional and individual growth. There is a lot of benefit in having a mentor within one's field of study. With our Mentorship Program, we aim to provide a platform for mentees interested with mentorship opportunities to engage with mentors within the ASU community. With this we hope that there will always be someone within SoDA that students can go to when they have questions or need someone to talk to.
                         <br/>
@@ -1328,12 +1329,12 @@
                         <br/>
                         If you are interested in becoming a mentee, fill out the following <a href="http://tinyurl.com/sodamentee17" target="_blank" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}}>form</a>
                     </div>
-                    
+
                     <div id="distinguished"></div>
                     <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
                         <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>DISTINGUISHED SoDA MEMBERSHIP</b>
                     </Card>
-                    
+
                     <div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, display: "inline-block", backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20}}>
                         SoDA's Distinguished Member Program is an initiative created with the intention of recognizing students who are highly involved in SoDA's activities and community. Admission into the distinguished member program is based on a point system from attendance and participation in SoDA activities including the other initiatives. Perks include an invitation to SoDA's linkedin alumni group, distinguished member resume books given to our industry partners, and giveaways exclusive to distinguished members. Once a Distinguished SoDA member, you are eligible to get personal one-on-one resume reviews from one of our officers to make sure it is high quality.
                         <br/>
@@ -1355,10 +1356,10 @@
                         <br/>
                         If you become a Distinguished SoDA member in the Fall, you only need to earn 6 points by the end of February to keep your Distinguished membership
                     </div>
-                    
+
                 </div>
-                    
-            </div>);  
+
+            </div>);
         };
 
         const MobileCommunityPage = ({width, height}) => {
@@ -1376,7 +1377,7 @@
                         </div>
                     </div>
                 </div>
-                    
+
                 <div style={{padding: 20,textAlign: "center"}}>
                     <div style={{display: "inline-block"}} id="sunhacks">
                         <Palette title="Group Projects" titleAlign= "left" contentAlign= "left" width={width - 100 < 700 ? width- 100 : 700}>
@@ -1391,7 +1392,7 @@
                             <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/25 < 24 ? width/25 : 24}}>For many individuals, mentorship is an important part of of their professional and individual growth. There is a lot of benefit in having a mentor within one's field of study. With our Mentorship Program, we aim to provide a platform for mentees interested with mentorship opportunities to engage with mentors within the ASU community. With this we hope that there will always be someone within SoDA that students can go to when they have questions or need someone to talk to.<br/><br/>If you are interested fill out this <a href="http://tinyurl.com/sodamentor17" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a><br/>If you are interested fill out this <a href= "http://tinyurl.com/sodamentee17" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a></div>
                         </Palette>
                     </div>
-                    
+
                     <div style={{display: "inline-block"}} id="sunhacks">
                         <Palette title="Distinguished SoDA Membership Program" titleAlign= "left" contentAlign= "left" width={width - 100 < 700 ? width- 100 : 700}>
                             <br/>
@@ -1416,10 +1417,10 @@
                             If you become a Distinguished SoDA member in the Fall, you only need to earn 6 points by the end of February to keep your Distinguished membership</div>
                         </Palette>
                     </div>
-                    
+
                 </div>
-                    
-            </div>);  
+
+            </div>);
         };
 
         const ContactPage = ({width, height}) => {
@@ -1436,7 +1437,7 @@
                         </div>
                     </div>
                 </div>
-                    
+
                 <div style={{textAlign: "center", position: "relative", top: 50}} id="officers">
                     <MembershipCard title="President" name="Michelle Capriles-Escobedo" email="mcaprile@asu.edu"/>
                     <MembershipCard title="Vice President" name="Daniel Baird" email="jamesdanielbaird@gmail.com"/>
@@ -1459,31 +1460,31 @@
                     <MembershipCard title="Web Developer" name="Azaldin Freidoon" email="azaldin123@yahoo.com"/>
                     <MembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu"/>
                 </div>
-                    
+
                 <div style={{textAlign: "center", position: "relative", top: 150}} id="sponsors">
-        
+
                     <div id="group_projects"></div>
                     <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
                         <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>Sponsors</b>
                     </Card>
-                    
+
                     <div style={{position: "Relative", top: 50}}>
                             <div style={{marginBottom: 50}}><img src="images/AllState2017_logo.png" width={500}/></div>
                             <div style={{marginBottom: 50}}><img src="images/Amazon_logo.jpg" width={500}/></div>
                             <div style={{marginBottom: 50}}><img src="images/AmericanExpress_logo.png" width={500}/></div>
                             <div style={{marginBottom: 50}}><img src="images/starbucks_logo.jpg" width={250}/></div>
                             <div style={{marginBottom: 50}}><img src="images/Workiva_logo.png" width={500}/></div>
-                        
+
                             <div style={{marginBottom: 50}}><img src="images/GoDaddy_logo.png" width={350}/></div>
                             <div style={{marginBottom: 50}}><img src="images/Statefarm_logo.png" width={350}/></div>
-                            
+
                             <div style={{marginBottom: 50}}><img src="images/Connexta_logo.jpg" width={200}/></div>
                             <div style={{marginBottom: 50}}><img src="images/GoldmanSachs_logo.jpg" width={200}/></div>
                             <div style={{marginBottom: 50}}><img src="images/google_logo.png" width={200}/></div>
                     </div>
-                    
+
                 </div>
-            </div>);  
+            </div>);
         };
 
         const MobileContactPage = ({width, height}) => {
@@ -1501,7 +1502,7 @@
                         </div>
                     </div>
                 </div>
-                    
+
                 <div style={{textAlign: "center", position: "relative", top: 50}}>
                     <MobileMembershipCard title="President" name="Michelle Capriles-Escobedo" email="mcaprile@asu.edu" width={width}/>
                     <MobileMembershipCard title="Vice President" name="Daniel Baird" email="jamesdanielbaird@gmail.com" width={width}/>
@@ -1524,7 +1525,7 @@
                     <MobileMembershipCard title="Web Developer" name="Azaldin Freidoon" email="azaldin123@yahoo.com" width={width}/>
                     <MobileMembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu" width={width}/>
                 </div>
-            </div>);  
+            </div>);
         };
 
         var App = React.createClass({
@@ -1541,7 +1542,7 @@
                 window.removeEventListener("resize", this.updateWindowDimensions);
             },
             updateWindowDimensions: function() {
-                this.setState({...this.state, width: window.innerWidth});    
+                this.setState({...this.state, width: window.innerWidth});
             },
             render: function() {
                 if (window.innerWidth >= 1075) {
@@ -1590,13 +1591,13 @@
                         <div style={{top: 750, position: "relative"}} id="contacts">
                             <MobileContactPage width={this.state.width} height={1500}/>
                         </div>
-                        
+
                         <MobileNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
                     </div>;
                 }
             }
         });
-        
+
         ReactDOM.render(
             <div style={{position: "absolute",left: 0,right: 0,top: 0,bottom: 0}}>
                 <App/>
