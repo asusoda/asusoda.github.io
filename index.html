@@ -696,6 +696,7 @@
                     answerText: "Show answer",
                     currentItemWidth: 0,
                     currentItemLeft: 0,
+                    upcomingEvent: true,
                 }
             },
 
@@ -718,26 +719,62 @@
                     WebkitFilter: "drop-shadow(0px 0px 10px #000)",
 					filter: "drop-shadow(5px 5px 5px 5px #666)",
                 }
+                
+                let upcomingEvent = null;
+                if (this.state.upcomingEvent) {
+                    upcomingEvent = (
+                        <Palette title="UPCOMING EVENT" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+                            <div style={{textAlign: "right"}}>
+                                <div style={{position: "relative", top: -20, padding: 10, borderRadius: 25, backgroundColor: "#FFF", textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold"}} onClick={() => this.setState({...this.state, upcomingEvent: false})}>Next</div>
+                            </div>
+                            <div style={{position: "relative", top: -25}}>
+                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Google Coding Competition</div>
+                                <br/>
+                                <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 101<br/>Tuesday, September 12th, 2017<br/>9:30 am ~ 11:30 am</div>
+                                <br/>
+                                <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Google is hosting their own coding and puzzle solving competition, Google Games! Join Google and SoDA and test your coding ability in teams of 5 at the first Google Games at ASU!</div>
+                                <br/>
+                                <br/>
+                                <div style={{display: "inline-block"}}>
+                                    <GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.4235735,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186?shorturl=1"/>
+                                    <div style={{position: "relative", left: 10}}>
+                                        <GoogleForms link="http://tinyurl.com/GoogleGamesCC17"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </Palette>);
+                } else {
+                    upcomingEvent = (
+                        <Palette title="UPCOMING EVENT" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+                            <div style={{textAlign: "right"}}>
+                                <div style={{position: "relative", top: -20, padding: 10, borderRadius: 25, backgroundColor: "#FFF", textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold"}} onClick={() => this.setState({...this.state, upcomingEvent: true})}>Prev</div>
+                            </div>
+                            <div style={{position: "relative", top: -25}}>
+                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>State Farm Presentation</div>
+                                <br/>
+                                <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Tuesday, September 12th, 2017<br/>7:00 pm ~ 9:00 pm</div>
+                                <br/>
+                                <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>State Farm will be here to talk about opportunities within their company and about technology they are currently using! As always food will be provided!</div>
+                                <br/>
+                                <br/>
+                                <div style={{display: "inline-block"}}>
+                                    <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
+                                    <div style={{position: "relative", left: 10}}>
+                                        <GoogleForms link="https://docs.google.com/forms/d/e/1FAIpQLSc8vrhnO1pEMuHKkIcTt6DoAXbNTBmZjbwAlYrc3iJgaS4eiQ/viewform"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </Palette>);
+                }
+                
                 return (
                     <div style={{width: width, overflow: "hidden", textAlign: "center", display:"inline-block", position: "relative", top:80}}>
                         <div style={{position: "absolute", textAlign: "center", width: width}}>
                             <div style={{display: "inline-block"}}>
                                 <div style={{display: "inline-block"}}>
-                                    <Palette title="UPCOMING EVENT" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
-                                        <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>American Express Presentation</div>
-                                        <br/>
-                                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, September 7th, 2017<br/>7:00 pm ~ 9:00 pm</div>
-                                        <br/>
-                                        <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>American Express will be here with a presentation on what they do, who they are, and opportunities at American Express!</div>
-                                        <br/>
-                                        <br/>
-                                        <div style={{display: "inline-block"}}>
-                                            <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
-                                            <div style={{position: "relative", left: 10}}>
-                                                <GoogleForms link="https://docs.google.com/forms/d/e/1FAIpQLSc8vrhnO1pEMuHKkIcTt6DoAXbNTBmZjbwAlYrc3iJgaS4eiQ/viewform"/>
-                                            </div>
-                                        </div>
-                                    </Palette>
+                                    
+                                    {upcomingEvent}
+                                    
                                 </div>
 
                                 <Palette title="NEW TO SoDA?" titleAlign= "left" contentAlign= "left" width={400} styling={{zIndex: 10, position: "relative"}} margin={40}>
@@ -763,7 +800,7 @@
                                         <OrgSync/>
                                     </div>
                                 </Palette>
-                                <div style={{textAlign: "left", position: "relative", top: -300}}>
+                                <div style={{textAlign: "left", position: "relative", top: -150}}>
                                     <Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
                                         <br/>
                                         <div style={{fontFamily: "RopaSans-Regular", fontSize: 24}}>What is the only state in America that can be typed on one row of a traditional English QWERTY keyboard?</div>
