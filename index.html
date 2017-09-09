@@ -1373,7 +1373,7 @@
             return (
             <div>
                 <div style={{width: width, backgroundColor: "#F6F3F4", id:"careers", paddingBottom: 40}}>
-                    <div style={{padding: 40, paddingLeft: 40}}>
+                    <div style={{padding: 40, paddingLeft: 20}}>
                         <div style={{fontSize: width/5 < 100 ? width/5 : 100, fontFamily: "RopaSansPro-Thin"}}>Community.</div>
                         <br/>
                         <div style={{display: "inline-block", width: "100%"}}>
@@ -1532,6 +1532,30 @@
                     <MobileMembershipCard title="Web Developer" name="Azaldin Freidoon" email="azaldin123@yahoo.com" width={width}/>
                     <MobileMembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu" width={width}/>
                 </div>
+                    
+                <div style={{textAlign: "center", position: "relative", top: 150}} id="sponsors">
+
+                    <div id="group_projects"></div>
+                    <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
+                        <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>Sponsors</b>
+                    </Card>
+
+                    <div style={{position: "Relative", top: 50}}>
+                            <div style={{marginBottom: 50}}><img src="images/AllState2017_logo.png" width={width-50 < 500 ? width-50 : 500}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/Amazon_logo.jpg" width={width-50 < 500 ? width-50 : 500}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/AmericanExpress_logo.png" width={width-50 < 500 ? width-50 : 500}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/starbucks_logo.jpg" width={width/2 < 250 ? width/2 : 250}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/Workiva_logo.png" width={width-50 < 500 ? width-50 : 500}/></div>
+
+                            <div style={{marginBottom: 50}}><img src="images/GoDaddy_logo.png" width={width/1.5 < 350 ? width/1.5 : 350}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/Statefarm_logo.png" width={width/1.5 < 350 ? width/1.5 : 350}/></div>
+
+                            <div style={{marginBottom: 50}}><img src="images/Connexta_logo.jpg" width={width/2.5 < 200 ? width/2.5 : 200}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/GoldmanSachs_logo.jpg" width={width/2.5 < 200 ? width/2.5 : 200}/></div>
+                            <div style={{marginBottom: 50}}><img src="images/google_logo.png" width={width/2.5 < 200 ? width/2.5 : 200}/></div>
+                    </div>
+
+                </div>
             </div>);
         };
 
@@ -1590,7 +1614,7 @@
                             <MobileCareersPage width={this.state.width} height={1500}/>
                         </div>
                         <div style={{top: 650, position: "relative"}} id="hackathon">
-                            <MobileHackathonPage width={this.state.width} height={3*this.state.width < 1600 ? 3*this.state.width : 1600}/>
+                            <MobileHackathonPage width={this.state.width} height={4*this.state.width < 1800 ? 4*this.state.width : 1800}/>
                         </div>
                         <div style={{top: 650, position: "relative"}} id="community">
                             <MobileCommunityPage width={this.state.width} height={1300}/>
