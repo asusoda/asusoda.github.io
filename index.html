@@ -723,7 +723,7 @@
                 let upcomingEvent = null;
                 if (this.state.upcomingEvent) {
                     upcomingEvent = (
-                        <Palette title="UPCOMING EVENT" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+                        <Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
                             <div style={{textAlign: "right"}}>
                                 <div style={{position: "relative", top: -20, padding: 10, borderRadius: 25, backgroundColor: "#FFF", textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold"}} onClick={() => this.setState({...this.state, upcomingEvent: false})}>Next</div>
                             </div>
@@ -745,7 +745,7 @@
                         </Palette>);
                 } else {
                     upcomingEvent = (
-                        <Palette title="UPCOMING EVENT" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+                        <Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
                             <div style={{textAlign: "right"}}>
                                 <div style={{position: "relative", top: -20, padding: 10, borderRadius: 25, backgroundColor: "#FFF", textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold"}} onClick={() => this.setState({...this.state, upcomingEvent: true})}>Prev</div>
                             </div>
@@ -855,7 +855,7 @@
                         <div style={{position: "absolute", textAlign: "center", width: width}}>
                             <div>
                                 <div style={{position: "relative", top: 50}}>
-                                    <Palette title="UPCOMING EVENT" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30}>
+                                    <Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30}>
                                         <div style={{fontFamily: "RopaSansPro-Light", fontSize: width/20 < 35 ? width/20 : 35}}>Mock Interviews</div>
                                         <br/>
                                         <div style={{fontFamily: "RopaSansPro-Medium", fontSize: width/25 < 25 ? width/25 : 25}}>PSH 150<br/>Tuesday, October 3rd, 2017<br/>7:00 pm ~ 9:00 pm</div>
