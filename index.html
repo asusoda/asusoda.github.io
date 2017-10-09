@@ -697,7 +697,7 @@
                     currentItemWidth: 0,
                     currentItemLeft: 0,
                     upcomingEvent: true,
-                    color: "#000"
+                    color: "#0000ff"
                 }
             },
 
@@ -727,7 +727,7 @@
                         <Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
                             <div style={{textAlign: "right"}}>
                                 <div style={{position: "absolute", top: 60, left: 355, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: false})}
-                                onMouseOver={() => this.setState({...this.state, color: "#0000ff"})} onMouseOut={() => this.setState({...this.state, color: "#000"})}>Next</div>
+                                onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
                             </div>
                             <div style={{position: "relative", top: 0}}>
                                 <div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Mock Interviews - CANCELLED</div>
@@ -750,7 +750,7 @@
                         <Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
                             <div style={{textAlign: "right"}}>
                                 <div style={{position: "absolute", top: 60, left: 357, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: true})}
-                                onMouseOver={() => this.setState({...this.state, color: "#0000ff"})} onMouseOut={() => this.setState({...this.state, color: "#000"})}>Prev</div>
+                                onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
                             </div>
                             <div style={{position: "relative", top: 0}}>
                                 <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Mentorship<br/>Meeting</div>
@@ -803,7 +803,6 @@
 
                                 </div>
 
-                                
                                 <div style={{textAlign: "left", position: "relative", top: -50}}>
                                     <Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
                                         <br/>
@@ -969,77 +968,186 @@
             );
         };
 
-        const EventPage = ({width, height}) => {
-            return (
-            <div style={{width: width, backgroundColor: "#F6F3F4", id:"events"}}>
-                <div style={{padding: 40, paddingLeft: 40}}>
-                    <div style={{fontSize: 150, fontFamily: "RopaSansPro-Thin"}}>Events.</div>
-                    <br/>
-                    <div style={{display: "inline-block", width: "100%"}}>
-                        <div style={{display: "inline-block", width: width/2 - 100, float: "left"}}>
-                            <div style={{fontSize: 40, fontFamily: "RopaSansPro-Medium", color:"#808080"}}>SoDA has events and meetings at the <span style={{color: "#000"}}>Physical Science building H wing (PSH),</span> room 150 unless otherwise stated.</div>
-                            <div style={{position: "relative", top: 50}}>
-                                <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
-                            </div>
-                        </div>
-                        <div style={{display: "inline-block", verticalAlign: "top", fontFamily: "RopaSansPro-Medium", width: width/2 - 100, float: "right"}}>
-                            <div style={{fontSize: 40, color:"#808080", display: "inline-block"}}>Events and meetings <span style={{color: "#000"}}>start at 7 pm and end at 9 pm</span> unless mentioned otherwise.</div>
-                            <div style={{position: "relative", top: 50}}>
-                                <GoogleCalendar/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+//        const EventPage = ({width, height}) => {
+        var EventPage = React.createClass({
+            getInitialState: function() {
+                return {
+                    markerColor: "#0000ff",
+                    answerColor: "#0000ff",
+                    answerText: "Show answer",
+                    currentItemWidth: 0,
+                    currentItemLeft: 0,
+                    upcomingEvent: true,
+                    color: "#0000ff"
+                }
+            },
 
-                <div style={{height: height, overflow: "hidden", textAlign: "center", display:"inline-block", position: "relative", top:80}}>
-                    <div style={{position: "absolute", textAlign: "center", width: width}}>
-                        <div style={{display: "inline-block"}}>
+            render: function() {
+                var width = this.props.width;
+                var height = this.props.height;
+                var props = {
+                    onClick: () => {},
+                    onMouseOut: () => this.setState({...this.state, markerColor: "#0000ff"})
+                }
+                var showRedMarker = () => {
+                    this.setState({...this.state, markerColor: "#ff0000"});
+                }
+                var markerStyle = {
+                    backgroundColor: this.state.markerColor,
+                    width: 93,
+                    position: "absolute",
+                    height: 15,
+                    bottom: -15,
+                    WebkitFilter: "drop-shadow(0px 0px 10px #000)",
+					filter: "drop-shadow(5px 5px 5px 5px #666)",
+                }
 
-                            <div style={{display: "inline-block"}}>
-                                <Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
-                                    <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Group Projects</div>
-                                    <br/>
-                                    <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, October 12th, 2017<br/>7:00 pm ~ 9:00 pm</div>
-                                    <br/>
-                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}> </div>
-                                    <br/>
-                                    <br/>
-                                    <div style={{display: "inline-block"}}>
+                let upcomingEvent = null;
+                if (this.state.upcomingEvent) {
+                    upcomingEvent = (
+                        <div style={{display: "inline-block", position: "relative"}}>
+                            <div style={{textAlign: "right"}}>
+                                <div style={{position: "absolute", top: 100, left: 394, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: false})}
+                                onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
+                            </div>
+                            <Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Group Projects</div>
+                                <br/>
+                                <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, October 12th, 2017<br/>7:00 pm ~ 9:00 pm</div>
+                                <br/>
+                                <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}> </div>
+                                <br/>
+                                <br/>
+                                <div style={{display: "inline-block"}}>
+                                    <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
+                                    <div style={{position: "relative", left: 10}}>
+                                        <GoogleForms link="https://docs.google.com/forms/d/e/1FAIpQLSdWI4Z5lwjRkhfBDE6RodJ_YP4FW3liWyFZJUCliEHnPU8W-w/viewform"/>
+                                    </div>
+                                </div>
+
+                            </Palette>
+                        </div>);
+                } else {
+                    upcomingEvent = (
+                        <div style={{display: "inline-block", position: "relative"}}>
+                            <div style={{textAlign: "right"}}>
+                                <div style={{position: "absolute", top: 100, left: 397, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: true})}
+                                onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
+                            </div>
+                            <Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Group Projects</div>
+                                <br/>
+                                <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, October 12th, 2017<br/>7:00 pm ~ 9:00 pm</div>
+                                <br/>
+                                <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}> </div>
+                                <br/>
+                                <br/>
+                                <div style={{display: "inline-block"}}>
+                                    <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
+                                    <div style={{position: "relative", left: 10}}>
+                                        <GoogleForms link="https://docs.google.com/forms/d/e/1FAIpQLSdWI4Z5lwjRkhfBDE6RodJ_YP4FW3liWyFZJUCliEHnPU8W-w/viewform"/>
+                                    </div>
+                                </div>
+
+                            </Palette>
+                        </div>);
+                }
+
+                return (
+                    <div style={{width: this.props.width, backgroundColor: "#F6F3F4", id:"events"}}>
+                        <div style={{padding: 40, paddingLeft: 40, paddingBottom: 80}}>
+                            <div style={{fontSize: 150, fontFamily: "RopaSansPro-Thin"}}>Events.</div>
+                            <br/>
+                            <div style={{display: "inline-block", width: "100%"}}>
+                                <div style={{display: "inline-block", width: width/2 - 100, float: "left"}}>
+                                    <div style={{fontSize: 40, fontFamily: "RopaSansPro-Medium", color:"#808080"}}>SoDA has events and meetings at the <span style={{color: "#000"}}>Physical Science building H wing (PSH),</span> room 150 unless otherwise stated.</div>
+                                    <div style={{position: "relative", top: 50}}>
                                         <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
-                                        <div style={{position: "relative", left: 10}}>
-                                            <GoogleForms link="https://docs.google.com/forms/d/e/1FAIpQLSdWI4Z5lwjRkhfBDE6RodJ_YP4FW3liWyFZJUCliEHnPU8W-w/viewform"/>
-                                        </div>
                                     </div>
-
-                                </Palette>
-                            </div>
-
-
-
-
-
-
-
-                            <div style={{display: "inline-block"}}>
-                                <Palette title="SNEAK PEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
-                                    <div style={{}}>
-                                        <iframe width="400" height="300" src="https://www.youtube.com/embed/oyejM9R2w6U" frameBorder="0" allowFullScreen></iframe>
+                                </div>
+                                <div style={{display: "inline-block", verticalAlign: "top", fontFamily: "RopaSansPro-Medium", width: width/2 - 100, float: "right"}}>
+                                    <div style={{fontSize: 40, color:"#808080", display: "inline-block"}}>Events and meetings <span style={{color: "#000"}}>start at 7 pm and end at 9 pm</span> unless mentioned otherwise.</div>
+                                    <div style={{position: "relative", top: 50}}>
+                                        <GoogleCalendar/>
                                     </div>
-                                    <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>SoDA Social Fall 2016 Compilation</div>
-                                    <br/>
-                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>It&apos;s always a good time. SoDers always have fun in this room. Watch our previous SoDA social event and see how SoDers get involved.</div>
-                                    <br/>
-                                    <YoutubeChannel/>
-                                    <br/>
-                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 17}}>Watch more events and hackathon videos from SoDA.</div>
-                                </Palette>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <img src="images/asu_geometry_soda_white.jpg" style={{width: width, overflow: "hidden", height: height}}/>
-                </div>
-            </div>);
-        };
+                        <div style={{position: "absolute", textAlign: "center", width: width}}>
+                            <div style={{display: "inline-block"}}>
+                                
+                                <div style={{display: "inline-block"}}>
+
+                                    {upcomingEvent}
+
+                                </div>
+
+                                <div style={{display: "inline-block"}}>
+                                    <Palette title="SNEAK PEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+                                        <div style={{}}>
+                                            <iframe width="400" height="300" src="https://www.youtube.com/embed/oyejM9R2w6U" frameBorder="0" allowFullScreen></iframe>
+                                        </div>
+                                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>SoDA Social Fall 2016 Compilation</div>
+                                        <br/>
+                                        <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>It&apos;s always a good time. SoDers always have fun in this room. Watch our previous SoDA social event and see how SoDers get involved.</div>
+                                        <br/>
+                                        <YoutubeChannel/>
+                                        <br/>
+                                        <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 17}}>Watch more events and hackathon videos from SoDA.</div>
+                                    </Palette>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="images/asu_geometry_soda_white.jpg" style={{width: width, overflow: "hidden", height: this.props.height}}/>
+                    </div>);}
+        });
+            
+//            return (
+//            <div style={{width: width, backgroundColor: "#F6F3F4", id:"events"}}>
+//                
+//
+//                <div style={{height: height, overflow: "hidden", textAlign: "center", display:"inline-block", position: "relative", top:80}}>
+//                    <div style={{position: "absolute", textAlign: "center", width: width}}>
+//                        <div style={{display: "inline-block"}}>
+//                            
+//                            <div style={{display: "inline-block"}}>
+//                                <Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+//                                    <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Group Projects</div>
+//                                    <br/>
+//                                    <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, October 12th, 2017<br/>7:00 pm ~ 9:00 pm</div>
+//                                    <br/>
+//                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}> </div>
+//                                    <br/>
+//                                    <br/>
+//                                    <div style={{display: "inline-block"}}>
+//                                        <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
+//                                        <div style={{position: "relative", left: 10}}>
+//                                            <GoogleForms link="https://docs.google.com/forms/d/e/1FAIpQLSdWI4Z5lwjRkhfBDE6RodJ_YP4FW3liWyFZJUCliEHnPU8W-w/viewform"/>
+//                                        </div>
+//                                    </div>
+//
+//                                </Palette>
+//                            </div>
+//
+//                            <div style={{display: "inline-block"}}>
+//                                <Palette title="SNEAK PEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+//                                    <div style={{}}>
+//                                        <iframe width="400" height="300" src="https://www.youtube.com/embed/oyejM9R2w6U" frameBorder="0" allowFullScreen></iframe>
+//                                    </div>
+//                                    <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>SoDA Social Fall 2016 Compilation</div>
+//                                    <br/>
+//                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>It&apos;s always a good time. SoDers always have fun in this room. Watch our previous SoDA social event and see how SoDers get involved.</div>
+//                                    <br/>
+//                                    <YoutubeChannel/>
+//                                    <br/>
+//                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 17}}>Watch more events and hackathon videos from SoDA.</div>
+//                                </Palette>
+//                            </div>
+//                        </div>
+//                    </div>
+//                    <img src="images/asu_geometry_soda_white.jpg" style={{width: width, overflow: "hidden", height: height}}/>
+//                </div>
+//            </div>);
 
         const MobileEventPage = ({width, height}) => {
             return (
