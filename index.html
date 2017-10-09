@@ -697,6 +697,7 @@
                     currentItemWidth: 0,
                     currentItemLeft: 0,
                     upcomingEvent: true,
+                    color: "#000"
                 }
             },
 
@@ -723,12 +724,13 @@
                 let upcomingEvent = null;
                 if (this.state.upcomingEvent) {
                     upcomingEvent = (
-                        <Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+                        <Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
                             <div style={{textAlign: "right"}}>
-                                <div style={{position: "relative", top: -20, padding: 10, borderRadius: 25, backgroundColor: "#FFF", textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold"}} onClick={() => this.setState({...this.state, upcomingEvent: false})}>Next</div>
+                                <div style={{position: "absolute", top: 60, left: 355, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: false})}
+                                onMouseOver={() => this.setState({...this.state, color: "#0000ff"})} onMouseOut={() => this.setState({...this.state, color: "#000"})}>Next</div>
                             </div>
-                            <div style={{position: "relative", top: -25}}>
-                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Mock Interviews - CANCELLED</div>
+                            <div style={{position: "relative", top: 0}}>
+                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Mock Interviews - CANCELLED</div>
                                 <br/>
                                 <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Tuesday, October 3rd, 2017<br/>7:00 pm ~ 9:00 pm</div>
                                 <br/>
@@ -745,12 +747,13 @@
                         </Palette>);
                 } else {
                     upcomingEvent = (
-                        <Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+                        <Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
                             <div style={{textAlign: "right"}}>
-                                <div style={{position: "relative", top: -20, padding: 10, borderRadius: 25, backgroundColor: "#FFF", textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold"}} onClick={() => this.setState({...this.state, upcomingEvent: true})}>Prev</div>
+                                <div style={{position: "absolute", top: 60, left: 357, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: true})}
+                                onMouseOver={() => this.setState({...this.state, color: "#0000ff"})} onMouseOut={() => this.setState({...this.state, color: "#000"})}>Prev</div>
                             </div>
-                            <div style={{position: "relative", top: -25}}>
-                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Mentorship Meeting</div>
+                            <div style={{position: "relative", top: 0}}>
+                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Mentorship<br/>Meeting</div>
                                 <br/>
                                 <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, October 5th, 2017<br/>7:00 pm ~ 9:00 pm</div>
                                 <br/>
@@ -771,12 +774,6 @@
                     <div style={{width: width, overflow: "hidden", textAlign: "center", display:"inline-block", position: "relative", top:80}}>
                         <div style={{position: "absolute", textAlign: "center", width: width}}>
                             <div style={{display: "inline-block"}}>
-                                <div style={{display: "inline-block"}}>
-
-                                    {upcomingEvent}
-
-                                </div>
-
                                 <Palette title="NEW TO SoDA?" titleAlign= "left" contentAlign= "left" width={400} styling={{zIndex: 10, position: "relative"}} margin={40}>
                                     <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Checklist.</div>
                                     <br/>
@@ -800,7 +797,14 @@
                                         <OrgSync/>
                                     </div>
                                 </Palette>
-                                <div style={{textAlign: "left", position: "relative", top: -150}}>
+                                <div style={{display: "inline-block"}}>
+
+                                    {upcomingEvent}
+
+                                </div>
+
+                                
+                                <div style={{textAlign: "left", position: "relative", top: -50}}>
                                     <Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
                                         <br/>
                                         <div style={{fontFamily: "RopaSans-Regular", fontSize: 24}}>What is the only state in America that can be typed on one row of a traditional English QWERTY keyboard?</div>
