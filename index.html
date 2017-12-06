@@ -1,4 +1,4 @@
-<!DOCTYPE html  .>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -160,16 +160,7 @@
         const MIN_DESKTOP_WIDTH = 1100;
 
         const SodaLogo = ({height}) => {return <a href="#"><img src="images/dot_slash_white.png" style={{height: height, position: "relative", right: 15}}/></a>};
-
         const BlackSodaLogo = ({height}) => {return <img src="images/dot_slash_black.png" style={{height: height}}/>};
-
-        var ChatBox = React.createClass({
-            render: function() {
-                return (
-                    <div></div>
-                );
-            }
-        });
 
         var Card = React.createClass({
             render: function() {
@@ -793,17 +784,18 @@
                                     <br/>
                                     <NewsLetter/>
                                     <br/>
+                                    {/*
                                     <div style={{position: "relative", left: 55}}>
                                         <OrgSync/>
                                     </div>
+                                    */}
                                 </Palette>
+                                
                                 <div style={{display: "inline-block"}}>
-
                                     {upcomingEvent}
-
                                 </div>
 
-                                <div style={{textAlign: "left", position: "relative", top: -50}}>
+                                <div style={{textAlign: "left", position: "relative", top: -150}}>
                                     <Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
                                         <br/>
                                         <div style={{fontFamily: "RopaSans-Regular", fontSize: 24}}>What is the only state in America that can be typed on one row of a traditional English QWERTY keyboard?</div>
@@ -968,7 +960,6 @@
             );
         };
 
-//        const EventPage = ({width, height}) => {
         var EventPage = React.createClass({
             getInitialState: function() {
                 return {
@@ -1013,9 +1004,16 @@
                             <Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
                                 <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}></div>
                                 <br/>
-                                <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}> <br/> <br/> </div>
+                                <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}> 
+                                    <br/> 
+                                        No events until next semester
+                                    <br/> 
+                                </div>
                                 <br/>
-                                <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}></div>
+                                <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>
+                                    If you want to learn more about SoDA and participate in upcoming events, click on the bubble icon in the title bar, it will take
+                                    you to our official Slack page where you can communicate with officers.
+                                </div>
                                 <br/>
                                 <br/>
                                 <div style={{display: "inline-block"}}>
@@ -1035,11 +1033,17 @@
                                 onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
                             </div>
                             <Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
-                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}> </div>
+                                <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}> 
+                                    
+                                </div>
                                 <br/>
-                                <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}> <br/><br/></div>
+                                <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}> 
+                                    Secret Event:
+                                </div>
                                 <br/>
-                                <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}> </div>
+                                <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}> 
+                                    Part at Lewis's House this friday!!!
+                                </div>
                                 <br/>
                                 <br/>
                                 <div style={{display: "inline-block"}}>
@@ -1077,9 +1081,7 @@
                             <div style={{display: "inline-block"}}>
                                 
                                 <div style={{display: "inline-block"}}>
-
                                     {upcomingEvent}
-
                                 </div>
 
                                 <div style={{display: "inline-block"}}>
@@ -1101,7 +1103,8 @@
                         <img src="images/asu_geometry_soda_white.jpg" style={{width: width, overflow: "hidden", height: this.props.height}}/>
                     </div>);}
         });
-            
+
+        /*
 //            return (
 //            <div style={{width: width, backgroundColor: "#F6F3F4", id:"events"}}>
 //                
@@ -1148,6 +1151,7 @@
 //                    <img src="images/asu_geometry_soda_white.jpg" style={{width: width, overflow: "hidden", height: height}}/>
 //                </div>
 //            </div>);
+*/
 
         const MobileEventPage = ({width, height}) => {
             return (
@@ -1387,7 +1391,7 @@
             </div>);
         };
 
-/*
+        /*
                     <div style={{position: "relative", top: 50}}>
                         <Card styling={{backgroundColor: "#FFF", padding: 30, textAlign: "left", display: "inline-block", borderRadius: 10}}>
                             <div style={{fontSize: 100, fontFamily: "RopaSansPro-Light"}}><span style={{fontFamily: "RopaSansPro-ExtraBold"}}>WTH</span>ecks</div>
