@@ -1559,20 +1559,23 @@ const MobileContactPage = ({width, height}) => {
             <MobileMembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu" width={width}/>
             <MobileMembershipCard title="Secretary" name="Alex Geschardt" email="ageschar@asu.edu" width={width}/>
             <MobileMembershipCard title="USG Liaison" name="Lilian Ngweta" email="lngweta@asu.edu" width={width}/>
+            <MobileMembershipCard title="Director of Documentation" name="Siddhant Kanwar" email="skanwar2@asu.edu" width={width}/>
             <MobileMembershipCard title="Industry Outreach Chair - Event Planning Lead" name="Chris Warren" email="cawarre6@asu.edu" width={width}/>
             <MobileMembershipCard title="Director of Group Projects" name="Steven King Jr." email="stevekx86@gmail.com" width={width}/>
             <MobileMembershipCard title="Director of Career Development" name="Nikola Uzelac" email="nuzelac@asu.edu" width={width}/>
             <MobileMembershipCard title="Industry Outreach Chair" name="Andrew Phillips" email="aphill23@asu.edu" width={width}/>
             <MobileMembershipCard title="Director of Operations" name="Sagarika Pannase" email="spannase@gmail.com" width={width}/>
-            <MobileMembershipCard title="Lead Development Director" name="VACANT" email="" width={width}/>
+            <MobileMembershipCard title="Community Development Director" name="Jacob Folson" email="jfolsom2@asu.edu" width={width}/>
+            <MobileMembershipCard title="Lead Development Director" name="Somesh Singh" email="ssing213@asu.edu" width={width}/>
             <MobileMembershipCard title="Social Chair" name="Lukas Zygas" email="lzygas@asu.edu" width={width}/>
-            <MobileMembershipCard title="Community Outreach Chair" name="Devyash Lodha" email="dlodha@asu.edu" width={width}/>
+            <MobileMembershipCard title="Community Outreach Chair" name="Rishi Bharadwaj Avvaru" email="avvarurishi123@gmail.com" width={width}/>
             <MobileMembershipCard title="Director of Marketing - Marketing Lead" name="Michael Rojas" email="mikerojaswa@gmail.com" width={width}/>
             <MobileMembershipCard title="Director of Communications" name="Raffi Shahbazian" email="raffi.p.shahbazian@gmail.com" width={width}/>
             <MobileMembershipCard title="Director of Digital Media" name="Junshu Liu" email="jliu237@asu.edu" width={width}/>
-            <MobileMembershipCard title="Public Engagement Chair" name="VACANT" email="" width={width}/>
+            <MobileMembershipCard title="Public Engagement Chair" name="Justin Dierken" email="jdierken@asu.edu" width={width}/>
             <MobileMembershipCard title="Webmaster" name="Vincent Truong" email="vincenttruong96@gmail.com, vntruon1@asu.edu" width={width}/>
             <MobileMembershipCard title="Web Developer" name="Azaldin Freidoon" email="azaldin123@yahoo.com" width={width}/>
+            <MobileMembershipCard title="Photographer" name="Jona Joe" email="jjoe3@asu.edu" width={width}/>
             <MobileMembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu" width={width}/>
         </div>
 
