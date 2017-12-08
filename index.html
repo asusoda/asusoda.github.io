@@ -438,6 +438,7 @@
                             <div style={{fontSize: 40, fontFamily: "RopaSansPro-Medium"}}>The Software Developers Association</div>
                             <div style={{fontSize: 40, fontFamily: "RopaSansPro-Light"}}>is the premiere software development club<br/>for university students.</div>
                         </div>
+                        {/*
                         <div style={{position: "absolute", display: "inline-block", bottom: 0, textAlign: "center", left:this.props.width/2 - 152, zIndex: 2}}>
                             <div style={{backgroundColor: "#000", textAlign: "center", display: "inline-block", padding: 20, paddingTop: 26, paddingRight: 22}}>
                                 <DesktopNavigationBarItem link="#about" {...props} updateRedMarker={showRedMarker}>About</DesktopNavigationBarItem>
@@ -447,7 +448,8 @@
                                 Learn more about<br/>SoDA
                             </div>
                         </div>
-
+                        */}
+                        
                     </div>
                 );
             }
@@ -540,7 +542,7 @@
                 <div>
                     <a href="https://calendar.google.com/calendar/embed?src=cDNkcmR1azUzbGszaGxrdDVkcjA0bW91aTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="_blank"><img src="images/google_calendar_icon.png" style={{height: size + 10 || 50, width: "auto", paddingRight: 15}}/></a>
                     <div style={{display:"inline-block", verticalAlign:4}}>
-                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: size/2 || 25}}>View our weekly calendar.</div>
+                        <div style={{fontFamily: "RopaSansPro-Medium", fontSize: size/2 || 25}}>View our monthly calendar.</div>
                         <a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="https://calendar.google.com/calendar/embed?src=cDNkcmR1azUzbGszaGxrdDVkcjA0bW91aTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="_blank">Google Calendar</a>
                     </div>
                 </div>
@@ -764,7 +766,9 @@
                 return (
                     <div style={{width: width, overflow: "hidden", textAlign: "center", display:"inline-block", position: "relative", top:80}}>
                         <div style={{position: "absolute", textAlign: "center", width: width}}>
-                            <div style={{display: "inline-block"}}>
+                            
+                            <div style={{display: "inline-block", width: 500}}>
+
                                 <Palette title="NEW TO SoDA?" titleAlign= "left" contentAlign= "left" width={400} styling={{zIndex: 10, position: "relative"}} margin={40}>
                                     <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Checklist.</div>
                                     <br/>
@@ -790,26 +794,56 @@
                                     </div>
                                     */}
                                 </Palette>
-                                
+
                                 <div style={{display: "inline-block"}}>
                                     {upcomingEvent}
                                 </div>
 
-                                <div style={{textAlign: "left", position: "relative", top: -150}}>
-                                    <Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
-                                        <br/>
-                                        <div style={{fontFamily: "RopaSans-Regular", fontSize: 24}}>What is the only state in America that can be typed on one row of a traditional English QWERTY keyboard?</div>
-                                        <br/>
+                            </div>
 
-                                        <div style={{textAlign: "right"}}>
-                                            <div style={{backgroundColor: this.state.answerColor, display: "inline-block", width: 150, textAlign: "center", fontFamily: "RopaSansPro-Medium", fontSize: 25, color:"#FFF", padding: 5, paddingRight: 20, paddingLeft: 20, WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 2px 5px #666)", position: "relative", right: 80}} onMouseOver={() => this.setState({...this.state, answerColor: "#ff0000", answerText: "Alaska"})} onMouseOut={() => this.setState({...this.state, answerColor: "#0000ff", answerText: "Show answer"})}>{this.state.answerText}</div>
+                            <div style={{display: "inline-block", width: 500, verticalAlign: "top"}}>
+
+                                <div style={{display: "inline-block"}}>
+                                    <Palette title="UPCOMING HACKATHON" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
+                                        <div style={{position: "relative", top: 0}}>
+                                            <div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Sundevil<br/>  Hacks!</div>
+                                            <br/>
+                                            <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, November 30th, 2017<br/>7:00 pm ~ 9:00 pm</div>
+                                            <br/>
+                                            <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Join SoDA for this amazing non existent hackathon that I am using as a placeholder until Mr. Vincent updates this palette. </div>
+                                            <br/>
+                                            <br/>
+                                            <div style={{display: "inline-block"}}>
+                                                <GoogleGetDirections link="https://goo.gl/maps/wCmYUWzcwh32"/>
+                                                <div style={{position: "relative", left: 10}}>
+                                                    <GoogleForms link="https://tinyurl.com/sodatshirt17"/>
+                                                </div>
+                                            </div>
                                         </div>
-
                                     </Palette>
                                 </div>
+
+                                <Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+                                    <br/>
+                                    <div style={{fontFamily: "RopaSans-Regular", fontSize: 24}}>What is the only state in America that can be typed on one row of a traditional English QWERTY keyboard?</div>
+                                    <br/>
+
+                                    <div style={{textAlign: "right"}}>
+                                        <div style={{backgroundColor: this.state.answerColor, display: "inline-block", width: 150, textAlign: "center", fontFamily: "RopaSansPro-Medium", fontSize: 25, color:"#FFF", padding: 5, paddingRight: 20, paddingLeft: 20, WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 2px 5px #666)", position: "relative", right: 80}} onMouseOver={() => this.setState({...this.state, answerColor: "#ff0000", answerText: "Alaska"})} onMouseOut={() => this.setState({...this.state, answerColor: "#0000ff", answerText: "Show answer"})}>{this.state.answerText}</div>
+                                    </div>
+
+                                </Palette>
+
+                            </div>
+                            
+                        </div>
+                        
+                        <div>
+                            <img src="images/geometry_white.jpg"/>
+                            <div style={{position :"relative", top: -5, zIndex: -1, overflow: "hidden", height: 800}}>
+                                <img src="images/geometry_white_2.jpg"/>
                             </div>
                         </div>
-                        <img src="images/geometry_white.jpg" />
                     </div>
                 );
             }
@@ -1461,10 +1495,12 @@
 
                 <div style={{padding: 20,textAlign: "center"}}>
                     <div id="group_projects"></div>
+                    
                     <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
                         <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>Group Projects</b>
                     </Card>
 
+                    {/*
                     <div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, display: "inline-block", backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20}}>
                         Students of computer science are often prompted to experiment with project-based learning because it gives the opportunity to focus on solving a bigger-picture problem than most school assignments. Working on extracurricular projects gives valuable skills, experience, an attractive interview topic, and an entry in one&apos;s repertoire.
                         <br/>
@@ -1475,7 +1511,15 @@
                         <br/>
                         If you are interested in participating in group projects, fill out the following <a href="http://tinyurl.com/sodagroupprojects17" target="_blank" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}}>form</a>
                     </div>
-
+                    */}
+                    
+                    <div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20}}>
+                        Current Group Projects: <br/><br/>
+                        1-<br/>
+                        2-<br/>
+                        3-<br/>
+                    </div>
+                    
                     <div id="mentorship"></div>
                     <Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
                         <b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>MENTORSHIP PROGRAM</b>
