@@ -669,9 +669,16 @@ var DesktopWebsiteAboutUs = React.createClass({
 							*/}
 						</Palette>
 
-						<div style={{display: "inline-block"}}>
-							{upcomingEvent}
-						</div>
+						<Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
+							<br/>
+							<div style={{fontFamily: "RopaSans-Regular", fontSize: 24}}>What is the only state in America that can be typed on one row of a traditional English QWERTY keyboard?</div>
+							<br/>
+
+							<div style={{textAlign: "right"}}>
+								<div style={{backgroundColor: this.state.answerColor, display: "inline-block", width: 150, textAlign: "center", fontFamily: "RopaSansPro-Medium", fontSize: 25, color:"#FFF", padding: 5, paddingRight: 20, paddingLeft: 20, WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 2px 5px #666)", position: "relative", right: 80}} onMouseOver={() => this.setState({...this.state, answerColor: "#ff0000", answerText: "Alaska"})} onMouseOut={() => this.setState({...this.state, answerColor: "#0000ff", answerText: "Show answer"})}>{this.state.answerText}</div>
+							</div>
+
+						</Palette>
 
 					</div>
 
@@ -697,16 +704,9 @@ var DesktopWebsiteAboutUs = React.createClass({
 							</Palette>
 						</div>
 
-						<Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
-							<br/>
-							<div style={{fontFamily: "RopaSans-Regular", fontSize: 24}}>What is the only state in America that can be typed on one row of a traditional English QWERTY keyboard?</div>
-							<br/>
-
-							<div style={{textAlign: "right"}}>
-								<div style={{backgroundColor: this.state.answerColor, display: "inline-block", width: 150, textAlign: "center", fontFamily: "RopaSansPro-Medium", fontSize: 25, color:"#FFF", padding: 5, paddingRight: 20, paddingLeft: 20, WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 2px 5px #666)", position: "relative", right: 80}} onMouseOver={() => this.setState({...this.state, answerColor: "#ff0000", answerText: "Alaska"})} onMouseOut={() => this.setState({...this.state, answerColor: "#0000ff", answerText: "Show answer"})}>{this.state.answerText}</div>
-							</div>
-
-						</Palette>
+						<div style={{display: "inline-block"}}>
+							{upcomingEvent}
+						</div>
 
 					</div>
 
@@ -811,9 +811,11 @@ var MobileWebsiteAboutUs = React.createClass({
 
 const AboutPage = ({width, height}) => {
 	return (
-		<div style={{display: "inline-block", verticalAlign: "top", textAlign: "center"}} id="about">
+		<div style={{display: "inline-block", verticalAlign: "top", textAlign: "center"}}>
 			<div style={{textAlign: "center"}}>
-				<Card styling={{backgroundColor: "#000", color:"#FFF", display: "inline-block", padding: 10, fontSize: 50, fontFamily: "RopaSansPro-ExtraBold", position: "relative", bottom: -30, zIndex: 1, paddingLeft: 18, paddingRight: 18}}>ABOUT US</Card>
+				<div>
+					<Card styling={{backgroundColor: "#000", color:"#FFF", display: "inline-block", padding: 10, fontSize: 50, fontFamily: "RopaSansPro-ExtraBold", position: "relative", bottom: -30, zIndex: 1, paddingLeft: 18, paddingRight: 18}}>ABOUT US</Card>
+				</div>
 			</div>
 			<div style={{backgroundColor: "#F4F4F4", display: "inline-block", width: width, textAlign: "center"}}>
 				<br/>
@@ -1368,30 +1370,19 @@ const CommunityPage = ({width, height}) => {
 		</div>
 
 		<div style={{padding: 20,textAlign: "center"}}>
+
 			<div id="group_projects"></div>
+			<div>
+				<Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
+					<b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>Group Projects</b>
+				</Card>
 
-			<Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
-				<b style={{color: "#FFF",fontSize: 45,lineHeight: "60px",fontFamily:"RopaSansPro-Extrabold"}}>Group Projects</b>
-			</Card>
-
-			{/*
-			<div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, display: "inline-block", backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20}}>
-				Students of computer science are often prompted to experiment with project-based learning because it gives the opportunity to focus on solving a bigger-picture problem than most school assignments. Working on extracurricular projects gives valuable skills, experience, an attractive interview topic, and an entry in one&apos;s repertoire.
-				<br/>
-				Our new Group Project initiative is an effort to create a supportive community for students interested in pursuing extracurricular projects. It is open to all students at any time.
-				<br/>
-				We will meet once a month to discuss big-picture challenges, solutions, and successes, with a focus on how to make success contagious. At the end of the year, Group Projects will conclude with Demo Day, where groups will show off their outcomes and receive prizes voted on by the community.
-				<br/>
-				<br/>
-				If you are interested in participating in group projects, fill out the following <a href="http://tinyurl.com/sodagroupprojects17" target="_blank" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}}>form</a>
-			</div>
-			*/}
-
-			<div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20}}>
-				Current Group Projects: <br/><br/>
-				1-<br/>
-				2-<br/>
-				3-<br/>
+				<div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20}}>
+					Current Group Projects: <br/><br/>
+					1-<br/>
+					2-<br/>
+					3-<br/>
+				</div>
 			</div>
 
 			<div id="mentorship"></div>
@@ -1516,7 +1507,8 @@ const ContactPage = ({width, height}) => {
 			</div>
 		</div>
 
-		<div style={{textAlign: "center", position: "relative", top: 50}} id="officers">
+		<div id="officers"></div>
+		<div style={{textAlign: "center", position: "relative", top: 50}}>
 			<MembershipCard title="President" name="Michelle Capriles-Escobedo" email="mcaprile@asu.edu"/>
 			<MembershipCard title="Vice President" name="Daniel Baird" email="jamesdanielbaird@gmail.com"/>
 			<MembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu"/>
@@ -1542,7 +1534,8 @@ const ContactPage = ({width, height}) => {
 			<MembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu"/>
 		</div>
 
-		<div style={{textAlign: "center", position: "relative", top: 150}} id="sponsors">
+		<div id="sponsors"></div>
+		<div style={{textAlign: "center", position: "relative", top: 150}}>
 
 			<div id="group_projects"></div>
 			<Card styling={{backgroundColor: "#000", textAlign: "center", display: "inline-block", margin: 20, padding: 10, paddingLeft: 25, paddingRight: 25}}>
@@ -1660,22 +1653,28 @@ var App = React.createClass({
 					<DesktopWebsiteHeader width= {this.state.width} height={400}/>
 				</div>
 				<DesktopWebsiteAboutUs width= {this.state.width}/>
+				<div id="about"></div>
 				<div style={{top: 80, position: "relative", textAlign: "center"}}>
 					<AboutPage width={this.state.width}/>
 				</div>
-				<div style={{top: 150, position: "relative"}} id="events">
+				<div id="events"></div>
+				<div style={{top: 150, position: "relative"}}>
 					<EventPage width={this.state.width} height={1000}/>
 				</div>
-				<div style={{top: 150, position: "relative"}} id="careers">
+				<div id="careers"></div>
+				<div style={{top: 150, position: "relative"}}>
 					<CareersPage width={this.state.width} height={1500}/>
 				</div>
-				<div style={{top: 150, position: "relative"}} id="hackathon">
+				<div id="hackathon"></div>
+				<div style={{top: 150, position: "relative"}}>
 					<HackathonPage width={this.state.width} height={1800}/>
 				</div>
-				<div style={{top: 150, position: "relative"}} id="community">
+				<div id="community"></div>
+				<div style={{top: 150, position: "relative"}}>
 					<CommunityPage width={this.state.width} height={1300}/>
 				</div>
-				<div style={{top: 250, position: "relative"}} id="contacts">
+				<div id="contacts"></div>
+				<div style={{top: 250, position: "relative"}}>
 					<ContactPage width={this.state.width} height={1500}/>
 				</div>
 				<DesktopNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
