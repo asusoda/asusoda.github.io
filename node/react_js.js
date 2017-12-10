@@ -112,14 +112,18 @@ var DesktopNavigationBarItem = React.createClass({
 		paddingRight: 15,
 	},
 	componentDidMount: function () {
-		window.addEventListener('scroll', this.handleScroll);
+		if (this.props.onScroll)
+			window.addEventListener('scroll', this.handleScroll);
 	},
 	componentWillUnmount: function() {
-		window.removeEventListener('scroll', this.handleScroll);
+		if (this.props.onScroll)
+			window.removeEventListener('scroll', this.handleScroll);
 	},
 	handleScroll: function() {
-		if (this.props.currentPage == this.props.targetPage) {
-			this.props.onScroll(this.state.divElement.clientWidth - (this.textStyle.paddingLeft + this.textStyle.paddingRight), this.state.divElement.offsetLeft + this.textStyle.paddingLeft);
+		// help minimize callbacks here please
+		if (this.props.currentPage == this.props.targetPage && this.props.redMarker != (this.state.divElement.offsetLeft + this.textStyle.paddingLeft)) {
+			console.log(this.props.redMarker + " " + (this.state.divElement.offsetLeft + this.textStyle.paddingLeft));
+			this.props.onScroll(this.state.divElement.clientWidth - (this.textStyle.paddingLeft + this.textStyle.paddingRight), this.state.divElement.offsetLeft + this.textStyle.paddingLeft, this.props.targetPage);
 		}
 	},
 	render: function() {
@@ -247,12 +251,12 @@ var DesktopNavigationBar = React.createClass({
 				<div style={navigationBarStyle}>
 					{/*<SodaLogo height={NAV_BAR_HEIGHT}/>*/}
 					<a href="#home"><ModifiedSodaLogo {...props} updateRedMarker={noSubMenuText} height={NAV_BAR_HEIGHT}>About</ModifiedSodaLogo></a>
-					<DesktopNavigationBarItem link="#about" {...props} updateRedMarker={noSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="about">About</DesktopNavigationBarItem>
-					<DesktopNavigationBarItem link="#events" {...props} updateRedMarker={noSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="events">Events</DesktopNavigationBarItem>
-					<DesktopNavigationBarItem link="#careers" {...props} updateRedMarker={noSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="careers">Careers</DesktopNavigationBarItem>
-					<DesktopNavigationBarItem link="#hackathon" {...props} updateRedMarker={communitySubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="hackathon">Hackathon</DesktopNavigationBarItem>
-					<DesktopNavigationBarItem link="#community" {...props} updateRedMarker={hackathonSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="community">Community</DesktopNavigationBarItem>
-					<DesktopNavigationBarItem link="#contacts" {...props} updateRedMarker={projectSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="contact us">Contact Us</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#about" {...props} updateRedMarker={noSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="about" redMarker={this.state.redMarkerLeft}>About</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#events" {...props} updateRedMarker={noSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="events" redMarker={this.state.redMarkerLeft}>Events</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#careers" {...props} updateRedMarker={noSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="careers" redMarker={this.state.redMarkerLeft}>Careers</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#hackathon" {...props} updateRedMarker={communitySubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="hackathon" redMarker={this.state.redMarkerLeft}>Hackathon</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#community" {...props} updateRedMarker={hackathonSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="community" redMarker={this.state.redMarkerLeft}>Community</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#contacts" {...props} updateRedMarker={projectSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="contact us" redMarker={this.state.redMarkerLeft}>Contact Us</DesktopNavigationBarItem>
 					<a href="https://sodaasu.slack.com" target="_blank"><img src="images/Chat_icon_white_tr.png" style={{height: NAV_BAR_HEIGHT-10, left: 15, position: "relative"}}/></a>
 				</div>
 				<div style={{backgroundColor: "#0000ff",width: this.props.width,height: 15,WebkitFilter: "drop-shadow(0px 0px 5px #666)",filter: "drop-shadow(0px 5px 5px #666)"}}>
@@ -1690,22 +1694,30 @@ var App = React.createClass({
 		window.removeEventListener("resize", this.updateWindowDimensions);
 	},
 	handleScroll: function(event) {
-		if (event.path[1].pageYOffset >= 10726) {
-			this.setState({...this.state, currentPage: "contact us"});
-		} else if (event.path[1].pageYOffset >= 8043) {
-			this.setState({...this.state, currentPage: "community"});
-		} else if (event.path[1].pageYOffset >= 6245) {
-			this.setState({...this.state, currentPage: "hackathon"});
-		} else if (event.path[1].pageYOffset >= 4953) {
-			this.setState({...this.state, currentPage: "careers"});
-		} else if (event.path[1].pageYOffset >= 3360) {
-			this.setState({...this.state, currentPage: "events"});
-		} else if (event.path[1].pageYOffset >= 2600) {
-			this.setState({...this.state, currentPage: "about"});
-		} else if (event.path[1].pageYOffset >= 0) {
-			this.setState({...this.state, currentPage: "home"});
+		var yoffset = event.path[1].pageYOffset;
+		var currentPage = this.currentPage;
+		if (yoffset >= 10726) {
+			if (currentPage != "contact us")
+				this.setState({...this.state, currentPage: "contact us"});
+		} else if (yoffset >= 8043) {
+			if (currentPage != "community")
+				this.setState({...this.state, currentPage: "community"});
+		} else if (yoffset >= 6245) {
+			if (currentPage != "hackathon")
+				this.setState({...this.state, currentPage: "hackathon"});
+		} else if (yoffset >= 4953) {
+			if (currentPage != "careers")
+				this.setState({...this.state, currentPage: "careers"});
+		} else if (yoffset >= 3360) {
+			if (currentPage != "events")
+				this.setState({...this.state, currentPage: "events"});
+		} else if (yoffset >= 2600) {
+			if (currentPage != "about")
+				this.setState({...this.state, currentPage: "about"});
+		} else if (yoffset >= 0) {
+			if (currentPage != "home")
+				this.setState({...this.state, currentPage: "home"});
 		}
-		//console.log(this.state.currentPage);
 	},
 	updateWindowDimensions: function() {
 		this.setState({...this.state, width: window.innerWidth});
