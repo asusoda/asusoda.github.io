@@ -276,7 +276,7 @@
 						window.removeEventListener('scroll', this.handleScroll);
 				},
 				handleScroll: function() {
-					// help minimize callbacks here please
+					// this if condition helps minimize number of callbacks, without it, YUGE FPS drops will take place
 					if (this.props.currentPage == this.props.targetPage && this.props.redMarker != (this.state.divElement.offsetLeft + this.textStyle.paddingLeft)) {
 						console.log(this.props.redMarker + " " + (this.state.divElement.offsetLeft + this.textStyle.paddingLeft));
 						this.props.onScroll(this.state.divElement.clientWidth - (this.textStyle.paddingLeft + this.textStyle.paddingRight), this.state.divElement.offsetLeft + this.textStyle.paddingLeft, this.props.targetPage);
@@ -1195,7 +1195,7 @@
 									</div>
 								</div>
 							</div>
-							<img src="images/asu_geometry_soda_white.jpg" style={{width: width, overflow: "hidden", height: this.props.height}}/>
+							<img src="images/geometry_white.jpg" style={{width: width, overflow: "hidden", height: this.props.height}}/>
 						</div>);}
 			});
 
