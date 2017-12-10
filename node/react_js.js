@@ -99,7 +99,29 @@ var DesktopNavigationBarItem = React.createClass({
 			divElement: null,
 		}
 	},
-
+	textStyle: {
+		color: "#FFF",
+		fontSize: 25,
+		textDecoration: "none",
+		fontFamily: "sans-serif",
+		fontWeight: "bold",
+		display: "inline-block",
+		verticalAlign: 11,
+		position: "relative",
+		paddingLeft: 15,
+		paddingRight: 15,
+	},
+	componentDidMount: function () {
+		window.addEventListener('scroll', this.handleScroll);
+	},
+	componentWillUnmount: function() {
+		window.removeEventListener('scroll', this.handleScroll);
+	},
+	handleScroll: function() {
+		if (this.props.currentPage == this.props.targetPage) {
+			this.props.onScroll(this.state.divElement.clientWidth - (this.textStyle.paddingLeft + this.textStyle.paddingRight), this.state.divElement.offsetLeft + this.textStyle.paddingLeft);
+		}
+	},
 	render: function() {
 		var textStyle = {
 			color: "#FFF",
@@ -194,8 +216,10 @@ var DesktopNavigationBar = React.createClass({
 			onClick: () => this.setState({...this.state, showRedMarker: true, redMarkerLeft: this.state.currentItemLeft, redMarkerWidth: this.state.currentItemWidth})
 		}
 		var noSubMenuText = (width, left) => {
-			this.setState({...this.state, currentItemWidth: width, currentItemLeft: left, showSubMenu: false
-			});
+			this.setState({...this.state, currentItemWidth: width, currentItemLeft: left, showSubMenu: false});
+		}
+		var onScroll = (width, left) => {
+			this.setState({...this.state, currentItemWidth: width, currentItemLeft: left, showSubMenu: false, showRedMarker: true, redMarkerLeft: this.state.currentItemLeft, redMarkerWidth: this.state.currentItemWidth});
 		}
 		var communitySubMenuText = (width, left) => {
 			this.setState({...this.state, currentItemWidth: width, currentItemLeft: left, showSubMenu: true, subMenuText:
@@ -217,17 +241,18 @@ var DesktopNavigationBar = React.createClass({
 					<ColorSwitchingButton style={{paddingTop: 10, paddingBottom: 5, padding: 10}} link="#sponsors">Sponsors</ColorSwitchingButton>
 				</div>});
 		}
+
 		return (
 			<div style={{position: "fixed", top:0, left: 0, right: 0, zIndex: 100}} onMouseLeave={() => this.setState({...this.state, showSubMenu: false})}>
 				<div style={navigationBarStyle}>
 					{/*<SodaLogo height={NAV_BAR_HEIGHT}/>*/}
 					<a href="#home"><ModifiedSodaLogo {...props} updateRedMarker={noSubMenuText} height={NAV_BAR_HEIGHT}>About</ModifiedSodaLogo></a>
-					<DesktopNavigationBarItem link="#about" {...props} updateRedMarker={noSubMenuText}>About</DesktopNavigationBarItem>
-					<DesktopNavigationBarItem link="#events" {...props} updateRedMarker={noSubMenuText}>Events</DesktopNavigationBarItem>
-					<DesktopNavigationBarItem link="#careers" {...props} updateRedMarker={noSubMenuText}>Careers</DesktopNavigationBarItem>
-					<DesktopNavigationBarItem link="#hackathon" {...props} updateRedMarker={communitySubMenuText}>Hackathon</DesktopNavigationBarItem>
-					<DesktopNavigationBarItem link="#community" {...props} updateRedMarker={hackathonSubMenuText}>Community</DesktopNavigationBarItem>
-					<DesktopNavigationBarItem link="#contacts" {...props} updateRedMarker={projectSubMenuText}>Contact Us</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#about" {...props} updateRedMarker={noSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="about">About</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#events" {...props} updateRedMarker={noSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="events">Events</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#careers" {...props} updateRedMarker={noSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="careers">Careers</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#hackathon" {...props} updateRedMarker={communitySubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="hackathon">Hackathon</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#community" {...props} updateRedMarker={hackathonSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="community">Community</DesktopNavigationBarItem>
+					<DesktopNavigationBarItem link="#contacts" {...props} updateRedMarker={projectSubMenuText} onScroll={onScroll} currentPage={this.props.currentPage} targetPage="contact us">Contact Us</DesktopNavigationBarItem>
 					<a href="https://sodaasu.slack.com" target="_blank"><img src="images/Chat_icon_white_tr.png" style={{height: NAV_BAR_HEIGHT-10, left: 15, position: "relative"}}/></a>
 				</div>
 				<div style={{backgroundColor: "#0000ff",width: this.props.width,height: 15,WebkitFilter: "drop-shadow(0px 0px 5px #666)",filter: "drop-shadow(0px 5px 5px #666)"}}>
@@ -1653,50 +1678,72 @@ var App = React.createClass({
 		return {
 			width: window.innerWidth,
 			height: window.innerHeight,
+			currentPage: "home"
 		}
 	},
 	componentDidMount: function () {
+		window.addEventListener('scroll', this.handleScroll);
 		window.addEventListener("resize", this.updateWindowDimensions);
 	},
 	componentWillUnmount: function() {
+		window.removeEventListener('scroll', this.handleScroll);
 		window.removeEventListener("resize", this.updateWindowDimensions);
+	},
+	handleScroll: function(event) {
+		if (event.path[1].pageYOffset >= 10726) {
+			this.setState({...this.state, currentPage: "contact us"});
+		} else if (event.path[1].pageYOffset >= 8043) {
+			this.setState({...this.state, currentPage: "community"});
+		} else if (event.path[1].pageYOffset >= 6245) {
+			this.setState({...this.state, currentPage: "hackathon"});
+		} else if (event.path[1].pageYOffset >= 4953) {
+			this.setState({...this.state, currentPage: "careers"});
+		} else if (event.path[1].pageYOffset >= 3360) {
+			this.setState({...this.state, currentPage: "events"});
+		} else if (event.path[1].pageYOffset >= 2600) {
+			this.setState({...this.state, currentPage: "about"});
+		} else if (event.path[1].pageYOffset >= 0) {
+			this.setState({...this.state, currentPage: "home"});
+		}
+		//console.log(this.state.currentPage);
 	},
 	updateWindowDimensions: function() {
 		this.setState({...this.state, width: window.innerWidth});
 	},
 	render: function() {
 		if (window.innerWidth >= 1075) {
-			return <div>
-				<div id="home">
-					<DesktopWebsiteHeader width= {this.state.width} height={400}/>
-				</div>
-				<DesktopWebsiteAboutUs width= {this.state.width}/>
-				<div id="about"></div>
-				<div style={{top: 80, position: "relative", textAlign: "center"}}>
-					<AboutPage width={this.state.width}/>
-				</div>
-				<div id="events"></div>
-				<div style={{top: 150, position: "relative"}}>
-					<EventPage width={this.state.width} height={1000}/>
-				</div>
-				<div id="careers"></div>
-				<div style={{top: 150, position: "relative"}}>
-					<CareersPage width={this.state.width} height={1500}/>
-				</div>
-				<div id="hackathon"></div>
-				<div style={{top: 150, position: "relative"}}>
-					<HackathonPage width={this.state.width} height={1800}/>
-				</div>
-				<div id="community"></div>
-				<div style={{top: 150, position: "relative"}}>
-					<CommunityPage width={this.state.width} height={1300}/>
-				</div>
-				<div id="contacts"></div>
-				<div style={{top: 250, position: "relative"}}>
-					<ContactPage width={this.state.width} height={1500}/>
-				</div>
-				<DesktopNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
-			</div>;
+			return (
+				<div>
+					<div id="home">
+						<DesktopWebsiteHeader width= {this.state.width} height={400}/>
+					</div>
+					<DesktopWebsiteAboutUs width= {this.state.width}/>
+					<div id="about"></div>
+					<div style={{top: 80, position: "relative", textAlign: "center"}}>
+						<AboutPage width={this.state.width}/>
+					</div>
+					<div id="events"></div>
+					<div style={{top: 150, position: "relative"}}>
+						<EventPage width={this.state.width} height={1000}/>
+					</div>
+					<div id="careers"></div>
+					<div style={{top: 150, position: "relative"}}>
+						<CareersPage width={this.state.width} height={1500}/>
+					</div>
+					<div id="hackathon"></div>
+					<div style={{top: 150, position: "relative"}}>
+						<HackathonPage width={this.state.width} height={1800}/>
+					</div>
+					<div id="community"></div>
+					<div style={{top: 150, position: "relative"}}>
+						<CommunityPage width={this.state.width} height={1300}/>
+					</div>
+					<div id="contacts"></div>
+					<div style={{top: 250, position: "relative"}}>
+						<ContactPage width={this.state.width} height={1500}/>
+					</div>
+					<DesktopNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT} currentPage={this.state.currentPage}/>
+				</div>);
 		} else {
 			return <div>
 				<MobileWebsiteHeader width= {this.state.width} height={this.state.width/2 < 300 ? this.state.width/2 : 300}/>
