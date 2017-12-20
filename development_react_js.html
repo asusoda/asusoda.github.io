@@ -278,7 +278,6 @@
 				handleScroll: function() {
 					// this if condition helps minimize number of callbacks, without it, YUGE FPS drops will take place
 					if (this.props.currentPage == this.props.targetPage && this.props.redMarker != (this.state.divElement.offsetLeft + this.textStyle.paddingLeft)) {
-						console.log(this.props.redMarker + " " + (this.state.divElement.offsetLeft + this.textStyle.paddingLeft));
 						this.props.onScroll(this.state.divElement.clientWidth - (this.textStyle.paddingLeft + this.textStyle.paddingRight), this.state.divElement.offsetLeft + this.textStyle.paddingLeft, this.props.targetPage);
 					}
 				},
@@ -1564,6 +1563,17 @@
 						<div>
 							<div style={{position: "relative", textAlign: "center", display: "inline-block"}}>
 								<div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20, width: 800}}>
+									
+									Students of computer science are often prompted to experiment with project-based learning because it gives the opportunity to focus on solving a bigger-picture problem than most school assignments. Working on extracurricular projects gives valuable skills, experience, an attractive interview topic, and an entry in one&apos;s repertoire.
+									<br/>
+									Our new Group Project initiative is an effort to create a supportive community for students interested in pursuing extracurricular projects. It is open to all students at any time.
+									<br/>
+									We will meet once a month to discuss big-picture challenges, solutions, and successes, with a focus on how to make success contagious. At the end of the year, Group Projects will conclude with Demo Day, where groups will show off their outcomes and receive prizes voted on by the community.
+									<br/>
+									<br/>
+									If you are interested in participating in group projects, fill out the following <a href="http://tinyurl.com/sodagroupprojects17" target="_blank" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}}>form</a>
+									<br/>
+									<br/>
 									Current Group Projects: <br/><br/>
 									1-<br/>
 									2-<br/>
@@ -1723,7 +1733,7 @@
 						<MembershipCard title="Director of Career Development" name="Nikola Uzelac" email="nuzelac@asu.edu"/>
 						<MembershipCard title="Industry Outreach Chair" name="Andrew Phillips" email="aphill23@asu.edu"/>
 						<MembershipCard title="Director of Operations" name="Sagarika Pannase" email="spannase@gmail.com"/>
-						<MembershipCard title="Community Development Director" name="Jacob Folson" email="jfolsom2@asu.edu"/>
+						<MembershipCard title="Community Development Director" name="Jacob Folsom" email="jfolsom2@asu.edu"/>
 						<MembershipCard title="Lead Development Director" name="Somesh Singh" email="ssing213@asu.edu"/>
 						<MembershipCard title="Social Chair" name="Lukas Zygas" email="lzygas@asu.edu"/>
 						<MembershipCard title="Community Outreach Chair" name="Rishi Bharadwaj Avvaru" email="avvarurishi123@gmail.com"/>
