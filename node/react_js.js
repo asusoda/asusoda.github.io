@@ -1362,13 +1362,15 @@ const NAV_BAR_HEIGHT = 45;
 						</div>
 			*/
 
-			const MembershipCard = ({title, name, email}) => {
+			const MembershipCard = ({title, name, email, link}) => {
 				return (
+					<a target="_blank" style={{textDecoration: "none", color: "#000"}} href={link}>
 					<Card styling={{backgroundColor: "#F6F3F4", width: 500, textAlign: "left", borderRadius: 10, padding: 20, margin: 40, display: "inline-block", marginBottom: 20}}>
 						<div style={{fontFamily: "RopaSansSCPro-Regular", fontSize: 25}}>{title}</div>
 						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 40}}>{name}</div>
 						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 25}}>{email}</div>
 					</Card>
+					</a>
 				);
 			};
 
@@ -1566,29 +1568,29 @@ const NAV_BAR_HEIGHT = 45;
 
 					<div id="officers"></div>
 					<div style={{textAlign: "center", position: "relative", top: 50}}>
-						<MembershipCard title="President" name="Michelle Capriles-Escobedo" email="mcaprile@asu.edu"/>
-						<MembershipCard title="Vice President" name="Daniel Baird" email="jamesdanielbaird@gmail.com"/>
-						<MembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu"/>
-						<MembershipCard title="Secretary" name="Alex Geschardt" email="ageschar@asu.edu"/>
-						<MembershipCard title="USG Liaison" name="Lilian Ngweta" email="lngweta@asu.edu"/>
-						<MembershipCard title="Director of Documentation" name="Siddhant Kanwar" email="skanwar2@asu.edu"/>
-						<MembershipCard title="Industry Outreach Chair - Event Planning Lead" name="Chris Warren" email="cawarre6@asu.edu"/>
-						<MembershipCard title="Director of Group Projects" name="Steven King Jr." email="stevekx86@gmail.com"/>
-						<MembershipCard title="Director of Career Development" name="Nikola Uzelac" email="nuzelac@asu.edu"/>
-						<MembershipCard title="Industry Outreach Chair" name="Andrew Phillips" email="aphill23@asu.edu"/>
-						<MembershipCard title="Director of Operations" name="Sagarika Pannase" email="spannase@gmail.com"/>
-						<MembershipCard title="Community Development Director" name="Jacob Folsom" email="jfolsom2@asu.edu"/>
-						<MembershipCard title="Lead Development Director" name="Somesh Singh" email="ssing213@asu.edu"/>
-						<MembershipCard title="Social Chair" name="Lukas Zygas" email="lzygas@asu.edu"/>
-						<MembershipCard title="Community Outreach Chair" name="Rishi Bharadwaj Avvaru" email="avvarurishi123@gmail.com"/>
-						<MembershipCard title="Director of Marketing - Marketing Lead" name="Michael Rojas" email="mikerojaswa@gmail.com"/>
-						<MembershipCard title="Director of Communications" name="Raffi Shahbazian" email="raffi.p.shahbazian@gmail.com"/>
-						<MembershipCard title="Director of Digital Media" name="Junshu Liu" email="jliu237@asu.edu"/>
-						<MembershipCard title="Public Engagement Chair" name="Justin Dierken" email="jdierken@asu.edu"/>
-						<MembershipCard title="Webmaster" name="Vincent Truong" email="vincenttruong96@gmail.com, vntruon1@asu.edu"/>
-						<MembershipCard title="Web Developer" name="Azaldin Freidoon" email="azaldin123@yahoo.com"/>
-						<MembershipCard title="Photographer" name="Jona Joe" email="jjoe3@asu.edu"/>
-						<MembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu"/>
+						<MembershipCard title="President" name="Michelle Capriles-Escobedo" email="mcaprile@asu.edu" link="https://www.linkedin.com/in/mcaprile/"/>
+						<MembershipCard title="Vice President" name="Daniel Baird" email="jamesdanielbaird@gmail.com" link="https://www.linkedin.com/in/james-daniel-baird-a85608ba/"/>
+						<MembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu" link="https://www.linkedin.com/in/ljruskin/"/>
+						<MembershipCard title="Secretary" name="Alex Geschardt" email="ageschar@asu.edu" link="https://www.linkedin.com/in/alex-geschardt-732a12a8/"/>
+						<MembershipCard title="USG Liaison" name="Lilian Ngweta" email="lngweta@asu.edu" link="https://www.linkedin.com/in/lilianngweta/"/>
+						<MembershipCard title="Director of Documentation" name="Siddhant Kanwar" email="skanwar2@asu.edu" link="https://www.linkedin.com/in/siddhantkanwar/"/>
+						<MembershipCard title="Industry Outreach Chair - Event Planning Lead" name="Chris Warren" email="cawarre6@asu.edu" link="https://www.linkedin.com/in/chris-warren-cj-24347178/"/>
+						<MembershipCard title="Director of Group Projects" name="Steven King Jr." email="stevekx86@gmail.com" link="https://www.linkedin.com/in/steve-king-jr-9b5283a8/"/>
+						<MembershipCard title="Director of Career Development" name="Nikola Uzelac" email="nuzelac@asu.edu" link="https://www.linkedin.com/in/nickuzelac/"/>
+						<MembershipCard title="Industry Outreach Chair" name="Andrew Phillips" email="aphill23@asu.edu" link="https://www.linkedin.com/in/andrewphillips20/"/>
+						<MembershipCard title="Director of Operations" name="Sagarika Pannase" email="spannase@gmail.com" link="https://www.linkedin.com/in/sagarikapannase/"/>
+						<MembershipCard title="Community Development Director" name="Jacob Folsom" email="jfolsom2@asu.edu" link="https://www.linkedin.com/in/jacob-folsom-68148b125/"/>
+						<MembershipCard title="Lead Development Director" name="Somesh Singh" email="ssing213@asu.edu" link=""/>
+						<MembershipCard title="Social Chair" name="Lukas Zygas" email="lzygas@asu.edu" link="https://www.linkedin.com/in/lukas-zygas-105b57a5/"/>
+						<MembershipCard title="Community Outreach Chair" name="Rishi Bharadwaj Avvaru" email="avvarurishi123@gmail.com" link=""/>
+						<MembershipCard title="Director of Marketing - Marketing Lead" name="Michael Rojas" email="mikerojaswa@gmail.com" link="https://www.linkedin.com/in/mikerojaswa/"/>
+						<MembershipCard title="Director of Communications" name="Raffi Shahbazian" email="raffi.p.shahbazian@gmail.com" link="https://www.linkedin.com/in/raffipshahbazian/"/>
+						<MembershipCard title="Director of Digital Media" name="Junshu Liu" email="jliu237@asu.edu" link="https://www.linkedin.com/in/junshu-liu-52ba26105/"/>
+						<MembershipCard title="Public Engagement Chair" name="Justin Dierken" email="jdierken@asu.edu" link="https://www.linkedin.com/in/justindierken/"/>
+						<MembershipCard title="Webmaster" name="Vincent Truong" email="vincenttruong96@gmail.com, vntruon1@asu.edu" link="https://www.linkedin.com/in/vntruon1/"/>
+						<MembershipCard title="Web Developer" name="Azaldin Freidoon" email="azaldin123@yahoo.com" link="https://www.linkedin.com/in/azaldin-freidoon-b18207105/"/>
+						<MembershipCard title="Photographer" name="Jona Joe" email="jjoe3@asu.edu" link="https://www.linkedin.com/in/jona-joe-932a62149/"/>
+						<MembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu" link="https://www.linkedin.com/in/nathan-fegard-03692911b/"/>
 					</div>
 
 					<div id="sponsors"></div>
