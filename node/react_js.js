@@ -1551,6 +1551,14 @@ const NAV_BAR_HEIGHT = 45;
 				</div>);
 			};
 
+			const SponsorLogo = ({width, link, image}) => {
+				return (
+					<a target="_blank" style={{textDecoration: "none"}} href={link}>
+						<div style={{marginBottom: 50}}><img src={image} width={width}/></div>
+					</a>
+				);
+			}
+
 			const ContactPage = ({width, height}) => {
 				return (
 				<div>
@@ -1602,19 +1610,19 @@ const NAV_BAR_HEIGHT = 45;
 						</Card>
 
 						<div style={{position: "Relative", top: 50}}>
-								<div style={{marginBottom: 50}}><img src="images/AllState2017_logo.png" width={500}/></div>
-								<div style={{marginBottom: 50}}><img src="images/Amazon_logo.jpg" width={500}/></div>
-								<div style={{marginBottom: 50}}><img src="images/AmericanExpress_logo.png" width={500}/></div>
-								<div style={{marginBottom: 50}}><img src="images/starbucks_logo.jpg" width={250}/></div>
-								<div style={{marginBottom: 50}}><img src="images/Workiva_logo.png" width={500}/></div>
-
-								<div style={{marginBottom: 50}}><img src="images/GoDaddy_logo.png" width={350}/></div>
-								<div style={{marginBottom: 50}}><img src="images/Statefarm_logo.png" width={350}/></div>
-
-								<div style={{marginBottom: 50}}><img src="images/Connexta_logo.jpg" width={200}/></div>
-								<div style={{marginBottom: 50}}><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png" width={200}/></div>
-								<div style={{marginBottom: 50}}><img src="images/GoldmanSachs_logo.jpg" width={200}/></div>
-								<div style={{marginBottom: 50}}><img src="images/google_logo.png" width={200}/></div>
+							<SponsorLogo width={500} link="https://www.allstate.com/" image="images/AllState2017_logo.png"/>
+							<SponsorLogo width={500} link="https://www.amazon.com" image="images/Amazon_logo.jpg"/>
+							<SponsorLogo width={500} link="https://jobs.americanexpress.com/tech" image="images/AmericanExpress_logo.png"/>
+							<SponsorLogo width={250} link="https://www.starbucks.com/" image="images/starbucks_logo.jpg"/>
+							<SponsorLogo width={500} link="https://www.workiva.com/" image="images/Workiva_logo.png"/>
+							
+							<SponsorLogo width={350} link="https://www.godaddy.com/" image="images/GoDaddy_logo.png"/>
+							<SponsorLogo width={350} link="https://www.statefarm.com/" image="images/Statefarm_logo.png"/>
+							
+							<SponsorLogo width={200} link="http://connexta.com/" image="images/Connexta_logo.jpg"/>
+							<SponsorLogo width={200} link="https://www.paypal.com/us/home" image= "https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png"/>
+							<SponsorLogo width={200} link="http://www.goldmansachs.com/" image="images/GoldmanSachs_logo.jpg"/>
+							<SponsorLogo width={200} link="https://careers.google.com/" image="images/google_logo.png"/>
 						</div>
 
 					</div>
