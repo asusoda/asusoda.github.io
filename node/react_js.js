@@ -2,16 +2,6 @@
 const NAV_BAR_HEIGHT = 45;
 const MIN_DESKTOP_WIDTH = 1100;
 
-/* documentation: https://www.npmjs.com/package/react-twitter-widgets */
-var Timeline = require('react-twitter-widgets').Timeline
-const TwitterTimeline = ({}) => {
-	return (
-		<div style={{display: "inline-block", position: "absolute", textAlign: "center"}}>
-			<Timeline dataSource={{sourceType: "profile", screenName: "asu_soda"}} options={{username: "asu_soda", height: "400"}}/>
-		</div>
-	);
-};
-
 const SodaLogo = ({height}) => {
 	return <a href="#"><img src="images/dot_slash_white.png" style={{height: height, position: "relative", right: 15}}/></a>
 };
@@ -346,9 +336,6 @@ var DesktopWebsiteHeader = React.createClass({
 		}
 		return (
 			<div style={{backgroundColor: "#F6F3F4", height: this.props.height, maxWidth:this.props.width, top:NAV_BAR_HEIGHT+35, position:"relative", padding: 40, textAlign: "center"}}>
-				<div style={{textAlign: "left"}}>
-					<TwitterTimeline/>
-				</div>
 				<div style={{textAlign: "left", display: "inline-block"}}>
 					<BlackSodaLogo height={150}/>
 					<div style={{fontSize: 40, fontFamily: "RopaSansPro-Medium"}}>The Software Developers Association</div>
@@ -597,6 +584,17 @@ const ReserveBus = ({}) => {
 	);
 };
 
+const TwitterTimeline = ({}) => {
+	/* documentation: https://www.npmjs.com/package/react-twitter-widgets */
+	var Timeline = require('react-twitter-widgets').Timeline
+	return (
+		<div style={{display: "inline-block", position: "absolute", textAlign: "center"}}>
+			<Timeline dataSource={{sourceType: "profile", screenName: "asu_soda"}} options={{username: "asu_soda", height: "600", width: "450"}}/>
+		</div>
+	);
+};
+
+
 var DesktopWebsiteAboutUs = React.createClass({
 	getInitialState: function() {
 		return {
@@ -721,6 +719,10 @@ var DesktopWebsiteAboutUs = React.createClass({
 							</div>
 
 						</Palette>
+						
+						<div style={{marginRight: 420, marginTop: 55}}>
+							<TwitterTimeline/>
+						</div>
 
 					</div>
 
@@ -1429,9 +1431,11 @@ const CommunityPage = ({width, height}) => {
 						Our new Group Project initiative is an effort to create a supportive community for students interested in pursuing extracurricular projects. It is open to all students at any time.
 						<br/>
 						We will meet once a month to discuss big-picture challenges, solutions, and successes, with a focus on how to make success contagious. At the end of the year, Group Projects will conclude with Demo Day, where groups will show off their outcomes and receive prizes voted on by the community.
+						{/*
 						<br/>
 						<br/>
 						If you are interested in participating in group projects, fill out the following <a href="http://tinyurl.com/sodagroupprojects17" target="_blank" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}}>form</a>
+						*/}
 						<br/>
 						<br/>
 						Current Group Projects: <br/><br/>
