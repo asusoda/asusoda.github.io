@@ -527,7 +527,7 @@ const GithubProjects = ({size}) => {
 const OrgSync = ({size}) => {
 	return (
 		<div>
-			<img src="" style={{height: size + 10 || 50, width: "auto", paddingRight: 10}}/>
+			<img src="images/orgsync_icon.png" style={{height: size + 10 || 50, width: "auto", paddingRight: 10}}/>
 			<div style={{display:"inline-block", verticalAlign:4}}>
 				<div style={{fontFamily: "RopaSansPro-Medium", fontSize: size/2 || 25}}>Register as a Soder on OrgSync.</div>
 				<a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="https://orgsync.com/12637/chapter" target="_blank">orgsync.com/12637/chapter</a>
@@ -702,11 +702,8 @@ var DesktopWebsiteAboutUs = React.createClass({
 							<br/>
 							<NewsLetter/>
 							<br/>
-							{/*
-							<div style={{position: "relative", left: 55}}>
-								<OrgSync/>
-							</div>
-							*/}
+							<OrgSync/>
+							{/**/}
 						</Palette>
 
 						<Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
@@ -729,6 +726,10 @@ var DesktopWebsiteAboutUs = React.createClass({
 					<div style={{display: "inline-block", width: 500, verticalAlign: "top"}}>
 
 						<div style={{display: "inline-block"}}>
+							{upcomingEvent}
+						</div>
+						
+						<div style={{display: "inline-block"}}>
 							<Palette title="UPCOMING HACKATHON" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
 								<div style={{position: "relative", top: 0}}>
 									<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Sundevil<br/>  Hacks!</div>
@@ -746,10 +747,6 @@ var DesktopWebsiteAboutUs = React.createClass({
 									</div>
 								</div>
 							</Palette>
-						</div>
-
-						<div style={{display: "inline-block"}}>
-							{upcomingEvent}
 						</div>
 
 					</div>
@@ -1459,11 +1456,13 @@ const CommunityPage = ({width, height}) => {
 				<div style={{position: "relative", textAlign: "center", display: "inline-block"}}>
 					<div style={{fontSize: 25, fontFamily: "RopaSansPro-Regular", textAlign: "left", padding: 50, paddingTop: 25, display: "inline-block", backgroundColor: "#F6F3F4", WebkitFilter: "drop-shadow(0px 0px 0px #666)", filter: "drop-shadow(0px 5px 5px #666)", marginTop: 20, marginBottom: 20, width: 800}}>
 						For many individuals, mentorship is an important part of of their professional and individual growth. There is a lot of benefit in having a mentor within one's field of study. With our Mentorship Program, we aim to provide a platform for mentees interested with mentorship opportunities to engage with mentors within the ASU community. With this we hope that there will always be someone within SoDA that students can go to when they have questions or need someone to talk to.
+						{/*
 						<br/>
 						<br/>
 						If you are interested in becoming a mentor, fill out the following <a href="http://tinyurl.com/sodamentor17" target="_blank" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}}>form</a>
 						<br/>
 						If you are interested in becoming a mentee, fill out the following <a href="http://tinyurl.com/sodamentee17" target="_blank" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}}>form</a>
+						*/}
 					</div>
 				</div>
 			</div>
@@ -1608,7 +1607,7 @@ const ContactPage = ({width, height}) => {
 			<MembershipCard title="Community Development Director" name="Jacob Folsom" email="jfolsom2@asu.edu" link="https://www.linkedin.com/in/jacob-folsom-68148b125/"/>
 			<MembershipCard title="Lead Development Director" name="Somesh Singh" email="ssing213@asu.edu" link=""/>
 			<MembershipCard title="Social Chair" name="Lukas Zygas" email="lzygas@asu.edu" link="https://www.linkedin.com/in/lukas-zygas-105b57a5/"/>
-			<MembershipCard title="Community Outreach Chair" name="Rishi Bharadwaj Avvaru" email="avvarurishi123@gmail.com" link=""/>
+			<MembershipCard title="Community Outreach Chair" name="Rishi Bharadwaj Avvaru" email="avvarurishi123@gmail.com" link="https://www.linkedin.com/in/rishi-avvaru-805aa5152/"/>
 			<MembershipCard title="Director of Marketing - Marketing Lead" name="Michael Rojas" email="mikerojaswa@gmail.com" link="https://www.linkedin.com/in/mikerojaswa/"/>
 			<MembershipCard title="Director of Communications" name="Raffi Shahbazian" email="raffi.p.shahbazian@gmail.com" link="https://www.linkedin.com/in/raffipshahbazian/"/>
 			<MembershipCard title="Director of Digital Media" name="Junshu Liu" email="jliu237@asu.edu" link="https://www.linkedin.com/in/junshu-liu-52ba26105/"/>
