@@ -948,10 +948,12 @@ var EventPage = React.createClass({
 		if (this.state.upcomingEvent) {
 			upcomingEvent = (
 				<div style={{display: "inline-block", position: "relative"}}>
+					{/*
 					<div style={{textAlign: "right"}}>
 						<div style={{position: "absolute", top: 100, left: 394, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: false})}
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
 					</div>
+					*/}
 					<Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
 						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}></div>
 						<br/>
