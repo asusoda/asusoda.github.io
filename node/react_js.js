@@ -560,6 +560,18 @@ const SunHacks = ({size}) => {
 	);
 };
 
+const AzHacks = ({size}) => {
+	return (
+		<div>
+			<img src="images/hack_arizona_logo.svg" style={{height: size + 10 || 50, width: "auto", paddingRight: 20}}/>
+			<div style={{display:"inline-block", verticalAlign:4}}>
+				<div style={{fontFamily: "RopaSansPro-Medium", fontSize: size/2 || 25}}>Find out more.</div>
+				<a style={{fontFamily: "RopaSans-Regular", fontSize: size/2.5 || 18, color: "#808080", textDecoration: "none"}} href="http://hackarizona.org/" target="_blank">hackarizona.org/h</a>
+			</div>
+		</div>
+	);
+};
+
 const LearnMore = ({}) => {
 	return (
 		<div>
@@ -632,22 +644,24 @@ var DesktopWebsiteAboutUs = React.createClass({
 		if (this.state.upcomingEvent) {
 			upcomingEvent = (
 				<Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
+					{/*
 					<div style={{textAlign: "right"}}>
 						<div style={{position: "absolute", top: 60, left: 355, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: false})}
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
 					</div>
+					*/}
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>T-Shirts, <br/>  Black Mirror, and Giveaways!</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Welcome Back/ <br/>  Hack AZ Team Matching</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, November 30th, 2017<br/>7:00 pm ~ 9:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, January 11th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Join SoDA for our last meeting of the semester! In this meeting we will be handing out exclusive SoDA T-shirts as well as giving out raffle prizes! (Note: There will be a special giveaway for dis-tinguished members!). We will also be watching Black Mirror episodes to de-stress from all that finals studying! As always food will be provided, be sure to RSVP! </div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Kick off the beginning of the year with a welcome back from SoDA! Join us as we prepare for the upcoming Hack AZ info session with team matching during this meeting! We will also be going over what you can look forward to in SoDA this semester. </div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
-							<GoogleGetDirections link="https://goo.gl/maps/wCmYUWzcwh32"/>
+							<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
 							<div style={{position: "relative", left: 10}}>
-								<GoogleForms link="https://tinyurl.com/sodatshirt17"/>
+								<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
 							</div>
 						</div>
 					</div>
@@ -660,17 +674,17 @@ var DesktopWebsiteAboutUs = React.createClass({
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 					</div>
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Resume <br/> Workshop</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Allstate Event: <br/> Women. Power. Technology.</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, November 16th, 2017<br/>7:00 pm ~ 9:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Galvanize<br/>Tuesday, January 16th, 2018<br/>12:00 pm ~ 5:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Do you feel like your resume is dull and boring? Is your resume missing that extra wow factor that really impresses recruiters? If so this meeting is for you! We will go over the do's and don'ts to help polish that resume to a squeaky shine!</div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}><a href="https://www.eventbrite.com/e/women-power-technology-tickets-40159664638">Join</a> Allstate at Galvanize for the opportunity to meet and learn from technology leaders! Come be inspired by the possibilities of working in a modern culture and exciting atmosphere! You are encouraged to apply early at www.allstate.jobs. Interviews scheduled in advance will be given priority.</div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
-							<GoogleGetDirections link="https://goo.gl/maps/wCmYUWzcwh32"/>
+							<GoogleGetDirections link="https://www.google.com/maps/search/515%20E.%20Grant%20St.%20Amphitheater%20G157%20Phoenix,%20AZ%2085004?hl=en&source=opensearch"/>
 							<div style={{position: "relative", left: 10}}>
-								<GoogleForms link="http://tinyurl.com/ResumeNov17"/>
+								<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
 							</div>
 						</div>
 					</div>
@@ -732,19 +746,21 @@ var DesktopWebsiteAboutUs = React.createClass({
 						<div style={{display: "inline-block"}}>
 							<Palette title="UPCOMING HACKATHON" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
 								<div style={{position: "relative", top: 0}}>
-									<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Sundevil<br/>  Hacks!</div>
+									<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Hack<br/>  Arizona!</div>
 									<br/>
-									<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, November 30th, 2017<br/>7:00 pm ~ 9:00 pm</div>
+									<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>University of Arizona<br/>January 12th - 14th, 2018</div>
 									<br/>
-									<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Join SoDA for this amazing non existent hackathon that I am using as a placeholder until Mr. Vincent updates this palette. </div>
+									<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}><a href="http://hackarizona.org/">Hack Arizona</a> is about bringing together the most talented students to represent the burgeoning tech ecosystem that is appearing in the Southwest and across the country. <br/> Hosted at the University of Arizona, over 800 participants will build software and hardware projects from start to finish in under 36 hours amongst their peers, mentors and company sponsors.</div>
 									<br/>
 									<br/>
+									{/*
 									<div style={{display: "inline-block"}}>
 										<GoogleGetDirections link="https://goo.gl/maps/wCmYUWzcwh32"/>
 										<div style={{position: "relative", left: 10}}>
 											<GoogleForms link="https://tinyurl.com/sodatshirt17"/>
 										</div>
 									</div>
+									*/}
 								</div>
 							</Palette>
 						</div>
@@ -919,7 +935,7 @@ var EventPage = React.createClass({
 			answerText: "Show answer",
 			currentItemWidth: 0,
 			currentItemLeft: 0,
-			upcomingEvent: true,
+			upcomingEvent: 0,
 			color: "#0000ff"
 		}
 	},
@@ -945,67 +961,91 @@ var EventPage = React.createClass({
 		}
 
 		let upcomingEvent = null;
-		if (this.state.upcomingEvent) {
+		if (this.state.upcomingEvent == 0) {
 			upcomingEvent = (
 				<div style={{display: "inline-block", position: "relative"}}>
-					{/*
 					<div style={{textAlign: "right"}}>
-						<div style={{position: "absolute", top: 100, left: 394, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: false})}
+						<div style={{position: "absolute", top: 100, left: 394, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: 1})}
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
 					</div>
-					*/}
-					<Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}></div>
-						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}> 
-							<br/> 
-								No events until next semester
-							<br/> 
+					<Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
+						<div style={{textAlign: "right"}}>
+							<div style={{position: "absolute", top: 60, left: 357, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: true})}
+							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
-						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>
-							If you want to learn more about SoDA and participate in upcoming events, click on the bubble icon in the title bar, it will take
-							you to our official Slack page where you can communicate with officers.
-						</div>
-						<br/>
-						<br/>
-						<div style={{display: "inline-block"}}>
-							<GoogleGetDirections link="https://goo.gl/maps/JBqwXncwYro"/>
-							<div style={{position: "relative", left: 10}}>
-								<GoogleForms link="https://tinyurl.com/mentorship1117"/>
+						<div style={{position: "relative", top: 0}}>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>How to Prepare <br/> for Code Challenges</div>
+							<br/>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, January 16th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+							<br/>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Join SoDA as we give tips and tricks for being successful in the upcoming Workiva code challenge and the SoDA coding competition!</div>
+							<br/>
+							<br/>
+							<div style={{display: "inline-block"}}>
+								<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
+								<div style={{position: "relative", left: 10}}>
+									<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
+								</div>
 							</div>
 						</div>
-
+					</Palette>
+				</div>);
+		} else if (this.state.upcomingEvent == 1) {
+			upcomingEvent = (
+				<div style={{display: "inline-block", position: "relative"}}>
+					<div style={{textAlign: "right"}}>
+						<div style={{position: "absolute", top: 100, left: 397, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: 2})}
+						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
+					</div>
+					<Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
+						<div style={{textAlign: "right"}}>
+							<div style={{position: "absolute", top: 60, left: 357, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: true})}
+							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
+						</div>
+						<div style={{position: "relative", top: 0}}>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Allstate Event: <br/> Women. Power. Technology.</div>
+							<br/>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Galvanize<br/>Tuesday, January 16th, 2018<br/>12:00 pm ~ 5:00 pm</div>
+							<br/>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}><a href="https://www.eventbrite.com/e/women-power-technology-tickets-40159664638">Join</a> Allstate at Galvanize for the opportunity to meet and learn from technology leaders! Come be inspired by the possibilities of working in a modern culture and exciting atmosphere! You are encouraged to apply early at www.allstate.jobs. Interviews scheduled in advance will be given priority.</div>
+							<br/>
+							<br/>
+							<div style={{display: "inline-block"}}>
+								<GoogleGetDirections link="https://www.google.com/maps/search/515%20E.%20Grant%20St.%20Amphitheater%20G157%20Phoenix,%20AZ%2085004?hl=en&source=opensearch"/>
+								<div style={{position: "relative", left: 10}}>
+									<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
+								</div>
+							</div>
+						</div>
 					</Palette>
 				</div>);
 		} else {
 			upcomingEvent = (
 				<div style={{display: "inline-block", position: "relative"}}>
 					<div style={{textAlign: "right"}}>
-						<div style={{position: "absolute", top: 100, left: 397, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: true})}
-						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
+						<div style={{position: "absolute", top: 100, left: 397, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: 0})}
+						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Back</div>
 					</div>
-					<Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}> 
-
+					<Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
+						<div style={{textAlign: "right"}}>
+							<div style={{position: "absolute", top: 60, left: 357, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: true})}
+							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
-						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}> 
-							Secret Event:
-						</div>
-						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}> 
-							Part at Lewis's House this friday!!!
-						</div>
-						<br/>
-						<br/>
-						<div style={{display: "inline-block"}}>
-							<GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
-							<div style={{position: "relative", left: 10}}>
-								<GoogleForms link="https://docs.google.com/forms/d/e/1FAIpQLSdWI4Z5lwjRkhfBDE6RodJ_YP4FW3liWyFZJUCliEHnPU8W-w/viewform"/>
+						<div style={{position: "relative", top: 0}}>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Group <br/> Projects</div>
+							<br/>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, January 18th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+							<br/>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Are you interested in starting, joining, or recruiting for an extracurricular student project? Come to the monthly group projects meeting to discuss progress and engage with strategies for success. First group or project not working out? You can change groups or projects at any time!</div>
+							<br/>
+							<br/>
+							<div style={{display: "inline-block"}}>
+								<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
+								<div style={{position: "relative", left: 10}}>
+									<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
+								</div>
 							</div>
 						</div>
-
 					</Palette>
 				</div>);
 		}
@@ -1272,15 +1312,15 @@ const HackathonPage = ({width, height}) => {
 			<br/>
 
 			<div style={{display: "inline-block"}} id="sunhacks">
-				<Palette title="Sun Hacks" titleAlign= "left" contentAlign= "left" width={800}>
-					<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Sun Hacks Hackathon</div>
+				<Palette title="HACK ARIZONA" titleAlign= "left" contentAlign= "left" width={800}>
+					<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Hack Arizona Hackathon</div>
 					<br/>
 					<br/>
-					<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Have you ever wanted to get more involved in the tech community and work personally with some of the top tech companies in the nation such as Amazon, Google, and Uber (just to name off a few of our partners from last year)? Well you can by becoming an organizer for SunHacks! Sunhacks is a collaboration of DesertHacks, SWHacks, and Emergentech to create one of the largest hackathons in the nation at ASU. Hackathons in short are magical events where students can learn about the latest things in the world of technology, network with top tech companies, and build amazing projects. This bold vision will require a significant amount of human capital. We are currently looking for people that are passionate about technology to help organize such a large event. There is no experience required and every major is allowed to apply! Fill out this <a href="https://goo.gl/forms/AhHEp8PLJ54FqN3n2" style={{textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000"}} target="_blank">form</a> if you are interested and we will be in touch!</div>
+					<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Hack Arizona is about bringing together the most talented students to represent the burgeoning tech ecosystem that is appearing in the Southwest and across the country. <br/><br/> Hosted at the University of Arizona, over 800 participants will build software and hardware projects from start to finish in under 36 hours amongst their peers, mentors and company sponsors.</div>
 					<br/>
 					<br/>
 					<div style={{display: "inline-block"}}>
-						<SunHacks/>
+						<AzHacks/>
 					</div>
 				</Palette>
 			</div>
@@ -1738,7 +1778,7 @@ var App = React.createClass({
 		if (yoffset >= 10726) {
 			if (currentPage != "contact us")
 				this.setState({...this.state, currentPage: "contact us"});
-		} else if (yoffset >= 8043) {
+		} else if (yoffset >= 8043-300) {
 			if (currentPage != "community")
 				this.setState({...this.state, currentPage: "community"});
 		} else if (yoffset >= 6245) {
@@ -1783,7 +1823,7 @@ var App = React.createClass({
 					</div>
 					<div id="hackathon"></div>
 					<div style={{top: 150, position: "relative"}}>
-						<HackathonPage width={this.state.width} height={1800}/>
+						<HackathonPage width={this.state.width} height={1500}/>
 					</div>
 					<div id="community"></div>
 					<div style={{top: 150, position: "relative"}}>

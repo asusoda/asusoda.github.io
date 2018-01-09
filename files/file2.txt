@@ -9579,6 +9579,28 @@ const SunHacks = ({ size }) => {
 	);
 };
 
+const AzHacks = ({ size }) => {
+	return React.createElement(
+		"div",
+		null,
+		React.createElement("img", { src: "images/hack_arizona_logo.svg", style: { height: size + 10 || 50, width: "auto", paddingRight: 20 } }),
+		React.createElement(
+			"div",
+			{ style: { display: "inline-block", verticalAlign: 4 } },
+			React.createElement(
+				"div",
+				{ style: { fontFamily: "RopaSansPro-Medium", fontSize: size / 2 || 25 } },
+				"Find out more."
+			),
+			React.createElement(
+				"a",
+				{ style: { fontFamily: "RopaSans-Regular", fontSize: size / 2.5 || 18, color: "#808080", textDecoration: "none" }, href: "http://hackarizona.org/", target: "_blank" },
+				"hackarizona.org/h"
+			)
+		)
+	);
+};
+
 const LearnMore = ({}) => {
 	return React.createElement(
 		"div",
@@ -9675,31 +9697,21 @@ var DesktopWebsiteAboutUs = React.createClass({
 				{ title: "UPCOMING EVENTS", titleAlign: "left", contentAlign: "left", width: 400, margin: 40, styling: { display: "inline-block", position: "relative" } },
 				React.createElement(
 					"div",
-					{ style: { textAlign: "right" } },
-					React.createElement(
-						"div",
-						{ style: { position: "absolute", top: 60, left: 355, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2 }, onClick: () => this.setState(_extends({}, this.state, { upcomingEvent: false })),
-							onMouseOver: () => this.setState(_extends({}, this.state, { color: "#ff0000" })), onMouseOut: () => this.setState(_extends({}, this.state, { color: "#0000ff" })) },
-						"Next"
-					)
-				),
-				React.createElement(
-					"div",
 					{ style: { position: "relative", top: 0 } },
 					React.createElement(
 						"div",
 						{ style: { fontFamily: "RopaSansPro-Light", fontSize: 45 } },
-						"T-Shirts, ",
+						"Welcome Back/ ",
 						React.createElement("br", null),
-						"  Black Mirror, and Giveaways!"
+						"  Hack AZ Team Matching"
 					),
 					React.createElement("br", null),
 					React.createElement(
 						"div",
 						{ style: { fontFamily: "RopaSansPro-Medium", fontSize: 30 } },
-						"PSH 150",
+						"CAVC 351",
 						React.createElement("br", null),
-						"Thursday, November 30th, 2017",
+						"Thursday, January 11th, 2018",
 						React.createElement("br", null),
 						"7:00 pm ~ 9:00 pm"
 					),
@@ -9707,18 +9719,18 @@ var DesktopWebsiteAboutUs = React.createClass({
 					React.createElement(
 						"div",
 						{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 24 } },
-						"Join SoDA for our last meeting of the semester! In this meeting we will be handing out exclusive SoDA T-shirts as well as giving out raffle prizes! (Note: There will be a special giveaway for dis-tinguished members!). We will also be watching Black Mirror episodes to de-stress from all that finals studying! As always food will be provided, be sure to RSVP! "
+						"Kick off the beginning of the year with a welcome back from SoDA! Join us as we prepare for the upcoming Hack AZ info session with team matching during this meeting! We will also be going over what you can look forward to in SoDA this semester. "
 					),
 					React.createElement("br", null),
 					React.createElement("br", null),
 					React.createElement(
 						"div",
 						{ style: { display: "inline-block" } },
-						React.createElement(GoogleGetDirections, { link: "https://goo.gl/maps/wCmYUWzcwh32" }),
+						React.createElement(GoogleGetDirections, { link: "https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186" }),
 						React.createElement(
 							"div",
 							{ style: { position: "relative", left: 10 } },
-							React.createElement(GoogleForms, { link: "https://tinyurl.com/sodatshirt17" })
+							React.createElement(GoogleForms, { link: "http://tinyurl.com/sodajanuary18" })
 						)
 					)
 				)
@@ -9743,36 +9755,41 @@ var DesktopWebsiteAboutUs = React.createClass({
 					React.createElement(
 						"div",
 						{ style: { fontFamily: "RopaSansPro-Light", fontSize: 50 } },
-						"Resume ",
+						"Allstate Event: ",
 						React.createElement("br", null),
-						" Workshop"
+						" Women. Power. Technology."
 					),
 					React.createElement("br", null),
 					React.createElement(
 						"div",
 						{ style: { fontFamily: "RopaSansPro-Medium", fontSize: 30 } },
-						"PSH 150",
+						"Galvanize",
 						React.createElement("br", null),
-						"Thursday, November 16th, 2017",
+						"Tuesday, January 16th, 2018",
 						React.createElement("br", null),
-						"7:00 pm ~ 9:00 pm"
+						"12:00 pm ~ 5:00 pm"
 					),
 					React.createElement("br", null),
 					React.createElement(
 						"div",
 						{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 24 } },
-						"Do you feel like your resume is dull and boring? Is your resume missing that extra wow factor that really impresses recruiters? If so this meeting is for you! We will go over the do's and don'ts to help polish that resume to a squeaky shine!"
+						React.createElement(
+							"a",
+							{ href: "https://www.eventbrite.com/e/women-power-technology-tickets-40159664638" },
+							"Join"
+						),
+						" Allstate at Galvanize for the opportunity to meet and learn from technology leaders! Come be inspired by the possibilities of working in a modern culture and exciting atmosphere! You are encouraged to apply early at www.allstate.jobs. Interviews scheduled in advance will be given priority."
 					),
 					React.createElement("br", null),
 					React.createElement("br", null),
 					React.createElement(
 						"div",
 						{ style: { display: "inline-block" } },
-						React.createElement(GoogleGetDirections, { link: "https://goo.gl/maps/wCmYUWzcwh32" }),
+						React.createElement(GoogleGetDirections, { link: "https://www.google.com/maps/search/515%20E.%20Grant%20St.%20Amphitheater%20G157%20Phoenix,%20AZ%2085004?hl=en&source=opensearch" }),
 						React.createElement(
 							"div",
 							{ style: { position: "relative", left: 10 } },
-							React.createElement(GoogleForms, { link: "http://tinyurl.com/ResumeNov17" })
+							React.createElement(GoogleForms, { link: "http://tinyurl.com/sodajanuary18" })
 						)
 					)
 				)
@@ -9861,38 +9878,33 @@ var DesktopWebsiteAboutUs = React.createClass({
 								React.createElement(
 									"div",
 									{ style: { fontFamily: "RopaSansPro-Light", fontSize: 45 } },
-									"Sundevil",
+									"Hack",
 									React.createElement("br", null),
-									"  Hacks!"
+									"  Arizona!"
 								),
 								React.createElement("br", null),
 								React.createElement(
 									"div",
 									{ style: { fontFamily: "RopaSansPro-Medium", fontSize: 30 } },
-									"PSH 150",
+									"University of Arizona",
 									React.createElement("br", null),
-									"Thursday, November 30th, 2017",
-									React.createElement("br", null),
-									"7:00 pm ~ 9:00 pm"
+									"January 12th - 14th, 2018"
 								),
 								React.createElement("br", null),
 								React.createElement(
 									"div",
 									{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 24 } },
-									"Join SoDA for this amazing non existent hackathon that I am using as a placeholder until Mr. Vincent updates this palette. "
+									React.createElement(
+										"a",
+										{ href: "http://hackarizona.org/" },
+										"Hack Arizona"
+									),
+									" is about bringing together the most talented students to represent the burgeoning tech ecosystem that is appearing in the Southwest and across the country. ",
+									React.createElement("br", null),
+									" Hosted at the University of Arizona, over 800 participants will build software and hardware projects from start to finish in under 36 hours amongst their peers, mentors and company sponsors."
 								),
 								React.createElement("br", null),
-								React.createElement("br", null),
-								React.createElement(
-									"div",
-									{ style: { display: "inline-block" } },
-									React.createElement(GoogleGetDirections, { link: "https://goo.gl/maps/wCmYUWzcwh32" }),
-									React.createElement(
-										"div",
-										{ style: { position: "relative", left: 10 } },
-										React.createElement(GoogleForms, { link: "https://tinyurl.com/sodatshirt17" })
-									)
-								)
+								React.createElement("br", null)
 							)
 						)
 					)
@@ -10168,7 +10180,7 @@ var EventPage = React.createClass({
 			answerText: "Show answer",
 			currentItemWidth: 0,
 			currentItemLeft: 0,
-			upcomingEvent: true,
+			upcomingEvent: 0,
 			color: "#0000ff"
 		};
 	},
@@ -10194,38 +10206,143 @@ var EventPage = React.createClass({
 		};
 
 		let upcomingEvent = null;
-		if (this.state.upcomingEvent) {
+		if (this.state.upcomingEvent == 0) {
 			upcomingEvent = React.createElement(
 				"div",
 				{ style: { display: "inline-block", position: "relative" } },
 				React.createElement(
+					"div",
+					{ style: { textAlign: "right" } },
+					React.createElement(
+						"div",
+						{ style: { position: "absolute", top: 100, left: 394, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2 }, onClick: () => this.setState(_extends({}, this.state, { upcomingEvent: 1 })),
+							onMouseOver: () => this.setState(_extends({}, this.state, { color: "#ff0000" })), onMouseOut: () => this.setState(_extends({}, this.state, { color: "#0000ff" })) },
+						"Next"
+					)
+				),
+				React.createElement(
 					Palette,
-					{ title: "EVENTS NEXT WEEK", titleAlign: "left", contentAlign: "left", width: 400, margin: 40 },
-					React.createElement("div", { style: { fontFamily: "RopaSansPro-Light", fontSize: 50 } }),
-					React.createElement("br", null),
+					{ title: "EVENTS NEXT WEEK", titleAlign: "left", contentAlign: "left", width: 400, margin: 40, styling: { display: "inline-block", position: "relative" } },
 					React.createElement(
 						"div",
-						{ style: { fontFamily: "RopaSansPro-Medium", fontSize: 30 } },
-						React.createElement("br", null),
-						"No events until next semester",
-						React.createElement("br", null)
-					),
-					React.createElement("br", null),
-					React.createElement(
-						"div",
-						{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 24 } },
-						"If you want to learn more about SoDA and participate in upcoming events, click on the bubble icon in the title bar, it will take you to our official Slack page where you can communicate with officers."
-					),
-					React.createElement("br", null),
-					React.createElement("br", null),
-					React.createElement(
-						"div",
-						{ style: { display: "inline-block" } },
-						React.createElement(GoogleGetDirections, { link: "https://goo.gl/maps/JBqwXncwYro" }),
+						{ style: { textAlign: "right" } },
 						React.createElement(
 							"div",
-							{ style: { position: "relative", left: 10 } },
-							React.createElement(GoogleForms, { link: "https://tinyurl.com/mentorship1117" })
+							{ style: { position: "absolute", top: 60, left: 357, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2 }, onClick: () => this.setState(_extends({}, this.state, { upcomingEvent: true })),
+								onMouseOver: () => this.setState(_extends({}, this.state, { color: "#ff0000" })), onMouseOut: () => this.setState(_extends({}, this.state, { color: "#0000ff" })) },
+							"Prev"
+						)
+					),
+					React.createElement(
+						"div",
+						{ style: { position: "relative", top: 0 } },
+						React.createElement(
+							"div",
+							{ style: { fontFamily: "RopaSansPro-Light", fontSize: 50 } },
+							"How to Prepare ",
+							React.createElement("br", null),
+							" for Code Challenges"
+						),
+						React.createElement("br", null),
+						React.createElement(
+							"div",
+							{ style: { fontFamily: "RopaSansPro-Medium", fontSize: 30 } },
+							"CAVC 351",
+							React.createElement("br", null),
+							"Tuesday, January 16th, 2018",
+							React.createElement("br", null),
+							"7:00 pm ~ 9:00 pm"
+						),
+						React.createElement("br", null),
+						React.createElement(
+							"div",
+							{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 24 } },
+							"Join SoDA as we give tips and tricks for being successful in the upcoming Workiva code challenge and the SoDA coding competition!"
+						),
+						React.createElement("br", null),
+						React.createElement("br", null),
+						React.createElement(
+							"div",
+							{ style: { display: "inline-block" } },
+							React.createElement(GoogleGetDirections, { link: "https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186" }),
+							React.createElement(
+								"div",
+								{ style: { position: "relative", left: 10 } },
+								React.createElement(GoogleForms, { link: "http://tinyurl.com/sodajanuary18" })
+							)
+						)
+					)
+				)
+			);
+		} else if (this.state.upcomingEvent == 1) {
+			upcomingEvent = React.createElement(
+				"div",
+				{ style: { display: "inline-block", position: "relative" } },
+				React.createElement(
+					"div",
+					{ style: { textAlign: "right" } },
+					React.createElement(
+						"div",
+						{ style: { position: "absolute", top: 100, left: 397, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2 }, onClick: () => this.setState(_extends({}, this.state, { upcomingEvent: 2 })),
+							onMouseOver: () => this.setState(_extends({}, this.state, { color: "#ff0000" })), onMouseOut: () => this.setState(_extends({}, this.state, { color: "#0000ff" })) },
+						"Next"
+					)
+				),
+				React.createElement(
+					Palette,
+					{ title: "EVENTS NEXT WEEK", titleAlign: "left", contentAlign: "left", width: 400, margin: 40, styling: { display: "inline-block", position: "relative" } },
+					React.createElement(
+						"div",
+						{ style: { textAlign: "right" } },
+						React.createElement(
+							"div",
+							{ style: { position: "absolute", top: 60, left: 357, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2 }, onClick: () => this.setState(_extends({}, this.state, { upcomingEvent: true })),
+								onMouseOver: () => this.setState(_extends({}, this.state, { color: "#ff0000" })), onMouseOut: () => this.setState(_extends({}, this.state, { color: "#0000ff" })) },
+							"Prev"
+						)
+					),
+					React.createElement(
+						"div",
+						{ style: { position: "relative", top: 0 } },
+						React.createElement(
+							"div",
+							{ style: { fontFamily: "RopaSansPro-Light", fontSize: 50 } },
+							"Allstate Event: ",
+							React.createElement("br", null),
+							" Women. Power. Technology."
+						),
+						React.createElement("br", null),
+						React.createElement(
+							"div",
+							{ style: { fontFamily: "RopaSansPro-Medium", fontSize: 30 } },
+							"Galvanize",
+							React.createElement("br", null),
+							"Tuesday, January 16th, 2018",
+							React.createElement("br", null),
+							"12:00 pm ~ 5:00 pm"
+						),
+						React.createElement("br", null),
+						React.createElement(
+							"div",
+							{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 24 } },
+							React.createElement(
+								"a",
+								{ href: "https://www.eventbrite.com/e/women-power-technology-tickets-40159664638" },
+								"Join"
+							),
+							" Allstate at Galvanize for the opportunity to meet and learn from technology leaders! Come be inspired by the possibilities of working in a modern culture and exciting atmosphere! You are encouraged to apply early at www.allstate.jobs. Interviews scheduled in advance will be given priority."
+						),
+						React.createElement("br", null),
+						React.createElement("br", null),
+						React.createElement(
+							"div",
+							{ style: { display: "inline-block" } },
+							React.createElement(GoogleGetDirections, { link: "https://www.google.com/maps/search/515%20E.%20Grant%20St.%20Amphitheater%20G157%20Phoenix,%20AZ%2085004?hl=en&source=opensearch" }),
+							React.createElement(
+								"div",
+								{ style: { position: "relative", left: 10 } },
+								React.createElement(GoogleForms, { link: "http://tinyurl.com/sodajanuary18" })
+							)
 						)
 					)
 				)
@@ -10239,37 +10356,61 @@ var EventPage = React.createClass({
 					{ style: { textAlign: "right" } },
 					React.createElement(
 						"div",
-						{ style: { position: "absolute", top: 100, left: 397, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2 }, onClick: () => this.setState(_extends({}, this.state, { upcomingEvent: true })),
+						{ style: { position: "absolute", top: 100, left: 397, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2 }, onClick: () => this.setState(_extends({}, this.state, { upcomingEvent: 0 })),
 							onMouseOver: () => this.setState(_extends({}, this.state, { color: "#ff0000" })), onMouseOut: () => this.setState(_extends({}, this.state, { color: "#0000ff" })) },
-						"Prev"
+						"Back"
 					)
 				),
 				React.createElement(
 					Palette,
-					{ title: "EVENTS NEXT WEEK", titleAlign: "left", contentAlign: "left", width: 400, margin: 40 },
-					React.createElement("div", { style: { fontFamily: "RopaSansPro-Light", fontSize: 50 } }),
-					React.createElement("br", null),
+					{ title: "EVENTS NEXT WEEK", titleAlign: "left", contentAlign: "left", width: 400, margin: 40, styling: { display: "inline-block", position: "relative" } },
 					React.createElement(
 						"div",
-						{ style: { fontFamily: "RopaSansPro-Medium", fontSize: 30 } },
-						"Secret Event:"
-					),
-					React.createElement("br", null),
-					React.createElement(
-						"div",
-						{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 24 } },
-						"Part at Lewis's House this friday!!!"
-					),
-					React.createElement("br", null),
-					React.createElement("br", null),
-					React.createElement(
-						"div",
-						{ style: { display: "inline-block" } },
-						React.createElement(GoogleGetDirections, { link: "https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496" }),
+						{ style: { textAlign: "right" } },
 						React.createElement(
 							"div",
-							{ style: { position: "relative", left: 10 } },
-							React.createElement(GoogleForms, { link: "https://docs.google.com/forms/d/e/1FAIpQLSdWI4Z5lwjRkhfBDE6RodJ_YP4FW3liWyFZJUCliEHnPU8W-w/viewform" })
+							{ style: { position: "absolute", top: 60, left: 357, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2 }, onClick: () => this.setState(_extends({}, this.state, { upcomingEvent: true })),
+								onMouseOver: () => this.setState(_extends({}, this.state, { color: "#ff0000" })), onMouseOut: () => this.setState(_extends({}, this.state, { color: "#0000ff" })) },
+							"Prev"
+						)
+					),
+					React.createElement(
+						"div",
+						{ style: { position: "relative", top: 0 } },
+						React.createElement(
+							"div",
+							{ style: { fontFamily: "RopaSansPro-Light", fontSize: 50 } },
+							"Group ",
+							React.createElement("br", null),
+							" Projects"
+						),
+						React.createElement("br", null),
+						React.createElement(
+							"div",
+							{ style: { fontFamily: "RopaSansPro-Medium", fontSize: 30 } },
+							"CAVC 351",
+							React.createElement("br", null),
+							"Thursday, January 18th, 2018",
+							React.createElement("br", null),
+							"7:00 pm ~ 9:00 pm"
+						),
+						React.createElement("br", null),
+						React.createElement(
+							"div",
+							{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 24 } },
+							"Are you interested in starting, joining, or recruiting for an extracurricular student project? Come to the monthly group projects meeting to discuss progress and engage with strategies for success. First group or project not working out? You can change groups or projects at any time!"
+						),
+						React.createElement("br", null),
+						React.createElement("br", null),
+						React.createElement(
+							"div",
+							{ style: { display: "inline-block" } },
+							React.createElement(GoogleGetDirections, { link: "https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186" }),
+							React.createElement(
+								"div",
+								{ style: { position: "relative", left: 10 } },
+								React.createElement(GoogleForms, { link: "http://tinyurl.com/sodajanuary18" })
+							)
 						)
 					)
 				)
@@ -10779,31 +10920,28 @@ const HackathonPage = ({ width, height }) => {
 				{ style: { display: "inline-block" }, id: "sunhacks" },
 				React.createElement(
 					Palette,
-					{ title: "Sun Hacks", titleAlign: "left", contentAlign: "left", width: 800 },
+					{ title: "HACK ARIZONA", titleAlign: "left", contentAlign: "left", width: 800 },
 					React.createElement(
 						"div",
 						{ style: { fontFamily: "RopaSansPro-Light", fontSize: 50 } },
-						"Sun Hacks Hackathon"
+						"Hack Arizona Hackathon"
 					),
 					React.createElement("br", null),
 					React.createElement("br", null),
 					React.createElement(
 						"div",
 						{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 24 } },
-						"Have you ever wanted to get more involved in the tech community and work personally with some of the top tech companies in the nation such as Amazon, Google, and Uber (just to name off a few of our partners from last year)? Well you can by becoming an organizer for SunHacks! Sunhacks is a collaboration of DesertHacks, SWHacks, and Emergentech to create one of the largest hackathons in the nation at ASU. Hackathons in short are magical events where students can learn about the latest things in the world of technology, network with top tech companies, and build amazing projects. This bold vision will require a significant amount of human capital. We are currently looking for people that are passionate about technology to help organize such a large event. There is no experience required and every major is allowed to apply! Fill out this ",
-						React.createElement(
-							"a",
-							{ href: "https://goo.gl/forms/AhHEp8PLJ54FqN3n2", style: { textDecoration: "none", fontFamily: "RopaSansPro-ExtraBold", color: "#000" }, target: "_blank" },
-							"form"
-						),
-						" if you are interested and we will be in touch!"
+						"Hack Arizona is about bringing together the most talented students to represent the burgeoning tech ecosystem that is appearing in the Southwest and across the country. ",
+						React.createElement("br", null),
+						React.createElement("br", null),
+						" Hosted at the University of Arizona, over 800 participants will build software and hardware projects from start to finish in under 36 hours amongst their peers, mentors and company sponsors."
 					),
 					React.createElement("br", null),
 					React.createElement("br", null),
 					React.createElement(
 						"div",
 						{ style: { display: "inline-block" } },
-						React.createElement(SunHacks, null)
+						React.createElement(AzHacks, null)
 					)
 				)
 			),
@@ -11532,7 +11670,7 @@ var App = React.createClass({
 		var currentPage = this.currentPage;
 		if (yoffset >= 10726) {
 			if (currentPage != "contact us") this.setState(_extends({}, this.state, { currentPage: "contact us" }));
-		} else if (yoffset >= 8043) {
+		} else if (yoffset >= 8043 - 300) {
 			if (currentPage != "community") this.setState(_extends({}, this.state, { currentPage: "community" }));
 		} else if (yoffset >= 6245) {
 			if (currentPage != "hackathon") this.setState(_extends({}, this.state, { currentPage: "hackathon" }));
@@ -11582,7 +11720,7 @@ var App = React.createClass({
 				React.createElement(
 					"div",
 					{ style: { top: 150, position: "relative" } },
-					React.createElement(HackathonPage, { width: this.state.width, height: 1800 })
+					React.createElement(HackathonPage, { width: this.state.width, height: 1500 })
 				),
 				React.createElement("div", { id: "community" }),
 				React.createElement(
