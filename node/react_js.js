@@ -974,15 +974,15 @@ var EventPage = React.createClass({
 							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
 						<div style={{position: "relative", top: 0}}>
-							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>How to Prepare <br/> for Code Challenges</div>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Allstate Event: <br/> Women. Power. Technology.</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, January 16th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Galvanize<br/>Tuesday, January 16th, 2018<br/>12:00 pm ~ 5:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Join SoDA as we give tips and tricks for being successful in the upcoming Workiva code challenge and the SoDA coding competition!</div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}><a href="https://www.eventbrite.com/e/women-power-technology-tickets-40159664638">Join</a> Allstate at Galvanize for the opportunity to meet and learn from technology leaders! Come be inspired by the possibilities of working in a modern culture and exciting atmosphere! You are encouraged to apply early at www.allstate.jobs. Interviews scheduled in advance will be given priority.</div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
-								<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
+								<GoogleGetDirections link="https://www.google.com/maps/search/515%20E.%20Grant%20St.%20Amphitheater%20G157%20Phoenix,%20AZ%2085004?hl=en&source=opensearch"/>
 								<div style={{position: "relative", left: 10}}>
 									<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
 								</div>
@@ -1003,15 +1003,15 @@ var EventPage = React.createClass({
 							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
 						<div style={{position: "relative", top: 0}}>
-							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Allstate Event: <br/> Women. Power. Technology.</div>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>How to Prepare <br/> for Code Challenges</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Galvanize<br/>Tuesday, January 16th, 2018<br/>12:00 pm ~ 5:00 pm</div>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, January 16th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}><a href="https://www.eventbrite.com/e/women-power-technology-tickets-40159664638">Join</a> Allstate at Galvanize for the opportunity to meet and learn from technology leaders! Come be inspired by the possibilities of working in a modern culture and exciting atmosphere! You are encouraged to apply early at www.allstate.jobs. Interviews scheduled in advance will be given priority.</div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Join SoDA as we give tips and tricks for being successful in the upcoming Workiva code challenge and the SoDA coding competition!</div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
-								<GoogleGetDirections link="https://www.google.com/maps/search/515%20E.%20Grant%20St.%20Amphitheater%20G157%20Phoenix,%20AZ%2085004?hl=en&source=opensearch"/>
+								<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
 								<div style={{position: "relative", left: 10}}>
 									<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
 								</div>
