@@ -548,6 +548,14 @@ const Wikipedia = ({}) => {
 	);
 };
 
+var Link = React.createClass({
+	render: function() {
+		return (
+			<a href={this.props.link} target="_blank">{this.props.children}</a>
+		);
+	}
+});
+
 const SunHacks = ({size}) => {
 	return (
 		<div>
@@ -605,7 +613,6 @@ const TwitterTimeline = ({}) => {
 		</div>
 	);
 };
-
 
 var DesktopWebsiteAboutUs = React.createClass({
 	getInitialState: function() {
@@ -750,7 +757,7 @@ var DesktopWebsiteAboutUs = React.createClass({
 									<br/>
 									<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>University of Arizona<br/>January 12th - 14th, 2018</div>
 									<br/>
-									<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}><a href="http://hackarizona.org/">Hack Arizona</a> is about bringing together the most talented students to represent the burgeoning tech ecosystem that is appearing in the Southwest and across the country. <br/> Hosted at the University of Arizona, over 800 participants will build software and hardware projects from start to finish in under 36 hours amongst their peers, mentors and company sponsors.</div>
+									<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}><Link link="http://hackarizona.org/">Hack Arizona</Link> is about bringing together the most talented students to represent the burgeoning tech ecosystem that is appearing in the Southwest and across the country. <br/> Hosted at the University of Arizona, over 800 participants will build software and hardware projects from start to finish in under 36 hours amongst their peers, mentors and company sponsors.</div>
 									<br/>
 									<br/>
 									{/*
@@ -978,7 +985,7 @@ var EventPage = React.createClass({
 							<br/>
 							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Galvanize<br/>Tuesday, January 16th, 2018<br/>12:00 pm ~ 5:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}><a href="https://www.eventbrite.com/e/women-power-technology-tickets-40159664638">Join</a> Allstate at Galvanize for the opportunity to meet and learn from technology leaders! Come be inspired by the possibilities of working in a modern culture and exciting atmosphere! You are encouraged to apply early at www.allstate.jobs. Interviews scheduled in advance will be given priority.</div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}><Link link="https://www.eventbrite.com/e/women-power-technology-tickets-40159664638">Join</Link> Allstate at Galvanize for the opportunity to meet and learn from technology leaders! Come be inspired by the possibilities of working in a modern culture and exciting atmosphere! You are encouraged to apply early at www.allstate.jobs. Interviews scheduled in advance will be given priority.</div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
@@ -1057,9 +1064,9 @@ var EventPage = React.createClass({
 					<br/>
 					<div style={{display: "inline-block", width: "100%"}}>
 						<div style={{display: "inline-block", width: width/2 - 100, float: "left"}}>
-							<div style={{fontSize: 40, fontFamily: "RopaSansPro-Medium", color:"#808080"}}>SoDA has events and meetings at the <span style={{color: "#000"}}>Physical Science building H wing (PSH),</span> room 150 unless otherwise stated.</div>
+							<div style={{fontSize: 40, fontFamily: "RopaSansPro-Medium", color:"#808080"}}>SoDA has events and meetings at the <span style={{color: "#000"}}>College Avenue Commons (CAVC),<br/></span> room 351 unless otherwise stated.</div>
 							<div style={{position: "relative", top: 50}}>
-								<GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
+								<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
 							</div>
 						</div>
 						<div style={{display: "inline-block", verticalAlign: "top", fontFamily: "RopaSansPro-Medium", width: width/2 - 100, float: "right"}}>
@@ -1524,13 +1531,15 @@ const CommunityPage = ({width, height}) => {
 						SoDA's Distinguished Member Program is an initiative created with the intention of recognizing students who are highly involved in SoDA's activities and community. Admission into the distinguished member program is based on a point system from attendance and participation in SoDA activities including the other initiatives. Perks include an invitation to SoDA's linkedin alumni group, distinguished member resume books given to our industry partners, and giveaways exclusive to distinguished members. Once a Distinguished SoDA member, you are eligible to get personal one-on-one resume reviews from one of our officers to make sure it is high quality.
 						<br/>
 						<br/>
-						You can become a Distinguished SoDA member by earning 12 points. You can earn points as follows:
+						You can become a Distinguished SoDA member by earning 10 points. You can earn points as follows:
 						<br/>
 						1 point per meeting you attend
 						<br/>
 						3 points for being a mentor
 						<br/>
 						2 points for every group projects meeting attended
+						<br/>
+						2 points for attending code challenges
 						<br/>
 						2 points for every mentorship meeting attended
 						<br/>
@@ -1540,6 +1549,10 @@ const CommunityPage = ({width, height}) => {
 						<br/>
 						<br/>
 						If you become a Distinguished SoDA member in the Fall, you only need to earn 6 points by the end of February to keep your Distinguished membership
+						<br/>
+						<br/>
+						You can check how many points you have for a current semester so far by requesting them here:<br/>
+						<Link link="https://tinyurl.com/SoDADistinguishedMemPoints">https://tinyurl.com/SoDADistinguishedMemPoints</Link>
 					</div>
 				</div>
 			</div>

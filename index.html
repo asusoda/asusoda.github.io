@@ -9710,6 +9710,18 @@ const Wikipedia = ({}) => {
 	);
 };
 
+var Link = React.createClass({
+	displayName: "Link",
+
+	render: function () {
+		return React.createElement(
+			"a",
+			{ href: this.props.link, target: "_blank" },
+			this.props.children
+		);
+	}
+});
+
 const SunHacks = ({ size }) => {
 	return React.createElement(
 		"div",
@@ -10048,8 +10060,8 @@ var DesktopWebsiteAboutUs = React.createClass({
 									"div",
 									{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 24 } },
 									React.createElement(
-										"a",
-										{ href: "http://hackarizona.org/" },
+										Link,
+										{ link: "http://hackarizona.org/" },
 										"Hack Arizona"
 									),
 									" is about bringing together the most talented students to represent the burgeoning tech ecosystem that is appearing in the Southwest and across the country. ",
@@ -10411,8 +10423,8 @@ var EventPage = React.createClass({
 							"div",
 							{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 24 } },
 							React.createElement(
-								"a",
-								{ href: "https://www.eventbrite.com/e/women-power-technology-tickets-40159664638" },
+								Link,
+								{ link: "https://www.eventbrite.com/e/women-power-technology-tickets-40159664638" },
 								"Join"
 							),
 							" Allstate at Galvanize for the opportunity to meet and learn from technology leaders! Come be inspired by the possibilities of working in a modern culture and exciting atmosphere! You are encouraged to apply early at www.allstate.jobs. Interviews scheduled in advance will be given priority."
@@ -10595,14 +10607,15 @@ var EventPage = React.createClass({
 							React.createElement(
 								"span",
 								{ style: { color: "#000" } },
-								"Physical Science building H wing (PSH),"
+								"College Avenue Commons (CAVC),",
+								React.createElement("br", null)
 							),
-							" room 150 unless otherwise stated."
+							" room 351 unless otherwise stated."
 						),
 						React.createElement(
 							"div",
 							{ style: { position: "relative", top: 50 } },
-							React.createElement(GoogleGetDirections, { link: "https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496" })
+							React.createElement(GoogleGetDirections, { link: "https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186" })
 						)
 					),
 					React.createElement(
@@ -11417,13 +11430,15 @@ const CommunityPage = ({ width, height }) => {
 						"SoDA's Distinguished Member Program is an initiative created with the intention of recognizing students who are highly involved in SoDA's activities and community. Admission into the distinguished member program is based on a point system from attendance and participation in SoDA activities including the other initiatives. Perks include an invitation to SoDA's linkedin alumni group, distinguished member resume books given to our industry partners, and giveaways exclusive to distinguished members. Once a Distinguished SoDA member, you are eligible to get personal one-on-one resume reviews from one of our officers to make sure it is high quality.",
 						React.createElement("br", null),
 						React.createElement("br", null),
-						"You can become a Distinguished SoDA member by earning 12 points. You can earn points as follows:",
+						"You can become a Distinguished SoDA member by earning 10 points. You can earn points as follows:",
 						React.createElement("br", null),
 						"1 point per meeting you attend",
 						React.createElement("br", null),
 						"3 points for being a mentor",
 						React.createElement("br", null),
 						"2 points for every group projects meeting attended",
+						React.createElement("br", null),
+						"2 points for attending code challenges",
 						React.createElement("br", null),
 						"2 points for every mentorship meeting attended",
 						React.createElement("br", null),
@@ -11432,7 +11447,16 @@ const CommunityPage = ({ width, height }) => {
 						"3 points for leading a workshop",
 						React.createElement("br", null),
 						React.createElement("br", null),
-						"If you become a Distinguished SoDA member in the Fall, you only need to earn 6 points by the end of February to keep your Distinguished membership"
+						"If you become a Distinguished SoDA member in the Fall, you only need to earn 6 points by the end of February to keep your Distinguished membership",
+						React.createElement("br", null),
+						React.createElement("br", null),
+						"You can check how many points you have for a current semester so far by requesting them here:",
+						React.createElement("br", null),
+						React.createElement(
+							Link,
+							{ link: "https://tinyurl.com/SoDADistinguishedMemPoints" },
+							"https://tinyurl.com/SoDADistinguishedMemPoints"
+						)
 					)
 				)
 			)
