@@ -987,13 +987,13 @@ var EventPage = React.createClass({
 							<br/>
 							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Skysong<br/>Tuesday, January 30th, 2018<br/>5:00 pm ~ 8:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Do you like coding, teamwork, games, pizza? Workiva is hosting a fun Workivia Coding Challenge for teams of 1-3 people. All levels of technical skills are encouraged to attend. Door prizes, swag, and food will be provided. The top team will win cool tech prize bundles. For more information, visit: <Link link="https://tinyurl.com/workivacampustrip">Workiva Campus Trip</Link></div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Do you like coding, teamwork, games, pizza? Workiva is hosting a fun Workivia Coding Challenge for teams of 1-3 people. All levels of technical skills are encouraged to attend. Door prizes, swag, and food will be provided. The top team will win cool tech prize bundles.</div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
 								<GoogleGetDirections link="https://www.google.com/maps/place/1365+N+Scottsdale+Rd+%23400,+Scottsdale,+AZ+85257/@33.4633844,-111.926804,17z/data=!3m1!4b1!4m5!3m4!1s0x872b096659d19167:0xc8643b26757eb357!8m2!3d33.4633844!4d-111.9246153"/>
 								<div style={{position: "relative", left: 10}}>
-									<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
+									<GoogleForms link="https://tinyurl.com/workivacampustrip"/>
 								</div>
 							</div>
 						</div>
