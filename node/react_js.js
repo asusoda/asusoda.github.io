@@ -1653,7 +1653,7 @@ const ContactPage = ({width, height}) => {
 			<MembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu" link="https://www.linkedin.com/in/ljruskin/"/>
 			<MembershipCard title="Secretary" name="Alex Geschardt" email="ageschar@asu.edu" link="https://www.linkedin.com/in/alex-geschardt-732a12a8/"/>
 			<MembershipCard title="USG Liaison" name="Lilian Ngweta" email="lngweta@asu.edu" link="https://www.linkedin.com/in/lilianngweta/"/>
-			<MembershipCard title="Director of Documentation" name="Siddhant Kanwar" email="skanwar2@asu.edu" link="https://www.linkedin.com/in/siddhantkanwar/"/>
+			<MembershipCard title="Director of Documentation" name="Raj Shah" email="rnshah9@asu.edu" link=""/>
 			<MembershipCard title="Industry Outreach Chair - Event Planning Lead" name="Chris Warren" email="cawarre6@asu.edu" link="https://www.linkedin.com/in/chris-warren-cj-24347178/"/>
 			<MembershipCard title="Director of Group Projects" name="Steven King Jr." email="stevekx86@gmail.com" link="https://www.linkedin.com/in/steve-king-jr-9b5283a8/"/>
 			<MembershipCard title="Director of Career Development" name="Nikola Uzelac" email="nuzelac@asu.edu" link="https://www.linkedin.com/in/nickuzelac/"/>
@@ -1666,9 +1666,11 @@ const ContactPage = ({width, height}) => {
 			<MembershipCard title="Director of Marketing - Marketing Lead" name="Michael Rojas" email="mikerojaswa@gmail.com" link="https://www.linkedin.com/in/mikerojaswa/"/>
 			<MembershipCard title="Director of Communications" name="Raffi Shahbazian" email="raffi.p.shahbazian@gmail.com" link="https://www.linkedin.com/in/raffipshahbazian/"/>
 			<MembershipCard title="Director of Digital Media" name="Junshu Liu" email="jliu237@asu.edu" link="https://www.linkedin.com/in/junshu-liu-52ba26105/"/>
-			<MembershipCard title="Public Engagement Chair" name="Justin Dierken" email="jdierken@asu.edu" link="https://www.linkedin.com/in/justindierken/"/>
+			<MembershipCard title="Public Engagement Chair" name="Kristy Taing" email="ktaing@asu.edu" link=""/>
+			{/*
 			<MembershipCard title="Webmaster" name="Vincent Truong" email="vincenttruong96@gmail.com, vntruon1@asu.edu" link="https://www.linkedin.com/in/vntruon1/"/>
-			<MembershipCard title="Web Developer" name="Azaldin Freidoon" email="azaldin123@yahoo.com" link="https://www.linkedin.com/in/azaldin-freidoon-b18207105/"/>
+			*/}
+			<MembershipCard title="Webmaster" name="Azaldin Freidoon" email="azaldin123@yahoo.com" link="https://www.linkedin.com/in/azaldin-freidoon-b18207105/"/>
 			<MembershipCard title="Photographer" name="Jona Joe" email="jjoe3@asu.edu" link="https://www.linkedin.com/in/jona-joe-932a62149/"/>
 			<MembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu" link="https://www.linkedin.com/in/nathan-fegard-03692911b/"/>
 		</div>
