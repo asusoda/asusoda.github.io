@@ -651,18 +651,16 @@ var DesktopWebsiteAboutUs = React.createClass({
 		if (this.state.upcomingEvent) {
 			upcomingEvent = (
 				<Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
-					{/*
 					<div style={{textAlign: "right"}}>
 						<div style={{position: "absolute", top: 60, left: 355, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: false})}
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
 					</div>
-					*/}
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Welcome Back/ <br/>  Hack AZ Team Matching</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Intel Tech Talk:<br/>So, You Want to be a<br/>Software Developer?</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, January 11th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, January 23rd, 2018<br/>7:00 pm ~ 9:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Kick off the beginning of the year with a welcome back from SoDA! Join us as we prepare for the upcoming Hack AZ info session with team matching during this meeting! We will also be going over what you can look forward to in SoDA this semester. </div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Don't let anyone fool you, Software Development is tough. Besides all of the languages you need to understand, you must also remember to design for performance, keep your data secure and figure out how to talk to non-developers. Despite all of these challenges, it's a great career. Come join us to learn about all of the skills needed to be a software developer in the real world. During this talk, the speaker will discuss agile development, testing, continuous delivery, design patterns, and advice about getting through the interview process.</div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
@@ -681,15 +679,15 @@ var DesktopWebsiteAboutUs = React.createClass({
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 					</div>
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Allstate Event: <br/> Women. Power. Technology.</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>How to Get References/ <br/>Mock Interviews</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Galvanize<br/>Tuesday, January 16th, 2018<br/>12:00 pm ~ 5:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, January 25th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}><a href="https://www.eventbrite.com/e/women-power-technology-tickets-40159664638">Join</a> Allstate at Galvanize for the opportunity to meet and learn from technology leaders! Come be inspired by the possibilities of working in a modern culture and exciting atmosphere! You are encouraged to apply early at www.allstate.jobs. Interviews scheduled in advance will be given priority.</div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Come find out tips on getting references and practice whiteboard style interview questions to help move you one step closer to your dream job or internship!</div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
-							<GoogleGetDirections link="https://www.google.com/maps/search/515%20E.%20Grant%20St.%20Amphitheater%20G157%20Phoenix,%20AZ%2085004?hl=en&source=opensearch"/>
+							<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
 							<div style={{position: "relative", left: 10}}>
 								<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
 							</div>
@@ -971,25 +969,29 @@ var EventPage = React.createClass({
 		if (this.state.upcomingEvent == 0) {
 			upcomingEvent = (
 				<div style={{display: "inline-block", position: "relative"}}>
+					{/*
 					<div style={{textAlign: "right"}}>
 						<div style={{position: "absolute", top: 100, left: 394, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: 1})}
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
 					</div>
+					*/}
 					<Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
+						{/*
 						<div style={{textAlign: "right"}}>
 							<div style={{position: "absolute", top: 60, left: 357, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: true})}
 							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
+						*/}
 						<div style={{position: "relative", top: 0}}>
-							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Allstate Event: <br/> Women. Power. Technology.</div>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Workiva Code<br/>Challenge</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Galvanize<br/>Tuesday, January 16th, 2018<br/>12:00 pm ~ 5:00 pm</div>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Skysong<br/>Tuesday, January 30th, 2018<br/>5:00 pm ~ 8:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}><Link link="https://www.eventbrite.com/e/women-power-technology-tickets-40159664638">Join</Link> Allstate at Galvanize for the opportunity to meet and learn from technology leaders! Come be inspired by the possibilities of working in a modern culture and exciting atmosphere! You are encouraged to apply early at www.allstate.jobs. Interviews scheduled in advance will be given priority.</div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Do you like coding, teamwork, games, pizza? Workiva is hosting a fun Workivia Coding Challenge for teams of 1-3 people. All levels of technical skills are encouraged to attend. Door prizes, swag, and food will be provided. The top team will win cool tech prize bundles. For more information, visit: <Link link="https://tinyurl.com/workivacampustrip">Workiva Campus Trip</Link></div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
-								<GoogleGetDirections link="https://www.google.com/maps/search/515%20E.%20Grant%20St.%20Amphitheater%20G157%20Phoenix,%20AZ%2085004?hl=en&source=opensearch"/>
+								<GoogleGetDirections link="https://www.google.com/maps/place/1365+N+Scottsdale+Rd+%23400,+Scottsdale,+AZ+85257/@33.4633844,-111.926804,17z/data=!3m1!4b1!4m5!3m4!1s0x872b096659d19167:0xc8643b26757eb357!8m2!3d33.4633844!4d-111.9246153"/>
 								<div style={{position: "relative", left: 10}}>
 									<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
 								</div>
