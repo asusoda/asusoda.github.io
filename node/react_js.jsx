@@ -656,17 +656,17 @@ var DesktopWebsiteAboutUs = React.createClass({
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
 					</div>
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Intel Tech Talk:<br/>So, You Want to be a<br/>Software Developer?</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Workiva Code Challenge</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, January 23rd, 2018<br/>7:00 pm ~ 9:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Skysong<br/>Tuesday, January 30th, 2018<br/>5:00 pm ~ 8:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Don't let anyone fool you, Software Development is tough. Besides all of the languages you need to understand, you must also remember to design for performance, keep your data secure and figure out how to talk to non-developers. Despite all of these challenges, it's a great career. Come join us to learn about all of the skills needed to be a software developer in the real world. During this talk, the speaker will discuss agile development, testing, continuous delivery, design patterns, and advice about getting through the interview process.</div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Do you like coding, teamwork, games, pizza? Workiva is hosting a fun Workivia Coding Challenge for teams of 1-3 people. All levels of technical skills are encouraged to attend. Door prizes, swag, and food will be provided. The top team will win cool tech prize bundles.</div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
-							<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
+							<GoogleGetDirections link="https://www.google.com/maps/place/1365+N+Scottsdale+Rd+%23400,+Scottsdale,+AZ+85257/@33.4633844,-111.926804,17z/data=!3m1!4b1!4m5!3m4!1s0x872b096659d19167:0xc8643b26757eb357!8m2!3d33.4633844!4d-111.9246153"/>
 							<div style={{position: "relative", left: 10}}>
-								<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
+								<GoogleForms link="https://tinyurl.com/workivacampustrip"/>
 							</div>
 						</div>
 					</div>
@@ -679,18 +679,20 @@ var DesktopWebsiteAboutUs = React.createClass({
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 					</div>
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>How to Get References/ <br/>Mock Interviews</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Amazon Alexa <br/>Workshop</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, January 25th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 1st, 2018<br/>7:00 pm ~ 9:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Come find out tips on getting references and practice whiteboard style interview questions to help move you one step closer to your dream job or internship!</div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Join SoDA for an exciting workshop on Amazon Alexa skills led by engineers from Amazon! Echo dots will be provided for use during the workshop!</div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
 							<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
+							{/*
 							<div style={{position: "relative", left: 10}}>
 								<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
 							</div>
+							*/}
 						</div>
 					</div>
 				</Palette>);
@@ -976,25 +978,25 @@ var EventPage = React.createClass({
 					</div>
 					*/}
 					<Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
-						{/*
 						<div style={{textAlign: "right"}}>
 							<div style={{position: "absolute", top: 60, left: 357, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: true})}
 							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
-						*/}
 						<div style={{position: "relative", top: 0}}>
-							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Workiva Code<br/>Challenge</div>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Google Tech Talk</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Skysong<br/>Tuesday, January 30th, 2018<br/>5:00 pm ~ 8:00 pm</div>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, February 6th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Do you like coding, teamwork, games, pizza? Workiva is hosting a fun Workivia Coding Challenge for teams of 1-3 people. All levels of technical skills are encouraged to attend. Door prizes, swag, and food will be provided. The top team will win cool tech prize bundles.</div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>This session will feature Google engineers and their path to and at Google, with plenty of tips and tricks for applying to roles at Google or other tech companies. </div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
-								<GoogleGetDirections link="https://www.google.com/maps/place/1365+N+Scottsdale+Rd+%23400,+Scottsdale,+AZ+85257/@33.4633844,-111.926804,17z/data=!3m1!4b1!4m5!3m4!1s0x872b096659d19167:0xc8643b26757eb357!8m2!3d33.4633844!4d-111.9246153"/>
+								<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
+								{/*
 								<div style={{position: "relative", left: 10}}>
 									<GoogleForms link="https://tinyurl.com/workivacampustrip"/>
 								</div>
+								*/}
 							</div>
 						</div>
 					</Palette>
@@ -1012,18 +1014,20 @@ var EventPage = React.createClass({
 							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
 						<div style={{position: "relative", top: 0}}>
-							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>How to Prepare <br/> for Code Challenges</div>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Walmart Networking<br/>Mixer</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, January 16th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 8th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Join SoDA as we give tips and tricks for being successful in the upcoming Workiva code challenge and the SoDA coding competition!</div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Walmart will be here for a networking mixer. Don’t miss this opportunity to talk to Walmart’s engineers!</div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
 								<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
+								{/*
 								<div style={{position: "relative", left: 10}}>
 									<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
 								</div>
+								*/}
 							</div>
 						</div>
 					</Palette>
