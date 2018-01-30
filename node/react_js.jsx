@@ -688,11 +688,9 @@ var DesktopWebsiteAboutUs = React.createClass({
 						<br/>
 						<div style={{display: "inline-block"}}>
 							<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
-							{/*
 							<div style={{position: "relative", left: 10}}>
-								<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
+								<GoogleForms link="http://tinyurl.com/sodafebruary18"/>
 							</div>
-							*/}
 						</div>
 					</div>
 				</Palette>);
@@ -992,11 +990,9 @@ var EventPage = React.createClass({
 							<br/>
 							<div style={{display: "inline-block"}}>
 								<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
-								{/*
 								<div style={{position: "relative", left: 10}}>
-									<GoogleForms link="https://tinyurl.com/workivacampustrip"/>
+									<GoogleForms link="http://tinyurl.com/sodafebruary18"/>
 								</div>
-								*/}
 							</div>
 						</div>
 					</Palette>
@@ -1023,11 +1019,9 @@ var EventPage = React.createClass({
 							<br/>
 							<div style={{display: "inline-block"}}>
 								<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
-								{/*
 								<div style={{position: "relative", left: 10}}>
-									<GoogleForms link="http://tinyurl.com/sodajanuary18"/>
+									<GoogleForms link="http://tinyurl.com/sodafebruary18"/>
 								</div>
-								*/}
 							</div>
 						</div>
 					</Palette>
