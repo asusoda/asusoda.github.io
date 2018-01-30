@@ -10276,7 +10276,7 @@ var EventPage = React.createClass({
 					{ style: { textAlign: "right" } },
 					React.createElement(
 						"div",
-						{ style: { position: "absolute", top: 100, left: 397, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2 }, onClick: () => this.setState(_extends({}, this.state, { upcomingEvent: 2 })),
+						{ style: { position: "absolute", top: 100, left: 397, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2 }, onClick: () => this.setState(_extends({}, this.state, { upcomingEvent: 0 })),
 							onMouseOver: () => this.setState(_extends({}, this.state, { color: "#ff0000" })), onMouseOut: () => this.setState(_extends({}, this.state, { color: "#0000ff" })) },
 						"Next"
 					)
