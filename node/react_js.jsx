@@ -1,4 +1,3 @@
-
 const NAV_BAR_HEIGHT = 45;
 const MIN_DESKTOP_WIDTH = 1100;
 
@@ -656,17 +655,17 @@ var DesktopWebsiteAboutUs = React.createClass({
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
 					</div>
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Workiva Code Challenge</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Google Tech Talk</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>Skysong<br/>Tuesday, January 30th, 2018<br/>5:00 pm ~ 8:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, February 6th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Do you like coding, teamwork, games, pizza? Workiva is hosting a fun Workivia Coding Challenge for teams of 1-3 people. All levels of technical skills are encouraged to attend. Door prizes, swag, and food will be provided. The top team will win cool tech prize bundles.</div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>This session will feature Google engineers and their path to and at Google, with plenty of tips and tricks for applying to roles at Google or other tech companies.</div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
-							<GoogleGetDirections link="https://www.google.com/maps/place/1365+N+Scottsdale+Rd+%23400,+Scottsdale,+AZ+85257/@33.4633844,-111.926804,17z/data=!3m1!4b1!4m5!3m4!1s0x872b096659d19167:0xc8643b26757eb357!8m2!3d33.4633844!4d-111.9246153"/>
+							<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
 							<div style={{position: "relative", left: 10}}>
-								<GoogleForms link="https://tinyurl.com/workivacampustrip"/>
+								<GoogleForms link="tinyurl.com/sodafebruary18"/>
 							</div>
 						</div>
 					</div>
@@ -679,17 +678,17 @@ var DesktopWebsiteAboutUs = React.createClass({
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 					</div>
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Amazon Alexa <br/>Workshop</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Walmart Networking<br/>Mixer</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 1st, 2018<br/>7:00 pm ~ 9:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 8th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Join SoDA for an exciting workshop on Amazon Alexa skills led by engineers from Amazon! Echo dots will be provided for use during the workshop!</div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Walmart will be here for a networking mixer. Don’t miss this opportunity to talk to Walmart’s engineers!</div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
 							<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
 							<div style={{position: "relative", left: 10}}>
-								<GoogleForms link="http://tinyurl.com/sodafebruary18"/>
+								<GoogleForms link="tinyurl.com/sodafebruary18"/>
 							</div>
 						</div>
 					</div>
@@ -981,11 +980,11 @@ var EventPage = React.createClass({
 							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
 						<div style={{position: "relative", top: 0}}>
-							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Google Tech Talk</div>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Git Workshop</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, February 6th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, February 13th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>This session will feature Google engineers and their path to and at Google, with plenty of tips and tricks for applying to roles at Google or other tech companies. </div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Come learn the ins and outs of GIt, a free and open source distributed version control system that you should be using!</div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
@@ -1010,11 +1009,11 @@ var EventPage = React.createClass({
 							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
 						<div style={{position: "relative", top: 0}}>
-							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Walmart Networking<br/>Mixer</div>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Group Projects<br/>Meeting</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 8th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 15th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Walmart will be here for a networking mixer. Don’t miss this opportunity to talk to Walmart’s engineers!</div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Are you interested in starting, joining, or recruit ing for an extracurricular student project? Come to the monthly group projects meeting to discuss progress and engage with strategies for success. First group or project not working out? You can change groups or projects at any time!</div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
