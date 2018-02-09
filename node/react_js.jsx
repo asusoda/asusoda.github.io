@@ -1,3 +1,7 @@
+var ReactGA = require('react-ga');
+ReactGA.initialize('UA-113864357-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 const NAV_BAR_HEIGHT = 45;
 const MIN_DESKTOP_WIDTH = 1100;
 
