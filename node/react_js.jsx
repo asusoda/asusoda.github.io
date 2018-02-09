@@ -1,6 +1,7 @@
 var ReactGA = require('react-ga');
-ReactGA.initialize('UA-113864357-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.initialize('UA-113864357-1', {
+	debug: true
+});
 
 const NAV_BAR_HEIGHT = 45;
 const MIN_DESKTOP_WIDTH = 1100;
@@ -1785,6 +1786,8 @@ var App = React.createClass({
 	componentDidMount: function () {
 		window.addEventListener('scroll', this.handleScroll);
 		window.addEventListener("resize", this.updateWindowDimensions);
+		ReactGA.pageview(window.location.pathname);
+		console.log(window.location.pathname);
 	},
 	componentWillUnmount: function() {
 		window.removeEventListener('scroll', this.handleScroll);
