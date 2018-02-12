@@ -660,11 +660,11 @@ var DesktopWebsiteAboutUs = React.createClass({
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
 					</div>
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Google Tech Talk</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Git Workshop</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, February 6th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, February 13th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>This session will feature Google engineers and their path to and at Google, with plenty of tips and tricks for applying to roles at Google or other tech companies.</div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Come learn the ins and outs of GIt, a free and open source distributed version control system that you should be using!</div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
@@ -683,11 +683,11 @@ var DesktopWebsiteAboutUs = React.createClass({
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 					</div>
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Walmart Networking<br/>Mixer</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Group Projects<br/>Meeting</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 8th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 15th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Walmart will be here for a networking mixer. Don’t miss this opportunity to talk to Walmart’s engineers!</div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Are you interested in starting, joining, or recruit ing for an extracurricular student project? Come to the monthly group projects meeting to discuss progress and engage with strategies for success. First group or project not working out? You can change groups or projects at any time!</div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
@@ -985,11 +985,11 @@ var EventPage = React.createClass({
 							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
 						<div style={{position: "relative", top: 0}}>
-							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Git Workshop</div>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Mentorship:<br/>Setting up your<br/>dev environment</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, February 13th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, February 20th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Come learn the ins and outs of GIt, a free and open source distributed version control system that you should be using!</div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Mentors will be giving a short presentation on setting up your developer environments for a productive workflow. Afterwards we will break out for individual help!</div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
@@ -1014,11 +1014,11 @@ var EventPage = React.createClass({
 							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
 						<div style={{position: "relative", top: 0}}>
-							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Group Projects<br/>Meeting</div>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>SoDA Social:<br/>Pancakes and Quiplash</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 15th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 22nd, 2018<br/>7:00 pm ~ 9:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Are you interested in starting, joining, or recruit ing for an extracurricular student project? Come to the monthly group projects meeting to discuss progress and engage with strategies for success. First group or project not working out? You can change groups or projects at any time!</div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Come relax with your fellow SoDA members while we play the fun trivia game: Quiplash and enjoy some pancakes fresh off the griddle!</div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
