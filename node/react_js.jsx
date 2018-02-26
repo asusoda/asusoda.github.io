@@ -660,11 +660,11 @@ var DesktopWebsiteAboutUs = React.createClass({
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
 					</div>
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Mentorship:<br/>Setting up your <br/>dev environment</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Starbucks<br/>Tech Talk</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, February 20th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, February 27th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Mentors will be giving a short presentation on setting up your developer environments for a productive workflow. Afterwards we will break out for individual help!</div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Starbucks director of emerging technology, Ryan Bruels, will be giving a tech talk about how Starbucks is advancing technology in the retail business. He will be speaking about current trends in IoT and digital as well as how Starbucks is adapting through their current projects. This is one event you don't want to miss!</div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
@@ -683,11 +683,11 @@ var DesktopWebsiteAboutUs = React.createClass({
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 					</div>
 					<div style={{position: "relative", top: 0}}>
-						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>SoDA Social: <br/>Pancakes and Quiplash</div>
+						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>The Secret Lives<br/>of Binaries:<br/> Diving into Buffer<br/>Overflow Vulnerabilities</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 22nd, 2018<br/>7:00 pm ~ 9:00 pm</div>
+						<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, March 1st, 2018<br/>7:00 pm ~ 9:00 pm</div>
 						<br/>
-						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Come relax with your fellow SoDA members while we play the fun trivia game: Quiplash and enjoy some pancakes fresh off the griddle!</div>
+						<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Buffer Overflow Vulnerabilities with pwndevils: We will, as a group, hack an x86 binary focusing on the most famous and common vulnerability class: buffer overflows.</div>
 						<br/>
 						<br/>
 						<div style={{display: "inline-block"}}>
@@ -985,15 +985,15 @@ var EventPage = React.createClass({
 							onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
 						</div>
 						<div style={{position: "relative", top: 0}}>
-							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>SoDA Code Challenge</div>
+							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Goldman Sachs<br/>Tech Talk</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>BAC 216<br/>Tuesday, February 24th, 2018<br/></div>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, March 13th, 2018<br/>7:00 pm - 9:00 pm</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>SoDA’s 4th annual code challenge is here! Come join this exciting event for the opportunity to win awesome prizes while solving interesting coding challenges with your friends!</div>
+							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Goldman Sachs is here to discuss opportunities within their organization and their exciting advancements in tech! You don't want to miss this great networking opportunity!</div>
 							<br/>
 							<br/>
 							<div style={{display: "inline-block"}}>
-								<GoogleGetDirections link="https://www.google.com/maps/dir//Artisan+Court+at+the+Brickyard,+30+E+7th+St,+Tempe,+AZ+85287/@33.423483,-111.9389761,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872b08d9ca9a9e99:0xc53d69bc77ce803a!2m2!1d-111.9390249!2d33.4234996?hl=en"/>
+								<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
 								<div style={{position: "relative", left: 10}}>
 									<GoogleForms link="http://tinyurl.com/sodafebruary18"/>
 								</div>
@@ -1016,7 +1016,7 @@ var EventPage = React.createClass({
 						<div style={{position: "relative", top: 0}}>
 							<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Startup day</div>
 							<br/>
-							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, February 27th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+							<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Thursday, March 15th, 2018<br/>7:00 pm ~ 9:00 pm</div>
 							<br/>
 							<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Are you curious about what a startup does or interested in joining one? Local startups will be here to give you an inside peek into what they do and will also be accepting resumes!</div>
 							<br/>
