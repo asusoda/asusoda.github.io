@@ -31,7 +31,7 @@ public class GUI extends JPanel
         directory = Paths.get("").toAbsolutePath().toString();
 
         try {
-            Scanner myscanner = new Scanner(new FileReader(directory + "/instances.txt"));
+            Scanner myscanner = new Scanner(new FileReader(directory + "/java/instances.txt"));
             while (myscanner.hasNextLine()) {
                 String[] instance = myscanner.nextLine().split(" ");
 
@@ -219,7 +219,7 @@ public class GUI extends JPanel
             for (HashMap.Entry<String, RedirectingInstance> entry: instancesMap.entrySet()) {
                 try {
                     @SuppressWarnings("unused")
-					Process process = new ProcessBuilder( directory + "/redirect", entry.getValue().res_id, entry.getValue().target).start();
+					Process process = new ProcessBuilder( directory + "/java/redirect", entry.getValue().res_id, entry.getValue().target).start();
                 } catch (Exception e) {
                     System.out.println("failed to run redirect script - contact azaldin 623-760-2571");
                 }
@@ -227,17 +227,6 @@ public class GUI extends JPanel
 
         } else if (event.getSource() == push_button) {
         		try {
-//				execute_command("git add .");
-				
-//				execute_command("echo \"Hello World\"", rt);
-				
-//				pr.waitFor();
-				
-//				pr = rt.exec("git commit -m \"updating SoDA's url resource identifiers mapping\"");
-//				pr.waitFor();
-//				pr = rt.exec("git push");
-//				pr.waitFor();
-//				System.out.println("Done -- github repository has been updated");
         			System.out.println("This button doesn't work yet, you need to manually add, commit, and push to Github using the textfield provided below");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
