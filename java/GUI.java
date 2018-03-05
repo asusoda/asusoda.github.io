@@ -227,23 +227,18 @@ public class GUI extends JPanel
 
         } else if (event.getSource() == push_button) {
         		try {
-				execute_command("git add .");
+//				execute_command("git add .");
 				
 //				execute_command("echo \"Hello World\"", rt);
 				
 //				pr.waitFor();
-				
-//				BufferedReader stdError = new BufferedReader(new InputStreamReader(pr.getErrorStream()));
-				
-//				while ((s = stdError.readLine()) != null) {
-//				    System.out.println(s);
-//				}
 				
 //				pr = rt.exec("git commit -m \"updating SoDA's url resource identifiers mapping\"");
 //				pr.waitFor();
 //				pr = rt.exec("git push");
 //				pr.waitFor();
 //				System.out.println("Done -- github repository has been updated");
+        			System.out.println("This button doesn't work yet, you need to manually add, commit, and push to Github using the textfield provided below");
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -257,6 +252,10 @@ public class GUI extends JPanel
     		BufferedReader stdInput = new BufferedReader(new InputStreamReader(pr.getInputStream()));
 		String s = null;
 		while ((s = stdInput.readLine()) != null) {
+		    System.out.println(s);
+		}
+		BufferedReader stdError = new BufferedReader(new InputStreamReader(pr.getErrorStream()));
+		while ((s = stdError.readLine()) != null) {
 		    System.out.println(s);
 		}
 		pr.waitFor();
