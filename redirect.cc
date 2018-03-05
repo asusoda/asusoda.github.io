@@ -17,7 +17,7 @@ int main(int argc, const char** argv) {
 	string bp_html_2 = "\");</script></html>";
 
 	ofstream f_o;
-	f_o.open(res_id);
+	f_o.open(res_id + ".html");
 	f_o << bp_html_1 << link << bp_html_2;
 	f_o.close();
 }
