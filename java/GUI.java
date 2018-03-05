@@ -227,7 +227,8 @@ public class GUI extends JPanel
 
         } else if (event.getSource() == push_button) {
         		try {
-				execute_command("git help");
+				execute_command("git add .");
+				
 //				execute_command("echo \"Hello World\"", rt);
 				
 //				pr.waitFor();
@@ -258,6 +259,7 @@ public class GUI extends JPanel
 		while ((s = stdInput.readLine()) != null) {
 		    System.out.println(s);
 		}
+		pr.waitFor();
     }
 
     private class RedirectingInstance {
