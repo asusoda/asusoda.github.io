@@ -618,7 +618,31 @@ const TwitterTimeline = ({}) => {
 	);
 };
 
-var DesktopWebsiteAboutUs = React.createClass({
+var Event = React.createClass({
+	render: function() {
+		return (
+			<Palette title={this.props.title} titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
+				<div style={{position: "relative", top: 0}}>
+					<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>{this.props.eventName}</div>
+					<br/>
+					<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>{this.props.eventTimeLocation}</div>
+					<br/>
+					<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>{this.props.eventDescription}</div>
+					<br/>
+					<br/>
+					<div style={{display: "inline-block"}}>
+						<GoogleGetDirections link={this.props.mapLink}/>
+						<div style={{position: "relative", left: 10}}>
+							<GoogleForms link={this.props.formLink}/>
+						</div>
+					</div>
+				</div>
+			</Palette>
+		);
+	}
+});
+
+var Events = React.createClass({
 	getInitialState: function() {
 		return {
 			markerColor: "#0000ff",
@@ -628,6 +652,49 @@ var DesktopWebsiteAboutUs = React.createClass({
 			currentItemLeft: 0,
 			upcomingEvent: true,
 			color: "#0000ff"
+		}
+	},
+	render: function() {
+		<Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
+			<div style={{textAlign: "right"}}>
+				<div style={{position: "absolute", top: 60, left: 355, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: false})}
+				onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
+			</div>
+			<div style={{position: "relative", top: 0}}>
+				<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Starbucks<br/>Tech Talk</div>
+				<br/>
+				<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>CAVC 351<br/>Tuesday, February 27th, 2018<br/>7:00 pm ~ 9:00 pm</div>
+				<br/>
+				<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>Starbucks director of emerging technology, Ryan Bruels, will be giving a tech talk about how Starbucks is advancing technology in the retail business. He will be speaking about current trends in IoT and digital as well as how Starbucks is adapting through their current projects. This is one event you don't want to miss!</div>
+				<br/>
+				<br/>
+				<div style={{display: "inline-block"}}>
+					<GoogleGetDirections link="https://www.google.com/maps/place/College+Avenue+Commons/@33.423578,-111.9374073,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08d93afcfcb7:0xbc8472e303af6132!8m2!3d33.4235735!4d-111.9352186"/>
+					<div style={{position: "relative", left: 10}}>
+						<GoogleForms link="tinyurl.com/sodafebruary18"/>
+					</div>
+				</div>
+			</div>
+		</Palette>
+});
+
+var EventsThisWeek = [
+	<Event title="UPCOMING EVENTS" transition="next" name="shit" location="my anus" description="CHINA IS YUGE!!" map_link="" form_link=""/>,
+	<Event title="UPCOMING EVENTS" transition="next" name="shit2" location="my anus" description="CHINA IS YUGE!!" map_link="" form_link=""/>
+];
+
+var DesktopWebsiteAboutUs = React.createClass({
+	getInitialState: function() {
+		return {
+			markerColor: "#0000ff",
+			answerColor: "#0000ff",
+			answerText: "Show answer",
+			currentItemWidth: 0,
+			currentItemLeft: 0,
+			upcomingEvent: true,
+			color: "#0000ff",
+			transition: "Next",
+			left: 394.5
 		}
 	},
 
@@ -655,10 +722,10 @@ var DesktopWebsiteAboutUs = React.createClass({
 		if (this.state.upcomingEvent) {
 			upcomingEvent = (
 				<Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
-					<div style={{textAlign: "right"}}>
+					{/*<div style={{textAlign: "right"}}>
 						<div style={{position: "absolute", top: 60, left: 355, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: false})}
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Next</div>
-					</div>
+					</div>*/}
 					<div style={{position: "relative", top: 0}}>
 						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45}}>Starbucks<br/>Tech Talk</div>
 						<br/>
@@ -678,10 +745,10 @@ var DesktopWebsiteAboutUs = React.createClass({
 		} else {
 			upcomingEvent = (
 				<Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
-					<div style={{textAlign: "right"}}>
+					{/*<div style={{textAlign: "right"}}>
 						<div style={{position: "absolute", top: 60, left: 357, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: true})}
 						onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>Prev</div>
-					</div>
+					</div>*/}
 					<div style={{position: "relative", top: 0}}>
 						<div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>The Secret Lives<br/>of Binaries:<br/> Diving into Buffer<br/>Overflow Vulnerabilities</div>
 						<br/>
@@ -749,6 +816,10 @@ var DesktopWebsiteAboutUs = React.createClass({
 					<div style={{display: "inline-block", width: 500, verticalAlign: "top"}}>
 
 						<div style={{display: "inline-block"}}>
+							<div style={{textAlign: "right", position: "absolute"}}>
+								<div style={{position: "relative", top: 100, left: this.state.left, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 2}} onClick={() => this.setState({...this.state, upcomingEvent: !this.state.upcomingEvent, transition: this.state.upcomingEvent? "Prev" : "Next", left: this.state.upcomingEvent? 396.5 : 394.5})}
+								onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>{this.state.transition}</div>
+							</div>
 							{upcomingEvent}
 						</div>
 						
@@ -777,7 +848,6 @@ var DesktopWebsiteAboutUs = React.createClass({
 					</div>
 
 				</div>
-
 				<div>
 					<img src="images/geometry_white.jpg"/>
 					<div style={{position :"relative", top: -5, zIndex: -1, overflow: "hidden", height: 800}}>
