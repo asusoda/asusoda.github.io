@@ -107,26 +107,25 @@ public class Quickstart {
         String rangeEventsNextWeekCell = "D2";
 
         int numEventsThisWeek = Integer.parseInt(qs.getCellValue(service, spreadsheetId, numEventsThisWeekCell));
-        
         int numEventsNextWeek = Integer.parseInt(qs.getCellValue(service, spreadsheetId, numEventsNextWeekCell));
 
         List<Event> eventsThisWeek = new ArrayList<Event>();
         int row = Integer.parseInt(qs.getCellValue(service, spreadsheetId, rangeEventsThisWeekCell));
-        System.out.println(row);
+        
         for (int i = 0; i < numEventsThisWeek; i++) {
-            eventsThisWeek.add(new Event(service, spreadsheetId, "A" + (row + i) + ":H" + (row + i)));
+            eventsThisWeek.add(new Event(service, spreadsheetId, "A" + (row + i) + ":AB" + (row + i)));
         }
 
         List<Event> eventsNextWeek = new ArrayList<Event>();
         row = Integer.parseInt(qs.getCellValue(service, spreadsheetId, rangeEventsNextWeekCell));
+
         for (int i = 0; i < numEventsNextWeek; i++) {
-            eventsNextWeek.add(new Event(service, spreadsheetId, "A" + (row + i) + ":H" + (row + i)));
+            eventsNextWeek.add(new Event(service, spreadsheetId, "A" + (row + i) + ":AB" + (row + i)));
         }
 
-        for (Event event: eventsThisWeek) {
-            System.out.println(event.eventName);
-        }
-        
+        EventComponentBuilder.generateComponent(eventsThisWeek, "CompiledEventComponentsFiles/events1.txt", "UPCOMING EVENTS", "EventsThisWeekList");
+        EventComponentBuilder.generateComponent(eventsNextWeek, "CompiledEventComponentsFiles/events2.txt", "EVENTS NEXT WEEK", "EventsNextWeekList");
+    
     }
 
     /*

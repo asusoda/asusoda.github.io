@@ -22,18 +22,24 @@ class Event {
     public String startDate, endDate, eventName, eventDescription, location, time, RSVP_link;
 
     public Event(Sheets service, String spreadsheetId, String range) throws IOException {
+
+        // Sheets.Spreadsheets.Get request = service.spreadsheets().get(spreadsheetId);
+        // request.setRanges(ranges);
+        // request.setIncludeGridData(true);
+        // Spreadsheet response = request.execute();
+
         ValueRange response = service.spreadsheets().values()
             .get(spreadsheetId, range)
             .execute();
-        
+
         List<List<Object>> values = response.getValues();
         if (values == null || values.size() == 0) {
             System.out.println("No data found.");
         } else {
             List<Object> row = values.get(0);
 
-            startDate = row.get(0).toString();
-            endDate = row.get(1).toString();
+            startDate = row.get(26).toString();
+            endDate = row.get(27).toString();
             eventName = row.get(2).toString();
             eventDescription = row.get(4).toString();
             location = row.get(5).toString();

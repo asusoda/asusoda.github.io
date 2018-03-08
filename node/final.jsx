@@ -1,3 +1,64 @@
+var Event = React.createClass({
+	render: function() {
+		return (
+			<Palette title={this.props.title} titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
+				<div style={{position: "relative", top: 0}}>
+					<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45, width:"80%"}}>{this.props.eventName}</div>
+					<br/>
+					<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>{this.props.eventLocation}<br/>{this.props.eventDate}<br/>{this.props.eventTime}</div>
+					<br/>
+					<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>{this.props.eventDescription}</div>
+					<br/>
+					<br/>
+					<div style={{display: "inline-block"}}>
+						<GoogleGetDirections link={this.props.mapLink}/>
+						<div style={{position: "relative", left: 10}}>
+							<GoogleForms link={this.props.formLink}/>
+						</div>
+					</div>
+				</div>
+			</Palette>
+		);
+	}
+});
+
+var Events = React.createClass({
+	getInitialState: function() {
+		return {
+			markerColor: "#0000ff",
+			answerColor: "#0000ff",
+			answerText: "Show answer",
+			currentItemWidth: 0,
+			currentItemLeft: 0,
+			upcomingEvent: true,
+			color: "#0000ff",
+			transition: "Next",
+			left: 394.5,
+			currentEvent: 0,
+		}
+	},
+	render: function() {
+		var button = (
+				<div style={{textAlign: "right", position: "absolute"}}>
+					<div style={{position: "relative", top: 100, left: this.state.left, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 1}} onClick={() => {
+							this.setState({...this.state, upcomingEvent: !this.state.upcomingEvent, transition: (this.state.currentEvent == this.props.eventsList.length - 2)? "Prev" : "Next", left: (this.state.currentEvent == this.props.eventsList.length - 2)? 396.5 : 394.5, currentEvent: (this.state.currentEvent + 1) % this.props.eventsList.length});
+						}
+					}
+					onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>{this.state.transition}</div>
+				</div>
+		);
+		if (this.props.eventsList.length < 2) {
+			button = null;
+		}
+		return (
+		<div style={{display: "inline-block"}}>
+			{button}
+			{this.props.eventsList[this.state.currentEvent]}
+		</div>);
+	}
+});var EventsThisWeekList = [<Event title="UPCOMING EVENTS" eventName="Goldman Sachs Tech Talk" eventLocation="CAVC 351" eventDate="Tuesday, March 13th, 2018" eventTime="7:00-9:00PM" eventDescription="Goldman Sachs is here to discuss opportunities within their organization and their exciting advancements in tech! You don't want to miss this great networking opportunity!" mapLink="" formLink="tinyurl.com/sodamarch18"/>,<Event title="UPCOMING EVENTS" eventName="Startup day" eventLocation="CAVC 351" eventDate="Thursday, March 15th, 2018" eventTime="7:00-9:00PM" eventDescription="Are you curious about what a startup does or interested in joining one? Local startups will be here to give you an inside peek into what they do and will also be accepting resumes!
+" mapLink="" formLink="tinyurl.com/sodamarch18"/>,];
+var EventsNextWeekList = [<Event title="EVENTS NEXT WEEK" eventName="Group Projects" eventLocation="CAVC 351" eventDate="Tuesday, March 20th, 2018" eventTime="7:00-9:00PM" eventDescription="Are you interested in starting, joining, or recruit ing for an extracurricular student project? Come to the monthly group projects meeting to discuss progress and engage with strategies for success. First group or project not working out? You can change groups or projects at any time!" mapLink="" formLink="tinyurl.com/sodamarch18"/>,<Event title="EVENTS NEXT WEEK" eventName="StateFarm Tech Talk" eventLocation="CAVC 351" eventDate="Thursday, March 22th, 2018" eventTime="7:00-9:00PM" eventDescription="State Farm will be here to talk about opportunities within their company and about technology they are currently using! As always food will be provided!" mapLink="" formLink="tinyurl.com/sodamarch18"/>,];
 var ReactGA = require('react-ga');
 ReactGA.initialize('UA-113864357-1', {
 	debug: true
