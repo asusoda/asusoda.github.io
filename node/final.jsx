@@ -761,7 +761,7 @@ var DesktopWebsiteAboutUs = React.createClass({
 					</div>
 
 					<div style={{display: "inline-block", width: 500, verticalAlign: "top"}}>
-						
+					
 						<Events eventsList={EventsThisWeekList}/>
 						
 						<div style={{display: "inline-block"}}>
@@ -834,7 +834,7 @@ var MobileWebsiteAboutUs = React.createClass({
 			<div style={{width: width, overflow: "hidden", textAlign: "center", display:"inline-block", height: height}}>
 				<div style={{position: "absolute", textAlign: "center", width: width}}>
 					<div>
-						<div style={{position: "relative", top: 50}}>
+						{/*<div style={{position: "relative", top: 50}}>
 							<Palette title="UPCOMING EVENTS" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30}>
 								<div style={{fontFamily: "RopaSansPro-Light", fontSize: width/20 < 35 ? width/20 : 35}}>T-Shirts, Black Mirror, and Giveaways!</div>
 								<br/>
@@ -849,7 +849,8 @@ var MobileWebsiteAboutUs = React.createClass({
 									</div>
 								</div>
 							</Palette>
-						</div>
+						</div>*/}
+						<Events eventsList={EventsThisWeekList}/>
 
 						<Palette title="NEW TO SoDA?" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30} styling={{top: 50, position: "relative"}}>
 							<div style={{fontFamily: "RopaSansPro-Light", fontSize: width/20 < 35 ? width/20 : 35}}>Checklist.</div>
@@ -866,7 +867,7 @@ var MobileWebsiteAboutUs = React.createClass({
 								<OrgSync size={width/15 < 45 ? width/15 : 45}/>
 							</div>
 						</Palette>
-						<div>
+						{/*<div>
 							<Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30} styling={{top: 50, position: "relative"}}>
 								<br/>
 								<div style={{fontFamily: "RopaSans-Regular", fontSize: width/25 < 20 ? width/25 : 20}}>What is the only state in America that can be typed on one row of a traditional English QWERTY keyboard?</div>
@@ -877,7 +878,7 @@ var MobileWebsiteAboutUs = React.createClass({
 								</div>
 
 							</Palette>
-						</div>
+						</div>*/}
 					</div>
 				</div>
 				<img src="images/geometry_white.jpg" style={{height: height, width: "auto"}}/>
@@ -1196,22 +1197,7 @@ const MobileEventPage = ({width, height}) => {
 			<div style={{position: "absolute", textAlign: "center", width: width}}>
 				<div style={{display: "inline-block"}}>
 
-					<div>
-						<Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30}>
-								<div style={{fontFamily: "RopaSansPro-Light", fontSize: width/20 < 35 ? width/20 : 35}}></div>
-								<br/>
-								<div style={{fontFamily: "RopaSansPro-Medium", fontSize: width/25 < 25 ? width/25 : 25}}>   <br/><br/></div>
-								<br/>
-								<div style={{fontFamily: "RopaSansPro-Regular", fontSize: width/30 +2 < 20 ? width/30 + 2 : 20}}></div>
-								<br/>
-								<div style={{display: "inline-block"}}>
-									<GoogleGetDirections link="https://goo.gl/maps/NQXH4Fin8sT2" size={width/15 < 35 ? width/15 : 35}/>
-									<div style={{position: "relative", left: 10}}>
-										<GoogleForms link="https://docs.google.com/forms/d/e/1FAIpQLSc8vrhnO1pEMuHKkIcTt6DoAXbNTBmZjbwAlYrc3iJgaS4eiQ/viewform" size={width/15 < 35 ? width/15 : 35}/>
-									</div>
-								</div>
-							</Palette>
-					</div>
+					<Events eventsList={EventsNextWeekList}/>
 
 					<div>
 						<Palette title="SNEAK PEEK" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30}>
@@ -1889,7 +1875,7 @@ var App = React.createClass({
 				<div style={{top: 750, position: "relative"}} id="contacts">
 					<MobileContactPage width={this.state.width} height={1500}/>
 				</div>
-
+				
 				<MobileNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
 			</div>;
 		}
