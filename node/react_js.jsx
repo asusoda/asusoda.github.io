@@ -789,23 +789,27 @@ var MobileWebsiteAboutUs = React.createClass({
 								</div>
 							</Palette>
 						</div>*/}
-						<Events eventsList={EventsThisWeekList}/>
+						<div>
+							<Events eventsList={EventsThisWeekList}/>
+						</div>
 
-						<Palette title="NEW TO SoDA?" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30} styling={{top: 50, position: "relative"}}>
-							<div style={{fontFamily: "RopaSansPro-Light", fontSize: width/20 < 35 ? width/20 : 35}}>Checklist.</div>
-							<br/>
-							<FacebookPage size={width/15 < 45 ? width/15 : 45}/>
-							<TwitterPage size={width/15 < 45 ? width/15 : 45}/>
-							<InstagramPage size={width/15 < 45 ? width/15 : 45}/>
-							<GoogleCalendar size={width/15 < 45 ? width/15 : 45}/>
-							<SlackTeam size={width/15 < 45 ? width/15 : 45}/>
-							<YoutubeChannel size={width/15 < 45 ? width/15 : 45}/>
-							<GithubProjects size={width/15 < 45 ? width/15 : 45}/>
-							<NewsLetter size={width/15 < 45 ? width/15 : 45}/>
-							<div style={{position: "relative", textAlign: "center"}}>
-								<OrgSync size={width/15 < 45 ? width/15 : 45}/>
-							</div>
-						</Palette>
+						<div>
+							<Palette title="NEW TO SoDA?" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30} styling={{top: 50, position: "relative"}}>
+								<div style={{fontFamily: "RopaSansPro-Light", fontSize: width/20 < 35 ? width/20 : 35}}>Checklist.</div>
+								<br/>
+								<FacebookPage size={width/15 < 45 ? width/15 : 45}/>
+								<TwitterPage size={width/15 < 45 ? width/15 : 45}/>
+								<InstagramPage size={width/15 < 45 ? width/15 : 45}/>
+								<GoogleCalendar size={width/15 < 45 ? width/15 : 45}/>
+								<SlackTeam size={width/15 < 45 ? width/15 : 45}/>
+								<YoutubeChannel size={width/15 < 45 ? width/15 : 45}/>
+								<GithubProjects size={width/15 < 45 ? width/15 : 45}/>
+								<NewsLetter size={width/15 < 45 ? width/15 : 45}/>
+								<div style={{position: "relative", textAlign: "center"}}>
+									<OrgSync size={width/15 < 45 ? width/15 : 45}/>
+								</div>
+							</Palette>
+						</div>
 						{/*<div>
 							<Palette title="DID YOU KNOW?" titleAlign= "left" contentAlign= "left" width={width/2 + 50 < 400 ? width/2 + 50 : 400} margin={0} fontSize={width/25 + 5 < 30 ? width/25 + 5 : 30} styling={{top: 50, position: "relative"}}>
 								<br/>
@@ -1800,7 +1804,7 @@ var App = React.createClass({
 					<MobileAboutPage width={this.state.width}/>
 				</div>
 				<div style={{top: 150, position: "relative"}} id="events">
-					<MobileEventPage width={this.state.width} height={3*this.state.width < 1600 ? 3*this.state.width : 1600}/>
+					<MobileEventPage width={this.state.width} height={3*this.state.width < 1800 ? 3*this.state.width : 1800}/>
 				</div>
 				<div style={{top: 650, position: "relative"}} id="careers">
 					<MobileCareersPage width={this.state.width} height={1500}/>

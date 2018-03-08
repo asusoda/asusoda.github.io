@@ -1257,28 +1257,36 @@ var MobileWebsiteAboutUs = React.createClass({
 				React.createElement(
 					"div",
 					null,
-					React.createElement(Events, { eventsList: EventsThisWeekList }),
 					React.createElement(
-						Palette,
-						{ title: "NEW TO SoDA?", titleAlign: "left", contentAlign: "left", width: width / 2 + 50 < 400 ? width / 2 + 50 : 400, margin: 0, fontSize: width / 25 + 5 < 30 ? width / 25 + 5 : 30, styling: { top: 50, position: "relative" } },
+						"div",
+						null,
+						React.createElement(Events, { eventsList: EventsThisWeekList })
+					),
+					React.createElement(
+						"div",
+						null,
 						React.createElement(
-							"div",
-							{ style: { fontFamily: "RopaSansPro-Light", fontSize: width / 20 < 35 ? width / 20 : 35 } },
-							"Checklist."
-						),
-						React.createElement("br", null),
-						React.createElement(FacebookPage, { size: width / 15 < 45 ? width / 15 : 45 }),
-						React.createElement(TwitterPage, { size: width / 15 < 45 ? width / 15 : 45 }),
-						React.createElement(InstagramPage, { size: width / 15 < 45 ? width / 15 : 45 }),
-						React.createElement(GoogleCalendar, { size: width / 15 < 45 ? width / 15 : 45 }),
-						React.createElement(SlackTeam, { size: width / 15 < 45 ? width / 15 : 45 }),
-						React.createElement(YoutubeChannel, { size: width / 15 < 45 ? width / 15 : 45 }),
-						React.createElement(GithubProjects, { size: width / 15 < 45 ? width / 15 : 45 }),
-						React.createElement(NewsLetter, { size: width / 15 < 45 ? width / 15 : 45 }),
-						React.createElement(
-							"div",
-							{ style: { position: "relative", textAlign: "center" } },
-							React.createElement(OrgSync, { size: width / 15 < 45 ? width / 15 : 45 })
+							Palette,
+							{ title: "NEW TO SoDA?", titleAlign: "left", contentAlign: "left", width: width / 2 + 50 < 400 ? width / 2 + 50 : 400, margin: 0, fontSize: width / 25 + 5 < 30 ? width / 25 + 5 : 30, styling: { top: 50, position: "relative" } },
+							React.createElement(
+								"div",
+								{ style: { fontFamily: "RopaSansPro-Light", fontSize: width / 20 < 35 ? width / 20 : 35 } },
+								"Checklist."
+							),
+							React.createElement("br", null),
+							React.createElement(FacebookPage, { size: width / 15 < 45 ? width / 15 : 45 }),
+							React.createElement(TwitterPage, { size: width / 15 < 45 ? width / 15 : 45 }),
+							React.createElement(InstagramPage, { size: width / 15 < 45 ? width / 15 : 45 }),
+							React.createElement(GoogleCalendar, { size: width / 15 < 45 ? width / 15 : 45 }),
+							React.createElement(SlackTeam, { size: width / 15 < 45 ? width / 15 : 45 }),
+							React.createElement(YoutubeChannel, { size: width / 15 < 45 ? width / 15 : 45 }),
+							React.createElement(GithubProjects, { size: width / 15 < 45 ? width / 15 : 45 }),
+							React.createElement(NewsLetter, { size: width / 15 < 45 ? width / 15 : 45 }),
+							React.createElement(
+								"div",
+								{ style: { position: "relative", textAlign: "center" } },
+								React.createElement(OrgSync, { size: width / 15 < 45 ? width / 15 : 45 })
+							)
 						)
 					)
 				)
@@ -2946,7 +2954,7 @@ var App = React.createClass({
 				React.createElement(
 					"div",
 					{ style: { top: 150, position: "relative" }, id: "events" },
-					React.createElement(MobileEventPage, { width: this.state.width, height: 3 * this.state.width < 1600 ? 3 * this.state.width : 1600 })
+					React.createElement(MobileEventPage, { width: this.state.width, height: 3 * this.state.width < 1800 ? 3 * this.state.width : 1800 })
 				),
 				React.createElement(
 					"div",
