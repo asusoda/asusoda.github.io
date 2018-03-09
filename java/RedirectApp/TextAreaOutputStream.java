@@ -3,11 +3,14 @@ This class is not my work
 All credit goes to Lawrence Dol
 from https://stackoverflow.com/questions/342990/create-java-console-inside-a-gui-panel
 */
-import java.awt.*;
-import java.io.*;
-import java.util.*;
+import java.awt.EventQueue;
+import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
-import javax.swing.*;
+
+import javax.swing.JTextArea;
 
 public class TextAreaOutputStream
 		extends OutputStream

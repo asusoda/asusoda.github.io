@@ -1,10 +1,30 @@
-import java.io.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import java.util.*;
-import java.util.concurrent.LinkedBlockingQueue;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Scanner;
+import javax.swing.BoxLayout;
+import javax.swing.DefaultListModel;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 
 public class GUI extends JPanel
                     implements ActionListener {
@@ -20,7 +40,6 @@ public class GUI extends JPanel
     private JTextField input_field;
     private String directory;
     private Runtime rt;
-//    private PrintStream ps2;
 
     public GUI() {
         this.setLayout(new BorderLayout());
@@ -31,7 +50,7 @@ public class GUI extends JPanel
         directory = Paths.get("").toAbsolutePath().toString();
 
         try {
-            Scanner myscanner = new Scanner(new FileReader(directory + "/java/instances.txt"));
+            Scanner myscanner = new Scanner(new FileReader(directory + "/java/RedirectApp/res/instances.txt"));
             while (myscanner.hasNextLine()) {
                 String[] instance = myscanner.nextLine().split(" ");
 
@@ -177,7 +196,7 @@ public class GUI extends JPanel
             list.setSelectedIndex(0);
         } else if (event.getSource() == save_button || event.getSource() == delete_button) {
             for (HashMap.Entry<String, RedirectingInstance> entry: instancesMap.entrySet()) {
-                String name = entry.getKey();
+                String name = entry.getKey() + ".html";
                 System.out.println(name);
                 File file = new File(name);
                 if(file != null && file.delete()) {
@@ -206,7 +225,7 @@ public class GUI extends JPanel
             }
 
             try {
-                BufferedWriter out = new BufferedWriter(new FileWriter(directory  + "/instances.txt"));
+                BufferedWriter out = new BufferedWriter(new FileWriter(directory  + "/java/RedirectApp/res/instances.txt"));
                 for (HashMap.Entry<String, RedirectingInstance> entry: instancesMap.entrySet()) {
                     out.write(entry.getValue().res_id + " " + entry.getValue().target);
                     out.newLine();
@@ -219,7 +238,7 @@ public class GUI extends JPanel
             for (HashMap.Entry<String, RedirectingInstance> entry: instancesMap.entrySet()) {
                 try {
                     @SuppressWarnings("unused")
-					Process process = new ProcessBuilder( directory + "/java/redirect", entry.getValue().res_id, entry.getValue().target).start();
+					Process process = new ProcessBuilder( directory + "/java/RedirectApp/res/redirect", entry.getValue().res_id, entry.getValue().target).start();
                 } catch (Exception e) {
                     System.out.println("failed to run redirect script - contact azaldin 623-760-2571");
                 }
