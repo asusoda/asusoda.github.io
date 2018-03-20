@@ -1638,7 +1638,7 @@ const ContactPage = ({width, height}) => {
 				<SponsorLogo width={350} link="https://www.statefarm.com/" image="images/Statefarm_logo.png"/>
 
 				<SponsorLogo width={200} link="http://connexta.com/" image="images/Connexta_logo.jpg"/>
-				<SponsorLogo width={200} link="https://www.paypal.com/us/home" image= "https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png"/>
+				<SponsorLogo width={200} link="https://www.paypal.com/us/home" image= "images/Paypal_logo.png"/>
 				<SponsorLogo width={200} link="http://www.goldmansachs.com/" image="images/GoldmanSachs_logo.jpg"/>
 				<SponsorLogo width={200} link="https://careers.google.com/" image="images/google_logo.png"/>
 			</div>
