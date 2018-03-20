@@ -37,7 +37,7 @@ class EventComponentBuilder {
 				event.time,
 				event.eventDescription,
 				"",
-				event.RSVP_link);
+				"https://" + event.RSVP_link);
 		}
 		writer.println("];");
 		writer.close();
