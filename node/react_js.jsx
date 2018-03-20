@@ -1633,6 +1633,7 @@ const ContactPage = ({width, height}) => {
 				<SponsorLogo width={500} link="https://jobs.americanexpress.com/tech" image="images/AmericanExpress_logo.png"/>
 				<SponsorLogo width={250} link="https://www.starbucks.com/" image="images/starbucks_logo.jpg"/>
 				<SponsorLogo width={500} link="https://www.workiva.com/" image="images/Workiva_logo.png"/>
+				<SponsorLogo width={500} link="https://careers.walmart.com/" image="images/Walmart_logo.png"/>
 
 				<SponsorLogo width={350} link="https://www.godaddy.com/" image="images/GoDaddy_logo.png"/>
 				<SponsorLogo width={350} link="https://www.statefarm.com/" image="images/Statefarm_logo.png"/>
