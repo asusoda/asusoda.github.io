@@ -1777,7 +1777,7 @@ var App = React.createClass({
 					</div>
 					<div id="events"></div>
 					<div style={{top: 150, position: "relative"}}>
-						<EventPage width={this.state.width} height={1000}/>
+						<EventPage width={this.state.width} height={1400}/>
 					</div>
 					<div id="careers"></div>
 					<div style={{top: 150, position: "relative"}}>
