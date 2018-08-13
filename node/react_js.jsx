@@ -1698,6 +1698,15 @@ const MobileContactPage = ({width, height}) => {
 			</Card>
 
 			<div style={{position: "Relative", top: 50}}>
+				<div style={{marginBottom: 50}}><img src="images/Amazon_logo.jpg" width={width-50 < 500 ? width-50 : 500}/></div>
+				<div style={{marginBottom: 50}}><img src="images/Workiva_logo.png" width={width-50 < 500 ? width-50 : 500}/></div>
+
+				<div style={{marginBottom: 50}}><img src="images/AmericanExpress_logo.png" width={width-50 < 350 ? width-50 : 350}/></div>
+				<div style={{marginBottom: 50}}><img src="images/Walmart_logo.png" width={width-50 < 350 ? width-50 : 350}/></div>
+
+				<div style={{marginBottom: 50}}><img src="images/GoDaddy_logo.png" width={width/1.5 < 200 ? width/1.5 : 200}/></div>
+				<div style={{marginBottom: 50}}><img src="images/Paypal_logo.png" width={width/1.5 < 200 ? width/1.5 : 200}/></div>
+				{/*
 					<div style={{marginBottom: 50}}><img src="images/AllState2017_logo.png" width={width-50 < 500 ? width-50 : 500}/></div>
 					<div style={{marginBottom: 50}}><img src="images/Amazon_logo.jpg" width={width-50 < 500 ? width-50 : 500}/></div>
 					<div style={{marginBottom: 50}}><img src="images/AmericanExpress_logo.png" width={width-50 < 500 ? width-50 : 500}/></div>
@@ -1710,6 +1719,7 @@ const MobileContactPage = ({width, height}) => {
 					<div style={{marginBottom: 50}}><img src="images/Connexta_logo.jpg" width={width/2.5 < 200 ? width/2.5 : 200}/></div>
 					<div style={{marginBottom: 50}}><img src="images/GoldmanSachs_logo.jpg" width={width/2.5 < 200 ? width/2.5 : 200}/></div>
 					<div style={{marginBottom: 50}}><img src="images/google_logo.png" width={width/2.5 < 200 ? width/2.5 : 200}/></div>
+				*/}
 			</div>
 
 		</div>
