@@ -1680,6 +1680,18 @@ const ContactPage = ({width, height}) => {
 			</Card>
 
 			<div style={{position: "Relative", top: 50}}>
+				<SponsorLogo width={500} link="https://www.amazon.com" image="images/Amazon_logo.jpg"/>
+				<SponsorLogo width={500} link="https://www.workiva.com/" image="images/Workiva_logo.png"/>
+
+				<SponsorLogo width={350} link="https://jobs.americanexpress.com/tech" image="images/AmericanExpress_logo.png"/>
+				<SponsorLogo width={350} link="https://careers.walmart.com/" image="images/Walmart_logo.png"/>
+
+				<SponsorLogo width={200} link="https://www.godaddy.com/" image="images/GoDaddy_logo.png"/>
+				<SponsorLogo width={200} link="https://www.paypal.com/us/home" image= "images/Paypal_logo.png"/>
+
+
+
+			{/*
 				<SponsorLogo width={500} link="https://www.allstate.com/" image="images/AllState2017_logo.png"/>
 				<SponsorLogo width={500} link="https://www.amazon.com" image="images/Amazon_logo.jpg"/>
 				<SponsorLogo width={500} link="https://jobs.americanexpress.com/tech" image="images/AmericanExpress_logo.png"/>
@@ -1694,6 +1706,7 @@ const ContactPage = ({width, height}) => {
 				<SponsorLogo width={200} link="https://www.paypal.com/us/home" image= "images/Paypal_logo.png"/>
 				<SponsorLogo width={200} link="http://www.goldmansachs.com/" image="images/GoldmanSachs_logo.jpg"/>
 				<SponsorLogo width={200} link="https://careers.google.com/" image="images/google_logo.png"/>
+			*/}
 			</div>
 
 		</div>
@@ -1717,29 +1730,24 @@ const MobileContactPage = ({width, height}) => {
 		</div>
 
 		<div style={{textAlign: "center", position: "relative", top: 50}}>
-			<MobileMembershipCard title="President" name="Andrew Phillips" email="aphill23@asu.edu" width={width}/>
-			<MobileMembershipCard title="Vice President" name="Daniel Baird" email="jamesdanielbaird@gmail.com" width={width}/>
-			<MobileMembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu" width={width}/>
-			<MobileMembershipCard title="Secretary" name="Alex Geschardt" email="ageschar@asu.edu" width={width}/>
-			<MobileMembershipCard title="USG Liaison" name="Lilian Ngweta" email="lngweta@asu.edu" width={width}/>
-			<MobileMembershipCard title="Director of Documentation" name="Siddhant Kanwar" email="skanwar2@asu.edu" width={width}/>
-			<MobileMembershipCard title="Industry Outreach Chair - Event Planning Lead" name="Chris Warren" email="cawarre6@asu.edu" width={width}/>
-			<MobileMembershipCard title="Director of Group Projects" name="Steven King Jr." email="stevekx86@gmail.com" width={width}/>
-			<MobileMembershipCard title="Director of Career Development" name="Nikola Uzelac" email="nuzelac@asu.edu" width={width}/>
-			<MobileMembershipCard title="Industry Outreach Chair" name="Andrew Phillips" email="aphill23@asu.edu" width={width}/>
-			<MobileMembershipCard title="Director of Operations" name="Sagarika Pannase" email="spannase@gmail.com" width={width}/>
-			<MobileMembershipCard title="Community Development Director" name="Jacob Folson" email="jfolsom2@asu.edu" width={width}/>
-			<MobileMembershipCard title="Lead Development Director" name="Somesh Singh" email="ssing213@asu.edu" width={width}/>
-			<MobileMembershipCard title="Social Chair" name="Lukas Zygas" email="lzygas@asu.edu" width={width}/>
-			<MobileMembershipCard title="Community Outreach Chair" name="Rishi Bharadwaj Avvaru" email="avvarurishi123@gmail.com" width={width}/>
-			<MobileMembershipCard title="Director of Marketing - Marketing Lead" name="Michael Rojas" email="mikerojaswa@gmail.com" width={width}/>
-			<MobileMembershipCard title="Director of Communications" name="Raffi Shahbazian" email="raffi.p.shahbazian@gmail.com" width={width}/>
-			<MobileMembershipCard title="Director of Digital Media" name="Junshu Liu" email="jliu237@asu.edu" width={width}/>
-			<MobileMembershipCard title="Public Engagement Chair" name="Justin Dierken" email="jdierken@asu.edu" width={width}/>
-			<MobileMembershipCard title="Webmaster" name="Vincent Truong" email="vincenttruong96@gmail.com, vntruon1@asu.edu" width={width}/>
-			<MobileMembershipCard title="Web Developer" name="Azaldin Freidoon" email="azaldin123@yahoo.com" width={width}/>
-			<MobileMembershipCard title="Photographer" name="Jona Joe" email="jjoe3@asu.edu" width={width}/>
-			<MobileMembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu" width={width}/>
+			<MobileMembershipCard title="President" name="Andrew Phillips" email="aphill23@asu.edu"/>
+			<MobileMembershipCard title="Vice President" name="Michael Rojas" email="marojas3@asu.edu"/>
+			<MobileMembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu"/>
+			<MobileMembershipCard title="Administrative Coordinator" name="Raj Shah" email="rnshah9@asu.edu"/>
+			<MobileMembershipCard title="ASU Liaison" name="Devyash Lodha" email="dlodha@asu.edu"/>
+			<MobileMembershipCard title="Director of Fundraising" name="Sagarika Pannase" email="spannase@gmail.com"/>
+			<MobileMembershipCard title="Industry Outreach Chair" name="Kristy Taing" email="ktaing@asu.edu"/>
+			<MobileMembershipCard title="Industry Outreach Chair" name="Matthew Budiman" email="mbudiman@asu.edu"/>
+			<MobileMembershipCard title="Community Development Director" name="Brandon Quan" email="bquan1@asu.edu"/>
+			<MobileMembershipCard title="Community Development Director" name="Trevor Angle" email="taangle@asu.edu"/>
+			<MobileMembershipCard title="Technical Development Director" name="Jacob Folsom" email="jfolsom2@asu.edu"/>
+			<MobileMembershipCard title="Career Development Director" name="Hunter Hardwick" email="hhardwic@asu.edu"/>
+			<MobileMembershipCard title="Director of Marketing" name="Raffi Shabazian" email="raffi.p.shahbazian@gmail.com"/>
+			<MobileMembershipCard title="Director of Communications" name="Mohit Doshi" email="mdoshi3@asu.edu"/>
+			<MobileMembershipCard title="Director of Digital Media" name="Jona Joe" email="jjoe3@asu.edu"/>
+			<MobileMembershipCard title="Director of Digital Media" name="Alex Geschardt" email="ageschar@asu.edu"/>
+			<MobileMembershipCard title="Public Engagement Chair" name="Chris Warren" email="cawarre6@asu.edu"/>
+			<MobileMembershipCard title="Webmaster" name="Azaldin Freidoon" email="afreidoo@asu.edu"/>
 		</div>
 
 		<div style={{textAlign: "center", position: "relative", top: 150}} id="sponsors">
