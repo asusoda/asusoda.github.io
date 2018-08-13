@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var Event = React.createClass({
@@ -89,8 +89,8 @@ var Events = React.createClass({
 			this.props.eventsList[this.state.currentEvent]
 		);
 	}
-});var EventsThisWeekList = [React.createElement(Event, { title: "UPCOMING EVENTS", eventName: "PayPal Tech Talk: What I wish I knew and what I\u2019ve learned in industry", eventLocation: "CAVC 351", eventDate: "Tuesday, April 17, 2018", eventTime: "7:00-9:00PM", eventDescription: "Get an inside look at what it\u2019s like to work for PayPal as two recent college grads talk about their experience working there and what they\u2019ve learned in industry, as well as provide tips for those going into their first software engineering job or internship!", mapLink: "", formLink: "https://tinyurl.com/sodaapril18" }), React.createElement(Event, { title: "UPCOMING EVENTS", eventName: "Group Projects - DEMO Day", eventLocation: "CAVC 351", eventDate: "Thursday, April 19, 2018", eventTime: "7:00-9:00PM", eventDescription: "Come check out the final group projects meeting that showcases each group project and their journey throughout the semester. We will be doing a raffle for random prizes and the grand prize will be voted on by the audience and teams!  Note: You don\u2019t have to have a project to show up, you may want to show up to see what everyone has done!\nAdditionally, if a team wants to come and demo their project they can do that even if they didn\u2019t come to the group projects meetings.", mapLink: "", formLink: "https://tinyurl.com/sodaapril18" })];
-var EventsNextWeekList = [React.createElement(Event, { title: "EVENTS NEXT WEEK", eventName: "Intel Tech Talk: Why is my CSS not working?", eventLocation: "CAVC 351", eventDate: "Tuesday, April 24, 2018", eventTime: "7:00-9:00PM", eventDescription: "It happens every day.  You optimistically write the most basic CSS (Cascading Style Sheet) code to modify the UI\u2019s (user interface) appearance of your website and are met with one of two results.  Either nothing takes effect or the wrong thing gets affected.  Pessimism eventually prevails and you abandon ship on a good idea leaving in place a wasted opportunity to enhance the user experience.  In this presentation we will run through common CSS problems and present tips and tricks that will make you better at identifying and correcting UI issues.", mapLink: "", formLink: "https://tinyurl.com/sodaapril18" }), React.createElement(Event, { title: "EVENTS NEXT WEEK", eventName: "SoDA Social: Casino Night", eventLocation: "CAVC 351", eventDate: "Thursday, April 26, 2018", eventTime: "7:00-9:00PM", eventDescription: "Join SoDA for this fun casino night social where we will play games such as poker, blackjack, and more. Don\u2019t worry if you don\u2019t know how to play, we will teach you! Also did I mention there will be giveaways and swag! ", mapLink: "", formLink: "https://tinyurl.com/sodaapril18" })];
+});var EventsThisWeekList = [React.createElement(Event, { title: "UPCOMING EVENTS", eventName: "First SoDA Meeting", eventLocation: "TBD - 23 of July", eventDate: "Thursday, August 23, 2018", eventTime: "6:30", eventDescription: "What is SoDA and can I drink it?", mapLink: "", formLink: "https://TBD" })];
+var EventsNextWeekList = [];
 var ReactGA = require('react-ga');
 ReactGA.initialize('UA-113864357-1', {
 	debug: true
@@ -2285,26 +2285,22 @@ const MobileHackathonPage = ({ width, height }) => {
 
 const MembershipCard = ({ title, name, email, link }) => {
 	return React.createElement(
-		"a",
-		{ target: "_blank", style: { textDecoration: "none", color: "#000" }, href: link },
+		Card,
+		{ styling: { backgroundColor: "#F6F3F4", width: 500, textAlign: "left", borderRadius: 10, padding: 20, margin: 40, display: "inline-block", marginBottom: 20 } },
 		React.createElement(
-			Card,
-			{ styling: { backgroundColor: "#F6F3F4", width: 500, textAlign: "left", borderRadius: 10, padding: 20, margin: 40, display: "inline-block", marginBottom: 20 } },
-			React.createElement(
-				"div",
-				{ style: { fontFamily: "RopaSansSCPro-Regular", fontSize: 25 } },
-				title
-			),
-			React.createElement(
-				"div",
-				{ style: { fontFamily: "RopaSansPro-Medium", fontSize: 40 } },
-				name
-			),
-			React.createElement(
-				"div",
-				{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 25 } },
-				email
-			)
+			"div",
+			{ style: { fontFamily: "RopaSansSCPro-Regular", fontSize: 25 } },
+			title
+		),
+		React.createElement(
+			"div",
+			{ style: { fontFamily: "RopaSansPro-Medium", fontSize: 40 } },
+			name
+		),
+		React.createElement(
+			"div",
+			{ style: { fontFamily: "RopaSansPro-Regular", fontSize: 25 } },
+			email
 		)
 	);
 };
@@ -2663,28 +2659,24 @@ const ContactPage = ({ width, height }) => {
 		React.createElement(
 			"div",
 			{ style: { textAlign: "center", position: "relative", top: 50 } },
-			React.createElement(MembershipCard, { title: "President", name: "Michelle Capriles-Escobedo", email: "mcaprile@asu.edu", link: "https://www.linkedin.com/in/mcaprile/" }),
-			React.createElement(MembershipCard, { title: "Vice President", name: "Daniel Baird", email: "jamesdanielbaird@gmail.com", link: "https://www.linkedin.com/in/james-daniel-baird-a85608ba/" }),
-			React.createElement(MembershipCard, { title: "Treasurer", name: "Lewis Ruskin", email: "ljruskin@asu.edu", link: "https://www.linkedin.com/in/ljruskin/" }),
-			React.createElement(MembershipCard, { title: "Secretary", name: "Alex Geschardt", email: "ageschar@asu.edu", link: "https://www.linkedin.com/in/alex-geschardt-732a12a8/" }),
-			React.createElement(MembershipCard, { title: "USG Liaison", name: "Lilian Ngweta", email: "lngweta@asu.edu", link: "https://www.linkedin.com/in/lilianngweta/" }),
-			React.createElement(MembershipCard, { title: "Director of Documentation", name: "Raj Shah", email: "rnshah9@asu.edu", link: "" }),
-			React.createElement(MembershipCard, { title: "Industry Outreach Chair - Event Planning Lead", name: "Chris Warren", email: "cawarre6@asu.edu", link: "https://www.linkedin.com/in/chris-warren-cj-24347178/" }),
-			React.createElement(MembershipCard, { title: "Director of Group Projects", name: "Steven King Jr.", email: "stevekx86@gmail.com", link: "https://www.linkedin.com/in/steve-king-jr-9b5283a8/" }),
-			React.createElement(MembershipCard, { title: "Director of Career Development", name: "Nikola Uzelac", email: "nuzelac@asu.edu", link: "https://www.linkedin.com/in/nickuzelac/" }),
-			React.createElement(MembershipCard, { title: "Industry Outreach Chair", name: "Andrew Phillips", email: "aphill23@asu.edu", link: "https://www.linkedin.com/in/andrewphillips20/" }),
-			React.createElement(MembershipCard, { title: "Director of Operations", name: "Sagarika Pannase", email: "spannase@gmail.com", link: "https://www.linkedin.com/in/sagarikapannase/" }),
-			React.createElement(MembershipCard, { title: "Community Development Director", name: "Jacob Folsom", email: "jfolsom2@asu.edu", link: "https://www.linkedin.com/in/jacob-folsom-68148b125/" }),
-			React.createElement(MembershipCard, { title: "Lead Development Director", name: "Somesh Singh", email: "ssing213@asu.edu", link: "" }),
-			React.createElement(MembershipCard, { title: "Social Chair", name: "Lukas Zygas", email: "lzygas@asu.edu", link: "https://www.linkedin.com/in/lukas-zygas-105b57a5/" }),
-			React.createElement(MembershipCard, { title: "Community Outreach Chair", name: "Rishi Bharadwaj Avvaru", email: "avvarurishi123@gmail.com", link: "https://www.linkedin.com/in/rishi-avvaru-805aa5152/" }),
-			React.createElement(MembershipCard, { title: "Director of Marketing - Marketing Lead", name: "Michael Rojas", email: "mikerojaswa@gmail.com", link: "https://www.linkedin.com/in/mikerojaswa/" }),
-			React.createElement(MembershipCard, { title: "Director of Communications", name: "Raffi Shahbazian", email: "raffi.p.shahbazian@gmail.com", link: "https://www.linkedin.com/in/raffipshahbazian/" }),
-			React.createElement(MembershipCard, { title: "Director of Digital Media", name: "Junshu Liu", email: "jliu237@asu.edu", link: "https://www.linkedin.com/in/junshu-liu-52ba26105/" }),
-			React.createElement(MembershipCard, { title: "Public Engagement Chair", name: "Kristy Taing", email: "ktaing@asu.edu", link: "" }),
-			React.createElement(MembershipCard, { title: "Webmaster", name: "Azaldin Freidoon", email: "azaldin123@yahoo.com", link: "https://www.linkedin.com/in/azaldin-freidoon-b18207105/" }),
-			React.createElement(MembershipCard, { title: "Photographer", name: "Jona Joe", email: "jjoe3@asu.edu", link: "https://www.linkedin.com/in/jona-joe-932a62149/" }),
-			React.createElement(MembershipCard, { title: "Student Advisor", name: "Nathan Fegard", email: "nfegard@asu.edu", link: "https://www.linkedin.com/in/nathan-fegard-03692911b/" })
+			React.createElement(MembershipCard, { title: "President", name: "Andrew Phillips", email: "aphill23@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Vice President", name: "Michael Rojas", email: "marojas3@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Treasurer", name: "Lewis Ruskin", email: "ljruskin@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Administrative Coordinator", name: "Raj Shah", email: "rnshah9@asu.edu" }),
+			React.createElement(MembershipCard, { title: "ASU Liaison", name: "Devyash Lodha", email: "dlodha@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Director of Fundraising", name: "Sagarika Pannase", email: "spannase@gmail.com" }),
+			React.createElement(MembershipCard, { title: "Industry Outreach Chair", name: "Kristy Taing", email: "ktaing@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Industry Outreach Chair", name: "Matthew Budiman", email: "mbudiman@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Community Development Director", name: "Brandon Quan", email: "bquan1@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Community Development Director", name: "Trevor Angle", email: "taangle@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Technical Development Director", name: "Jacob Folsom", email: "jfolsom2@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Career Development Director", name: "Hunter Hardwick", email: "hhardwic@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Director of Marketing", name: "Raffi Shabazian", email: "raffi.p.shahbazian@gmail.com" }),
+			React.createElement(MembershipCard, { title: "Director of Communications", name: "Mohit Doshi", email: "mdoshi3@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Director of Digital Media", name: "Jona Joe", email: "jjoe3@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Director of Digital Media", name: "Alex Geschardt", email: "ageschar@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Public Engagement Chair", name: "Chris Warren", email: "cawarre6@asu.edu" }),
+			React.createElement(MembershipCard, { title: "Webmaster", name: "Azaldin Freidoon", email: "afreidoo@asu.edu" })
 		),
 		React.createElement("div", { id: "sponsors" }),
 		React.createElement(
@@ -2755,7 +2747,7 @@ const MobileContactPage = ({ width, height }) => {
 		React.createElement(
 			"div",
 			{ style: { textAlign: "center", position: "relative", top: 50 } },
-			React.createElement(MobileMembershipCard, { title: "President", name: "Michelle Capriles-Escobedo", email: "mcaprile@asu.edu", width: width }),
+			React.createElement(MobileMembershipCard, { title: "President", name: "Andrew Phillips", email: "aphill23@asu.edu", width: width }),
 			React.createElement(MobileMembershipCard, { title: "Vice President", name: "Daniel Baird", email: "jamesdanielbaird@gmail.com", width: width }),
 			React.createElement(MobileMembershipCard, { title: "Treasurer", name: "Lewis Ruskin", email: "ljruskin@asu.edu", width: width }),
 			React.createElement(MobileMembershipCard, { title: "Secretary", name: "Alex Geschardt", email: "ageschar@asu.edu", width: width }),

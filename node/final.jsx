@@ -56,11 +56,8 @@ var Events = React.createClass({
 			{this.props.eventsList[this.state.currentEvent]}
 		</div>);
 	}
-});var EventsThisWeekList = [<Event title="UPCOMING EVENTS" eventName="PayPal Tech Talk: What I wish I knew and what I’ve learned in industry" eventLocation="CAVC 351" eventDate="Tuesday, April 17, 2018" eventTime="7:00-9:00PM" eventDescription="Get an inside look at what it’s like to work for PayPal as two recent college grads talk about their experience working there and what they’ve learned in industry, as well as provide tips for those going into their first software engineering job or internship!" mapLink="" formLink="https://tinyurl.com/sodaapril18"/>,<Event title="UPCOMING EVENTS" eventName="Group Projects - DEMO Day" eventLocation="CAVC 351" eventDate="Thursday, April 19, 2018" eventTime="7:00-9:00PM" eventDescription="Come check out the final group projects meeting that showcases each group project and their journey throughout the semester. We will be doing a raffle for random prizes and the grand prize will be voted on by the audience and teams! 
-
-Note: You don’t have to have a project to show up, you may want to show up to see what everyone has done!
-Additionally, if a team wants to come and demo their project they can do that even if they didn’t come to the group projects meetings." mapLink="" formLink="https://tinyurl.com/sodaapril18"/>,];
-var EventsNextWeekList = [<Event title="EVENTS NEXT WEEK" eventName="Intel Tech Talk: Why is my CSS not working?" eventLocation="CAVC 351" eventDate="Tuesday, April 24, 2018" eventTime="7:00-9:00PM" eventDescription="It happens every day.  You optimistically write the most basic CSS (Cascading Style Sheet) code to modify the UI’s (user interface) appearance of your website and are met with one of two results.  Either nothing takes effect or the wrong thing gets affected.  Pessimism eventually prevails and you abandon ship on a good idea leaving in place a wasted opportunity to enhance the user experience.  In this presentation we will run through common CSS problems and present tips and tricks that will make you better at identifying and correcting UI issues." mapLink="" formLink="https://tinyurl.com/sodaapril18"/>,<Event title="EVENTS NEXT WEEK" eventName="SoDA Social: Casino Night" eventLocation="CAVC 351" eventDate="Thursday, April 26, 2018" eventTime="7:00-9:00PM" eventDescription="Join SoDA for this fun casino night social where we will play games such as poker, blackjack, and more. Don’t worry if you don’t know how to play, we will teach you! Also did I mention there will be giveaways and swag! " mapLink="" formLink="https://tinyurl.com/sodaapril18"/>,];
+});var EventsThisWeekList = [<Event title="UPCOMING EVENTS" eventName="First SoDA Meeting" eventLocation="TBD - 23 of July" eventDate="Thursday, August 23, 2018" eventTime="6:30" eventDescription="What is SoDA and can I drink it?" mapLink="" formLink="https://TBD"/>,];
+var EventsNextWeekList = [];
 var ReactGA = require('react-ga');
 ReactGA.initialize('UA-113864357-1', {
 	debug: true
@@ -1433,13 +1430,11 @@ const MobileHackathonPage = ({width, height}) => {
 
 const MembershipCard = ({title, name, email, link}) => {
 	return (
-		<a target="_blank" style={{textDecoration: "none", color: "#000"}} href={link}>
 		<Card styling={{backgroundColor: "#F6F3F4", width: 500, textAlign: "left", borderRadius: 10, padding: 20, margin: 40, display: "inline-block", marginBottom: 20}}>
 			<div style={{fontFamily: "RopaSansSCPro-Regular", fontSize: 25}}>{title}</div>
 			<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 40}}>{name}</div>
 			<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 25}}>{email}</div>
 		</Card>
-		</a>
 	);
 };
 
@@ -1655,31 +1650,25 @@ const ContactPage = ({width, height}) => {
 
 		<div id="officers"></div>
 		<div style={{textAlign: "center", position: "relative", top: 50}}>
-			<MembershipCard title="President" name="Michelle Capriles-Escobedo" email="mcaprile@asu.edu" link="https://www.linkedin.com/in/mcaprile/"/>
-			<MembershipCard title="Vice President" name="Daniel Baird" email="jamesdanielbaird@gmail.com" link="https://www.linkedin.com/in/james-daniel-baird-a85608ba/"/>
-			<MembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu" link="https://www.linkedin.com/in/ljruskin/"/>
-			<MembershipCard title="Secretary" name="Alex Geschardt" email="ageschar@asu.edu" link="https://www.linkedin.com/in/alex-geschardt-732a12a8/"/>
-			<MembershipCard title="USG Liaison" name="Lilian Ngweta" email="lngweta@asu.edu" link="https://www.linkedin.com/in/lilianngweta/"/>
-			<MembershipCard title="Director of Documentation" name="Raj Shah" email="rnshah9@asu.edu" link=""/>
-			<MembershipCard title="Industry Outreach Chair - Event Planning Lead" name="Chris Warren" email="cawarre6@asu.edu" link="https://www.linkedin.com/in/chris-warren-cj-24347178/"/>
-			<MembershipCard title="Director of Group Projects" name="Steven King Jr." email="stevekx86@gmail.com" link="https://www.linkedin.com/in/steve-king-jr-9b5283a8/"/>
-			<MembershipCard title="Director of Career Development" name="Nikola Uzelac" email="nuzelac@asu.edu" link="https://www.linkedin.com/in/nickuzelac/"/>
-			<MembershipCard title="Industry Outreach Chair" name="Andrew Phillips" email="aphill23@asu.edu" link="https://www.linkedin.com/in/andrewphillips20/"/>
-			<MembershipCard title="Director of Operations" name="Sagarika Pannase" email="spannase@gmail.com" link="https://www.linkedin.com/in/sagarikapannase/"/>
-			<MembershipCard title="Community Development Director" name="Jacob Folsom" email="jfolsom2@asu.edu" link="https://www.linkedin.com/in/jacob-folsom-68148b125/"/>
-			<MembershipCard title="Lead Development Director" name="Somesh Singh" email="ssing213@asu.edu" link=""/>
-			<MembershipCard title="Social Chair" name="Lukas Zygas" email="lzygas@asu.edu" link="https://www.linkedin.com/in/lukas-zygas-105b57a5/"/>
-			<MembershipCard title="Community Outreach Chair" name="Rishi Bharadwaj Avvaru" email="avvarurishi123@gmail.com" link="https://www.linkedin.com/in/rishi-avvaru-805aa5152/"/>
-			<MembershipCard title="Director of Marketing - Marketing Lead" name="Michael Rojas" email="mikerojaswa@gmail.com" link="https://www.linkedin.com/in/mikerojaswa/"/>
-			<MembershipCard title="Director of Communications" name="Raffi Shahbazian" email="raffi.p.shahbazian@gmail.com" link="https://www.linkedin.com/in/raffipshahbazian/"/>
-			<MembershipCard title="Director of Digital Media" name="Junshu Liu" email="jliu237@asu.edu" link="https://www.linkedin.com/in/junshu-liu-52ba26105/"/>
-			<MembershipCard title="Public Engagement Chair" name="Kristy Taing" email="ktaing@asu.edu" link=""/>
-			{/*
-			<MembershipCard title="Webmaster" name="Vincent Truong" email="vincenttruong96@gmail.com, vntruon1@asu.edu" link="https://www.linkedin.com/in/vntruon1/"/>
-			*/}
-			<MembershipCard title="Webmaster" name="Azaldin Freidoon" email="azaldin123@yahoo.com" link="https://www.linkedin.com/in/azaldin-freidoon-b18207105/"/>
-			<MembershipCard title="Photographer" name="Jona Joe" email="jjoe3@asu.edu" link="https://www.linkedin.com/in/jona-joe-932a62149/"/>
-			<MembershipCard title="Student Advisor" name="Nathan Fegard" email="nfegard@asu.edu" link="https://www.linkedin.com/in/nathan-fegard-03692911b/"/>
+			<MembershipCard title="President" name="Andrew Phillips" email="aphill23@asu.edu"/>
+			<MembershipCard title="Vice President" name="Michael Rojas" email="marojas3@asu.edu"/>
+			<MembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu"/>
+			<MembershipCard title="Administrative Coordinator" name="Raj Shah" email="rnshah9@asu.edu"/>
+			<MembershipCard title="ASU Liaison" name="Devyash Lodha" email="dlodha@asu.edu"/>
+			<MembershipCard title="Director of Fundraising" name="Sagarika Pannase" email="spannase@gmail.com"/>
+			<MembershipCard title="Industry Outreach Chair" name="Kristy Taing" email="ktaing@asu.edu"/>
+			<MembershipCard title="Industry Outreach Chair" name="Matthew Budiman" email="mbudiman@asu.edu"/>
+			<MembershipCard title="Community Development Director" name="Brandon Quan" email="bquan1@asu.edu"/>
+			<MembershipCard title="Community Development Director" name="Trevor Angle" email="taangle@asu.edu"/>
+			<MembershipCard title="Technical Development Director" name="Jacob Folsom" email="jfolsom2@asu.edu"/>
+			<MembershipCard title="Career Development Director" name="Hunter Hardwick" email="hhardwic@asu.edu"/>
+			<MembershipCard title="Director of Marketing" name="Raffi Shabazian" email="raffi.p.shahbazian@gmail.com"/>
+			<MembershipCard title="Director of Communications" name="Mohit Doshi" email="mdoshi3@asu.edu"/>
+			<MembershipCard title="Director of Digital Media" name="Jona Joe" email="jjoe3@asu.edu"/>
+			<MembershipCard title="Director of Digital Media" name="Alex Geschardt" email="ageschar@asu.edu"/>
+			<MembershipCard title="Public Engagement Chair" name="Chris Warren" email="cawarre6@asu.edu"/>
+			<MembershipCard title="Webmaster" name="Azaldin Freidoon" email="afreidoo@asu.edu"/>
+			
 		</div>
 
 		<div id="sponsors"></div>
@@ -1728,7 +1717,7 @@ const MobileContactPage = ({width, height}) => {
 		</div>
 
 		<div style={{textAlign: "center", position: "relative", top: 50}}>
-			<MobileMembershipCard title="President" name="Michelle Capriles-Escobedo" email="mcaprile@asu.edu" width={width}/>
+			<MobileMembershipCard title="President" name="Andrew Phillips" email="aphill23@asu.edu" width={width}/>
 			<MobileMembershipCard title="Vice President" name="Daniel Baird" email="jamesdanielbaird@gmail.com" width={width}/>
 			<MobileMembershipCard title="Treasurer" name="Lewis Ruskin" email="ljruskin@asu.edu" width={width}/>
 			<MobileMembershipCard title="Secretary" name="Alex Geschardt" email="ageschar@asu.edu" width={width}/>

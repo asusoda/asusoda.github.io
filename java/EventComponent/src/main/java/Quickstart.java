@@ -101,10 +101,10 @@ public class Quickstart {
 
         String spreadsheetId = qs.getCurrentSpreadSheetID(service);
 
-        String numEventsThisWeekCell = "A2";
-        String numEventsNextWeekCell = "C2";
-        String rangeEventsThisWeekCell = "B2";
-        String rangeEventsNextWeekCell = "D2";
+        String numEventsThisWeekCell = "A1";
+        String numEventsNextWeekCell = "C1";
+        String rangeEventsThisWeekCell = "B1";
+        String rangeEventsNextWeekCell = "D1";
 
         int numEventsThisWeek = Integer.parseInt(qs.getCellValue(service, spreadsheetId, numEventsThisWeekCell));
         int numEventsNextWeek = Integer.parseInt(qs.getCellValue(service, spreadsheetId, numEventsNextWeekCell));
