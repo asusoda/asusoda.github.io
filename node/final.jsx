@@ -56,7 +56,7 @@ var Events = React.createClass({
 			{this.props.eventsList[this.state.currentEvent]}
 		</div>);
 	}
-});var EventsThisWeekList = [<Event title="UPCOMING EVENTS" eventName="First SoDA Meeting" eventLocation="TBD - 23 of July" eventDate="Thursday, August 23, 2018" eventTime="6:30" eventDescription="What is SoDA and can I drink it?" mapLink="" formLink="https://TBD"/>,];
+});var EventsThisWeekList = [<Event title="UPCOMING EVENTS" eventName="First SoDA Meeting" eventLocation="CAVC 351" eventDate="Thursday, August 23, 2018" eventTime="7:00-9:00pm" eventDescription="What is SoDA and can I drink it?" mapLink="" formLink="https://tinyurl.com/sodawelcome18"/>,];
 var EventsNextWeekList = [];
 var ReactGA = require('react-ga');
 ReactGA.initialize('UA-113864357-1', {
