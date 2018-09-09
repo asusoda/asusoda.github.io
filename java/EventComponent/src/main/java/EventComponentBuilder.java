@@ -29,14 +29,13 @@ class EventComponentBuilder {
 		writer.printf("var %s = [", array_name);
 		for (Event event: events) {
 			String date = (event.startDate.equals(event.endDate))? event.startDate : (event.startDate + " - " + event.endDate);
-			writer.printf("<Event title=\"%s\" eventName=\"%s\" eventLocation=\"%s\" eventDate=\"%s\" eventTime=\"%s\" eventDescription=\"%s\" mapLink=\"%s\" formLink=\"%s\"/>,", 
+			writer.printf("<Event title=\"%s\" eventName=\"%s\" eventLocation=\"%s\" eventDate=\"%s\" eventTime=\"%s\" eventDescription=\"%s\" formLink=\"%s\"/>,", 
 				title,
 				event.eventName,
 				event.location,
 				date,
 				event.time,
 				event.eventDescription,
-				"",
 				"https://" + event.RSVP_link);
 		}
 		writer.println("];");

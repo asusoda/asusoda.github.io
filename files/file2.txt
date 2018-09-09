@@ -37,7 +37,6 @@ var Event = React.createClass({
 				React.createElement(
 					"div",
 					{ style: { display: "inline-block" } },
-					React.createElement(GoogleGetDirections, { link: this.props.mapLink }),
 					React.createElement(
 						"div",
 						{ style: { position: "relative", left: 10 } },
@@ -89,8 +88,8 @@ var Events = React.createClass({
 			this.props.eventsList[this.state.currentEvent]
 		);
 	}
-});var EventsThisWeekList = [React.createElement(Event, { title: "UPCOMING EVENTS", eventName: "SoDA Kickoff", eventLocation: "Student Pavilion Senita A and B", eventDate: "Tuesday, September 4, 2018", eventTime: "6:00-9:00pm", eventDescription: "//30-40 minutes: Kick off with our sponsers Do not forget: Extension cords, Black electrical tape", mapLink: "", formLink: "https://https://tinyurl.com/sodakickoff2018" }), React.createElement(Event, { title: "UPCOMING EVENTS", eventName: "Workiva", eventLocation: "CAVC 351", eventDate: "Thursday, September 6, 2018", eventTime: "7:00-9:00pm", eventDescription: "Workiva is stopping by SoDA to give a presentation on future opportunities including their upcoming Flutter Code Jams! ", mapLink: "", formLink: "https://http://tinyurl.com/sodaseptember18-1" })];
-var EventsNextWeekList = [React.createElement(Event, { title: "EVENTS NEXT WEEK", eventName: "American Express", eventLocation: "CAVC 351", eventDate: "Tuesday, September 11, 2018", eventTime: "7:00-9:00pm", eventDescription: "I dont know what companies are planning :( American Express will be giving a tech talk about machine learning! They will be covering usages (throughout their company (maybe idk?)) and go through a (demo?)", mapLink: "", formLink: "https://" }), React.createElement(Event, { title: "EVENTS NEXT WEEK", eventName: "Career Related", eventLocation: "", eventDate: "Thursday, September 13, 2018", eventTime: "7:00-9:00pm", eventDescription: "//High level computer science overview (What is computer science, what different career fields are there, maybe explore other majors, this is for CS Freshmen to get to know what they\u2019re getting themselves into mostly) ", mapLink: "", formLink: "https://" })];
+});var EventsThisWeekList = [React.createElement(Event, { title: "UPCOMING EVENTS", eventName: "American Express", eventLocation: "CAVC 351", eventDate: "Tuesday, September 11, 2018", eventTime: "7:00-9:00pm", eventDescription: "American Express is coming to SoDA to give a tech talk on their usage of machine learning within their company.", formLink: "https://https://tinyurl.com/sodaseptember18-2" }), React.createElement(Event, { title: "UPCOMING EVENTS", eventName: "Techincal Interview Prep", eventLocation: "CAVC 351", eventDate: "Saturday, December 30, 1899 - Thursday, September 13, 2018", eventTime: "7:00-9:00pm", eventDescription: "Get a head start for your first technical interview with our round of mock interview questions! SoDA Officers will be here to guide you through a typical coding interview setting.", formLink: "https://https://tinyurl.com/sodaseptember18-2" })];
+var EventsNextWeekList = [];
 var ReactGA = require('react-ga');
 ReactGA.initialize('UA-113864357-1', {
 	debug: true
@@ -1257,6 +1256,8 @@ var MobileWebsiteAboutUs = React.createClass({
 				React.createElement(
 					"div",
 					null,
+					React.createElement("br", null),
+					React.createElement("br", null),
 					React.createElement(
 						"div",
 						null,
@@ -1282,11 +1283,8 @@ var MobileWebsiteAboutUs = React.createClass({
 							React.createElement(YoutubeChannel, { size: width / 15 < 45 ? width / 15 : 45 }),
 							React.createElement(GithubProjects, { size: width / 15 < 45 ? width / 15 : 45 }),
 							React.createElement(NewsLetter, { size: width / 15 < 45 ? width / 15 : 45 }),
-							React.createElement(
-								"div",
-								{ style: { position: "relative", textAlign: "center" } },
-								React.createElement(OrgSync, { size: width / 15 < 45 ? width / 15 : 45 })
-							)
+							React.createElement(OrgSync, { size: width / 15 < 45 ? width / 15 : 45 }),
+							React.createElement("div", { style: { position: "relative", textAlign: "center" } })
 						)
 					)
 				)
@@ -1745,55 +1743,6 @@ var EventPage = React.createClass({
 	}
 });
 
-/*
-//            return (
-//            <div style={{width: width, backgroundColor: "#F6F3F4", id:"events"}}>
-//                
-//
-//                <div style={{height: height, overflow: "hidden", textAlign: "center", display:"inline-block", position: "relative", top:80}}>
-//                    <div style={{position: "absolute", textAlign: "center", width: width}}>
-//                        <div style={{display: "inline-block"}}>
-//                            
-//                            <div style={{display: "inline-block"}}>
-//                                <Palette title="EVENTS NEXT WEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
-//                                    <div style={{fontFamily: "RopaSansPro-Light", fontSize: 50}}>Group Projects</div>
-//                                    <br/>
-//                                    <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>PSH 150<br/>Thursday, October 12th, 2017<br/>7:00 pm ~ 9:00 pm</div>
-//                                    <br/>
-//                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}> </div>
-//                                    <br/>
-//                                    <br/>
-//                                    <div style={{display: "inline-block"}}>
-//                                        <GoogleGetDirections link="https://www.google.com/maps/place/Physical+Sciences+Center+F-Wing/@33.4208759,-111.9336383,17z/data=!3m1!4b1!4m5!3m4!1s0x872b08dc4ac6af5f:0x213722c63856da62!8m2!3d33.4208714!4d-111.9314496"/>
-//                                        <div style={{position: "relative", left: 10}}>
-//                                            <GoogleForms link="https://docs.google.com/forms/d/e/1FAIpQLSdWI4Z5lwjRkhfBDE6RodJ_YP4FW3liWyFZJUCliEHnPU8W-w/viewform"/>
-//                                        </div>
-//                                    </div>
-//
-//                                </Palette>
-//                            </div>
-//
-//                            <div style={{display: "inline-block"}}>
-//                                <Palette title="SNEAK PEEK" titleAlign= "left" contentAlign= "left" width={400} margin={40}>
-//                                    <div style={{}}>
-//                                        <iframe width="400" height="300" src="https://www.youtube.com/embed/oyejM9R2w6U" frameBorder="0" allowFullScreen></iframe>
-//                                    </div>
-//                                    <div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>SoDA Social Fall 2016 Compilation</div>
-//                                    <br/>
-//                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>It&apos;s always a good time. SoDers always have fun in this room. Watch our previous SoDA social event and see how SoDers get involved.</div>
-//                                    <br/>
-//                                    <YoutubeChannel/>
-//                                    <br/>
-//                                    <div style={{fontFamily: "RopaSansPro-Regular", fontSize: 17}}>Watch more events and hackathon videos from SoDA.</div>
-//                                </Palette>
-//                            </div>
-//                        </div>
-//                    </div>
-//                    <img src="images/asu_geometry_soda_white.jpg" style={{width: width, overflow: "hidden", height: height}}/>
-//                </div>
-//            </div>);
-*/
-
 const MobileEventPage = ({ width, height }) => {
 	return React.createElement(
 		"div",
@@ -2250,39 +2199,6 @@ const MobileHackathonPage = ({ width, height }) => {
 	);
 };
 
-/*
-			<div style={{position: "relative", top: 50}}>
-				<Card styling={{backgroundColor: "#FFF", padding: 30, textAlign: "left", display: "inline-block", borderRadius: 10}}>
-					<div style={{fontSize: 100, fontFamily: "RopaSansPro-Light"}}><span style={{fontFamily: "RopaSansPro-ExtraBold"}}>WTH</span>ecks</div>
-					<div style={{fontSize: 50, fontFamily: "RopaSansPro-Light", position: "relative", top: -30}}>2017</div>
-					<div style={{fontSize: 300, fontFamily: "RopaSansPro-Light", position: "absolute", textAlign: "center", color: "#E4E4E4", zIndex: -1, top: -60, marginLeft: 50}}>W</div>
-					<div style={{textAlign: "center", fontSize: 25}}>
-						<div style={{fontFamily: "RopaSansPro-Bold"}}>September 8~10, 2017</div>
-						<div style={{fontFamily: "RopaSansPro-Regular"}}>What University<br/>Surprise, AZ</div>
-					</div>
-					<br/>
-					<LearnMore/>
-					<br/>
-					<ReserveBus/>
-				</Card>
-
-				<Card styling={{backgroundColor: "#FFF", padding: 30, textAlign: "left", display: "inline-block", borderRadius: 10, verticalAlign: "top", marginLeft: 130, height: 475}}>
-					<div style={{color: "#E4E4E4", fontSize: 100, fontFamily: "RopaSansPro-Medium", textAlign: "center"}}>coLd</div>
-					<div style={{fontSize: 100, position: "relative", top: -50, fontFamily: "RopaSansPro-Medium"}}>coco 2017</div>
-					<div style={{color: "#E4E4E4", fontSize: 100, position: "relative", top: -90, fontFamily: "RopaSansPro-Medium", textAlign: "center"}}>codE</div>
-					<div style={{position: "relative", top: -100}}>
-						<div style={{textAlign: "center", fontSize: 25}}>
-							<div style={{fontFamily: "RopaSansPro-Bold"}}>September 8~10, 2017</div>
-							<div style={{fontFamily: "RopaSansPro-Regular"}}>Cool University<br/>Glendale, AZ</div>
-						</div>
-						<br/>
-						<LearnMore/>
-					</div>
-				</Card>
-				<br/>
-			</div>
-*/
-
 const MembershipCard = ({ title, name, email, link }) => {
 	return React.createElement(
 		Card,
@@ -2307,22 +2223,26 @@ const MembershipCard = ({ title, name, email, link }) => {
 
 const MobileMembershipCard = ({ title, name, email, width }) => {
 	return React.createElement(
-		Card,
-		{ styling: { backgroundColor: "#F6F3F4", width: (width - 100 < 500 ? width - 100 : 500) || 500, textAlign: "left", borderRadius: 10, padding: 20, display: "inline-block", marginBottom: 40 } },
+		"div",
+		{ style: { paddingRight: 20 } },
 		React.createElement(
-			"div",
-			{ style: { fontFamily: "RopaSansSCPro-Regular", fontSize: width / 20 < 25 ? width / 20 : 25 } },
-			title
-		),
-		React.createElement(
-			"div",
-			{ style: { fontFamily: "RopaSansSCPro-Bold", fontSize: width / 20 < 25 ? width / 20 : 25 } },
-			name
-		),
-		React.createElement(
-			"div",
-			{ style: { fontFamily: "RopaSansPro-Regular", fontSize: width / 20 < 25 ? width / 20 : 25 } },
-			email
+			Card,
+			{ styling: { backgroundColor: "#F6F3F4", width: (width - 100 < 500 ? width - 100 : 500) || 500, textAlign: "left", borderRadius: 10, padding: 20, display: "inline-block", marginBottom: 40 } },
+			React.createElement(
+				"div",
+				{ style: { fontFamily: "RopaSansSCPro-Regular", fontSize: width / 20 < 25 ? width / 20 : 25 } },
+				title
+			),
+			React.createElement(
+				"div",
+				{ style: { fontFamily: "RopaSansSCPro-Bold", fontSize: width / 20 < 25 ? width / 20 : 25 } },
+				name
+			),
+			React.createElement(
+				"div",
+				{ style: { fontFamily: "RopaSansPro-Regular", fontSize: width / 20 < 25 ? width / 20 : 25 } },
+				email
+			)
 		)
 	);
 };
@@ -2789,12 +2709,22 @@ const MobileContactPage = ({ width, height }) => {
 				React.createElement(
 					"div",
 					{ style: { marginBottom: 50 } },
+					React.createElement("img", { src: "images/starbucks_logo.jpg", width: width / 2 < 250 ? width / 2 : 250 })
+				),
+				React.createElement(
+					"div",
+					{ style: { marginBottom: 50 } },
 					React.createElement("img", { src: "images/AmericanExpress_logo.png", width: width - 50 < 350 ? width - 50 : 350 })
 				),
 				React.createElement(
 					"div",
 					{ style: { marginBottom: 50 } },
 					React.createElement("img", { src: "images/Walmart_logo.png", width: width - 50 < 350 ? width - 50 : 350 })
+				),
+				React.createElement(
+					"div",
+					{ style: { marginBottom: 50 } },
+					React.createElement("img", { src: "images/USAA_logo.png", width: width - 50 < 350 ? width - 50 : 350 })
 				),
 				React.createElement(
 					"div",
@@ -2810,6 +2740,120 @@ const MobileContactPage = ({ width, height }) => {
 		)
 	);
 };
+
+// var App = React.createClass({
+// 	getInitialState: function() {
+// 		return {
+// 			width: window.innerWidth,
+// 			height: window.innerHeight,
+// 			currentPage: "home"
+// 		}
+// 	},
+// 	componentDidMount: function () {
+// 		window.addEventListener('scroll', this.handleScroll);
+// 		window.addEventListener("resize", this.updateWindowDimensions);
+// 		ReactGA.pageview(window.location.pathname);
+// 		console.log(window.location.pathname);
+// 	},
+// 	componentWillUnmount: function() {
+// 		window.removeEventListener('scroll', this.handleScroll);
+// 		window.removeEventListener("resize", this.updateWindowDimensions);
+// 	},
+// 	handleScroll: function(event) {
+// 		var yoffset = event.path[1].pageYOffset;
+// 		var currentPage = this.currentPage;
+// 		if (yoffset >= 10726) {
+// 			if (currentPage != "contact us")
+// 				this.setState({...this.state, currentPage: "contact us"});
+// 		} else if (yoffset >= 8043-300) {
+// 			if (currentPage != "community")
+// 				this.setState({...this.state, currentPage: "community"});
+// 		} else if (yoffset >= 6245) {
+// 			if (currentPage != "hackathon")
+// 				this.setState({...this.state, currentPage: "hackathon"});
+// 		} else if (yoffset >= 4953) {
+// 			if (currentPage != "careers")
+// 				this.setState({...this.state, currentPage: "careers"});
+// 		} else if (yoffset >= 3360) {
+// 			if (currentPage != "events")
+// 				this.setState({...this.state, currentPage: "events"});
+// 		} else if (yoffset >= 2600) {
+// 			if (currentPage != "about")
+// 				this.setState({...this.state, currentPage: "about"});
+// 		} else if (yoffset >= 0) {
+// 			if (currentPage != "home")
+// 				this.setState({...this.state, currentPage: "home"});
+// 		}
+// 	},
+// 	updateWindowDimensions: function() {
+// 		this.setState({...this.state, width: window.innerWidth});
+// 	},
+// 	render: function() {
+// 		if (window.innerWidth >= 1075) {
+// 			return (
+// 				<div>
+// 					<div id="home">
+// 						<DesktopWebsiteHeader width= {this.state.width} height={400}/>
+// 					</div>
+// 					<DesktopWebsiteAboutUs width= {this.state.width}/>
+// 					<div id="about"></div>
+// 					<div style={{top: 80, position: "relative", textAlign: "center"}}>
+// 						<AboutPage width={this.state.width}/>
+// 					</div>
+// 					<div id="events"></div>
+// 					<div style={{top: 150, position: "relative"}}>
+// 						<EventPage width={this.state.width} height={1400}/>
+// 					</div>
+// 					<div id="careers"></div>
+// 					<div style={{top: 150, position: "relative"}}>
+// 						<CareersPage width={this.state.width} height={1500}/>
+// 					</div>
+// 					<div id="hackathon"></div>
+// 					<div style={{top: 150, position: "relative"}}>
+// 						<HackathonPage width={this.state.width} height={1500}/>
+// 					</div>
+// 					<div id="community"></div>
+// 					<div style={{top: 150, position: "relative"}}>
+// 						<CommunityPage width={this.state.width} height={1300}/>
+// 					</div>
+// 					<div id="contacts"></div>
+// 					<div style={{top: 250, position: "relative"}}>
+// 						<ContactPage width={this.state.width} height={1500}/>
+// 					</div>
+// 					<DesktopNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT} currentPage={this.state.currentPage}/>
+// 				</div>);
+// 		} else {
+// 			return <div>
+// 				<MobileWebsiteHeader width= {this.state.width} height={this.state.width/2 < 300 ? this.state.width/2 : 300}/>
+// 				<MobileWebsiteAboutUs width= {this.state.width} height={3.5*this.state.width < 1800 ? 3.5*this.state.width : 1800}/>
+// 				<div style={{top: 40, position: "relative", textAlign: "center"}}>
+// 					<MobileAboutPage width={this.state.width}/>
+// 				</div>
+// 				<div style={{top: 150, position: "relative"}} id="events">
+// 					<MobileEventPage width={this.state.width} height={3*this.state.width < 1800 ? 3*this.state.width : 1800}/>
+// 				</div>
+// 				<div style={{top: 650, position: "relative"}} id="careers">
+// 					<MobileCareersPage width={this.state.width} height={1500}/>
+// 				</div>
+// 				<div style={{top: 650, position: "relative"}} id="hackathon">
+// 					<MobileHackathonPage width={this.state.width} height={4*this.state.width < 1800 ? 4*this.state.width : 1800}/>
+// 				</div>
+// 				<div style={{top: 650, position: "relative"}} id="community">
+// 					<MobileCommunityPage width={this.state.width} height={1300}/>
+// 				</div>
+// 				<div style={{top: 750, position: "relative"}} id="contacts">
+// 					<MobileContactPage width={this.state.width} height={1500}/>
+// 				</div>
+
+// 				<MobileNavigationBar width={this.state.width} height={NAV_BAR_HEIGHT}/>
+// 			</div>;
+// 		}
+// 	}
+// });
+
+// <div style={{top: 150, position: "relative"}} id="events">
+// 	<MobileEventPage width={this.state.width} height={3*this.state.width < 1800 ? 3*this.state.width : 1800}/>
+// </div>
 
 var App = React.createClass({
 	displayName: "App",
@@ -2831,116 +2875,42 @@ var App = React.createClass({
 		window.removeEventListener('scroll', this.handleScroll);
 		window.removeEventListener("resize", this.updateWindowDimensions);
 	},
-	handleScroll: function (event) {
-		var yoffset = event.path[1].pageYOffset;
-		var currentPage = this.currentPage;
-		if (yoffset >= 10726) {
-			if (currentPage != "contact us") this.setState(_extends({}, this.state, { currentPage: "contact us" }));
-		} else if (yoffset >= 8043 - 300) {
-			if (currentPage != "community") this.setState(_extends({}, this.state, { currentPage: "community" }));
-		} else if (yoffset >= 6245) {
-			if (currentPage != "hackathon") this.setState(_extends({}, this.state, { currentPage: "hackathon" }));
-		} else if (yoffset >= 4953) {
-			if (currentPage != "careers") this.setState(_extends({}, this.state, { currentPage: "careers" }));
-		} else if (yoffset >= 3360) {
-			if (currentPage != "events") this.setState(_extends({}, this.state, { currentPage: "events" }));
-		} else if (yoffset >= 2600) {
-			if (currentPage != "about") this.setState(_extends({}, this.state, { currentPage: "about" }));
-		} else if (yoffset >= 0) {
-			if (currentPage != "home") this.setState(_extends({}, this.state, { currentPage: "home" }));
-		}
-	},
 	updateWindowDimensions: function () {
 		this.setState(_extends({}, this.state, { width: window.innerWidth }));
 	},
 	render: function () {
-		if (window.innerWidth >= 1075) {
-			return React.createElement(
+		return React.createElement(
+			"div",
+			null,
+			React.createElement(MobileWebsiteHeader, { width: this.state.width, height: this.state.width / 2 < 300 ? this.state.width / 2 : 300 }),
+			React.createElement(MobileWebsiteAboutUs, { width: this.state.width, height: 3.5 * this.state.width < 1800 ? 3.5 * this.state.width : 1800 }),
+			React.createElement(
 				"div",
-				null,
-				React.createElement(
-					"div",
-					{ id: "home" },
-					React.createElement(DesktopWebsiteHeader, { width: this.state.width, height: 400 })
-				),
-				React.createElement(DesktopWebsiteAboutUs, { width: this.state.width }),
-				React.createElement("div", { id: "about" }),
-				React.createElement(
-					"div",
-					{ style: { top: 80, position: "relative", textAlign: "center" } },
-					React.createElement(AboutPage, { width: this.state.width })
-				),
-				React.createElement("div", { id: "events" }),
-				React.createElement(
-					"div",
-					{ style: { top: 150, position: "relative" } },
-					React.createElement(EventPage, { width: this.state.width, height: 1400 })
-				),
-				React.createElement("div", { id: "careers" }),
-				React.createElement(
-					"div",
-					{ style: { top: 150, position: "relative" } },
-					React.createElement(CareersPage, { width: this.state.width, height: 1500 })
-				),
-				React.createElement("div", { id: "hackathon" }),
-				React.createElement(
-					"div",
-					{ style: { top: 150, position: "relative" } },
-					React.createElement(HackathonPage, { width: this.state.width, height: 1500 })
-				),
-				React.createElement("div", { id: "community" }),
-				React.createElement(
-					"div",
-					{ style: { top: 150, position: "relative" } },
-					React.createElement(CommunityPage, { width: this.state.width, height: 1300 })
-				),
-				React.createElement("div", { id: "contacts" }),
-				React.createElement(
-					"div",
-					{ style: { top: 250, position: "relative" } },
-					React.createElement(ContactPage, { width: this.state.width, height: 1500 })
-				),
-				React.createElement(DesktopNavigationBar, { width: this.state.width, height: NAV_BAR_HEIGHT, currentPage: this.state.currentPage })
-			);
-		} else {
-			return React.createElement(
+				{ style: { top: 40, position: "relative", textAlign: "center" } },
+				React.createElement(MobileAboutPage, { width: this.state.width })
+			),
+			React.createElement(
 				"div",
-				null,
-				React.createElement(MobileWebsiteHeader, { width: this.state.width, height: this.state.width / 2 < 300 ? this.state.width / 2 : 300 }),
-				React.createElement(MobileWebsiteAboutUs, { width: this.state.width, height: 3.5 * this.state.width < 1800 ? 3.5 * this.state.width : 1800 }),
-				React.createElement(
-					"div",
-					{ style: { top: 40, position: "relative", textAlign: "center" } },
-					React.createElement(MobileAboutPage, { width: this.state.width })
-				),
-				React.createElement(
-					"div",
-					{ style: { top: 150, position: "relative" }, id: "events" },
-					React.createElement(MobileEventPage, { width: this.state.width, height: 3 * this.state.width < 1800 ? 3 * this.state.width : 1800 })
-				),
-				React.createElement(
-					"div",
-					{ style: { top: 650, position: "relative" }, id: "careers" },
-					React.createElement(MobileCareersPage, { width: this.state.width, height: 1500 })
-				),
-				React.createElement(
-					"div",
-					{ style: { top: 650, position: "relative" }, id: "hackathon" },
-					React.createElement(MobileHackathonPage, { width: this.state.width, height: 4 * this.state.width < 1800 ? 4 * this.state.width : 1800 })
-				),
-				React.createElement(
-					"div",
-					{ style: { top: 650, position: "relative" }, id: "community" },
-					React.createElement(MobileCommunityPage, { width: this.state.width, height: 1300 })
-				),
-				React.createElement(
-					"div",
-					{ style: { top: 750, position: "relative" }, id: "contacts" },
-					React.createElement(MobileContactPage, { width: this.state.width, height: 1500 })
-				),
-				React.createElement(MobileNavigationBar, { width: this.state.width, height: NAV_BAR_HEIGHT })
-			);
-		}
+				{ style: { top: 100, position: "relative" }, id: "careers" },
+				React.createElement(MobileCareersPage, { width: this.state.width, height: 1500 })
+			),
+			React.createElement(
+				"div",
+				{ style: { top: 650, position: "relative" }, id: "hackathon" },
+				React.createElement(MobileHackathonPage, { width: this.state.width, height: 4 * this.state.width < 1800 ? 4 * this.state.width : 1800 })
+			),
+			React.createElement(
+				"div",
+				{ style: { top: 650, position: "relative" }, id: "community" },
+				React.createElement(MobileCommunityPage, { width: this.state.width, height: 1300 })
+			),
+			React.createElement(
+				"div",
+				{ style: { top: 750, position: "relative" }, id: "contacts" },
+				React.createElement(MobileContactPage, { width: this.state.width, height: 1500 })
+			),
+			React.createElement(MobileNavigationBar, { width: this.state.width, height: NAV_BAR_HEIGHT })
+		);
 	}
 });
 

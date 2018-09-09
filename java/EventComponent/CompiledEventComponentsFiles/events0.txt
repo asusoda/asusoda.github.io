@@ -11,7 +11,7 @@ var Event = React.createClass({
 					<br/>
 					<br/>
 					<div style={{display: "inline-block"}}>
-						<GoogleGetDirections link={this.props.mapLink}/>
+						
 						<div style={{position: "relative", left: 10}}>
 							<GoogleForms link={this.props.formLink}/>
 						</div>
