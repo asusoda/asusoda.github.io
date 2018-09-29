@@ -1,0 +1,30 @@
+#main {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+#main #logo {
+	max-height: 150px;
+}
+
+#main #title {
+	font-family: 'RopaSansPro-Light';
+	font-size: 2em;
+	text-align: center;
+	padding: 10px;
+}
+
+#main #bold {
+	font-family: 'RopaSansPro-Medium';
+}
+
+#main #statistic {
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	justify-content: center;
+}

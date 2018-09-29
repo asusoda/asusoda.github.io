@@ -1,0 +1,21 @@
+{
+	"title": "Facebook Career's Event",
+	"sponsor": "deloitte",
+	"start": {
+		"year": 2018,
+		"month": 9,
+		"day": 1,
+		"hour": 20,
+		"minute": 0
+	},
+	"end": {
+		"year": 2018,
+		"month": 9,
+		"day": 1,
+		"hour": 21,
+		"minute": 0
+	},
+	"description": "Non-soda sponsored, but we should still advertise.",
+	"location": "CVC 341",
+	"RSVP_link": "https://www.google.com/"
+}

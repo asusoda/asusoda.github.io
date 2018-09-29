@@ -1,0 +1,36 @@
+#checklistItem #facebook {
+    color: #3B5998;
+}
+
+#checklistItem #twitter {
+    color: #1DA1F2;
+}
+
+#checklistItem #instagram {
+    color: #262626;
+}
+
+#checklistItem #linkedin {
+    color: #0077B5;
+}
+
+#checklistItem #youtube {
+    color: red;
+}
+
+#checklistItem #github {
+    color: black;
+}
+
+#checklistItem #orgsync {
+    color: rgb(183,221,72);
+}
+
+#checklistItem #google+ {
+    color: #DB4437;
+}
+
+#checklistItem {
+	margin-right: 10px;
+	word-wrap: nowrap;
+}

@@ -1,0 +1,14 @@
+.Sponsor {
+	padding: 10px;
+}
+
+#sponsors {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#sponsors #deloitte {
+	background-color: black;
+}

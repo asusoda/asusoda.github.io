@@ -1,0 +1,25 @@
+#events {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+#events #info {
+	background-color: black;
+	color: white;
+}
+
+#events #info #title {
+	font-family: 'RopaSansPro-Medium';
+	font-size: 2.5em;
+	padding: 40px;
+}
+
+#events #calendar {
+	align-self: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 90vw;
+	height: 90vh;
+}

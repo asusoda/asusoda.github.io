@@ -1,0 +1,25 @@
+#contact {
+}
+
+#contact #info {
+	background-color: black;
+	color: white;
+}
+
+#contact #info #title {
+	font-family: 'RopaSansPro-Medium';
+	font-size: 2.5em;
+	padding: 40px;
+	padding-bottom: 0px;
+}
+
+#contact #info #content {
+	font-family: 'RopaSansPro-Light';
+	font-size: 1.3em;
+	padding: 40px;
+	padding-top: 25px;
+}
+
+#contact #cards {
+	margin: 20px;
+}
