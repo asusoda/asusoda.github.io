@@ -4,18 +4,18 @@
 	"start": {
 		"year": 2018,
 		"month": 9,
-		"day": 1,
-		"hour": 20,
+		"day": 2,
+		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2018,
 		"month": 9,
-		"day": 1,
+		"day": 2,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "Non-soda sponsored, but we should still advertise.",
-	"location": "CVC 341",
-	"RSVP_link": "https://www.google.com/"
+	"description": "Deloitte Consulting is excited to come to SoDA and teach everyone the tips and tricks you need to nail a technical interview with Deloitte's own NEW Technology Delivery Center in Phoenix.",
+	"location": "CVC 351",
+	"RSVP_link": "https://tinyurl.com/sodaseptember18-4"
 }
