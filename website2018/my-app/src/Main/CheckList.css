@@ -1,36 +1,38 @@
-#checklistItem #facebook {
+#card {}
+
+#checklist #facebook {
     color: #3B5998;
 }
 
-#checklistItem #twitter {
+#checklist #twitter {
     color: #1DA1F2;
 }
 
-#checklistItem #instagram {
+#checklist #instagram {
     color: #262626;
 }
 
-#checklistItem #linkedin {
+#checklist #linkedin {
     color: #0077B5;
 }
 
-#checklistItem #youtube {
+#checklist #youtube {
     color: red;
 }
 
-#checklistItem #github {
+#checklist #github {
     color: black;
 }
 
-#checklistItem #orgsync {
+#checklist #orgsync {
     color: rgb(183,221,72);
 }
 
-#checklistItem #google+ {
+#checklist #google+ {
     color: #DB4437;
 }
 
-#checklistItem {
+.ChecklistItem {
 	margin-right: 10px;
 	word-wrap: nowrap;
 }

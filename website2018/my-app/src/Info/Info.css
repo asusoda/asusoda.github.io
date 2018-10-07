@@ -1,18 +1,19 @@
-#info {
-	text-align: left;
-	min-height: 40%;
-}
+#info {}
 
 #info #title {
 	font-family: 'RopaSansPro-Medium';
-	font-size: 2.5em;
-	padding: 40px;
-	padding-bottom: 0px;
+	font-size: 2em;
+	text-align: center;
+	padding: 3vw;
+	padding-bottom: 0vw;
 }
 
-#info #content {
-	font-family: 'RopaSansPro-Light';
-	font-size: 1.3em;
-	padding: 40px;
-	padding-top: 25px;
+#info #terminal {
+	margin: 5vh auto 5vh auto;
+	height: 50vh;
+	border: solid;
+	border-right: none;
+	border-left: none;
+	overflow: hidden;
+	max-width: 800px;
 }

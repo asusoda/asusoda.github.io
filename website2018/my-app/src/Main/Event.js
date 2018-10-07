@@ -64,7 +64,7 @@ class Event extends Component {
 						<Icon name='mail'/> RSVP
 					</a>
 					<br/>
-					<Modal basic
+					<Modal basic style={{maxWidth: '600px'}}
 						trigger={<a>New to SoDA?</a>}
 						content={<CheckList/>}/>
 				</Card.Content>

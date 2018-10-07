@@ -63,15 +63,18 @@ class CheckList extends Component {
 		]
 
 		return (
-			<Card fluid id="checklist" header="New to SoDA?"
+			<Card id="card" fluid header="New to SoDA?" centered
 				description={
-					items.map(({name, icon, description, link}) =>
-						<span id="checklistItem">
-							<a href={link} target="blank">
-								<Icon name={icon} size='large' id={name}/> {description}
-							</a>
-						</span>
-					)}
+					<div id="checklist">
+						{items.map(({name, icon, description, link}) =>
+							<span class="ChecklistItem" key={name}>
+								<a href={link} target="blank">
+									<Icon name={icon} size='large' id={name}/> {description}
+								</a>
+							</span>
+						)}
+					</div>
+				}
 			/>
 		);
 	}

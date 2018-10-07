@@ -4,6 +4,7 @@ import Particles from 'react-particles-js';
 
 import ParticleConfig from '../assets/particlesjs-config.json';
 import Event from './Event.js';
+import AnimatedNumber from '../Components/AnimatedNumber';
 
 import './Main.css';
 
@@ -13,17 +14,20 @@ class Main extends Component {
             {
                 key: 'signup',
                 label: 'Signups',
-                value: '3000'
+                value: 3000,
+                steps: 20
             },
             {
                 key: 'industry',
                 label: 'Industry Contacts',
-                value: '35'
+                value: 36,
+                steps: 2
             },
             {
                 key: 'officers',
                 label: 'Officers',
-                value: '21'
+                value: 21,
+                steps: 1
             }
         ];
 
@@ -35,9 +39,20 @@ class Main extends Component {
                     <Image src="./assets/logo/soda.png" id='logo'/>
                     <div id="title">
                         <div id="bold">The Software Developers Association</div>
-                        is the premiere software development club for university students.
+                        <div>is the premiere software development club for university students.</div>
                     </div>
-                    <Statistic.Group items={statistics} size="small" id="statistic"/>
+                    <Statistic.Group size='small' id='statistic'>
+                        {
+                            statistics.map(({key, label, value, steps}) => {
+                                return <Statistic key={key}>
+                                    <Statistic.Value>
+                                        <AnimatedNumber number={value} steps={steps}/>
+                                    </Statistic.Value>
+                                    <Statistic.Label>{label}</Statistic.Label>
+                                </Statistic>
+                            })
+                        }
+                    </Statistic.Group>
                 </div>
                 <Event/>
             </div>
