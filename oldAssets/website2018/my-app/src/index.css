@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: "RetroComputer";
+    src: url("./assets/fonts/RetroComputer.ttf");
+}
+@font-face {
+    font-family: "Pxlvetica";
+    src: url("./assets/fonts/Pxlvetica.ttf");
+}
+@font-face {
+    font-family: "PressStart2P";
+    src: url("./assets/fonts/PressStart2P.ttf");
+}
+@font-face {
+    font-family: "RopaSans-Regular";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSans-Regular.ttf");
+}
+@font-face {
+    font-family: "RopaSansPro-Black";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-Black.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-BlackItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-BlackItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-Bold";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-Bold.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-BoldItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-BoldItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-ExtraBold";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-Black.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-ExtraBoldItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-ExtraBoldItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-ExtraLight";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-ExtraLight.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-ExtraLightItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-ExtraLightItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-Italic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-Italic.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-Light";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-Light.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-LightItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-LightItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-Medium";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-Medium.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-MediumItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-MediumItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-Regular";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-Regular.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-Thin";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-Thin.otf");
+}
+@font-face {
+    font-family: "RopaSansPro-ThinItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansPro-ThinItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-Black";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-Black.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-BlackItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-BlackItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-Bold";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-Bold.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-BoldItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-BoldItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-ExtraBold";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-ExtraBold.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-ExtraBoldItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-ExtraBoldItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-ExtraLight";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-ExtraLight.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-ExtraLightItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-ExtraLightItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-Italic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-Italic.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-Light";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-Light.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-LightItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-LightItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-Medium";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-Medium.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-MediumItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-MediumItalic.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-Regular";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-Regular.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-Thin";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-Thin.otf");
+}
+@font-face {
+    font-family: "RopaSansSCPro-ThinItalic";
+    src: url("./assets/fonts/RopaSansProFontFamily/RopaSansSCPro-ThinItalic.otf");
+}

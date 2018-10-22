@@ -1,0 +1,44 @@
+#card {}
+
+#card #info {
+    color: black;
+    font-size: 16px;
+    font-family: 'RopaSansPro-Light';
+}
+
+#checklist #facebook {
+    color: #3B5998;
+}
+
+#checklist #twitter {
+    color: #1DA1F2;
+}
+
+#checklist #instagram {
+    color: #262626;
+}
+
+#checklist #linkedin {
+    color: #0077B5;
+}
+
+#checklist #youtube {
+    color: red;
+}
+
+#checklist #github {
+    color: black;
+}
+
+#checklist #orgsync {
+    color: rgb(183,221,72);
+}
+
+#checklist #google+ {
+    color: #DB4437;
+}
+
+.ChecklistItem {
+	margin-right: 10px;
+	word-wrap: nowrap;
+}

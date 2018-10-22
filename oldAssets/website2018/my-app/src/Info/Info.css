@@ -1,0 +1,19 @@
+#info {}
+
+#info #title {
+	font-family: 'RopaSansPro-Medium';
+	font-size: 2em;
+	text-align: center;
+	padding: 3vw;
+	padding-bottom: 0vw;
+}
+
+#info #terminal {
+	margin: 5vh auto 5vh auto;
+	height: 50vh;
+	border: solid;
+	border-right: none;
+	border-left: none;
+	overflow: hidden;
+	max-width: 800px;
+}
