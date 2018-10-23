@@ -1,0 +1,59 @@
+var Event = React.createClass({
+	render: function() {
+		return (
+			<Palette title={this.props.title} titleAlign= "left" contentAlign= "left" width={400} margin={40} styling={{display: "inline-block", position: "relative"}}>
+				<div style={{position: "relative", top: 0}}>
+					<div style={{fontFamily: "RopaSansPro-Light", fontSize: 45, width:"80%"}}>{this.props.eventName}</div>
+					<br/>
+					<div style={{fontFamily: "RopaSansPro-Medium", fontSize: 30}}>{this.props.eventLocation}<br/>{this.props.eventDate}<br/>{this.props.eventTime}</div>
+					<br/>
+					<div style={{fontFamily: "RopaSansPro-Regular", fontSize: 24}}>{this.props.eventDescription}</div>
+					<br/>
+					<br/>
+					<div style={{display: "inline-block"}}>
+						
+						<div style={{position: "relative", left: 10}}>
+							<GoogleForms link={this.props.formLink}/>
+						</div>
+					</div>
+				</div>
+			</Palette>
+		);
+	}
+});
+
+var Events = React.createClass({
+	getInitialState: function() {
+		return {
+			markerColor: "#0000ff",
+			answerColor: "#0000ff",
+			answerText: "Show answer",
+			currentItemWidth: 0,
+			currentItemLeft: 0,
+			upcomingEvent: true,
+			color: "#0000ff",
+			transition: "Next",
+			left: 394.5,
+			currentEvent: 0,
+		}
+	},
+	render: function() {
+		var button = (
+				<div style={{textAlign: "right", position: "absolute"}}>
+					<div style={{position: "relative", top: 100, left: this.state.left, padding: 30, borderRadius: "0px 10px 0px 25px", backgroundColor: this.state.color, textAlign: "center", display: "inline-block", fontFamily: "RopaSansPro-Bold", color: "#FFF", fontSize: 20, zIndex: 1}} onClick={() => {
+							this.setState({...this.state, upcomingEvent: !this.state.upcomingEvent, transition: (this.state.currentEvent == this.props.eventsList.length - 2)? "Prev" : "Next", left: (this.state.currentEvent == this.props.eventsList.length - 2)? 396.5 : 394.5, currentEvent: (this.state.currentEvent + 1) % this.props.eventsList.length});
+						}
+					}
+					onMouseOver={() => this.setState({...this.state, color: "#ff0000"})} onMouseOut={() => this.setState({...this.state, color: "#0000ff"})}>{this.state.transition}</div>
+				</div>
+		);
+		if (this.props.eventsList.length < 2) {
+			button = null;
+		}
+		return (
+		<div style={{display: "inline-block"}}>
+			{button}
+			{this.props.eventsList[this.state.currentEvent]}
+		</div>);
+	}
+});
