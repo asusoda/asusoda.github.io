@@ -40,7 +40,7 @@ class Event extends Component {
 			timeLeft = `${helper(weeks, 'week', weeks + 1)} ${helper(days, 'day', 7)} ${helper(hours, 'hour', 24)} ${helper(minutes, 'minute', 60)} ${helper(seconds, 'second', 60)}`.trim();
 		} else {
 			timeLeft = 'happened in the past!'
-			// clearInterval(this.forceUpdateInterval);
+			clearInterval(this.forceUpdateInterval);
 		}
 
 		return (
