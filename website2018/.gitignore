@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules/*
-/node_modules/terminal-in-react/README.md
 
 # Keep this because I had to manually change things inside of it. If you redownload that
 # dependency, all my changes would be gone. See the following issues I raised if you're
@@ -10,6 +9,7 @@
 # https://github.com/nitin42/terminal-in-react/issues/61
 # https://github.com/nitin42/terminal-in-react/issues/59
 !/node_modules/terminal-in-react
+/node_modules/terminal-in-react/README.md
 
 # testing
 /coverage
