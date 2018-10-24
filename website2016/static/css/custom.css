@@ -1,0 +1,492 @@
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.btn-md.round {
+    border-radius: 20px;
+}
+.btn-lg.round {
+    border-radius: 24px;
+}
+
+hidden {
+    display: none;
+}
+/* fonts */
+@font-face {
+    font-family: 'expressway';
+    src: url(../expressway.ttf);
+}
+
+/* navbar styles */
+.navbar-default {
+    color: black;
+    background: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.6), rgba(0,0,0,.4),rgba(0,0,0,0));
+    border: 0;
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 75px;
+    height: 75px;
+    padding-top: 0;
+}
+.navbar-default .navbar-nav > li > a {
+    font-family: expressway;
+    color: whitesmoke; /*Change active text color here*/
+}
+
+/* generic parallax styles */
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.parallax__group {
+    position: relative;
+    transform-style: preserve-3d;
+}
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.parallax__layer--base {
+    transform: translateZ(0);
+}
+.parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+}
+
+
+
+/* -----------------------------------splash styles--------------------------------------- */
+.parallax__group.splash {
+    z-index: -1;
+    min-height: 100vh;
+    height: 700px;
+}
+.parallax__layer--base.splash h3 {
+    color: white;
+    font-family: expressway;
+}
+.parallax__layer--back.splash {
+    background: url(../img/geometry_.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .parallax__layer--base.splash h3 {
+        font-size: 1.3em;
+    }
+    .parallax__layer--back.splash {
+        transform: translateZ(-1px) scale(2.5);
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .parallax__layer--base.splash h3 {
+        font-size: 1.3em;
+    }
+    .parallax__layer--back.splash {
+        transform: translateZ(-1px) scale(2.5);
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .parallax__layer--base.splash h3 {
+        font-size: 1.5em;
+    }
+    .parallax__layer--back.splash {
+        transform: translateZ(-1px) scale(2.5);
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .parallax__layer--base.splash h3 {
+        font-size: 1.6em;
+    }
+    .parallax__layer--back.splash {
+        transform: translateZ(-1px) scale(2);
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .parallax__layer--base.splash h3 {
+        font-size: 1.8em;
+    }
+}
+
+
+
+
+/* -----------------------------------what we offer styles--------------------------------------- */
+.about_us {
+    z-index: 1;
+    background: white;
+    padding: 5%;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+   
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .about_us h2 {
+        font-size: 2em;
+    }
+    .about_us h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .about_us h2 {
+        font-size: 2em;
+    }
+    .about_us h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .about_us h3 {
+        font-size: 1.8em;
+    }
+}
+
+
+
+
+/* -----------------------------------newsletter banner styles--------------------------------------- */
+.parallax__group.newsletter {
+    z-index: 2;
+}
+.parallax__group.newsletter { 
+    background: url(../img/newsletter_banner.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.parallax__layer--base.newsletter h3 {
+    color: white;
+    font-family: expressway;
+}
+.parallax__layer--base.newsletter {
+    
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .parallax__group.newsletter { 
+        height: 350px;
+    }
+    .col-centered.newsletter {
+        padding-top: 50px;
+    }
+    .parallax__layer--base.newsletter h3 {
+        font-size: 1.3em;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .parallax__group.newsletter { 
+        height: 350px;
+    }
+    .col-centered.newsletter {
+        padding-top: 75px;
+    }
+    .parallax__layer--base.newsletter h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .parallax__group.newsletter { 
+        height: 400px;
+    }
+    .col-centered.newsletter {
+        padding-top: 110px;
+    }
+    .parallax__layer--base.newsletter h3 {
+        font-size: 1.6em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .parallax__group.newsletter { 
+        height: 500px;
+    }
+    .col-centered.newsletter {
+        padding-top: 175px;
+    }
+    .parallax__layer--base.newsletter h3 {
+        font-size: 1.7em;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .parallax__group.newsletter { 
+        height: 550px;
+    }
+    .col-centered.newsletter {
+        padding-top: 200px;
+    }
+}
+
+
+
+
+/* -----------------------------------meetings styles--------------------------------------- */
+.meetings {
+    background: white;
+    padding: 5%;
+}
+
+.meetings h5 {
+    color: dodgerblue;
+    font-family: expressway;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .meetings h2 {
+        font-size: 2em;
+    }
+    .meetings h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .meetings h2 {
+        font-size: 2em;
+    }
+    .meetings h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .meetings h3 {
+        font-size: 1.8em;
+    }
+}
+
+
+
+
+/* -----------------------------------social media styles--------------------------------------- */
+.parallax__group.social_media {
+    z-index: -2;
+}
+.parallax__layer--back.social_media {
+    background: url(../img/social_media.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transform: translateZ(-1px) scale(2.3);
+    height: 150%;
+}
+.parallax__layer--base.social_media h3 {
+    color: white;
+    font-family: expressway;
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .parallax__group.social_media { 
+        height: 500px;
+    }
+    .col-centered.social_media {
+        padding-top: 50px;
+    }
+    .parallax__layer--base.social_media h3 {
+        font-size: 1.3em;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .parallax__group.social_media { 
+        height: 550px;
+    }
+    .col-centered.social_media {
+        padding-top: 75px;
+    }
+    .parallax__layer--base.social_media h3 {
+        font-size: 1.5em;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .parallax__group.social_media { 
+        height: 400px;
+    }
+    .col-centered.social_media {
+        padding-top: 110px;
+    }
+    .parallax__layer--base.social_media h3 {
+        font-size: 1.6em;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .parallax__group.social_media { 
+        height: 500px;
+    }
+    .col-centered.social_media {
+        padding-top: 175px;
+    }
+    .parallax__layer--base.social_media h3 {
+        font-size: 1.7em;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .parallax__group.social_media { 
+        height: 550px;
+    }
+    .col-centered.social_media {
+        padding-top: 200px;
+    }
+}
+
+
+
+
+/* -----------------------------------sponsors styles--------------------------------------- */
+.sponsors {
+    z-index: 4;
+    background: white;
+    padding: 5%;
+}
+.gold {
+    max-height: 200px;
+    max-width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.silver {
+    max-height: 125px;
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.bronze {
+    max-height: 100px;
+    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    
+}
+
+
+
+
+/* -----------------------------------footer styles--------------------------------------- */
+.footer {
+    z-index: 5;
+    background: black;
+    background: black;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .footer { 
+        height: 225px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .footer { 
+        height: 225px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .footer { 
+        height: 225px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .footer { 
+        height: 225px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .footer { 
+        height: 225px;
+    }
+}

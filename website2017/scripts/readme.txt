@@ -1,0 +1,1 @@
+Most of the scripts only work if current directory is the root folder of this repository

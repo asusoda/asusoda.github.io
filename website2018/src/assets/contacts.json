@@ -1,0 +1,76 @@
+{
+	"officers": [
+		{
+            "header": "Andrew Philips",
+            "meta": "President - aphill23@asu.edu"
+        },
+        {
+        	"header": "Michael Rojas",
+            "meta": "Director of Marketing"
+        },
+        {
+            "header": "Lewis Ruskin",
+            "meta": "Treasurer"
+        },
+        {
+            "header": "Raj Shah",
+            "meta": "Administrative Coordinator"
+        },
+        {
+            "header": "Devyash Lodha",
+            "meta": "ASU Liaison"
+        },
+        {
+            "header": "Sagarika Pannase",
+            "meta": "Director of Fundraising"
+        },
+        {
+            "header": "VACANT",
+            "meta": "Industry Outreach Chair"
+        },
+        {
+            "header": "Matthew Budiman",
+            "meta": "Industry Outreach Chair"
+        },
+        {
+            "header": "Brandon Quan",
+            "meta": "Community Development Director"
+        },
+        {
+            "header": "Trevor Angle",
+            "meta": "Community Development Director"
+        },
+        {
+            "header": "Jacob Folsom",
+            "meta": "Technical Development Director"
+        },
+        {
+            "header": "Hunter Hardwick",
+            "meta": "Career Development Director"
+        },
+        {
+            "header": "Raffi Shahbazian",
+            "meta": "Director of Marketing"
+        },
+        {
+            "header": "Mohit Doshi",
+            "meta": "Director of Communications"
+        },
+        {
+            "header": "Jona Joe",
+            "meta": "Director of Digital Media"
+        },
+        {
+            "header": "Alex Geschardt",
+            "meta": "Director of Digital Media"
+        },
+        {
+            "header": "Chris Warren",
+            "meta": "Public Engagement Chair"
+        },
+        {
+            "header": "Azaldin Freidoon",
+            "meta": "Webmaster"
+        }
+	]
+}
