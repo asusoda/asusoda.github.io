@@ -1,4 +1,6 @@
 #contact {
+	display: flex;
+	flex-direction: column;
 }
 
 #contact #title {
@@ -26,4 +28,12 @@
 #contact #cards {
 	max-width: 1000px;
 	margin: 3vh auto 5vh auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#contact #cards .Card {
+	margin: 5px 10px 5px 10px;
 }

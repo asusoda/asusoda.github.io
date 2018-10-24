@@ -45,7 +45,7 @@
 			"type": "bronze"
 		},
 		{
-			"name": "stateFarm",
+			"name": "statefarm",
 			"type": "silver"
 		},
 		{

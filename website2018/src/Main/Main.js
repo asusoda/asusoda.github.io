@@ -46,10 +46,10 @@ class Main extends Component {
                         <div id="bold">The Software Developers Association</div>
                         <div>is the premiere software development club for university students.</div>
                     </div>
-                    <Statistic.Group size='small' id='statistic'>
+                    <div id='statistic'>
                         {
                             statistics.map(({key, label, value, steps, formatter}) => {
-                                return <Statistic key={key}>
+                                return <Statistic key={key} size='small'>
                                     <Statistic.Value>
                                         <AnimatedNumber number={value} steps={steps} formatter={formatter}/>
                                     </Statistic.Value>
@@ -57,7 +57,7 @@ class Main extends Component {
                                 </Statistic>
                             })
                         }
-                    </Statistic.Group>
+                    </div>
                 </div>
                 <Event/>
             </div>
