@@ -1,8 +1,12 @@
 {
 	"sponsors": [
 		{
-			"name": "axosoft",
-			"type": "bronze"
+			"name": "starbucks",
+			"type": "gold"
+		},
+		{
+			"name": "workiva",
+			"type": "gold"
 		},
 		{
 			"name": "amazon",
@@ -18,6 +22,14 @@
 		},
 		{
 			"name": "deloitte",
+			"type": "silver"
+		},
+		{
+			"name": "statefarm",
+			"type": "silver"
+		},
+		{
+			"name": "usaa",
 			"type": "silver"
 		},
 		{
@@ -37,27 +49,15 @@
 			"type": "bronze"
 		},
 		{
-			"name": "workiva",
-			"type": "gold"
-		},
-		{
 			"name": "paypal",
 			"type": "bronze"
 		},
 		{
-			"name": "statefarm",
-			"type": "silver"
-		},
-		{
-			"name": "starbucks",
-			"type": "gold"
-		},
-		{
-			"name": "usaa",
-			"type": "silver"
-		},
-		{
 			"name": "microsoft",
+			"type": "bronze"
+		},
+		{
+			"name": "axosoft",
 			"type": "bronze"
 		}
 	]

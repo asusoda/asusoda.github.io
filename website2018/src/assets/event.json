@@ -1,21 +1,21 @@
 {
-	"title": "Facebook - Coding Interview Workshop",
-	"sponsor": "facebook",
+	"title": "State Farm - VR Tech Talk",
+	"sponsor": "statefarm",
 	"start": {
 		"year": 2018,
 		"month": 9,
-		"day": 23,
+		"day": 25,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2018,
 		"month": 9,
-		"day": 23,
+		"day": 25,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "Join Facebook at SoDA for important talk to help you crush coding interviews!",
-	"location": "CAVC 3rd Floor Atrium",
+	"description": "Want to learn more about VR technology? Stop by SoDA to hear a virtual reality tech talk presented by State Farm!",
+	"location": "CAVC 351",
 	"RSVP_link": "https://tinyurl.com/sodaoctober18-4"
 }
