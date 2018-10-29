@@ -1,21 +1,21 @@
 {
-	"title": "State Farm - VR Tech Talk",
-	"sponsor": "statefarm",
+	"title": "Mock Technical Interviews",
+	"sponsor": "",
 	"start": {
 		"year": 2018,
 		"month": 9,
-		"day": 25,
+		"day": 29,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2018,
 		"month": 9,
-		"day": 25,
+		"day": 29,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "Want to learn more about VR technology? Stop by SoDA to hear a virtual reality tech talk presented by State Farm!",
+	"description": "Join us at SoDA for some more mock technical interviews! Use our tips and tricks to help you crush your future coding interview questions!",
 	"location": "CAVC 351",
-	"RSVP_link": "https://tinyurl.com/sodaoctober18-4"
+	"RSVP_link": "https://tinyurl.com/sodaoctober18-5"
 }
