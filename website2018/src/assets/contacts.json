@@ -21,14 +21,6 @@
             "meta": "ASU Liaison - dlodha@asu.edu"
         },
         {
-            "header": "Sagarika Pannase",
-            "meta": "Director of Fundraising - spannase@gmail.com"
-        },
-        {
-            "header": "VACANT",
-            "meta": "Industry Outreach Chair"
-        },
-        {
             "header": "Matthew Budiman",
             "meta": "Industry Outreach Chair - mbudiman@asu.edu"
         },
@@ -71,6 +63,10 @@
         {
             "header": "Azaldin Freidoon",
             "meta": "Webmaster - afreidoo@asu.edu"
+        },
+        {
+            "header": "VACANT",
+            "meta": "Industry Outreach Chair"
         }
 	]
 }
