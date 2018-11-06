@@ -1,21 +1,21 @@
 {
-	"title": "SoDA Cookout",
+	"title": "Resume Reviews and Code Questions",
 	"sponsor": "",
 	"start": {
 		"year": 2018,
 		"month": 10,
-		"day": 1,
+		"day": 6,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2018,
 		"month": 10,
-		"day": 1,
+		"day": 6,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "Join SoDA at The Hyve Apartments for a night of BBQ and fun! It's only a short walk off campus!",
-	"location": "1260 E University Dr (The Hyve Apartments)",
-	"RSVP_link": "https://tinyurl.com/sodaoctober18-5"
+	"description": "Come by SoDA to get your resume reviewed and practice along with some whiteboard coding questions.",
+	"location": "CAVC 351",
+	"RSVP_link": "http://tinyurl.com/sodanovember18-1"
 }
