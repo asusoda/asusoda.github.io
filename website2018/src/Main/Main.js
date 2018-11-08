@@ -23,14 +23,14 @@ class Main extends Component {
             {
                 key: 'sponsors',
                 label: 'Sponsors',
-                value: 15,
+                value: 14,
                 steps: 1,
                 formatter: x => x
             },
             {
                 key: 'officers',
                 label: 'Officers',
-                value: 30,
+                value: 16,
                 steps: 1,
                 formatter: x => x
             }

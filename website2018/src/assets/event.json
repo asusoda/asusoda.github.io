@@ -1,21 +1,21 @@
 {
-	"title": "Resume Reviews and Code Questions",
+	"title": "Building a Message Board",
 	"sponsor": "",
 	"start": {
 		"year": 2018,
 		"month": 10,
-		"day": 6,
+		"day": 8,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2018,
 		"month": 10,
-		"day": 6,
+		"day": 8,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "Come by SoDA to get your resume reviewed and practice along with some whiteboard coding questions.",
+	"description": "SoDA will be hosting a tech talk that will teach you how to build a message board! Presented by Chuck Dries.",
 	"location": "CAVC 351",
 	"RSVP_link": "http://tinyurl.com/sodanovember18-1"
 }
