@@ -24,24 +24,24 @@ class CheckList extends Component {
 				description: 'follow us on instagram',
 				link: 'https://www.instagram.com/asu_soda/'
 			},
-			{
-				name: 'calendar',
-				icon: 'calendar outline',
-				description: 'view our monthly calendar',
-				link: 'https://www.instagram.com/asu_soda/'
-			},
+			// {
+			// 	name: 'calendar',
+			// 	icon: 'calendar outline',
+			// 	description: 'view our monthly calendar',
+			// 	link: 'https://www.instagram.com/asu_soda/'
+			// },
 			{
 				name: 'slack',
 				icon: 'slack',
 				description: 'join our slack team',
 				link: 'https://www.sodaasu.slack.com'
 			},
-			{
-				name: 'youtube',
-				icon: 'youtube',
-				description: 'subscribe to our youtube channel',
-				link: 'https://www.youtube.com/sodaasu'
-			},
+			// {
+			// 	name: 'youtube',
+			// 	icon: 'youtube',
+			// 	description: 'subscribe to our youtube channel',
+			// 	link: 'https://www.youtube.com/sodaasu'
+			// },
 			{
 				name: 'github',
 				icon: 'github',
@@ -58,7 +58,7 @@ class CheckList extends Component {
 				name: 'orgsync',
 				icon: 'redo',
 				description: 'register as a SoDer on OrgSync',
-				link: 'https://www.orgsync.com/12637/chapter'
+				link: 'https://orgsync.com/12637/chapter'
 			}
 		]
 
@@ -74,7 +74,7 @@ class CheckList extends Component {
 						<br/>
 						<div id="checklist">
 							{items.map(({name, icon, description, link}) =>
-								<span class="ChecklistItem" key={name}>
+								<span className="ChecklistItem" key={name}>
 									<a href={link} target="blank">
 										<Icon name={icon} size='large' id={name}/> {description}
 									</a>

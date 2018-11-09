@@ -15,8 +15,8 @@ class Contact extends Component {
                     SoDA officers are here to help you. Please feel free to reach out to any of us by e-mail, slack, or social media. We want to help and would be happy to answer any questions you have.
                 </div>
                 <div id="cards">
-                    {items.map((item) =>
-                        <Card header={item.header} meta={item.meta} className="Card"/>
+                    {items.map((item, i) =>
+                        <Card header={item.header} meta={item.meta} className="Card" key={i}/>
                     )}
                 </div>
             </div>
