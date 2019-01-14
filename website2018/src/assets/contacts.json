@@ -16,14 +16,38 @@
             "header": "Raj Shah",
             "meta": "Administrative Coordinator - rnshah9@asu.edu"
         },
+				{
+						"header": "Azaldin Freidoon",
+						"meta": "Webmaster - afreidoo@asu.edu"
+				},
+				{
+						"header": "Darren Vasquez",
+						"meta": "Webmaster - darrenvasquez@asu.edu"
+				},
+				{
+						"header": "Randy Ngo",
+						"meta": "Director of Distinguished Members - rngo3@asu.edu"
+				},
         {
             "header": "Devyash Lodha",
             "meta": "ASU Liaison - dlodha@asu.edu"
         },
+				{
+						"header": "Andrew Marshall",
+						"meta": "Director of Deans Funding - akmarsh4@asu.edu"
+				},
+				{
+						"header": "Michelle Staskauskas",
+						"meta": "Director of Fundraising - mstaskau@asu.edu"
+				},
         {
             "header": "Matthew Budiman",
-            "meta": "Industry Outreach Chair - mbudiman@asu.edu"
+            "meta": "Industry Outreach - mbudiman@asu.edu"
         },
+				{
+						"header": "Eric Peterson",
+						"meta": "Industry Outreach - dlodha@asu.edu"
+				},
         {
             "header": "Brandon Quan",
             "meta": "Community Development Director - bquan1@asu.edu"
@@ -53,20 +77,8 @@
             "meta": "Director of Digital Media - jjoe3@asu.edu"
         },
         {
-            "header": "Alex Geschardt",
-            "meta": "Director of Digital Media - ageschar@asu.edu"
-        },
-        {
             "header": "Chris Warren",
             "meta": "Public Engagement Chair - cawarre6@asu.edu"
-        },
-        {
-            "header": "Azaldin Freidoon",
-            "meta": "Webmaster - afreidoo@asu.edu"
-        },
-        {
-            "header": "VACANT",
-            "meta": "Industry Outreach Chair"
         }
 	]
 }
