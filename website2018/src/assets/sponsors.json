@@ -55,6 +55,10 @@
 		{
 			"name": "axosoft",
 			"type": "bronze"
+		},
+		{
+			"name": "connexta",
+			"type": "bronze"
 		}
 	]
 }
