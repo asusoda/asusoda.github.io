@@ -16,7 +16,18 @@ class Contact extends Component {
                 </div>
                 <div id="cards">
                     {items.map((item, i) =>
-                        <Card header={item.header} meta={item.meta} className="Card" key={i}/>
+//                      <Card header={item.header} meta={item.meta} className="Card" key={i}/>
+                        <Card key={i} className="Card">
+                            <Card.Content>
+                             <Card.Header>{item.name}</Card.Header>
+                                <Card.Meta>
+                                  {item.role}
+                                  <br/>
+                                  {item.email}
+                              </Card.Meta>
+                            </Card.Content>
+                        </Card>
+                        
                     )}
                 </div>
             </div>

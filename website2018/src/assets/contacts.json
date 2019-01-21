@@ -1,84 +1,104 @@
 {
 	"officers": [
 		{
-            "header": "Andrew Philips",
-            "meta": "President - aphill23@asu.edu"
+            "name": "Andrew Philips",
+            "role": "President",
+            "email": "aphill23@asu.edu"
         },
         {
-        	"header": "Michael Rojas",
-            "meta": "Vice President - marojas3@asu.edu"
+        	"name": "Michael Rojas",
+            "role": "Vice President",
+            "email": "marojas3@asu.edu"
         },
         {
-            "header": "Lewis Ruskin",
-            "meta": "Treasurer - ljruskin@asu.edu"
+            "name": "Lewis Ruskin",
+            "role": "Treasurer",
+            "email": "ljruskin@asu.edu"
         },
         {
-            "header": "Raj Shah",
-            "meta": "Administrative Coordinator - rnshah9@asu.edu"
+            "name": "Raj Shah",
+            "role": "Administrative Coordinator",
+            "email": "rnshah9@asu.edu"
         },
-				{
-						"header": "Azaldin Freidoon",
-						"meta": "Webmaster - afreidoo@asu.edu"
-				},
-				{
-						"header": "Darren Vasquez",
-						"meta": "Webmaster - darrenvasquez@asu.edu"
-				},
-				{
-						"header": "Randy Ngo",
-						"meta": "Director of Distinguished Members - rngo3@asu.edu"
-				},
+		{				
+            "name": "Azaldin Freidoon",
+			"role": "Webmaster",
+            "email": "afreidoo@asu.edu"
+		},
+		{
+			"name": "Darren Vasquez",
+			"role": "Webmaster",
+            "email": "darrenvasquez@asu.edu"
+		},
+		{
+			"name": "Randy Ngo",
+			"role": "Director of Distinguished Members",
+            "email": "rngo3@asu.edu"
+		},
         {
-            "header": "Devyash Lodha",
-            "meta": "ASU Liaison - dlodha@asu.edu"
+            "name": "Devyash Lodha",
+            "role": "ASU Liaison",
+            "email": "dlodha@asu.edu"
         },
-				{
-						"header": "Andrew Marshall",
-						"meta": "Director of Deans Funding - akmarsh4@asu.edu"
-				},
-				{
-						"header": "Michelle Staskauskas",
-						"meta": "Director of Fundraising - mstaskau@asu.edu"
-				},
+		{
+			"name": "Andrew Marshall",
+			"role": "Director of Deans Funding",
+            "email": "akmarsh4@asu.edu"
+		},
+		{
+			"name": "Michelle Staskauskas",
+			"role": "Director of Fundraising",
+            "email": "mstaskau@asu.edu"
+		},
         {
-            "header": "Matthew Budiman",
-            "meta": "Industry Outreach - mbudiman@asu.edu"
+            "name": "Matthew Budiman",
+            "role": "Industry Outreach",
+            "email": "mbudiman@asu.edu"
         },
-				{
-						"header": "Eric Peterson",
-						"meta": "Industry Outreach - dlodha@asu.edu"
-				},
+		{
+			"name": "Eric Peterson",
+			"role": "Industry Outreach",
+            "email": "empete11@asu.edu"
+		},
         {
-            "header": "Brandon Quan",
-            "meta": "Community Development Director - bquan1@asu.edu"
-        },
-        {
-            "header": "Trevor Angle",
-            "meta": "Community Development Director - taangle@asu.edu"
-        },
-        {
-            "header": "Jacob Folsom",
-            "meta": "Technical Development Director - jfolsom2@asu.edu"
-        },
-        {
-            "header": "Hunter Hardwick",
-            "meta": "Career Development Director - hhardwic@asu.edu"
+            "name": "Brandon Quan",
+            "role": "Community Development Director",
+            "email": "bquan1@asu.edu"
         },
         {
-            "header": "Raffi Shahbazian",
-            "meta": "Director of Marketing - raffi.p.shahbazian@gmail.com"
+            "name": "Trevor Angle",
+            "role": "Community Development Director",
+            "email": "taangle@asu.edu"
         },
         {
-            "header": "Mohit Doshi",
-            "meta": "Director of Communications - mdoshi3@asu.edu"
+            "name": "Jacob Folsom",
+            "role": "Technical Development Director",
+            "email": "jfolsom2@asu.edu"
         },
         {
-            "header": "Jona Joe",
-            "meta": "Director of Digital Media - jjoe3@asu.edu"
+            "name": "Hunter Hardwick",
+            "role": "Career Development Director",
+            "email": "hhardwic@asu.edu"
         },
         {
-            "header": "Chris Warren",
-            "meta": "Public Engagement Chair - cawarre6@asu.edu"
+            "name": "Raffi Shahbazian",
+            "role": "Director of Marketing",
+            "email": "raffi.p.shahbazian@gmail.com"
+        },
+        {
+            "name": "Mohit Doshi",
+            "role": "Director of Communications",
+            "email": "mdoshi3@asu.edu"
+        },
+        {
+            "name": "Jona Joe",
+            "role": "Director of Digital Media",
+            "email": "jjoe3@asu.edu"
+        },
+        {
+            "name": "Chris Warren",
+            "role": "Public Engagement Chair",
+            "email": "cawarre6@asu.edu"
         }
 	]
 }
