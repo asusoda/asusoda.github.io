@@ -16,8 +16,8 @@ class Main extends Component {
             {
                 key: 'pizza',
                 label: 'worth of pizza served',
-                value: 13600,
-                steps: 40,
+                value: 16400,
+                steps: 50,
                 formatter: x => dollarFormatter.format(x)
             },
             {

@@ -1,6 +1,6 @@
 {
-	"officers": [
-		{
+    "officers": [
+        {
             "name": "Andrew Philips",
             "role": "President",
             "email": "aphill23@asu.edu"
@@ -20,46 +20,46 @@
             "role": "Administrative Coordinator",
             "email": "rnshah9@asu.edu"
         },
-		{				
+        {
             "name": "Azaldin Freidoon",
-			"role": "Webmaster",
+            "role": "Webmaster",
             "email": "afreidoo@asu.edu"
-		},
-		{
-			"name": "Darren Vasquez",
-			"role": "Webmaster",
+        },
+        {
+            "name": "Darren Vasquez",
+            "role": "Webmaster",
             "email": "darrenvasquez@asu.edu"
-		},
-		{
-			"name": "Randy Ngo",
-			"role": "Director of Distinguished Members",
+        },
+        {
+            "name": "Randy Ngo",
+            "role": "Director of Distinguished Members",
             "email": "rngo3@asu.edu"
-		},
+        },
         {
             "name": "Devyash Lodha",
             "role": "ASU Liaison",
             "email": "dlodha@asu.edu"
         },
-		{
-			"name": "Andrew Marshall",
-			"role": "Director of Deans Funding",
+        {
+            "name": "Andrew Marshall",
+            "role": "Director of Deans Funding",
             "email": "akmarsh4@asu.edu"
-		},
-		{
-			"name": "Michelle Staskauskas",
-			"role": "Director of Fundraising",
+        },
+        {
+            "name": "Michelle Staskauskas",
+            "role": "Director of Fundraising",
             "email": "mstaskau@asu.edu"
-		},
+        },
         {
             "name": "Matthew Budiman",
             "role": "Industry Outreach",
             "email": "mbudiman@asu.edu"
         },
-		{
-			"name": "Eric Peterson",
-			"role": "Industry Outreach",
+        {
+            "name": "Eric Peterson",
+            "role": "Industry Outreach",
             "email": "empete11@asu.edu"
-		},
+        },
         {
             "name": "Brandon Quan",
             "role": "Community Development Director",
@@ -100,5 +100,5 @@
             "role": "Public Engagement Chair",
             "email": "cawarre6@asu.edu"
         }
-	]
+    ]
 }

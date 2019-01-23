@@ -26,7 +26,7 @@ class Info extends Component {
 					<Terminal startState="maximised" allowTabs={false} hideTopBar={true} color='black'
 						backgroundColor='white' outputColor="black" watchConsoleLogging={false}
 						msg={`Try entering 'help'`}
-						style={{fontSize: "1.25em", fontFamily: "PressStart2P", height: '50vh'}}
+						style={{fontSize: "1.25em", fontFamily:"PressStart2P", height: '50vh'}}
 						commands={{
 							info: (command) => {
 								const modal = command[1];
