@@ -36,10 +36,14 @@ class Info extends Component {
 									this.setState({[modal]: true})
 									return 'Hope that was helpful!'
 								}
+							},
+							get: () => {
+								return `go to:\n\thttps://tinyurl.com/membership-points`
 							}
 						}}
 						descriptions={{
 							info: `Displays helpful information\n\tUsage: info [Option]\n\t\tOptions:\t${titles.join(', ')}`,
+							get: `Get current SoDA distinguished membership points`,
 							show: false
 						}}
 					/>
