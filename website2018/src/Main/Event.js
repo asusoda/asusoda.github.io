@@ -65,7 +65,7 @@ class Event extends Component {
 					</a>
 					<br/>
 				</Card.Content>
-				<Card.Content extra textAlight='left'>
+				<Card.Content extra textAlign='left'>
 					<Modal basic style={{maxWidth: '600px'}}
 						trigger={<a>New to SoDA?</a>}
 						content={<CheckList/>}/>

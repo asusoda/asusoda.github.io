@@ -1,0 +1,41 @@
+#infocards {
+	display: flex;
+	flex-direction: column;
+}
+
+#infocards #title {
+	font-family: 'RopaSansPro-Medium';
+	font-size: 2em;
+	text-align: center;
+	padding: 3vw;
+	padding-bottom: 0vw;
+}
+
+#infocards #info {
+	background-color: black;
+	color: white;
+}
+
+#infocards #content {
+	display: flex;
+	justify-content: center;
+	font-family: 'RopaSansPro-Light';
+	font-size: 1.4em;
+	padding: 25px;
+	padding-top: 0px;
+}
+
+#cards {
+	max-width: 1000px;
+	margin: 3vh auto 5vh auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#cards .Card {
+    padding-top: 3px;
+    margin: 5px 10px 5px 10px;
+	justify-content: center;
+}
