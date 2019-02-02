@@ -1,21 +1,21 @@
 {
-	"title": "Using Typed Languages For Better Code Maintainability and Refactorability",
-	"sponsor": "",
+	"title": "Amazon: The Adapter Software Design Pattern",
+	"sponsor": "amazon",
 	"start": {
 		"year": 2019,
-		"month": 0,
-		"day": 31,
+		"month": 1,
+		"day": 5,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2019,
-		"month": 0,
-		"day": 31,
+		"month": 1,
+		"day": 5,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "Sal Aiello, CTO of STYR Labs, will describe the value of using strongly typed languages over dynamic languages to provide clarity, refactorability, and sanity in a medium to large size codebase. Specifically, he will show off the value of Typescript over Javascript!",
+	"description": "Chris Levine, a Software Engineer at Amazon will give an introductory talk on the Adapter Software Design Pattern, a foundational pattern for robust and scalable software",
 	"location": "PSH 150",
-	"RSVP_link": "https://tinyurl.com/sodajanuary19-3"
+	"RSVP_link": "https://tinyurl.com/sodafebruary19-1"
 }
