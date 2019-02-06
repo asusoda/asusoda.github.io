@@ -1,21 +1,21 @@
 {
-	"title": "Amazon: The Adapter Software Design Pattern",
-	"sponsor": "amazon",
+	"title": "SoDA Social: ASU Men's Basketball vs Washington State",
+	"sponsor": "",
 	"start": {
 		"year": 2019,
 		"month": 1,
-		"day": 5,
-		"hour": 19,
+		"day": 7,
+		"hour": 18,
 		"minute": 0
 	},
 	"end": {
 		"year": 2019,
 		"month": 1,
-		"day": 5,
+		"day": 7,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "Chris Levine, a Software Engineer at Amazon will give an introductory talk on the Adapter Software Design Pattern, a foundational pattern for robust and scalable software",
-	"location": "PSH 150",
+	"description": "SoDA cheers on ASU! Instead of a traditional SoDA meeting, we will go as a group to the basketball game! Reserve your free ticket through Ticketmaster - we will meet at CAVC and walk together to the game. Don't forget to wear a SoDA shirt!",
+	"location": "CAVC",
 	"RSVP_link": "https://tinyurl.com/sodafebruary19-1"
 }
