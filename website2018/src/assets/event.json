@@ -1,21 +1,21 @@
 {
-	"title": "Hacking Workshop with Jake!",
+	"title": "Side Projects 101",
 	"sponsor": "",
 	"start": {
 		"year": 2019,
 		"month": 1,
-		"day": 12,
+		"day": 14,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2019,
 		"month": 1,
-		"day": 12,
+		"day": 14,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "Join us for a tech talk on all things hacking! Jake will cover common programming security issues including real world applications such as SQL injections and how to defend against them.",
+	"description": "Quality side projects look impressive on a resume, but actually starting and finishing a project is easier said than done. This talk will help students of all levels know where to start, how to stay motivated, and why side projects are valuable.",
 	"location": "PSH 150",
 	"RSVP_link": "https://tinyurl.com/sodafebruary19-2"
 }
