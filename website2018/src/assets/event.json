@@ -1,21 +1,21 @@
 {
-	"title": "F# - Because C# Isn't Cool Anymore",
-	"sponsor": "",
+	"title": "Deloitte: Robotics Intelligent Automation Transforming the Business World",
+	"sponsor": "deloitte",
 	"start": {
 		"year": 2019,
 		"month": 1,
-		"day": 19,
+		"day": 21,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2019,
 		"month": 1,
-		"day": 19,
+		"day": 21,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "Carson Howard, a Senior Software Engineer at Aspen Systems, is here to give a tech talk on F#. Learn how to write more expressive code with a functional language.",
+	"description": "Deloitte will be giving an interactive tech talk on automation in the business field, specifically through UiPath. They will also be discussing a job listing at their new facility in Gilbert, AZ. https://tinyurl.com/deloitteapply",
 	"location": "PSH 150",
 	"RSVP_link": "https://tinyurl.com/sodafebruary19-3"
 }
