@@ -23,7 +23,7 @@ class Term extends Component {
 					<Terminal startState="maximised" allowTabs={false} hideTopBar={true} color='black'
 						backgroundColor='white' outputColor="black" watchConsoleLogging={false}
 						msg={`Try entering 'help'`}
-						style={{fontSize: "1.25em", fontFamily:"PressStart2P", height: '50vh'}}
+						style={{fontSize: "1.25em", height: '50vh'}}
 						commands={{
 							info: (command) => {
 								const modal = command[1];
@@ -35,6 +35,7 @@ class Term extends Component {
 								}
 							},
 							get: () => {
+								window.open('https://tinyurl.com/membership-points');
 								return `go to:\n\thttps://tinyurl.com/membership-points`
 							}
 						}}

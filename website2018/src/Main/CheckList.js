@@ -1,25 +1,39 @@
 import React, { Component } from 'react';
-import { Card, Icon } from 'semantic-ui-react'
+import { Card, Icon, Button } from 'semantic-ui-react'
 
 import './CheckList.css';
 
 class CheckList extends Component {
+
+	constructor(props) {
+		super(props);
+		this.link = this.link.bind(this);
+	}
+
+	link = (a, b) => {
+		window.open(a)
+		// window.location.href = a;
+	}
+
 	render() {
 		const items = [
 			{
 				name: 'facebook',
-				icon: 'facebook',
+				color: 'facebook',
+				icon: 'facebook f',
 				description: 'follow our facebook page',
 				link: 'https://www.facebook.com/SoDAASU/'
 			},
 			{
 				name: 'twitter',
+				color: 'twitter',
 				icon: 'twitter',
 				description: 'follow us on twitter',
 				link: 'https://www.twitter.com/asu_soda'
 			},
 			{
 				name: 'instagram',
+				color: 'instagram',
 				icon: 'instagram',
 				description: 'follow us on instagram',
 				link: 'https://www.instagram.com/asu_soda/'
@@ -32,9 +46,10 @@ class CheckList extends Component {
 			// },
 			{
 				name: 'slack',
-				icon: 'slack',
+				color: 'purple',
+				icon: 'slack hash',
 				description: 'join our slack team',
-				link: 'https://www.sodaasu.slack.com'
+				link: 'https://sodaasu.slack.com'
 			},
 			// {
 			// 	name: 'youtube',
@@ -44,18 +59,21 @@ class CheckList extends Component {
 			// },
 			{
 				name: 'github',
+				color: 'grey',
 				icon: 'github',
 				description: 'view our github projects',
 				link: 'https://www.github.com/asusoda'
 			},
 			{
 				name: 'newsletter',
+				color: 'black',
 				icon: 'mail',
 				description: 'subscribe to our newsletter',
 				link: 'https://www.tinyurl.com/sodanews'
 			},
 			{
 				name: 'orgsync',
+				color: 'green',
 				icon: 'redo',
 				description: 'register as a SoDer on OrgSync',
 				link: 'https://orgsync.com/12637/chapter'
@@ -69,15 +87,16 @@ class CheckList extends Component {
 						<br/>
 						<div id="info">
 							We're an open door club all are welcome, just attend any event. Subscribe to our 
-							newsletter for email blasts about upcoming events and don't forget to RSVP for the event.
+							newsletter for email blasts about upcoming events and don't forget to RSVP to our events.
 						</div>
 						<br/>
 						<div id="checklist">
-							{items.map(({name, icon, description, link}) =>
+							{items.map(({name, color, icon, link}) =>
 								<span className="ChecklistItem" key={name}>
-									<a href={link} target="blank">
-										<Icon name={icon} size='large' id={name}/> {description}
-									</a>
+									<Button color={color} onClick={(e) => this.link(link, e)}>
+										<Icon name={icon}/>
+										{name}
+									</Button>
 								</span>
 							)}
 						</div>

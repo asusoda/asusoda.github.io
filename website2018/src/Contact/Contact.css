@@ -34,6 +34,25 @@
 	justify-content: center;
 }
 
+#contact #email {
+	max-width: 1000px;
+	margin: 3vh auto 5vh auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
 #contact #cards .Card {
 	margin: 5px 10px 5px 10px;
+}
+
+#contact #email .Modal {
+	margin: 3vh auto 5vh auto;
+}
+
+.mailto {
+	display:block;
+	width:100px;
+	height:20px;
 }
