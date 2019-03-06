@@ -60,10 +60,8 @@ class Event extends Component {
 				<Card.Content extra textAlign='left'>
 					<Icon name='time'/> {timeLeft}
 					<br/>
-					<a href={RSVP_link} target="_blank">
-						<Icon name='mail'/> RSVP
-					</a>
-					<br/>
+					{RSVP_link && <a href={RSVP_link} target="_blank"><Icon name='mail'/> RSVP</a> && <br/>}
+					
 				</Card.Content>
 				<Card.Content extra textAlign='left'>
 					<Modal basic style={{maxWidth: '600px'}}

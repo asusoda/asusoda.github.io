@@ -1,21 +1,21 @@
 {
-	"title": "SoDA Social - Smash Tournament!",
+	"title": "To Be Determined",
 	"sponsor": "",
 	"start": {
 		"year": 2019,
-		"month": 1,
-		"day": 26,
+		"month": 2,
+		"day": 12,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2019,
-		"month": 1,
-		"day": 26,
+		"month": 2,
+		"day": 12,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "SoDA is hosting a Smash Bros tournament! Show off your skill and maybe walk away with the prize of a copy of Cracking the Coding Interview!",
+	"description": "SoDA Events will return after Spring Break. Enjoy the break from classes!",
 	"location": "PSH 150",
-	"RSVP_link": "https://tinyurl.com/sodafebruary19-4"
+	"RSVP_link": ""
 }
