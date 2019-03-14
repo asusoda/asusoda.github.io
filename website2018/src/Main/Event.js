@@ -60,7 +60,7 @@ class Event extends Component {
 				<Card.Content extra textAlign='left'>
 					<Icon name='time'/> {timeLeft}
 					<br/>
-					{RSVP_link && <a href={RSVP_link} target="_blank"><Icon name='mail'/> RSVP</a> && <br/>}
+					{RSVP_link && <a href={RSVP_link} target="_blank"><Icon name='mail'/> RSVP</a>}
 					
 				</Card.Content>
 				<Card.Content extra textAlign='left'>
