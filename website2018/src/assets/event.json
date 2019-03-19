@@ -1,21 +1,21 @@
 {
-	"title": "Technical Interview Readiness Club",
+	"title": "Functional Programming in React with Steve King",
 	"sponsor": "",
 	"start": {
 		"year": 2019,
 		"month": 2,
-		"day": 14,
+		"day": 19,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2019,
 		"month": 2,
-		"day": 14,
+		"day": 19,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "TIRC is prepared to teach you all the tips and tricks you need to crush a technical interview! Stop by for a meeting to get a head start on your career path.",
+	"description": "We will be having a tech talk about functional programming in React presented by previous SoDA Officer, Steve King!",
 	"location": "PSH 150",
-	"RSVP_link": ""
+	"RSVP_link": "https://tinyurl.com/sodamarch19-3"
 }
