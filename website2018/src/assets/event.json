@@ -1,21 +1,21 @@
 {
-	"title": "Goldman Sachs HackerRank Challenge",
-	"sponsor": "goldmansachs",
+	"title": "Deep Learning Tech Talk with Chris Huie",
+	"sponsor": "",
 	"start": {
 		"year": 2019,
 		"month": 2,
-		"day": 21,
+		"day": 26,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2019,
 		"month": 2,
-		"day": 21,
+		"day": 26,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "In partnership with the Software Developers Association, join Goldman Sachs professionals for a fun and competitive HackerRank challenge. Prizes provided to winning teams.",
+	"description": "Chris Huie, self proclaimed \"Phoenix Tech Nerd\", is hosting a deep learning tech talk at SoDA. ",
 	"location": "PSH 150",
-	"RSVP_link": "https://tinyurl.com/sodamarch19-3"
+	"RSVP_link": "https://tinyurl.com/sodamarch19-4"
 }

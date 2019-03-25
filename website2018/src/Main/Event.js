@@ -7,6 +7,7 @@ import './Event.css';
 
 class Event extends Component {
 	render() {
+		const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 		const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 		
 		const {title, sponsor, start, end, description, location, RSVP_link} = event;
@@ -15,7 +16,7 @@ class Event extends Component {
 
 		let period;
 		if (startDate.getTime() === endDate.getTime()) {
-			period = `${startDate.getDate()} ${monthNames[startDate.getMonth()]}, ${startDate.getFullYear()}`;
+			period = `${weekday[startDate.getDay()]}, ${monthNames[startDate.getMonth()]} ${startDate.getDate()}, ${startDate.getFullYear()}`;
 		} else {
 			period = [`${startDate.getDate()} ${monthNames[startDate.getMonth()]}, ${startDate.getFullYear()}`,
 			`${endDate.getDate()} ${monthNames[endDate.getMonth()]}, ${endDate.getFullYear()}`].join(' - ');
