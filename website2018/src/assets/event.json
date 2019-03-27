@@ -1,21 +1,21 @@
 {
-	"title": "Deep Learning Tech Talk with Chris Huie",
-	"sponsor": "",
+	"title": "AWS Tech Talk by GoDaddy",
+	"sponsor": "godaddy",
 	"start": {
 		"year": 2019,
 		"month": 2,
-		"day": 26,
+		"day": 28,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2019,
 		"month": 2,
-		"day": 26,
+		"day": 28,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "Chris Huie, self proclaimed \"Phoenix Tech Nerd\", is hosting a deep learning tech talk at SoDA. ",
+	"description": "Join GoDaddy for a presentation on how they use Amazon Web Services while utilizing their unique partnership with Amazon.",
 	"location": "PSH 150",
 	"RSVP_link": "https://tinyurl.com/sodamarch19-4"
 }
