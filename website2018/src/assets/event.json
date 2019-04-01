@@ -1,21 +1,21 @@
 {
-	"title": "AWS Tech Talk by GoDaddy",
-	"sponsor": "godaddy",
+	"title": "SoDA Social - TBA",
+	"sponsor": "",
 	"start": {
 		"year": 2019,
-		"month": 2,
-		"day": 28,
+		"month": 3,
+		"day": 2,
 		"hour": 19,
 		"minute": 0
 	},
 	"end": {
 		"year": 2019,
-		"month": 2,
-		"day": 28,
+		"month": 3,
+		"day": 2,
 		"hour": 21,
 		"minute": 0
 	},
-	"description": "Join GoDaddy for a presentation on how they use Amazon Web Services while utilizing their unique partnership with Amazon.",
-	"location": "PSH 150",
-	"RSVP_link": "https://tinyurl.com/sodamarch19-4"
+	"description": "Join SoDA for our final social of the semester! More details TBA",
+	"location": "TBA",
+	"RSVP_link": "https://tinyurl.com/sodaapril19-1"
 }

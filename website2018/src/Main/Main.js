@@ -4,7 +4,7 @@ import Particles from 'react-particles-js';
 
 import ParticleConfig from '../assets/particlesjs-config.json';
 import Event from './Event.js';
-import SpecialEvent from './SpecialEvent.js';
+import Event2 from './Event2.js';
 import AnimatedNumber from '../Components/AnimatedNumber';
 
 import './Main.css';
@@ -61,7 +61,7 @@ class Main extends Component {
                     </div>
                 </div>
                 <Event/>
-                <SpecialEvent/>
+                <Event2/>
             </div>
         );
     }
