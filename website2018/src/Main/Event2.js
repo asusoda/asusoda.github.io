@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Card, Icon, Image, Modal } from 'semantic-ui-react';
+import { Card, Icon, Image } from 'semantic-ui-react';
 
-import CheckList from './CheckList.js';
+//import CheckList from './CheckList.js';
 import event from '../assets/event-2.json';
 import './Event2.css';
 
@@ -64,11 +64,11 @@ class Event2 extends Component {
 					{RSVP_link && <a href={RSVP_link} target="_blank"><Icon name='mail'/> RSVP</a>}
 					
 				</Card.Content>
-				<Card.Content extra textAlign='left'>
+				{/* <Card.Content extra textAlign='left'>
 					<Modal basic style={{maxWidth: '600px'}}
 						trigger={<a>New to SoDA?</a>}
 						content={<CheckList/>}/>
-				</Card.Content>
+				</Card.Content> */}
 			</Card>
 		);
 	}
