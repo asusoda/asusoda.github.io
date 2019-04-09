@@ -107,7 +107,7 @@ class Main extends Component {
                     style={{position: 'absolute', top: 0, left: 0}}/>
                 </div>
                 <div>
-                    <Image src="./assets/logo/soda.png" id='logo'centered='true' />
+                    <Image src="./assets/logo/soda.png" id='logo' centered/>
                     <div id="title">
                         <div id="bold">The Software Developers Association</div>
                         <div>is the premiere software development club for university students.</div>
@@ -129,7 +129,7 @@ class Main extends Component {
                             <Popup 
                                 key={social.name} 
                                 position='bottom center' 
-                                inverted='true' 
+                                inverted
                                 trigger={<Icon link name={social.icon} onClick={(e) => this.link(social.link, e)} size='big'/>} 
                                 header={social.name} 
                                 content={social.description}

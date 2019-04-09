@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Icon, Image} from 'semantic-ui-react';
+import { Card, Icon, Image, Popup } from 'semantic-ui-react';
 
 //import CheckList from './CheckList.js';
 import event from '../assets/event.json';
@@ -54,7 +54,16 @@ class Event extends Component {
 						<br/>
 						<span>{duration}</span>
 						<br/>
-						<span>{location}</span>
+						{
+							location.length > 8 && 
+							<Popup key='event1' position='left center' inverted trigger={<a href={"https://google.com/maps/search/" + location} target="_blank">{location}</a>} 
+							header='Open Google Maps' content={location}/>
+						}
+						{	
+							location.length <= 8 && 
+							<Popup key='event1' position='left center' inverted trigger={<a href={"https://www.asu.edu/map/interactive/?psCode=" + location.substring(0, 4)} target="_blank">{location}</a>} 
+							header='Open ASU Map' content={location}/>
+						}
 					</Card.Meta>
 					<Card.Description>{description}</Card.Description>
 				</Card.Content>
