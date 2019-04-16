@@ -1,19 +1,20 @@
-The 2018 SoDA website was built with React.js. The source code can be found under `/website2018`.
+# <img src="./assets/logo/soda.png" width="250">
+### The Software Developers Association @ Arizona State University
 
-##### How to run website locally
-The website uses npm, which manages all dependencies and has a dummy server that you can run on your local machine to view the website.
-```
-cd /website2018
-npm i #install all dependencies if this is the first time you are doing this
-npm start
-```
+This repository hosts the official SoDA static website found at https://thesoda.io, hosted through GitHub Pages.
 
-##### Pushing changes
-Always make sure you pull before working on the repository.
-Since the website is a react application, uses many dependencies, and is written in ES6, you will have to use many tools to transpile bundel. Fortunately, npm has scripts that does that and puts all the code in `/website2018/build`. When you are done writing code and want to get the final build:
-```
-cd /website2018
-npm run-script build
-```
-Then, you have to copy all the files and folders from `/website2018/build` to `/`.
-Then, you can push all your changes.
+## 2018 Website
+
+The 2018 SoDA website was built with React.js. The source code can be found under [`./website2018`](./website2018).
+
+Documentation on installing, running, and compiling on your local machine is found at the above directory.
+
+## Old Websites
+
+### 2017 Website
+
+The source code can be found under [`./website2017`](./website2017).
+
+### 2016 Website
+
+The source code can be found under [`./website2016`](./website2016).

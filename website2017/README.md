@@ -1,8 +1,7 @@
-# asusoda.github.io
+# thesoda.io
 
+2017-2018 SoDA repo website.
 
-thesoda.io
-Current SoDA repo website.
 Static. 
 
 Don’t change name of index.html — it is required by Github pages hosting service
