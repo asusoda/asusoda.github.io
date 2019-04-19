@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Divider, Button, Modal } from 'semantic-ui-react';
+import { Card, Divider, Button, Modal, Popup } from 'semantic-ui-react';
 
 import contacts from '../assets/contacts.json';
 import './Contact.css';
@@ -33,12 +33,19 @@ class Contact extends Component {
 //                      <Card header={item.header} meta={item.meta} className="Card" key={i}/>
                         <Card key={i} className="Card">
                             <Card.Content>
-                             <Card.Header>{item.name}</Card.Header>
-                                <Card.Meta>
-                                  {item.role}
-                                  <br/>
-                                  {item.email}
-                              </Card.Meta>
+                                <Card.Header>{item.name}</Card.Header>
+                                    <Card.Meta>
+                                    {item.role}
+                                    <br/>
+                                    <Popup 
+                                        key={item.name} 
+                                        position='bottom center' 
+                                        inverted
+                                        trigger={<a href={'mailto:' + item.email}>{item.email}</a>} 
+                                        header='Open Mail Client' 
+                                        content={item.email}
+                                    />
+                                </Card.Meta>
                             </Card.Content>
                         </Card>
                         

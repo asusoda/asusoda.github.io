@@ -41,6 +41,6 @@
 
 }
 
-#main #particles {
+#particles {
 	pointer-events:none; /* This prevents interaction with the background but fixes weird issue with the social buttons */
 }

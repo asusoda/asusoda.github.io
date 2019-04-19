@@ -1,0 +1,88 @@
+{
+    "events": [
+        {
+            "title": "Responsible AI Development with Trevor Angle",
+            "sponsor": "",
+            "start": {
+                "year": 2019,
+                "month": 3,
+                "day": 16,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 3,
+                "day": 16,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Experts agree that the intelligence level of AI is going to continue increasing exponentially, and that it may pass humans in general intelligence within our lifetimes. What are the implications of this? What precautions do we need to take as responsible developers? Is it all just science fiction? These questions and more will be discussed in this talk.",
+            "location": "PSH 150",
+            "RSVP_link": "https://tinyurl.com/sodaapril19-3"
+        },
+        {
+            "title": "Garmin International",
+            "sponsor": "",
+            "start": {
+                "year": 2019,
+                "month": 3,
+                "day": 18,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 3,
+                "day": 18,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Garmin Engineer Chris Foster will be giving a compnay overview of Garmin along with his experiences as an engineer in the technical industry.",
+            "location": "PSH 150",
+            "RSVP_link": "https://tinyurl.com/sodaapril19-3"
+        },
+        {
+            "title": "What to do over the summer?",
+            "sponsor": "",
+            "start": {
+                "year": 2019,
+                "month": 3,
+                "day": 23,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 3,
+                "day": 23,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Looking for ideas on what to do over the summer? Eric Peterson, SoDA’s new Vice President will be giving a presentation on just that. Eric will go over some ideas on what you should do with your free time in order to help grow your skills to ensure that you stand out when applying for future jobs and internships.",
+            "location": "PSH 150",
+            "RSVP_link": "http://tinyurl.com/sodaapril19-4"
+        },
+        {
+            "title": "Flapjack Fest and Shirt Giveaway",
+            "sponsor": "",
+            "start": {
+                "year": 2019,
+                "month": 3,
+                "day": 25,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 3,
+                "day": 25,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "For SoDA's last event of the school year, come celebrate with our flapjack fest tradition! Hang out with other SoDA members, eat some pancakes and pick up this year's SoDA shirt!",
+            "location": "PSH 150",
+            "RSVP_link": "http://tinyurl.com/sodaapril19-4"
+        }
+    ]
+}

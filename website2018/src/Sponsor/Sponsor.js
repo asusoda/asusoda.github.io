@@ -16,12 +16,14 @@ class Sponsor extends Component {
             <div id="sponsor">
                 <Divider horizontal id="title">Sponsors</Divider>
                 <div id="sponsors">
-                    {items.map(({name, type}) => <Image
+                    {items.map(({name, type}) => 
+                        <Image
                             key={name}
                             size={size[type]}
                             className="Sponsor"
                             id={name}
-                            src={`./assets/logo/${name}.png`}/>
+                            src={`./assets/logo/${name}.png`}
+                        />
                     )}
                 </div>
             </div>

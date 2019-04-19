@@ -3,8 +3,8 @@ import { Image, Statistic, Icon, Popup } from 'semantic-ui-react'
 import Particles from 'react-particles-js';
 
 import ParticleConfig from '../assets/particlesjs-config.json';
+import events from '../assets/events.json'; // this json file contains the events to be displayed on the website.
 import Event from './Event.js';
-import Event2 from './Event2.js';
 import AnimatedNumber from '../Components/AnimatedNumber';
 
 import './Main.css';
@@ -28,7 +28,7 @@ class Main extends Component {
             {
                 key: 'pizza',
                 label: 'worth of pizza served',
-                value: 17800,
+                value: 18300,
                 steps: 50,
                 formatter: x => dollarFormatter.format(x)
             },
@@ -101,11 +101,12 @@ class Main extends Component {
 		]
 
         return (
-            <div id="main">
+            <div>
                 <div id='particles'>
                 <Particles params={ParticleConfig}
                     style={{position: 'absolute', top: 0, left: 0}}/>
                 </div>
+                <div id="main">
                 <div>
                     <Image src="./assets/logo/soda.png" id='logo' centered/>
                     <div id="title">
@@ -138,8 +139,8 @@ class Main extends Component {
                     
                     </div>
                 </div>
-                <Event/>
-                <Event2/>
+                {events.events.map(event => ( <Event content={event}/> ))}
+            </div>
             </div>
         );
     }

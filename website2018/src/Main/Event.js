@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Icon, Image, Popup } from 'semantic-ui-react';
 
-//import CheckList from './CheckList.js';
-import event from '../assets/event.json';
 import './Event.css';
 
 class Event extends Component {
@@ -10,9 +8,8 @@ class Event extends Component {
 		const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 		const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 		
-		const {title, sponsor, start, end, description, location, RSVP_link} = event;
-		const startDate = new Date(start.year, start.month, start.day);
-		const endDate = new Date(end.year, end.month, end.day);
+		const startDate = new Date(this.props.content.start.year, this.props.content.start.month, this.props.content.start.day);
+		const endDate = new Date(this.props.content.end.year, this.props.content.end.month, this.props.content.end.day);
 
 		let period;
 		if (startDate.getTime() === endDate.getTime()) {
@@ -22,12 +19,12 @@ class Event extends Component {
 			`${endDate.getDate()} ${monthNames[endDate.getMonth()]}, ${endDate.getFullYear()}`].join(' - ');
 		}
 		
-		const startAMPM = (start.hour / 12) < 1? 'AM': 'PM';
-		const endAMPM = (end.hour / 12) < 1? 'AM': 'PM';
-		const duration = [`${start.hour % 12} ${startAMPM}`,`${end.hour % 12} ${endAMPM}`].join(' - ');
+		const startAMPM = (this.props.content.start.hour / 12) < 1? 'AM': 'PM';
+		const endAMPM = (this.props.content.end.hour / 12) < 1? 'AM': 'PM';
+		const duration = [`${this.props.content.start.hour % 12} ${startAMPM}`,`${this.props.content.end.hour % 12} ${endAMPM}`].join(' - ');
 
-		startDate.setHours(start.hour);
-		startDate.setMinutes(start.minute);
+		startDate.setHours(this.props.content.start.hour);
+		startDate.setMinutes(this.props.content.start.minute);
 		const elapsed = startDate.getTime() - Date.now();
 		const seconds = elapsed / 1000;
 		const minutes = seconds / 60;
@@ -44,34 +41,40 @@ class Event extends Component {
 			clearInterval(this.forceUpdateInterval);
 		}
 
+		const currentTime = new Date();
+
+		console.log("For event" + this.props.content.title + ", the current endDate.getTime()-Date.now() is: " + (endDate.getTime()-currentTime.getTime()));
+
+		if((Date.now() > endDate && elapsed <= 0) || (endDate.getTime()-currentTime.getTime()) > 604800000) { return null; }
+
 		return (
-			<Card id="event">
-				{sponsor && <Image src={`./assets/logo/${sponsor}.png`} id={sponsor}/>}
+			<Card id="event" key={this.props.content.title}>
+				{this.props.content.sponsor && <Image src={`./assets/logo/${this.props.content.sponsor}.png`} id={this.props.content.sponsor}/>}
 				<Card.Content textAlign='left'>
-					<Card.Header>{title}</Card.Header>
+					<Card.Header>{this.props.content.title}</Card.Header>
 					<Card.Meta>
 						<span>{period}</span>
 						<br/>
 						<span>{duration}</span>
 						<br/>
 						{
-							location.length > 8 && 
-							<Popup key='event1' position='left center' inverted trigger={<a href={"https://google.com/maps/search/" + location} target="_blank">{location}</a>} 
-							header='Open Google Maps' content={location}/>
+							this.props.content.location.length > 8 && 
+							<Popup key='event1' position='left center' inverted trigger={<a href={"https://google.com/maps/search/" + this.props.content.location} target="_blank">{this.props.content.location}</a>} 
+							header='Open Google Maps' content={this.props.content.location}/>
 						}
 						{	
-							location.length <= 8 && 
-							<Popup key='event1' position='left center' inverted trigger={<a href={"https://www.asu.edu/map/interactive/?psCode=" + location.substring(0, 4)} target="_blank">{location}</a>} 
-							header='Open ASU Map' content={location}/>
+							this.props.content.location.length <= 8 && 
+							<Popup key='event1' position='left center' inverted trigger={<a href={"https://www.asu.edu/map/interactive/?psCode=" + this.props.content.location.substring(0, 4)} target="_blank">{this.props.content.location}</a>} 
+							header='Open ASU Map' content={this.props.content.location}/>
 						}
 					</Card.Meta>
-					<Card.Description>{description}</Card.Description>
+					<Card.Description>{this.props.content.description}</Card.Description>
 				</Card.Content>
 				<Card.Content extra textAlign='left'>
 					<Icon name='time'/> {timeLeft}
 					<br/>
-					{RSVP_link && <a href={RSVP_link} target="_blank"><Icon name='mail'/> RSVP</a>}
-					
+					{this.props.content.RSVP_link && <a href={this.props.content.RSVP_link} target="_blank"><Icon name='mail'/> RSVP</a>}
+					{!this.props.content.RSVP_link && <Popup key='event1_rsvp' position='left center' inverted trigger={<a><Icon name='mail'/>RSVP</a>} header='RSVP' content='Coming Soon'/>}
 				</Card.Content>
 				{/* <Card.Content extra textAlign='left'>
 					<Modal basic style={{maxWidth: '600px'}}
