@@ -43,7 +43,7 @@ class Event extends Component {
 
 		const currentTime = new Date();
 
-		console.log("For event" + this.props.content.title + ", the current endDate.getTime()-Date.now() is: " + (endDate.getTime()-currentTime.getTime()));
+//		console.log("For event" + this.props.content.title + ", the current endDate.getTime()-Date.now() is: " + (endDate.getTime()-currentTime.getTime()));
 
 		if((Date.now() > endDate && elapsed <= 0) || (endDate.getTime()-currentTime.getTime()) > 604800000) { return null; }
 
@@ -86,7 +86,7 @@ class Event extends Component {
 	}
 
 	componentDidMount() {
-		this.forceUpdateInterval = setInterval(() => this.forceUpdate(), 50);
+		this.forceUpdateInterval = setInterval(() => this.forceUpdate(), 100); // increased from 50 -> 100, make sure this is still good
 	}
 
 	componentWillUnmount() {
