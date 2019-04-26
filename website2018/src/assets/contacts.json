@@ -1,54 +1,29 @@
 {
     "officers": [
         {
-            "name": "Andrew Philips",
+            "name": "Jacob Folsom",
             "role": "President",
-            "email": "aphill23@asu.edu"
+            "email": "jfolsom2@asu.edu"
         },
         {
-        	"name": "Michael Rojas",
+        	"name": "Eric Peterson",
             "role": "Vice President",
-            "email": "marojas3@asu.edu"
-        },
-        {
-            "name": "Lewis Ruskin",
-            "role": "Treasurer",
-            "email": "ljruskin@asu.edu"
-        },
-        {
-            "name": "Raj Shah",
-            "role": "Administrative Coordinator",
-            "email": "rnshah9@asu.edu"
-        },
-        {
-            "name": "Azaldin Freidoon",
-            "role": "Webmaster",
-            "email": "afreidoo@asu.edu"
-        },
-        {
-            "name": "Darren Vasquez",
-            "role": "Webmaster",
-            "email": "darrenvasquez@asu.edu"
-        },
-        {
-            "name": "Randy Ngo",
-            "role": "Director of Distinguished Members",
-            "email": "rngo3@asu.edu"
-        },
-        {
-            "name": "Devyash Lodha",
-            "role": "ASU Liaison",
-            "email": "dlodha@asu.edu"
-        },
-        {
-            "name": "Andrew Marshall",
-            "role": "Director of Deans Funding",
-            "email": "akmarsh4@asu.edu"
+            "email": "empete11@asu.edu"
         },
         {
             "name": "Michelle Staskauskas",
-            "role": "Director of Fundraising",
+            "role": "Treasurer",
             "email": "mstaskau@asu.edu"
+        },
+        {
+            "name": "Randy Ngo",
+            "role": "Deans Funding Director",
+            "email": "rngo3@asu.edu"
+        },
+        {
+            "name": "Darren Vasquez",
+            "role": "Technical Development Director",
+            "email": "darrenvasquez@asu.edu"
         },
         {
             "name": "Matthew Budiman",
@@ -56,34 +31,29 @@
             "email": "mbudiman@asu.edu"
         },
         {
-            "name": "Eric Peterson",
+            "name": "Andrew Marshall",
             "role": "Industry Outreach",
-            "email": "empete11@asu.edu"
+            "email": "akmarsh4@asu.edu"
         },
         {
-            "name": "Brandon Quan",
+            "name": "Rahisul Haque",
+            "role": "Distinguished Members Director",
+            "email": "rahisul.haque@asu.edu"
+        },
+        {
+            "name": "Ahmed Usman",
             "role": "Community Development Director",
-            "email": "bquan1@asu.edu"
+            "email": "ausman3@asu.edu"
         },
         {
-            "name": "Trevor Angle",
-            "role": "Community Development Director",
-            "email": "taangle@asu.edu"
+            "name": "Jona Joe",
+            "role": "Marketing Director",
+            "email": "jjoe3@asu.edu"
         },
         {
-            "name": "Jacob Folsom",
-            "role": "Technical Development Director",
-            "email": "jfolsom2@asu.edu"
-        },
-        {
-            "name": "Hunter Hardwick",
-            "role": "Career Development Director",
-            "email": "hhardwic@asu.edu"
-        },
-        {
-            "name": "Raffi Shahbazian",
-            "role": "Director of Marketing",
-            "email": "raffi.p.shahbazian@gmail.com"
+            "name": "Prashant Mokkapati",
+            "role": "Marketing Director",
+            "email": "pmokkap1@asu.edu"
         },
         {
             "name": "Mohit Doshi",
@@ -91,19 +61,14 @@
             "email": "mdoshi3@asu.edu"
         },
         {
-            "name": "Jona Joe",
-            "role": "Director of Digital Media",
-            "email": "jjoe3@asu.edu"
+            "name": "Raj Shah",
+            "role": "Webmaster",
+            "email": "rnshah9@asu.edu"
         },
         {
-            "name": "Chris Warren",
-            "role": "Public Engagement Chair",
-            "email": "cawarre6@asu.edu"
-        },
-        {
-            "name": "Prashant Mokkapati",
-            "role": "Director of Digital Media",
-            "email": "pmokkap1@asu.edu"
+            "name": "Jason Manuel",
+            "role": "Webmaster",
+            "email": "jamanue1@asu.edu"
         }
     ]
 }
