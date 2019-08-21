@@ -72,11 +72,11 @@ class CheckList extends Component {
 				link: 'https://www.tinyurl.com/sodanews'
 			},
 			{
-				name: 'orgsync',
+				name: 'sundevilsync',
 				color: 'green',
 				icon: 'redo',
-				description: 'register as a SoDer on OrgSync',
-				link: 'https://orgsync.com/12637/chapter'
+				description: 'register as a SoDer on SunDevilSync',
+				link: 'https://asu.campuslabs.com/engage/organization/software-developers-association-soda'
 			}
 		]
 
@@ -86,7 +86,7 @@ class CheckList extends Component {
 					<div>
 						<br/>
 						<div id="info">
-							We're an open door club all are welcome, just attend any event. Subscribe to our 
+							We're an open door club all are welcome, just attend any event. Subscribe to our
 							newsletter for email blasts about upcoming events and don't forget to RSVP to our events.
 						</div>
 						<br/>

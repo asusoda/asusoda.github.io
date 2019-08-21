@@ -20,7 +20,7 @@ class Main extends Component {
 		window.open(a)
 		// window.location.href = a;
     }
-    
+
     render() {
         const dollarFormatter = new Intl.NumberFormat('US',{ style: 'currency', currency: 'USD' })
 
@@ -92,11 +92,11 @@ class Main extends Component {
 				link: 'https://www.tinyurl.com/sodanews'
 			},
 			{
-				name: 'OrgSync',
+				name: 'SunDevilSync',
 				color: 'green',
 				icon: 'redo',
-				description: 'Register as a SoDer on OrgSync!',
-				link: 'https://orgsync.com/12637/chapter'
+				description: 'Register as a SoDer on SunDevilSync!',
+				link: 'https://asu.campuslabs.com/engage/organization/software-developers-association-soda'
 			}
 		]
 
@@ -127,16 +127,16 @@ class Main extends Component {
                     </div>
                     <div id='social'>
                         {socials.map(social => (
-                            <Popup 
-                                key={social.name} 
-                                position='bottom center' 
+                            <Popup
+                                key={social.name}
+                                position='bottom center'
                                 inverted
-                                trigger={<Icon link name={social.icon} onClick={(e) => this.link(social.link, e)} size='big'/>} 
-                                header={social.name} 
+                                trigger={<Icon link name={social.icon} onClick={(e) => this.link(social.link, e)} size='big'/>}
+                                header={social.name}
                                 content={social.description}
                             />
                         ))}
-                    
+
                     </div>
                 </div>
                 {events.events.map(event => ( <Event content={event}/> ))}
