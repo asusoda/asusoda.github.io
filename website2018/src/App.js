@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Main from './Main/Main.js';
-//import Events from './Events/Events.js';
+import Events from './Events/Events.js';
 import Info from './Info/Info.js';
 import Contact from './Contact/Contact.js';
 import Sponsor from './Sponsor/Sponsor.js';
@@ -14,7 +14,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Main/>
-                {/* <Events/> */}
+                <Events/>
                 <Info/>
                 <Contact/>
                 <Sponsor/>
