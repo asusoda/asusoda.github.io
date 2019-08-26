@@ -103,7 +103,28 @@
             },
             "description": "What is SoDA and can I drink it? Join us for our first meeting of the semester! We will outline the layout of SoDA and let you know about our upcoming events.",
             "location": "PSH 150",
-            "RSVP_link": ""
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScPngNI1KFpHgH-pVU0bJZ1HvPu2kCUtBlkCCWXbNmOudZ1iw/viewform"
+        },
+        {
+            "title": "Board Game Night!",
+            "sponsor": "",
+            "start": {
+                "year": 2019,
+                "month": 7,
+                "day": 29,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 7,
+                "day": 29,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Finish off the first week of school and play some board games with SoDA! Feel free to bring some games of your own!",
+            "location": "CAVC 351",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScPngNI1KFpHgH-pVU0bJZ1HvPu2kCUtBlkCCWXbNmOudZ1iw/viewform"
         }
     ]
 }
