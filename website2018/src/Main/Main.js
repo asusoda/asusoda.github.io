@@ -96,7 +96,7 @@ class Main extends Component {
 				color: 'green',
 				icon: 'redo',
 				description: 'Register as a SoDer on SunDevilSync!',
-				link: 'https://asu.campuslabs.com/engage/organization/software-developers-association-soda'
+				link: 'https://asu.campuslabs.com/engage/organization/soda'
 			}
 		]
 
