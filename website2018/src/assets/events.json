@@ -125,6 +125,48 @@
             "description": "Finish off the first week of school and play some board games with SoDA! Feel free to bring some games of your own!",
             "location": "CAVC 351",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScPngNI1KFpHgH-pVU0bJZ1HvPu2kCUtBlkCCWXbNmOudZ1iw/viewform"
+        },
+        {
+            "title": "GitHub Basics!",
+            "sponsor": "",
+            "start": {
+                "year": 2019,
+                "month": 8,
+                "day": 3,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 8,
+                "day": 3,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Want to show off your personal projects in a professional way? Keep hearing about GitHub, and all its' benefits? Join us for a talk on git and learn what exactly git is, how to use it, and how you can use it to improve your resume!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/1mYU2QcaYkVFNwE1Zr7Bnt_iR915QyZHpLICR3puDUB4/viewform"
+        },
+        {
+            "title": "Amazon Tech Talk",
+            "sponsor": "amazon",
+            "start": {
+                "year": 2019,
+                "month": 8,
+                "day": 5,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 8,
+                "day": 5,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Amazon will be hosting our first industry event of the school year focused on scaling, throttling and building resilient systems.",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/1mYU2QcaYkVFNwE1Zr7Bnt_iR915QyZHpLICR3puDUB4/viewform"
         }
     ]
 }

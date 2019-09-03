@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, Statistic, Icon, Popup } from 'semantic-ui-react'
+import { Image, Statistic, Icon, Popup, Modal, Button, Header } from 'semantic-ui-react'
 import Particles from 'react-particles-js';
 
 import ParticleConfig from '../assets/particlesjs-config.json';
@@ -140,6 +140,9 @@ class Main extends Component {
                     </div>
                 </div>
                 {events.events.map(event => ( <Event content={event}/> ))}
+
+
+
             </div>
             </div>
         );
