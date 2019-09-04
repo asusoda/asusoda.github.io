@@ -141,7 +141,26 @@ class Main extends Component {
                 </div>
                 {events.events.map(event => ( <Event content={event}/> ))}
 
+                <Modal defaultOpen closeIcon size='small'>
+                    <Header icon='calendar alternate outline' content='Notice  -  SoDA Kickoff'/>
+                    <Modal.Content>
+                        <h3>SoDA is hosting our annual Kickoff Event on Friday, September 6th from 5-8 PM!</h3>
+                        
+                            Known as a mini career fair for SoDA Members, we invite all our sponsors to attend an event dedicated to interacting with our members. <br/><br/>
+                            Bring your resume and be ready to talk to companies about potential internships and/or employement opportunities. <br/><br/>
+                            Food will be provided! <br/><br/>
+                            Come any time between 5-8 PM, but <b>you MUST RSVP to attend the event</b>. <br/> <br/>
 
+                            Location: <a href="https://www.asu.edu/map/interactive/?id=120#!m/231607">Student Pavilion Senita Ballroom</a>
+
+                        
+                    </Modal.Content>
+                    <Modal.Actions>
+                    <Button color='green' onClick={(e) => window.open("https://docs.google.com/forms/d/1PoHQMOKRBiJ0C7H77FrhX6ewo08SAtx79BK7buzGXX4")}>
+                        <Icon name='angle right'/> RSVP 
+                    </Button>
+                    </Modal.Actions>
+                </Modal>
 
             </div>
             </div>
