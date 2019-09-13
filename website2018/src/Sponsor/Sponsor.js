@@ -6,20 +6,35 @@ import './Sponsor.css';
 
 class Sponsor extends Component {
     render() {
-        const items = sponsors.sponsors;
-        const size = {
-            "bronze": "tiny",
-            "silver": "small",
-            "gold": "medium"
-        }
+        const gold = sponsors.gold;
+        const silver = sponsors.silver;
+        const bronze = sponsors.bronze;
         return (
             <div id="sponsor">
                 <Divider horizontal id="title">Sponsors</Divider>
                 <div id="sponsors">
-                    {items.map(({name, type}) => 
+                    {gold.map(({name}) => 
                         <Image
                             key={name}
-                            size={size[type]}
+                            size='medium'
+                            className="Sponsor"
+                            id={name}
+                            src={`./assets/logo/${name}.png`}
+                        />
+                    )}
+                    {silver.map(({name}) => 
+                        <Image
+                            key={name}
+                            size='small'
+                            className="Sponsor"
+                            id={name}
+                            src={`./assets/logo/${name}.png`}
+                        />
+                    )}
+                    {bronze.map(({name}) => 
+                        <Image
+                            key={name}
+                            size='tiny'
                             className="Sponsor"
                             id={name}
                             src={`./assets/logo/${name}.png`}

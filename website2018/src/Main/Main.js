@@ -28,21 +28,21 @@ class Main extends Component {
             {
                 key: 'pizza',
                 label: 'worth of pizza served',
-                value: 18300,
+                value: 20150,
                 steps: 50,
                 formatter: x => dollarFormatter.format(x)
             },
             {
                 key: 'sponsors',
                 label: 'Sponsors',
-                value: 15,
+                value: 11,
                 steps: 1,
                 formatter: x => x
             },
             {
                 key: 'officers',
                 label: 'Officers',
-                value: 14,
+                value: 15,
                 steps: 1,
                 formatter: x => x
             }
