@@ -209,27 +209,6 @@
             "description": "Come by SoDA and get your resume reviewed by Microsoft! Get useful feedback and tips on how to improve your resume so you can get your dream internship/job!",
             "location": "PSH 150",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSfIbJi-NtHUf2GrbZaULNAal241hCGsH4-N2_O8vS-8qDbPEQ/viewform"
-        },
-        {
-            "title": "Microsoft Brunch",
-            "sponsor": "microsoft",
-            "start": {
-                "year": 2019,
-                "month": 8,
-                "day": 14,
-                "hour": 11,
-                "minute": 0
-            },
-            "end": {
-                "year": 2019,
-                "month": 8,
-                "day": 14,
-                "hour": 13,
-                "minute": 0
-            },
-            "description": "Come to the Microsoft Brunch to talk to Microsoft representatives about POCs in tech! Get the opportunity to network and meet new people!",
-            "location": "ECF 102",
-            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSfIbJi-NtHUf2GrbZaULNAal241hCGsH4-N2_O8vS-8qDbPEQ/viewform"
         }
     ]
 }
