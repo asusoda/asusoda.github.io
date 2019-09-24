@@ -251,6 +251,48 @@
             "description": "Reflect on the career fair and the next steps to take. Also practice some technical and behavioral questions for your interviews coming up!",
             "location": "PSH 150",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSdYz-sIJmTKTOt2-7KcOehB9Txikw7v7Tewqo2BU_QoV31L3w/viewform"
+        },
+        {
+            "title": "The Benefits of Learning React Native",
+            "sponsor": "",
+            "start": {
+                "year": 2019,
+                "month": 8,
+                "day": 24,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 8,
+                "day": 24,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Learn how to become a web developer and a mobile developer at the same time with React Native!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSdCbs5zBGlA3q2mE8ClxzlClzm5LB1cfW5KVc-dK0-0ACLHgA/viewform"
+        },
+        {
+            "title": "Deloitte Technical Workshop",
+            "sponsor": "deloitte",
+            "start": {
+                "year": 2019,
+                "month": 8,
+                "day": 26,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 8,
+                "day": 26,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Come by to participate in a technical workshop on Tech Trends hosted by Deloitte! Learn about Intelligent Interfaces, AI-Fueled Organizations, & the Connectivity of Tomorrow and how they play a role in technology consulting.",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSdCbs5zBGlA3q2mE8ClxzlClzm5LB1cfW5KVc-dK0-0ACLHgA/viewform"
         }
     ]
 }
