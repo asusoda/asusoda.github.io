@@ -255,6 +255,7 @@
         {
             "title": "The Benefits of Learning React Native",
             "sponsor": "",
+            "showEndTime": false,
             "start": {
                 "year": 2019,
                 "month": 8,
@@ -276,6 +277,7 @@
         {
             "title": "Deloitte Technical Workshop",
             "sponsor": "deloitte",
+            "showEndTime": false,
             "start": {
                 "year": 2019,
                 "month": 8,
