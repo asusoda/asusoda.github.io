@@ -317,6 +317,50 @@
             "description": "Come by and learn more about PayPal’s Opportunity Hack hackathon from October 19-20.  See what the event is about and meet new people!",
             "location": "PSH 150",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSdvqIw26PVKs7_gja9tpV1D1xbvfJ29Nnj7yiHpJS-Y83DqhA/viewform"
+        },
+        {
+            "title": "Walmart Resume Event",
+            "sponsor": "walmart",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 9,
+                "day": 8,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 9,
+                "day": 8,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Come by to get your resume reviewed by Walmart recruiters! Network with recruiters and learn about the careers and opportunities Walmart has to offer you!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSek8veLRUT1yCaiBE0joU9yFkXHjwLdNTZs-lLvypW5_nx5hw/viewform"
+        },
+        {
+            "title": "Workiva Presentation",
+            "sponsor": "workiva",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 9,
+                "day": 10,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 9,
+                "day": 10,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Listen to Workiva give a presentation about their company and their development process. Find out what opportunities could be at Workiva for you!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSek8veLRUT1yCaiBE0joU9yFkXHjwLdNTZs-lLvypW5_nx5hw/viewform"
         }
     ]
 }
