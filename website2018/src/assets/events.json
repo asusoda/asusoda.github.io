@@ -361,6 +361,28 @@
             "description": "Listen to Workiva give a presentation about their company and their development process. Find out what opportunities could be at Workiva for you!",
             "location": "PSH 150",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSek8veLRUT1yCaiBE0joU9yFkXHjwLdNTZs-lLvypW5_nx5hw/viewform"
+        },
+        {
+            "title": "Technical Interview Prep",
+            "sponsor": "",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 9,
+                "day": 17,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 9,
+                "day": 17,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Come by to practice some technical interview questions for your upcoming interviews! Learn the process behind approaching these questions and how to ace them to land your dream job!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSdGd5hTBU7rUlWzWC1OLoAJbjbLomSuXzPXkb15TsyzJOS0hQ/viewform"
         }
     ]
 }
