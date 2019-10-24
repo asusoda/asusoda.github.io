@@ -383,6 +383,28 @@
             "description": "Come by to practice some technical interview questions for your upcoming interviews! Learn the process behind approaching these questions and how to ace them to land your dream job!",
             "location": "PSH 150",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSdGd5hTBU7rUlWzWC1OLoAJbjbLomSuXzPXkb15TsyzJOS0hQ/viewform"
+        },
+        {
+            "title": "SoDA Social",
+            "sponsor": "",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 9,
+                "day": 24,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 9,
+                "day": 24,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "End the week by spending time with SoDA! Enjoy food and entertainment and hang out with the officers and members.",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSfwxNwulLKIxV0mdVrvJkMNrk4rGUruo5Xz9bAId1ZwKBOM3Q/viewform"
         }
     ]
 }
