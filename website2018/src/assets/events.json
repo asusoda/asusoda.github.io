@@ -405,6 +405,28 @@
             "description": "End the week by spending time with SoDA! Enjoy food and entertainment and hang out with the officers and members.",
             "location": "PSH 150",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSfwxNwulLKIxV0mdVrvJkMNrk4rGUruo5Xz9bAId1ZwKBOM3Q/viewform"
+        },
+        {
+            "title": "Resume Reviews",
+            "sponsor": "",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 9,
+                "day": 29,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 9,
+                "day": 29,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Not confident on whether your resume is good to apply to companies or not? Come by SoDA to get feedback on your resume and tips on how to improve it so you can start applying ASAP!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSfs34qsZ-0FwIS0Dd27GPrp4TuuI5XUqsCXPmYe5xivtNzXZg/viewform"
         }
     ]
 }
