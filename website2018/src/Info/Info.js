@@ -29,34 +29,34 @@ class Info extends Component {
 		if(this.state.terminal) {
 			return (
 				<div id="info">
-					<Divider horizontal id="title">Info</Divider>
-					<Term/>
-					<Grid>
-						<Grid.Column textAlign="center">
-							<Button.Group>
-								<Button positive>Terminal</Button>
-								<Button.Or />
-								<Button onClick={this.handleClick}>Cards</Button>
-							</Button.Group>
-						</Grid.Column>
-					</Grid>
-				</div>
+				<Divider horizontal id="title">Info</Divider>
+				<InfoCards/>
+				<Grid>
+					<Grid.Column textAlign="center">
+						<Button.Group>
+							<Button positive>Cards</Button>
+							<Button.Or />
+							<Button onClick={this.handleClick}>Terminal</Button>
+						</Button.Group>
+					</Grid.Column>
+				</Grid>
+			</div>		
 			);
 		} else {
-			return (
+			return (		
 				<div id="info">
-					<Divider horizontal id="title">Info</Divider>
-					<InfoCards/>
-					<Grid>
-						<Grid.Column textAlign="center">
-							<Button.Group>
-								<Button onClick={this.handleClick}>Terminal</Button>
-								<Button.Or />
-								<Button positive>Cards</Button>
-							</Button.Group>
-						</Grid.Column>
-					</Grid>
-				</div>				
+				<Divider horizontal id="title">Info</Divider>
+				<Term/>
+				<Grid>
+					<Grid.Column textAlign="center">
+						<Button.Group>
+							<Button onClick={this.handleClick}>Cards</Button>
+							<Button.Or />
+							<Button positive>Terminal</Button>							
+						</Button.Group>
+					</Grid.Column>
+				</Grid>
+			</div>
 			);
 		}
 

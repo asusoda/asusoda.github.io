@@ -11,6 +11,14 @@
 	margin: 3vh auto 3vh auto;
 }
 
+#sponsors #gold {
+
+	flex-wrap: nowrap;
+	align-items: center;
+	display: flex;
+
+}
+
 #sponsor #title {
 	font-family: 'RopaSansPro-Medium';
 	font-size: 2em;

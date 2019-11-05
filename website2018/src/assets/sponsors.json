@@ -36,6 +36,9 @@
 		},
 		{
 			"name": "garmin"
+		},
+		{
+			"name": "generalmotors"
 		}
 	]
 }

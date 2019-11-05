@@ -13,33 +13,39 @@ class Sponsor extends Component {
             <div id="sponsor">
                 <Divider horizontal id="title">Sponsors</Divider>
                 <div id="sponsors">
-                    {gold.map(({name}) => 
-                        <Image
-                            key={name}
-                            size='medium'
-                            className="Sponsor"
-                            id={name}
-                            src={`./assets/logo/${name}.png`}
-                        />
-                    )}
-                    {silver.map(({name}) => 
-                        <Image
-                            key={name}
-                            size='small'
-                            className="Sponsor"
-                            id={name}
-                            src={`./assets/logo/${name}.png`}
-                        />
-                    )}
-                    {bronze.map(({name}) => 
-                        <Image
-                            key={name}
-                            size='tiny'
-                            className="Sponsor"
-                            id={name}
-                            src={`./assets/logo/${name}.png`}
-                        />
-                    )}
+                    <div id="gold">
+                        {gold.map(({name}) => 
+                            <Image
+                                key={name}
+                                size='medium'
+                                className="Sponsor"
+                                id={name}
+                                src={`./assets/logo/${name}.png`}
+                            />
+                        )}
+                    </div>
+                    <div id="gold">
+                        {silver.map(({name}) => 
+                            <Image
+                                key={name}
+                                size='small'
+                                className="Sponsor"
+                                id={name}
+                                src={`./assets/logo/${name}.png`}
+                            />
+                        )}
+                    </div>
+                    <div id="gold">
+                        {bronze.map(({name}) => 
+                            <Image
+                                key={name}
+                                size='tiny'
+                                className="Sponsor"
+                                id={name}
+                                src={`./assets/logo/${name}.png`}
+                            />
+                        )}
+                    </div>
                 </div>
             </div>
         );
