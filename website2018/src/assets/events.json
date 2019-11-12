@@ -471,6 +471,50 @@
             "description": "Discuss how to do well in coding competitions, and competitive programming tips and tricks to succeed. Learn how to approach difficult problems and use what you already know to solve them!",
             "location": "PSH 150",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScLbTdo1Y-LKdf5VNts9l0V5IbuWrzvLMWQaa7lk-FjmT1bxg/viewform"
+        },
+        {
+            "title": "Technical Interview Prep",
+            "sponsor": "",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 10,
+                "day": 12,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 10,
+                "day": 12,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Come by and practice some technical interview questions to practice for your upcoming interviews. Get advice for how to succeed in your interviews!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScUgBGiHea2oYeuGPQGgN5_xCmu-FBHZ1V9OH2eg7RDhrCf8g/viewform"
+        },
+        {
+            "title": "Modern React Apps with NextJS and ZEIT",
+            "sponsor": "",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 10,
+                "day": 14,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 10,
+                "day": 14,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Chase Adams from The Luminosity Lab will be hosting an interactive session covering NextJS and ZEIT! Stop by to learn how to learn about the powerful web framework that is React and how to deploy a static website with ZEIT!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScUgBGiHea2oYeuGPQGgN5_xCmu-FBHZ1V9OH2eg7RDhrCf8g/viewform"
         }
     ]
 }
