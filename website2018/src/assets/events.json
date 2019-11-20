@@ -515,6 +515,50 @@
             "description": "Chase Adams from The Luminosity Lab will be hosting an interactive session covering NextJS and ZEIT! Stop by to learn how to learn about the powerful web framework that is React and how to deploy a static website with ZEIT!",
             "location": "PSH 150",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScUgBGiHea2oYeuGPQGgN5_xCmu-FBHZ1V9OH2eg7RDhrCf8g/viewform"
+        },
+        {
+            "title": "Poker Night",
+            "sponsor": "",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 10,
+                "day": 19,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 10,
+                "day": 19,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Come by and spend some time at the SoDA social playing Poker! Enjoy food and hang out with SoDA Officers and Members!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSccnwVqp_I8pFlMi-RfJuRWDxQNwZJzp2_MnEAccIuGzy1Riw/viewform"
+        },
+        {
+            "title": "What to Do If You Don't Have an Internship",
+            "sponsor": "",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 10,
+                "day": 21,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 10,
+                "day": 21,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Don’t have an internship for the summer yet? Don’t worry! Come by to get some tips on what you can do over winter break and over the spring semester to increase your chances of getting an internship for the summer!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSccnwVqp_I8pFlMi-RfJuRWDxQNwZJzp2_MnEAccIuGzy1Riw/viewform"
         }
     ]
 }
