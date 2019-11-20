@@ -3,11 +3,6 @@
 
 This is the directory for SoDA's current React.js static website.
 
-## Heads Up
-If the terminal React component in the website is behaving weirdly, check out the following two issues I raised that contain fixes:  
-https://github.com/nitin42/terminal-in-react/issues/61  
-https://github.com/nitin42/terminal-in-react/issues/59
-
 ## How to run website locally
 The website uses npm, which manages all dependencies and has a dummy server that you can run on your local machine to view the website.
 ```
