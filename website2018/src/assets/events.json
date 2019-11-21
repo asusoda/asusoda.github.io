@@ -559,6 +559,28 @@
             "description": "Don’t have an internship for the summer yet? Don’t worry! Come by to get some tips on what you can do over winter break and over the spring semester to increase your chances of getting an internship for the summer!",
             "location": "PSH 150",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSccnwVqp_I8pFlMi-RfJuRWDxQNwZJzp2_MnEAccIuGzy1Riw/viewform"
+        },
+        {
+            "title": "SoDA Code Challenge VI",
+            "sponsor": "",
+            "showEndTime": true,
+            "start": {
+                "year": 2019,
+                "month": 10,
+                "day": 24,
+                "hour": 10,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 10,
+                "day": 24,
+                "hour": 14,
+                "minute": 0
+            },
+            "description": "Come by for the 6th annual SoDA Code Challenge! Get a chance to show off your programming skills and win some prizes too! Build a team of up to two students with one laptop per team. Internet usage is strictly prohibited except for the official Hackerrank given and code documentation (may also use physical documentation). Looking up solutions will lead to disqualification.",
+            "location": "SCOB 250",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSe2idx_qfgBfZOQmQMpoIfi-3Jdz_8NMXgINvpRQlkrNZHJwQ/viewform"
         }
     ]
 }
