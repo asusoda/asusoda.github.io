@@ -581,6 +581,28 @@
             "description": "Come by for the 6th annual SoDA Code Challenge! Get a chance to show off your programming skills and win some prizes too! Build a team of up to two students with one laptop per team. Internet usage is strictly prohibited except for the official Hackerrank given and code documentation (may also use physical documentation). Looking up solutions will lead to disqualification.",
             "location": "SCOB 250",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSe2idx_qfgBfZOQmQMpoIfi-3Jdz_8NMXgINvpRQlkrNZHJwQ/viewform"
+        },
+        {
+            "title": "Stripe Tech Talk",
+            "sponsor": "",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 10,
+                "day": 26,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 10,
+                "day": 26,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Join us to hear Thomas from Stripe give a talk on his experience at Stripe and general career tips for when you are starting your career in tech!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSdQC7IR7Wu0GQgVns5OboGSEGor9-4r8spAV10a5jj2VBUA0Q/viewform"
         }
     ]
 }
