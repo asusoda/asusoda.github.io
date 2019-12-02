@@ -603,6 +603,50 @@
             "description": "Join us to hear Thomas from Stripe give a talk on his experience at Stripe and general career tips for when you are starting your career in tech!",
             "location": "PSH 150",
             "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSdQC7IR7Wu0GQgVns5OboGSEGor9-4r8spAV10a5jj2VBUA0Q/viewform"
+        },
+        {
+            "title": "Officer Elections",
+            "sponsor": "",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 11,
+                "day": 3,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 11,
+                "day": 3,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "We will be having elections to fill in officer positions! We are looking for a community development officer and two K12 outreach chairs, and others (more information on RSVP form). Be prepared to give a short speech on why you should be a SoDA officer!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScCjqQNiog1oavLsyNZrEXAIABQ6aK3VSt3N_El4vlR34omwg/viewform"
+        },
+        {
+            "title": "Pancake Social",
+            "sponsor": "",
+            "showEndTime": false,
+            "start": {
+                "year": 2019,
+                "month": 11,
+                "day": 5,
+                "hour": 19,
+                "minute": 0
+            },
+            "end": {
+                "year": 2019,
+                "month": 11,
+                "day": 5,
+                "hour": 21,
+                "minute": 0
+            },
+            "description": "Stressed out because of finals? Take a break and come by to hang out with fellow members and officers and enjoy some pancakes!",
+            "location": "PSH 150",
+            "RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScCjqQNiog1oavLsyNZrEXAIABQ6aK3VSt3N_El4vlR34omwg/viewform"
         }
     ]
 }
