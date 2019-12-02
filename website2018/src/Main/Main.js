@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import { Image, Statistic, Icon, Popup } from 'semantic-ui-react'
+import {
+	Image,
+	Statistic,
+	Icon,
+	Popup
+} from 'semantic-ui-react';
 import Particles from 'react-particles-js';
 
 import ParticleConfig from '../assets/particlesjs-config.json';
 import events from '../assets/events.json'; // this json file contains the events to be displayed on the website.
 import Event from './Event.js';
 import AnimatedNumber from '../Components/AnimatedNumber';
+import LearnMore from '../LearnMore/LearnMore';
 
 import './Main.css';
 
@@ -98,7 +104,10 @@ class Main extends Component {
 				description: 'Register as a SoDer on SunDevilSync!',
 				link: 'https://asu.campuslabs.com/engage/organization/soda'
 			}
-		]
+		];
+
+		const newsletterLink = socials.find(
+			({name}) => name === 'Newsletter').link;
 
 		return (
 			<div>
@@ -125,6 +134,7 @@ class Main extends Component {
 							})
 						}
 					</div>
+					<LearnMore newsletterLink={newsletterLink}/>
 					<div id='social'>
 						{socials.map(social => (
 							<Popup

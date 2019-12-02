@@ -1,0 +1,26 @@
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.align-baseline {
+	display: flex;
+	align-items: baseline;
+}
+
+.padding-bottom-10px {
+	padding-bottom: 10px;
+}
+
+#learn-more-button {
+	margin-left: 10px;
+}
+
+.faq-question {
+	font-weight: bold;
+}
+
+span {
+  font-family: 'RopaSansPro-Light';
+  font-size: 1.4em;
+}
