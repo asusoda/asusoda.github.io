@@ -1,79 +1,79 @@
 {
-    "officers": [
-        {
-            "name": "Jacob Folsom",
-            "role": "President",
-            "email": "jfolsom2@asu.edu"
-        },
-        {
-        	"name": "Eric Peterson",
-            "role": "Vice President",
-            "email": "empete11@asu.edu"
-        },
-        {
-            "name": "Michelle Staskauskas",
-            "role": "Treasurer",
-            "email": "mstaskau@asu.edu"
-        },
-        {
-            "name": "Randy Ngo",
-            "role": "Deans Funding Director",
-            "email": "rngo3@asu.edu"
-        },
-        {
-            "name": "Darren Vasquez",
-            "role": "Technical Development Director",
-            "email": "darrenvasquez@asu.edu"
-        },
-        {
-            "name": "Matthew Budiman",
-            "role": "Industry Outreach",
-            "email": "mbudiman@asu.edu"
-        },
-        {
-            "name": "Andrew Marshall",
-            "role": "Industry Outreach",
-            "email": "akmarsh4@asu.edu"
-        },
-        {
-            "name": "Rahisul Haque",
-            "role": "Distinguished Members Director",
-            "email": "rahisul.haque@asu.edu"
-        },
-        {
-            "name": "Ahmed Usman",
-            "role": "Community Development Director",
-            "email": "ausman3@asu.edu"
-        },
-        {
-            "name": "Jona Joe",
-            "role": "Marketing Director",
-            "email": "jjoe3@asu.edu"
-        },
-        {
-            "name": "Prashant Mokkapati",
-            "role": "Marketing Director",
-            "email": "pmokkap1@asu.edu"
-        },
-        {
-            "name": "Antonio Enriquez",
-            "role": "Director of Communications",
-            "email": "aenriq29@asu.edu"
-        },
-        {
-            "name": "Mohit Doshi",
-            "role": "Director of Communications",
-            "email": "mdoshi3@asu.edu"
-        },
-        {
-            "name": "Raj Shah",
-            "role": "Webmaster",
-            "email": "rnshah9@asu.edu"
-        },
-        {
-            "name": "Jason Manuel",
-            "role": "Webmaster",
-            "email": "jamanue1@asu.edu"
-        }
-    ]
+	"officers": [
+		{
+			"name": "Jacob Folsom",
+			"role": "President",
+			"email": "jfolsom2@asu.edu"
+		},
+		{
+			"name": "Eric Peterson",
+			"role": "Vice President",
+			"email": "empete11@asu.edu"
+		},
+		{
+			"name": "Michelle Staskauskas",
+			"role": "Treasurer",
+			"email": "mstaskau@asu.edu"
+		},
+		{
+			"name": "Randy Ngo",
+			"role": "Deans Funding Director",
+			"email": "rngo3@asu.edu"
+		},
+		{
+			"name": "Darren Vasquez",
+			"role": "Technical Development Director",
+			"email": "darrenvasquez@asu.edu"
+		},
+		{
+			"name": "Matthew Budiman",
+			"role": "Industry Outreach",
+			"email": "mbudiman@asu.edu"
+		},
+		{
+			"name": "Andrew Marshall",
+			"role": "Industry Outreach",
+			"email": "akmarsh4@asu.edu"
+		},
+		{
+			"name": "Rahisul Haque",
+			"role": "Distinguished Members Director",
+			"email": "rahisul.haque@asu.edu"
+		},
+		{
+			"name": "Ahmed Usman",
+			"role": "Community Development Director",
+			"email": "ausman3@asu.edu"
+		},
+		{
+			"name": "Jona Joe",
+			"role": "Marketing Director",
+			"email": "jjoe3@asu.edu"
+		},
+		{
+			"name": "Prashant Mokkapati",
+			"role": "Marketing Director",
+			"email": "pmokkap1@asu.edu"
+		},
+		{
+			"name": "Antonio Enriquez",
+			"role": "Director of Communications",
+			"email": "aenriq29@asu.edu"
+		},
+		{
+			"name": "Mohit Doshi",
+			"role": "Director of Communications",
+			"email": "mdoshi3@asu.edu"
+		},
+		{
+			"name": "Raj Shah",
+			"role": "Webmaster",
+			"email": "rnshah9@asu.edu"
+		},
+		{
+			"name": "Jason Manuel",
+			"role": "Webmaster",
+			"email": "jamanue1@asu.edu"
+		}
+	]
 }

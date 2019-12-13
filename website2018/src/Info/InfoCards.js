@@ -5,23 +5,23 @@ import './InfoCards.css'
 
 class InfoCards extends Component {
 
-    render() {
-    	const items = content.content;
-    	return (
-            <div id="cards">
-                {items.map(({title, content, i}) =>
-                    <Card key={title} className="Card">
-                        <Card.Content>
-                            <Card.Header>{title}</Card.Header>
-                            <br/>
-                            <Modal key={i} trigger={<Button>More Information</Button>} header={title} content={content.map((content) => <div>{content}</div>)}></Modal>
-                        </Card.Content>
-                    </Card>
+	render() {
+		const items = content.content;
+		return (
+			<div id="cards">
+				{items.map(({title, content, i}) =>
+					<Card key={title} className="Card">
+						<Card.Content>
+							<Card.Header>{title}</Card.Header>
+							<br/>
+							<Modal key={i} trigger={<Button>More Information</Button>} header={title} content={content.map((content) => <div>{content}</div>)}></Modal>
+						</Card.Content>
+					</Card>
 
-                    )}              
-            </div>
+					)}
+			</div>
 		);
-    }
+	}
 
 }
 

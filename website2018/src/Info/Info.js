@@ -6,7 +6,7 @@ import './Info.css';
 
 class Info extends Component {
 
-    render() {
+	render() {
 
 			return (
 				<div id="info">

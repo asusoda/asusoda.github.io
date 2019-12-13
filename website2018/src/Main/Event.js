@@ -7,7 +7,7 @@ class Event extends Component {
 	render() {
 		const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 		const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-		
+
 		const startDate = new Date(this.props.content.start.year, this.props.content.start.month, this.props.content.start.day);
 		const endDate = new Date(this.props.content.end.year, this.props.content.end.month, this.props.content.end.day);
 
@@ -18,7 +18,7 @@ class Event extends Component {
 			period = [`${startDate.getDate()} ${monthNames[startDate.getMonth()]}, ${startDate.getFullYear()}`,
 			`${endDate.getDate()} ${monthNames[endDate.getMonth()]}, ${endDate.getFullYear()}`].join(' - ');
 		}
-		
+
 		const startAMPM = (this.props.content.start.hour / 12) < 1? 'AM': 'PM';
 		const endAMPM = (this.props.content.end.hour / 12) < 1? 'AM': 'PM';
 		const duration = (this.props.content.showEndTime ? [`${this.props.content.start.hour % 12} ${startAMPM}`,`${this.props.content.end.hour % 12} ${endAMPM}`].join(' - ') : `Starts at ${this.props.content.start.hour % 12} ${startAMPM}`);
@@ -58,13 +58,13 @@ class Event extends Component {
 						<span>{duration}</span>
 						<br/>
 						{
-							this.props.content.location.length > 8 && 
-							<Popup key='event1' position='left center' inverted trigger={<a href={"https://google.com/maps/search/" + this.props.content.location} target="_blank">{this.props.content.location}</a>} 
+							this.props.content.location.length > 8 &&
+							<Popup key='event1' position='left center' inverted trigger={<a href={"https://google.com/maps/search/" + this.props.content.location} target="_blank">{this.props.content.location}</a>}
 							header='Open Google Maps' content={this.props.content.location}/>
 						}
-						{	
-							this.props.content.location.length <= 8 && 
-							<Popup key='event1' position='left center' inverted trigger={<a href={"https://www.asu.edu/map/interactive/?psCode=" + this.props.content.location.substring(0, 4)} target="_blank">{this.props.content.location}</a>} 
+						{
+							this.props.content.location.length <= 8 &&
+							<Popup key='event1' position='left center' inverted trigger={<a href={"https://www.asu.edu/map/interactive/?psCode=" + this.props.content.location.substring(0, 4)} target="_blank">{this.props.content.location}</a>}
 							header='Open ASU Map' content={this.props.content.location}/>
 						}
 					</Card.Meta>
