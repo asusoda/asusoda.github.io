@@ -1,0 +1,10 @@
+# inferred with npx eclint infer website2018/src
+
+root = true
+
+[*]
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+max_line_length = 160
