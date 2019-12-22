@@ -4,18 +4,6 @@ body {
 }
 
 @font-face {
-	font-family: "RetroComputer";
-	src: url("./assets/fonts/RetroComputer.ttf");
-}
-@font-face {
-	font-family: "Pxlvetica";
-	src: url("./assets/fonts/Pxlvetica.ttf");
-}
-@font-face {
-	font-family: "PressStart2P";
-	src: url("./assets/fonts/PressStart2P.ttf");
-}
-@font-face {
 	font-family: "RopaSans-Regular";
 	src: url("./assets/fonts/RopaSansProFontFamily/RopaSans-Regular.ttf");
 }
