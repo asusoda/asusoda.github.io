@@ -3,11 +3,13 @@
 
 This repository hosts the official SoDA static website found at https://thesoda.io, hosted through GitHub Pages.
 
-## 2018 Website
+## 2018-Present Website
 
-The 2018 SoDA website was built with React.js. The source code can be found under [`./website2018`](./website2018).
+The current SoDA website is built with React.js. The source code can be found
+under [`./website2018`](./website2018).
 
-Documentation on installing, running, and compiling on your local machine is found at the above directory.
+Documentation on installing, running, and compiling on your local machine is
+found at the above directory's [README](./website2018/README.md).
 
 ## Old Websites
 
