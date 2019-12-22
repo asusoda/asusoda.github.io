@@ -19,6 +19,15 @@ All new events are added to
 [`./website2018/src/assets/events.json`](./src/assets/events.json). Copy and
 edit a previous event to create a new one.
 
+## Code formatting
+
+Please try to follow our [`.editorconfig`](../.editorconfig). In particular,
+please prefer tabs for code indentation.
+
+There are many editor plugins that can help with changing your editor settings
+to respect the `.editorconfig` when you have this project open, like
+[`editorconfig` for atom](https://atom.io/packages/editorconfig).
+
 ## Pushing changes
 
 Always make sure you pull before working on the repository. Since the website is
