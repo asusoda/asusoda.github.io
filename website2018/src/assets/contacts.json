@@ -36,6 +36,21 @@
 			"email": "akmarsh4@asu.edu"
 		},
 		{
+			"name": "Yasser Dbeis",
+			"role": "Industry Outreach",
+			"email": "ydbeis@asu.edu"
+		},
+		{
+			"name": "Tanay Gandhi",
+			"role": "K12 Outreach",
+			"email": "tgandhi1@asu.edu"
+		},
+		{
+			"name": "Juan Pablo Romero",
+			"role": "K12 Outreach",
+			"email": "jpromer2@asu.edu"
+		},
+		{
 			"name": "Rahisul Haque",
 			"role": "Distinguished Members Director",
 			"email": "rahisul.haque@asu.edu"
@@ -44,6 +59,11 @@
 			"name": "Ahmed Usman",
 			"role": "Community Development Director",
 			"email": "ausman3@asu.edu"
+		},
+		{
+			"name": "Nandakishore Vudumula",
+			"role": "Community Development Director",
+			"email": "nandukrv@gmail.com"
 		},
 		{
 			"name": "Jona Joe",
@@ -74,6 +94,16 @@
 			"name": "Jason Manuel",
 			"role": "Webmaster",
 			"email": "jamanue1@asu.edu"
+		},
+		{
+			"name": "Brightan Hsu",
+			"role": "Webmaster",
+			"email": "bhsu4@asu.edu"
+		},
+		{
+			"name": "Bader Alrifai",
+			"role": "Webmaster",
+			"email": "balrifai@asu.edu"
 		}
 	]
 }
