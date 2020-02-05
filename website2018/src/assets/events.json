@@ -647,6 +647,50 @@
 			"description": "Stressed out because of finals? Take a break and come by to hang out with fellow members and officers and enjoy some pancakes!",
 			"location": "PSH 150",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScCjqQNiog1oavLsyNZrEXAIABQ6aK3VSt3N_El4vlR34omwg/viewform"
+		},
+		{
+			"title": "Spring Into SoDA",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 2,
+				"day": 4,
+				"hour": 19,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 2,
+				"day": 4,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Welcome to another semester of SoDA! We will be going over what fun and exciting events we have in store for the semester!",
+			"location": "PSH 150",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSevh6Ryn_yUhbwQ-S0VpRi-Q5XbGzb2Q0APLvMKfpgujg61_Q/viewform"
+		},
+		{
+			"title": "Career Fair Prep",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 2,
+				"day": 6,
+				"hour": 19,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 2,
+				"day": 6,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Come by to get ready for the career fair! Find out how you can get ready for the career fair and get your dream job!",
+			"location": "PSH 150",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSevh6Ryn_yUhbwQ-S0VpRi-Q5XbGzb2Q0APLvMKfpgujg61_Q/viewform"
 		}
 	]
 }
