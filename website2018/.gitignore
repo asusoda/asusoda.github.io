@@ -1,7 +1,7 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
-/node_modules/*
+/node_modules
 
 # Keep this because I had to manually change things inside of it. If you redownload that
 # dependency, all my changes would be gone. See the following issues I raised if you're
