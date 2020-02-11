@@ -691,6 +691,28 @@
 			"description": "Come by to get ready for the career fair! Find out how you can get ready for the career fair and get your dream job!",
 			"location": "PSH 150",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSevh6Ryn_yUhbwQ-S0VpRi-Q5XbGzb2Q0APLvMKfpgujg61_Q/viewform"
+		},
+		{
+			"title": "Getting Involved with IoT Projects",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 1,
+				"day": 11,
+				"hour": 19,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 1,
+				"day": 11,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Interested in IoT projects? Come by to learn more about them and the IAAG (Industry-Academic Advisory Group) which works with companies and students to develop capstone ideas and work on industry issued projects!",
+			"location": "PSH 150",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSfSK4RRFUUVi2ZTRIyTxM6RBithziGjKddEXoBXxkrArI37fQ/viewform"
 		}
 	]
 }
