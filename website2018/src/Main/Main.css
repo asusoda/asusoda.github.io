@@ -41,33 +41,6 @@
 
 }
 
-.center {
-	display: flex;
-	justify-content: center;
-}
-
-.align-baseline {
-	display: flex;
-	align-items: baseline;
-}
-
-.padding-bottom-10px {
-	padding-bottom: 10px;
-}
-
-#learn-more-button {
-	margin-left: 10px;
-}
-
 #particles {
 	pointer-events:none; /* This prevents interaction with the background but fixes weird issue with the social buttons */
-}
-
-.faq-question {
-	font-weight: bold;
-}
-
-span {
-  font-family: 'RopaSansPro-Light';
-  font-size: 1.4em;
 }
