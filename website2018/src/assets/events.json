@@ -713,6 +713,28 @@
 			"description": "Interested in IoT projects? Come by to learn more about them and the IAAG (Industry-Academic Advisory Group) which works with companies and students to develop capstone ideas and work on industry issued projects!",
 			"location": "PSH 150",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSfSK4RRFUUVi2ZTRIyTxM6RBithziGjKddEXoBXxkrArI37fQ/viewform"
+		},
+		{
+			"title": "Resume Review Workshop",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 1,
+				"day": 13,
+				"hour": 19,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 1,
+				"day": 13,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Come by to get some helpful tips on how to prepare your resume for next week's career fair! Get useful feedback for improving your resume!",
+			"location": "PSH 150",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScgH3yx5gKOREdKCw3ps_5qw7CtLKnW6X99m5sBk_IFb_ZvAw/viewform"
 		}
 	]
 }
