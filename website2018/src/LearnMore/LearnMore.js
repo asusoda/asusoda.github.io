@@ -44,8 +44,8 @@ class LearnMore extends Component {
 		);
 
 		return (
-			<div className='center align-baseline padding-bottom-10px'>
-				<span>New to SoDA?</span>
+			<div className='learn-more-text center align-baseline padding-bottom-10px'>
+				New to SoDA?
 				<Modal trigger={learnMoreButton}>
 					<Modal.Header>New to SoDA?</Modal.Header>
 					<Modal.Content>
