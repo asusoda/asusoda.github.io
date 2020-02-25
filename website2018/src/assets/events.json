@@ -779,6 +779,50 @@
 			"description": "Need help preparing for an upcoming interview? Come by SoDA to learn some tips and tricks for how to do well in your coding interviews!",
 			"location": "PSH 150",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScfI6JZtkPWIUag4BJEjX6kjocOZJ1JCLZOQpdPEUtgKIloFQ/viewform"
+		},
+		{
+			"title": "Amazon Tech Talk",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 1,
+				"day": 25,
+				"hour": 19,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 1,
+				"day": 25,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Come by to talk about encryption with Amazon!  Learn about SSL, why it is used, and the different aspects of it!",
+			"location": "PSH 150",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSfJPQXcbfJLiMF_sqSQwREZcS-j4cZlo7AnJRQRgaZfXScnhQ/viewform"
+		},
+		{
+			"title": "Board Game Social",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 1,
+				"day": 27,
+				"hour": 19,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 1,
+				"day": 27,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Take a break from classes and play some board games with your fellow members and officers! Come hang out and have a good time!",
+			"location": "PSH 150",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSfJPQXcbfJLiMF_sqSQwREZcS-j4cZlo7AnJRQRgaZfXScnhQ/viewform"
 		}
 	]
 }
