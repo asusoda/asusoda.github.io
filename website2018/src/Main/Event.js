@@ -58,11 +58,14 @@ class Event extends Component {
 						<span>{duration}</span>
 						<br/>
 						{
+							this.props.content.meetingLink !== undefined &&
+							<Popup key='event1' position='left center' inverted trigger={<a href={this.props.content.meetingLink}>{this.props.content.meetingLink}</a>}
+							header='Enter Virtual Meeting' content={this.props.content.meetingLink}/> ||
+
 							this.props.content.location.length > 8 &&
 							<Popup key='event1' position='left center' inverted trigger={<a href={"https://google.com/maps/search/" + this.props.content.location} target="_blank">{this.props.content.location}</a>}
-							header='Open Google Maps' content={this.props.content.location}/>
-						}
-						{
+							header='Open Google Maps' content={this.props.content.location}/> ||
+
 							this.props.content.location.length <= 8 &&
 							<Popup key='event1' position='left center' inverted trigger={<a href={"https://www.asu.edu/map/interactive/?psCode=" + this.props.content.location.substring(0, 4)} target="_blank">{this.props.content.location}</a>}
 							header='Open ASU Map' content={this.props.content.location}/>
@@ -73,8 +76,11 @@ class Event extends Component {
 				<Card.Content extra textAlign='left'>
 					<Icon name='time'/> {timeLeft}
 					<br/>
-					{this.props.content.RSVP_link && <a href={this.props.content.RSVP_link} target="_blank"><Icon name='mail'/> RSVP</a>}
-					{!this.props.content.RSVP_link && <Popup key='event1_rsvp' position='left center' inverted trigger={<a><Icon name='mail'/>RSVP</a>} header='RSVP' content='Coming Soon'/>}
+					{
+						this.props.content.meetingLink === undefined &&
+						(this.props.content.RSVP_link && <a href={this.props.content.RSVP_link} target="_blank"><Icon name='mail'/> RSVP</a> ||
+						!this.props.content.RSVP_link && <Popup key='event1_rsvp' position='left center' inverted trigger={<a><Icon name='mail'/>RSVP</a>} header='RSVP' content='Coming Soon'/>)
+					}
 				</Card.Content>
 				{/* <Card.Content extra textAlign='left'>
 					<Modal basic style={{maxWidth: '600px'}}
