@@ -59,7 +59,7 @@ class Event extends Component {
 						<br/>
 						{
 							this.props.content.meetingLink !== undefined &&
-							<Popup key='event1' position='left center' inverted trigger={<a href={this.props.content.meetingLink}>{this.props.content.meetingLink}</a>}
+							<Popup key='event1' position='left center' inverted trigger={<span>Meeting link: <a href={this.props.content.meetingLink}>{this.props.content.meetingLink}</a></span>}
 							header='Enter Virtual Meeting' content={this.props.content.meetingLink}/> ||
 
 							this.props.content.location.length > 8 &&
