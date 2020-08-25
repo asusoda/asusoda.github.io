@@ -77,9 +77,8 @@ class Event extends Component {
 					<Icon name='time'/> {timeLeft}
 					<br/>
 					{
-						this.props.content.meetingLink === undefined &&
-						(this.props.content.RSVP_link && <a href={this.props.content.RSVP_link} target="_blank"><Icon name='mail'/> RSVP</a> ||
-						!this.props.content.RSVP_link && <Popup key='event1_rsvp' position='left center' inverted trigger={<a><Icon name='mail'/>RSVP</a>} header='RSVP' content='Coming Soon'/>)
+						this.props.content.RSVP_link && <a href={this.props.content.RSVP_link} target="_blank"><Icon name='mail'/> RSVP</a> ||
+						!this.props.content.RSVP_link && <Popup key='event1_rsvp' position='left center' inverted trigger={<a><Icon name='mail'/>RSVP</a>} header='RSVP' content='Coming Soon'/>
 					}
 				</Card.Content>
 				{/* <Card.Content extra textAlign='left'>

@@ -20,6 +20,28 @@
 			},
 			"description": "We will be having elections to fill in officer positions! We will be giving more information on the specific positions that are open and how to apply during the meeting.",
 			"meetingLink": "https://asu.zoom.us/j/97962607917"
+		},
+		{
+			"title": "What is SoDA and can I drink it?",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 7,
+				"day": 25,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 7,
+				"day": 25,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "Join us for our first meeting of the semester! The meeting will be virtual and we will outline the layout of SoDA and let you know about our upcoming events.",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSe1kVGc-w3mk_1pNigHG-3dkSaMJ49ML-tNGUDixx42cLVQZg/viewform",
+			"meetingLink": "https://asu.zoom.us/j/94370748693"
 		}
 	]
 }
