@@ -48,7 +48,7 @@ class Main extends Component {
 			{
 				key: 'officers',
 				label: 'Officers',
-				value: 21,
+				value: 9,
 				steps: 1,
 				formatter: x => x
 			}
