@@ -42,6 +42,27 @@
 			"description": "Join us for our first meeting of the semester! The meeting will be virtual and we will outline the layout of SoDA and let you know about our upcoming events.",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSe1kVGc-w3mk_1pNigHG-3dkSaMJ49ML-tNGUDixx42cLVQZg/viewform",
 			"meetingLink": "https://asu.zoom.us/j/94370748693"
+		},
+		{
+			"title": "Resume Reviews",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 8,
+				"day": 1,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 8,
+				"day": 1,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "Need help getting your resume together before you start applying to companies? Join our meeting to get your resume reviewed! Get useful tips and tricks to make your resume ready to apply!",
+			"meetingLink": "https://asu.zoom.us/j/96279983116"
 		}
 	]
 }
