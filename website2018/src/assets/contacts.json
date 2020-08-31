@@ -1,9 +1,9 @@
 {
 	"officers": [
 		{
-			"name": "Jacob Folsom",
+			"name": "Randy Ngo",
 			"role": "President",
-			"email": "jfolsom2@asu.edu"
+			"email": "rngo3@asu.edu"
 		},
 		{
 			"name": "Eric Peterson",
@@ -16,34 +16,9 @@
 			"email": "mstaskau@asu.edu"
 		},
 		{
-			"name": "Randy Ngo",
-			"role": "Deans Funding Director",
-			"email": "rngo3@asu.edu"
-		},
-		{
-			"name": "Darren Vasquez",
-			"role": "Technical Development Director",
-			"email": "darrenvasquez@asu.edu"
-		},
-		{
-			"name": "Matthew Budiman",
-			"role": "Industry Outreach",
-			"email": "mbudiman@asu.edu"
-		},
-		{
-			"name": "Andrew Marshall",
-			"role": "Industry Outreach",
-			"email": "akmarsh4@asu.edu"
-		},
-		{
 			"name": "Yasser Dbeis",
 			"role": "Industry Outreach",
 			"email": "ydbeis@asu.edu"
-		},
-		{
-			"name": "Tanay Gandhi",
-			"role": "K12 Outreach",
-			"email": "tgandhi1@asu.edu"
 		},
 		{
 			"name": "Juan Pablo Romero",
@@ -51,59 +26,24 @@
 			"email": "jpromer2@asu.edu"
 		},
 		{
-			"name": "Rahisul Haque",
-			"role": "Distinguished Members Director",
-			"email": "rahisul.haque@asu.edu"
-		},
-		{
-			"name": "Ahmed Usman",
-			"role": "Community Development Director",
-			"email": "ausman3@asu.edu"
-		},
-		{
-			"name": "Nandakishore Vudumula",
-			"role": "Community Development Director",
-			"email": "nandukrv@gmail.com"
-		},
-		{
-			"name": "Jona Joe",
-			"role": "Marketing Director",
-			"email": "jjoe3@asu.edu"
-		},
-		{
 			"name": "Prashant Mokkapati",
 			"role": "Marketing Director",
 			"email": "pmokkap1@asu.edu"
 		},
 		{
-			"name": "Antonio Enriquez",
-			"role": "Director of Communications",
-			"email": "aenriq29@asu.edu"
-		},
-		{
 			"name": "Mohit Doshi",
-			"role": "Director of Communications",
+			"role": "Technical Development Director",
 			"email": "mdoshi3@asu.edu"
 		},
 		{
-			"name": "Raj Shah",
-			"role": "Webmaster",
-			"email": "rnshah9@asu.edu"
-		},
-		{
 			"name": "Jason Manuel",
-			"role": "Webmaster",
+			"role": "Technical Development Director",
 			"email": "jamanue1@asu.edu"
 		},
 		{
 			"name": "Brightan Hsu",
 			"role": "Webmaster",
 			"email": "bhsu4@asu.edu"
-		},
-		{
-			"name": "Bader Alrifai",
-			"role": "Webmaster",
-			"email": "balrifai@asu.edu"
 		}
 	]
 }
