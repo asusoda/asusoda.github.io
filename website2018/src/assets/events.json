@@ -105,6 +105,27 @@
 			},
 			"description": "Struggling with technical interviews? Come by to this special Thursday meeting where we'll go over the basics of technical interviews and how you can ace them!",
 			"meetingLink": "https://asu.zoom.us/j/96279983116"
+		},
+		{
+			"title": "Navigating the Career Fair",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 8,
+				"day": 15,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 8,
+				"day": 15,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "Nervous about the upcoming career fair? Come by this week's meeting to hear our advice on how to get through the career fair and score a job/internship!",
+			"meetingLink": "https://asu.zoom.us/j/96279983116"
 		}
 	]
 }
