@@ -126,6 +126,27 @@
 			},
 			"description": "Nervous about the upcoming career fair? Come by this week's meeting to hear our advice on how to get through the career fair and score a job/internship!",
 			"meetingLink": "https://asu.zoom.us/j/96279983116"
+		},
+		{
+			"title": "SoDA Social",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 8,
+				"day": 22,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 8,
+				"day": 22,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "Exhausted after a long week of job searching at the career fair? Come by the meeting this week to relax, hang out, and play some games!",
+			"meetingLink": "https://asu.zoom.us/j/96279983116"
 		}
 	]
 }
