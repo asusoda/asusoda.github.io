@@ -147,6 +147,27 @@
 			},
 			"description": "Exhausted after a long week of job searching at the career fair? Come by the meeting this week to relax, hang out, and play some games!",
 			"meetingLink": "https://asu.zoom.us/j/96279983116"
+		},
+		{
+			"title": "Introduction to Git",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 8,
+				"day": 29,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 8,
+				"day": 29,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "Do you keep hearing the term Git being thrown around, but aren’t sure what it is or how to use it? Git is one of the most essential tools in software engineering and we’ll be going over the basics you need to help yourself stand out!",
+			"meetingLink": "https://asu.zoom.us/j/96279983116"
 		}
 	]
 }
