@@ -168,6 +168,27 @@
 			},
 			"description": "Do you keep hearing the term Git being thrown around, but aren’t sure what it is or how to use it? Git is one of the most essential tools in software engineering and we’ll be going over the basics you need to help yourself stand out!",
 			"meetingLink": "https://asu.zoom.us/j/96279983116"
+		},
+		{
+			"title": "Introduction to HTML/CSS",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 9,
+				"day": 6,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 9,
+				"day": 6,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "Keep hearing about web development and HTML but have no idea what it is? Come by this week's meeting to learn how to develop a website from scratch!",
+			"meetingLink": "https://asu.zoom.us/j/96279983116"
 		}
 	]
 }
