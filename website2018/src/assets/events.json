@@ -189,6 +189,48 @@
 			},
 			"description": "Keep hearing about web development and HTML but have no idea what it is? Come by this week's meeting to learn how to develop a website from scratch!",
 			"meetingLink": "https://asu.zoom.us/j/96279983116"
+		},
+		{
+			"title": "Alumni Meet and Greet",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 9,
+				"day": 12,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 9,
+				"day": 12,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "Meet and network with our SoDA Alumni and find out what they’ve been up to since graduating. Make sure to come prepared with questions!",
+			"meetingLink": "https://asu.zoom.us/j/96279983116"
+		},
+		{
+			"title": "Goldman Sachs",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 9,
+				"day": 15,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 9,
+				"day": 15,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "Come to our meeting this week to hear about engineering opportunities at Goldman Sachs. Get a chance to network and get to know what it’s like to work at this prestigious firm!",
+			"meetingLink": "https://asu.zoom.us/j/96279983116"
 		}
 	]
 }
