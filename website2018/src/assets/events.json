@@ -231,6 +231,49 @@
 			},
 			"description": "Come to our meeting this week to hear about engineering opportunities at Goldman Sachs. Get a chance to network and get to know what it’s like to work at this prestigious firm!",
 			"meetingLink": "https://asu.zoom.us/j/96279983116"
+		},
+		{
+			"title": "Introduction to Javascript",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 9,
+				"day": 20,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 9,
+				"day": 20,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "Want to learn more about javascript and how to add new features to a webpage? Join the meeting this week to start learning javascript and start customizing your websites!",
+			"meetingLink": "https://asu.zoom.us/j/96279983116"
+		},
+		{
+			"title": "MobileDevs - UI/UX Design Informational Meeting",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 9,
+				"day": 21,
+				"hour": 18,
+				"minute": 30
+			},
+			"end": {
+				"year": 2020,
+				"month": 9,
+				"day": 21,
+				"hour": 19,
+				"minute": 45
+			},
+			"description": "What better way to learn how to put your new Javascript skills to use than by learning UI/UX design! Check out the MobileDevs flyer below for more information on this meeting. Please RSVP beforehand and use the link to join the event!",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSe1kVGc-w3mk_1pNigHG-3dkSaMJ49ML-tNGUDixx42cLVQZg/viewform",
+			"meetingLink": "https://asu.zoom.us/j/88122336586"
 		}
 	]
 }
