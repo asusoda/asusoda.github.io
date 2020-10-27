@@ -274,6 +274,27 @@
 			"description": "What better way to learn how to put your new Javascript skills to use than by learning UI/UX design! Please RSVP beforehand and use the link to join the event!",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSe1kVGc-w3mk_1pNigHG-3dkSaMJ49ML-tNGUDixx42cLVQZg/viewform",
 			"meetingLink": "https://asu.zoom.us/j/88122336586"
+		},
+		{
+			"title": "Crash Course on the Web",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 9,
+				"day": 27,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 9,
+				"day": 27,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "What is the web? We all know it is used to search for things, but how do you develop for it? Come by to learn about how the web works and different tech stacks, frameworks, and considerations when working with it.",
+			"meetingLink": "https://asu.zoom.us/j/96279983116"
 		}
 	]
 }
