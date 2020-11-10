@@ -295,6 +295,27 @@
 			},
 			"description": "What is the web? We all know it is used to search for things, but how do you develop for it? Come by to learn about how the web works and different tech stacks, frameworks, and considerations when working with it.",
 			"meetingLink": "https://asu.zoom.us/j/96279983116"
+		},
+		{
+			"title": "SQL Basics",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2020,
+				"month": 10,
+				"day": 10,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2020,
+				"month": 10,
+				"day": 10,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "Databases are a huge part of software development and a great skill to have on your resume. Come by this meeting to learn about databases, database management systems, SQL, SQL queries, and more!",
+			"meetingLink": "https://asu.zoom.us/j/96279983116"
 		}
 	]
 }
