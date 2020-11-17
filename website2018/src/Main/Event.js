@@ -37,7 +37,8 @@ class Event extends Component {
 		if (elapsed > 0) {
 			timeLeft = `${helper(weeks, 'week', weeks + 1)} ${helper(days, 'day', 7)} ${helper(hours, 'hour', 24)} ${helper(minutes, 'minute', 60)} ${helper(seconds, 'second', 60)}`.trim();
 		} else {
-			timeLeft = 'happened in the past!'
+			//timeLeft = 'happened in the past!'
+			timeLeft = 'Happening now!' //temporary change for officer applications
 			clearInterval(this.forceUpdateInterval);
 		}
 
@@ -45,8 +46,8 @@ class Event extends Component {
 
 //		console.log("For event" + this.props.content.title + ", the current endDate.getTime()-Date.now() is: " + (endDate.getTime()-currentTime.getTime()));
 
-		if((Date.now() > endDate && elapsed <= 0) || (endDate.getTime()-currentTime.getTime()) > 604800000) { return null; }
-
+		//if((Date.now() > endDate && elapsed <= 0) || (endDate.getTime()-currentTime.getTime()) > 604800000) { return null; }
+		if((Date.now() > endDate && elapsed <= 0)) { return null; } //temporary change to allow officer applications to stay up for several days
 		return (
 			<Card id="event" key={this.props.content.title}>
 				{this.props.content.sponsor && <Image src={`./assets/logo/${this.props.content.sponsor}.png`} id={this.props.content.sponsor}/>}
