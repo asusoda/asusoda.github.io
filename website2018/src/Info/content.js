@@ -4,6 +4,12 @@ import { List } from 'semantic-ui-react';
 const content =
 	[
 		{
+			"title": "How To Join SoDA",
+			"content": [
+				<p>Want to join SoDA? Just go to one of our meetings! Everyone who attends our meetings is a SoDA member. The best way to keep up with our meetings is to sign up for our newsletter at https://www.tinyurl.com/sodanews.</p>,
+			]
+		},
+		{
 			"title": "Careers",
 			"content": [
 				<p>One thing that is deeply rooted is SoDA is helping its fellow members get their foot in the door with industry. We want students to become familiar with industry by helping them prepare for technical interviews, and showing them how and when to apply. Students who think and prepare sooner have a much easier time landing a job, and are much more successful during the job hunt itself.</p>,

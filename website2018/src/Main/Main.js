@@ -148,6 +148,9 @@ class Main extends Component {
 						))}
 
 					</div>
+					<div id="info">
+						<div>Scroll down to learn more!</div>
+					</div>
 				</div>
 				{events.events.map(event => ( <Event content={event}/> ))}
 			</div>

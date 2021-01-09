@@ -41,6 +41,13 @@
 
 }
 
+#main #info {
+	font-family: 'RopaSansPro-Light';
+	font-size: 2em;
+	text-align: center;
+	padding: 10px;
+}
+
 #particles {
 	pointer-events:none; /* This prevents interaction with the background but fixes weird issue with the social buttons */
 }
