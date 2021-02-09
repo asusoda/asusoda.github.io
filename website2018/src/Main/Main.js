@@ -84,6 +84,13 @@ class Main extends Component {
 				link: 'https://join.slack.com/t/sodaasu/shared_invite/zt-iopjsnhw-u25_xaCEWkfTPbUxI_GhjQ'
 			},
 			{
+				name: 'Discord',
+				color: 'orange',
+				icon: 'discord',
+				description: 'Join our Discord!',
+				link: 'https://discord.gg/6mpAPKk'
+			},
+			{
 				name: 'GitHub',
 				color: 'grey',
 				icon: 'github',
@@ -103,7 +110,7 @@ class Main extends Component {
 				icon: 'redo',
 				description: 'Register as a SoDer on SunDevilSync!',
 				link: 'https://asu.campuslabs.com/engage/organization/soda'
-			}
+			},
 		];
 
 		const newsletterLink = socials.find(
