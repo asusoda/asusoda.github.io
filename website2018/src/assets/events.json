@@ -400,6 +400,27 @@
 			},
 			"description": "Keep hearing about React and seeing it on job descriptions, but have no idea what it is? Come by our meeting this week to get an introduction to React so you can start using this javascript framework in all your projects and have your resume stand out!",
 			"meetingLink": "https://asu.zoom.us/j/96279983116"
+		},
+		{
+			"title": "Advanced Git",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2021,
+				"month": 2,
+				"day": 9,
+				"hour": 18,
+				"minute": 0
+			},
+			"end": {
+				"year": 2021,
+				"month": 2,
+				"day": 9,
+				"hour": 20,
+				"minute": 0
+			},
+			"description": "Git is a very powerful and popular tool in the industry that is used for storing code revisions. Learn how to use it so that you can start backing up all your projects and show employers you know how to use this incredible resource!",
+			"meetingLink": "https://asu.zoom.us/j/96279983116"
 		}
 	]
 }
