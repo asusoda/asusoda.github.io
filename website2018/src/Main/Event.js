@@ -45,7 +45,8 @@ class Event extends Component {
 
 //		console.log("For event" + this.props.content.title + ", the current endDate.getTime()-Date.now() is: " + (endDate.getTime()-currentTime.getTime()));
 
-		if((Date.now() > endDate && elapsed <= 0) || (endDate.getTime()-currentTime.getTime()) > 604800000) { return null; }
+		//if((Date.now() > endDate && elapsed <= 0) || (endDate.getTime()-currentTime.getTime()) > 604800000) { return null; } //temp change to allow for code challenge
+		if((Date.now() > endDate && elapsed <= 0)) { return null; }
 		return (
 			<Card id="event" key={this.props.content.title}>
 				{this.props.content.sponsor && <Image src={`./assets/logo/${this.props.content.sponsor}.png`} id={this.props.content.sponsor}/>}
