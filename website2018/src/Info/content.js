@@ -10,6 +10,16 @@ const content =
 			]
 		},
 		{
+			"title": "SoDA Code Challenge VII",
+			"content": [
+				<p>Every year, SoDA hosts a competitive programming challenge with a chance to win cool prizes (such as AirPods, Nintendo Switches, or Apple Watches) and network with industry sponsors. The challenge is hosted on HackerRank and is separated into different divisions based on school year, so feel free to participate regardless of experience!</p>,
+				<p>Congratulations to the the top scorers of the seventh annual SoDA Code Challenge! Here are the results:</p>,
+				<p>Upper Division+: #1 Monil Nisar | #2 Ujjval Patel | #3 Jalansh Munshi</p>,
+				<p>Lower Division: #1 Walker Kroubalkian | #2 Garrett Parzych | #3 Tanner Rackow</p>,
+				<p>Freshman: #1 Yang Husurianto | #2 Rishik Kolli | #3 Piyussh Singhal</p>,
+			]
+		},
+		{
 			"title": "Careers",
 			"content": [
 				<p>One thing that is deeply rooted is SoDA is helping its fellow members get their foot in the door with industry. We want students to become familiar with industry by helping them prepare for technical interviews, and showing them how and when to apply. Students who think and prepare sooner have a much easier time landing a job, and are much more successful during the job hunt itself.</p>,
