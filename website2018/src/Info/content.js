@@ -4,6 +4,24 @@ import { List } from 'semantic-ui-react';
 const content =
 	[
 		{
+			"title": "Apply to be a SoDA Officer!",
+			"content": [
+				<p>We currently have 12 openings. Here is a list of available positions:</p>,
+				<List as='ul'>
+					<List.Item as='li'>President: The face of the club, makes executive decisions and is the main point of contact on issues</List.Item>
+					<List.Item as='li'>Vice President of Finance: In charge of the budget of the club and making sure the proper funds are in place</List.Item>
+					<List.Item as='li'>Vice President of Operations: Manages operations and logistics within SoDA</List.Item>
+					<List.Item as='li'>Director of Communications/Digital Media: In charge of social media and photography for the club</List.Item>
+					<List.Item as='li'>Director of Marketing (2): Responsible for weekly newsletters, swag, and other promotional material, as well as bringing awareness to the club</List.Item>
+					<List.Item as='li'>Industry Manager: Responsible for getting new sponsors and distributing tasks</List.Item>
+					<List.Item as='li'>Industry Outreach (2): Responsible for talking to current sponsors and organizing events</List.Item>
+					<List.Item as='li'>Director of Technical Development (2): In charge of planning and organizing technical meetings</List.Item>
+					<List.Item as='li'>Community Manager: Responsible for interacting with the SoDA community and organizing socials</List.Item>
+				</List>,
+				<p><a href='https://forms.gle/B1KuKn2NH6ttF7Jc8'>Apply Here!</a></p>	
+			]
+		},
+		{
 			"title": "How To Join SoDA",
 			"content": [
 				<p>Want to join SoDA? Just go to one of our meetings! Everyone who attends our meetings is a SoDA member. The best way to keep up with our meetings is to sign up for our newsletter at https://www.tinyurl.com/sodanews.</p>,
