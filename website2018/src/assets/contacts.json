@@ -6,29 +6,14 @@
 			"email": "rngo3@asu.edu"
 		},
 		{
-			"name": "Eric Peterson",
-			"role": "Vice President",
-			"email": "empete11@asu.edu"
-		},
-		{
 			"name": "Michelle Staskauskas",
-			"role": "Treasurer",
+			"role": "Vice President of Finance",
 			"email": "mstaskau@asu.edu"
 		},
 		{
-			"name": "Vacant Position",
-			"role": "Industry Outreach",
-			"email": ""
-		},
-		{
-			"name": "Prashant Mokkapati",
-			"role": "Marketing Director",
-			"email": "pmokkap1@asu.edu"
-		},
-		{
-			"name": "Mohit Doshi",
-			"role": "Technical Development Director",
-			"email": "mdoshi3@asu.edu"
+			"name": "Brightan Hsu",
+			"role": "Marketing Director & Webmaster",
+			"email": "bhsu4@asu.edu"
 		},
 		{
 			"name": "Jason Manuel",
@@ -36,9 +21,14 @@
 			"email": "jamanue1@asu.edu"
 		},
 		{
-			"name": "Brightan Hsu",
-			"role": "Webmaster",
-			"email": "bhsu4@asu.edu"
+			"name": "Yasser Dbeis",
+			"role": "Technical Development Director",
+			"email": "ydbeis@asu.edu"
+		},
+		{
+			"name": "Matthew Jurenka",
+			"role": "Industry Outreach",
+			"email": "mjurenka@asu.edu"
 		},
 		{
 			"name": "William Bowden",
