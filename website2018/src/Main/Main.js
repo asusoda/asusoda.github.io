@@ -81,7 +81,7 @@ class Main extends Component {
 				color: 'purple',
 				icon: 'slack hash',
 				description: 'Join our slack team to talk with fellow members!',
-				link: 'https://join.slack.com/t/sodaasu/shared_invite/zt-iopjsnhw-u25_xaCEWkfTPbUxI_GhjQ'
+				link: 'https://tinyurl.com/joinSodaSlack'
 			},
 			{
 				name: 'Discord',
