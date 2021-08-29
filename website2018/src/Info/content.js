@@ -38,19 +38,6 @@ const content =
 			"content": [
 				<p>One of SoDA's missions is to foster a sense of community and create a support network within its members. As part of this mission, Distinguished SoDA Membership was introduced. The Distinguished Membership program aligns with our goals of providing further career development opportunities for our members and encouraging more familiarity within the club.</p>
 			]
-		},
-		{
-			"title": "Distinguished SoDA Membership Program",
-			"content": [
-				<p>SoDA's Distinguished Member Program is an initiative created with the intention of recognizing students who are highly involved in SoDA's activities and community. Admission into the distinguished member program is based on a point system from attendance and participation in SoDA activities including any other initiatives. Perks include an invitation to SoDA's linkedin alumni group, distinguished member resume books given to our industry partners, and giveaways exclusive to distinguished members. Once a Distinguished SoDA member, you are eligible to get personal one-on-one resume reviews from one of our officers to make sure it is high quality.</p>,
-				<p>You can become a Distinguished SoDA member by earning 12 points. You can earn points as follows:</p>,
-				<List as='ul'>
-					<List.Item as='li'>1 point per meeting you attend</List.Item>
-					<List.Item as='li'>2 points per special event you attend</List.Item>
-				</List>,
-				<p>If you become a Distinguished SoDA member in the Fall, you only need to earn 6 points by the end of February to keep your Distinguished membership.</p>,
-				<p><a href='https://tinyurl.com/membership-points'>View your current points</a></p>
-			]
 		}
 	];
 
