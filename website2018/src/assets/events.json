@@ -21,6 +21,28 @@
 			"description": "Kick off the beginning of the year with a welcome back from SoDA! Join us for our info session, we will be going over what you can look forward to in SoDA this semester!",
 			"location": "CAVC 351",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSedNgM8U_MNclP3gJUklXdJOd1xPEyHsDBEd_G3EtHgsCKnUQ/viewform"
+		},
+		{
+			"title": "Resume Reviews",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2021,
+				"month": 8,
+				"day": 7,
+				"hour": 19,
+				"minute": 0
+			},
+			"end": {
+				"year": 2021,
+				"month": 8,
+				"day": 7,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Bring your resume to SoDA to learn the best tips and tricks on making a great resume! Don’t have one? Come learn about the fundamentals and build one from the ground up!",
+			"location": "CAVC 351",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSeW1kswuZePy-wMSnJZN7ZsMqwNhU34FnVFglEmIWkDux7YTA/viewform"
 		}
 	]
 }
