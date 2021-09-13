@@ -43,6 +43,28 @@
 			"description": "Bring your resume to SoDA to learn the best tips and tricks on making a great resume! Don’t have one? Come learn about the fundamentals and build one from the ground up!",
 			"location": "CAVC 351",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSeW1kswuZePy-wMSnJZN7ZsMqwNhU34FnVFglEmIWkDux7YTA/viewform"
+		},
+		{
+			"title": "A Day in the Life with Walmart",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2021,
+				"month": 8,
+				"day": 14,
+				"hour": 19,
+				"minute": 0
+			},
+			"end": {
+				"year": 2021,
+				"month": 8,
+				"day": 14,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Learn about opportunities at Walmart and what it is like to work there!",
+			"location": "CAVC 351",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSd7a7SuaV3t1Zj6rw2VXhbQ8YmDCzJJEuYRGYvbCAgb6EJiMw/viewform"
 		}
 	]
 }
