@@ -87,6 +87,28 @@
 			"description": "Learn all about technical interviews at this week's meeting where we will go over the basics and how you can ace them!",
 			"location": "CAVC 351",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSfrL4D-L5r88P8efyR0Fe0aYqLjbm5iok7BHmuNEB289IHgtA/viewform"
+		},
+		{
+			"title": "Behavioral Interview Workshop",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2021,
+				"month": 8,
+				"day": 28,
+				"hour": 19,
+				"minute": 0
+			},
+			"end": {
+				"year": 2021,
+				"month": 8,
+				"day": 28,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Learn about behavioral interviews at this week’s meeting where we will go over how to approach interview questions and practice answering them too!",
+			"location": "CAVC Third Floor Atrium",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScrejpiPM-FPfjaJWEE91mLPTZpV-pAGDT-lOL1AQOQzQ-gKA/viewform"
 		}
 	]
 }
