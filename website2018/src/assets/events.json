@@ -131,6 +131,28 @@
 			"description": "Join us in this week’s event to learn about opportunities at Amazon and network with their representatives!",
 			"location": "CAVC Third Floor Atrium",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLScltB7ulbb8YzYRJYMKZvCbfKY75UaDzWQeRAAm_E6Q7-jOdg/viewform"
+		},
+		{
+			"title": "Card Games Social",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2021,
+				"month": 9,
+				"day": 26,
+				"hour": 19,
+				"minute": 0
+			},
+			"end": {
+				"year": 2021,
+				"month": 9,
+				"day": 26,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Come by and spend some time at the SoDA social playing some card games! Enjoy food and hang out with SoDA Officers and Members!",
+			"location": "CAVC 351",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSf5DmmiIlHNOjg35nWldkniKKUEgcgNzKwJGnypEqPAHcGtwQ/viewform"
 		}
 	]
 }
