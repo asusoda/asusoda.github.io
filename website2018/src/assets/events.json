@@ -175,6 +175,28 @@
 			"description": "Come by this week’s meeting to learn about one of the most essential tools in software engineering! We’ll be going over the basics you need to help yourself stand out!",
 			"location": "CAVC 351",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSffL6QHUzeO3Hgx2volzFg9IzQqYnU2C0pPOa-UEfQexzlDUg/viewform"
+		},
+		{
+			"title": "How to Prepare for the Spring Semester",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2021,
+				"month": 10,
+				"day": 23,
+				"hour": 19,
+				"minute": 0
+			},
+			"end": {
+				"year": 2021,
+				"month": 10,
+				"day": 23,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Come to this week’s meeting to learn how to best prepare yourself for an upcoming internship or what to do if you didn’t get one.",
+			"location": "CAVC 351",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSd4tMxIRo7HdEu3P0Y0IBqSgNXvVael0O-YFKyJa8MyGddNhw/viewform"
 		}
 	]
 }
