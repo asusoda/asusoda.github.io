@@ -21,3 +21,6 @@ yarn-debug.log*
 yarn-error.log*
 /.vs/asusoda.github.io/v16/.suo
 /.vs
+
+.vscode
+
