@@ -9,6 +9,7 @@ import Particles from 'react-particles-js';
 
 import ParticleConfig from '../assets/particlesjs-config.json';
 import events from '../assets/events.json'; // this json file contains the events to be displayed on the website.
+import { officers } from '../assets/contacts.json';
 import Event from './Event.js';
 import AnimatedNumber from '../Components/AnimatedNumber';
 import LearnMore from '../LearnMore/LearnMore';
@@ -48,7 +49,7 @@ class Main extends Component {
 			{
 				key: 'officers',
 				label: 'Officers',
-				value: 8,
+				value: officers.length,
 				steps: 1,
 				formatter: x => x
 			}
