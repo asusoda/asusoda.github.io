@@ -1,59 +1,99 @@
 {
-	"officers": [
-		{
-			"name": "Randy Ngo",
-			"role": "President",
-			"email": "rngo3@asu.edu"
-		},
-		{
-			"name": "Michelle Staskauskas",
-			"role": "Vice President of Finance",
-			"email": "mstaskau@asu.edu"
-		},
-		{
-			"name": "Brightan Hsu",
-			"role": "Marketing Director & Webmaster",
-			"email": "bhsu4@asu.edu"
-		},
-		{
-			"name": "Jason Manuel",
-			"role": "Technical Development Director",
-			"email": "jamanue1@asu.edu"
-		},
-		{
-			"name": "Yasser Dbeis",
-			"role": "Technical Development Director",
-			"email": "ydbeis@asu.edu"
-		},
-		{
-			"name": "Matthew Jurenka",
-			"role": "Industry Outreach",
-			"email": "mjurenka@asu.edu"
-		},
-		{
-			"name": "William Bowden",
-			"role": "Community Manager",
-			"email": "wfbowden@asu.edu"
-		},
-		{
-			"name": "Sean Nguyen",
-			"role": "Discord Manager",
-			"email": "stnguye8@asu.edu"
-		},
-		{
-			"name": "Jeffery Frederic",
-			"role": "Technical Officer",
-			"email": "jfreder5@asu.edu"
-		},
-		{
-			"name": "Harsh Kumar",
-			"role": "Technical Officer",
-			"email": "hkumar30@asu.edu"
-		},
-		{
-			"name": "Zain Jakwani",
-			"role": "Technical Officer",
-			"email": "zjakwani@asu.edu"
-		}
-	]
+    "officers": [
+        {
+            "name": "Randy Ngo",
+            "role": "President",
+            "email": "rngo3@asu.edu"
+        },
+        {
+            "name": "Brightan Hsu",
+            "role": "Vice President of Operations",
+            "email": "bhsu4@asu.edu"
+        },
+        {
+            "name": "Michelle Staskauskas",
+            "role": "Vice President of Finance",
+            "email": "mstaskau@asu.edu"
+        },
+        {
+            "name": "Matthew Jurenka",
+            "role": "Industry Director",
+            "email": "mjurenka@asu.edu"
+        },
+        {
+            "name": "Jonathan Zhao",
+            "role": "Industry Outreach",
+            "email": "jjzhao@asu.edu"
+        },
+        {
+            "name": "Neel Madhav",
+            "role": "Industry Outreach",
+            "email": "ndogra2@asu.edu"
+        },
+        {
+            "name": "Jason Manuel",
+            "role": "Technical Development Director",
+            "email": "jamanue1@asu.edu"
+        },
+        {
+            "name": "Yasser Dbeis",
+            "role": "Technical Development Director",
+            "email": "ydbeis@asu.edu"
+        },
+        {
+            "name": "Harsh Kumar",
+            "role": "Technical Officer",
+            "email": "hkumar30@asu.edu"
+        },
+        {
+            "name": "Zain Jakwani",
+            "role": "Technical Officer",
+            "email": "zjakwani@asu.edu"
+        },
+        {
+            "name": "Jeffery Frederic",
+            "role": "Technical Officer",
+            "email": "jfreder5@asu.edu"
+        },
+        {
+            "name": "Nhut Nguyen",
+            "role": "Technical Officer",
+            "email": "nmnguye5@asu.edu"
+        },
+        {
+            "name": "Mahir Bose",
+            "role": "Technical Officer",
+            "email": "mbose4@asu.edu"
+        },
+        {
+            "name": "Tung Nguyen",
+            "role": "Marketing Director",
+            "email": "vnguye54@asu.edu"
+        },
+        {
+            "name": "Yi-Ting Chiu",
+            "role": "Graphic Designer",
+            "email": "ychiu34@asu.edu"
+        },
+        {
+            "name": "Shreyash Singh",
+            "role": "Photographer/Videographer",
+            "email": "ssing375@asu.edu"
+        },
+        {
+            "name": "William Bowden",
+            "role": "Community Manager",
+            "email": "wfbowden@asu.edu"
+        },
+        {
+            "name": "Allen Lin",
+            "role": "Community Development Director",
+            "email": "alin32@asu.edu"
+        },
+        {
+            "name": "Sean Nguyen",
+            "role": "Discord Manager",
+            "email": "stnguye8@asu.edu"
+        }
+    ]
 }
