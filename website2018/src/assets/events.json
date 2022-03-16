@@ -197,6 +197,28 @@
 			"description": "Come to this week’s meeting to learn how to best prepare yourself for an upcoming internship or what to do if you didn’t get one.",
 			"location": "CAVC 351",
 			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSd4tMxIRo7HdEu3P0Y0IBqSgNXvVael0O-YFKyJa8MyGddNhw/viewform"
+		},
+		{
+			"title": "Zelle Offensive Security Talks",
+			"sponsor": "",
+			"showEndTime": false,
+			"start": {
+				"year": 2022,
+				"month": 2,
+				"day": 15,
+				"hour": 19,
+				"minute": 30
+			},
+			"end": {
+				"year": 2022,
+				"month": 2,
+				"day": 15,
+				"hour": 21,
+				"minute": 0
+			},
+			"description": "Join us in this Tuesday’s meeting to learn about cracking passwords with Michael Gallagher, Director of Offensive Security at Zelle!",
+			"location": "CAVC 351",
+			"RSVP_link": "https://docs.google.com/forms/d/e/1FAIpQLSd8vfK058Qsww1e7NtrvgVA7n0Wea2G_R49nF1e5zApMd664g/viewform"
 		}
 	]
 }
