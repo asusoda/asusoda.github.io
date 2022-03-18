@@ -94,6 +94,27 @@
             "name": "Sean Nguyen",
             "role": "Discord Manager",
             "email": "stnguye8@asu.edu"
+        },
+        {
+            "name": "Teresa Tran",
+            "role": "Finance Intern",
+            "email": "tttran29@asu.edu"
+        },
+        {
+            "name": "Spencer Ozcur",
+            "role": "Industry Intern",
+            "email": "sozgur@asu.edu"
+        }
+        ,
+        {
+            "name": "Ilia Rubashkin",
+            "role": "Technical Intern",
+            "email": "irubashk@asu.edu"
+        },
+        {
+            "name": "Sebastian Martinez",
+            "role": "Marketing Intern",
+            "email": "sjmart28@asu.edu"
         }
     ]
 }
