@@ -1,9 +1,9 @@
 {
     "officers": [
         {
-            "name": "Randy Ngo",
+            "name": "Neel Madhav",
             "role": "President",
-            "email": "rngo3@asu.edu"
+            "email": "ndogra2@asu.edu"
         },
         {
             "name": "Brightan Hsu",
@@ -11,44 +11,34 @@
             "email": "bhsu4@asu.edu"
         },
         {
-            "name": "Michelle Staskauskas",
+            "name": "Teresa Tran",
             "role": "Vice President of Finance",
-            "email": "mstaskau@asu.edu"
+            "email": "tttran29@asu.edu"
         },
         {
-            "name": "Matthew Jurenka",
+            "name": "Spencer Ozgur",
             "role": "Industry Director",
-            "email": "mjurenka@asu.edu"
+            "email": "sozgur@asu.edu"
         },
         {
-            "name": "Jonathan Zhao",
+            "name": "Logan Van Pelt",
             "role": "Industry Outreach",
-            "email": "jjzhao@asu.edu"
+            "email": "lrvanpel@asu.edu"
         },
         {
-            "name": "Neel Madhav",
+            "name": "Sathwik Reddy Mopuru",
             "role": "Industry Outreach",
-            "email": "ndogra2@asu.edu"
-        },
-        {
-            "name": "Jason Manuel",
-            "role": "Technical Development Director",
-            "email": "jamanue1@asu.edu"
+            "email": "smopuru@asu.edu"
         },
         {
             "name": "Harsh Kumar",
-            "role": "Technical Officer",
+            "role": "Technical Development Director",
             "email": "hkumar30@asu.edu"
         },
         {
-            "name": "Zain Jakwani",
+            "name": "Jonathan Zhao",
             "role": "Technical Officer",
-            "email": "zjakwani@asu.edu"
-        },
-        {
-            "name": "Jeffery Frederic",
-            "role": "Technical Officer",
-            "email": "jfreder5@asu.edu"
+            "email": "jjzhao@asu.edu"
         },
         {
             "name": "Nhut Nguyen",
@@ -61,55 +51,44 @@
             "email": "mbose4@asu.edu"
         },
         {
+            "name": "Ilia Rubashkin",
+            "role": "Technical Officer",
+            "email": "irubashk@asu.edu"
+        },
+        {
             "name": "Tung Nguyen",
             "role": "Marketing Director",
             "email": "vnguye54@asu.edu"
         },
         {
-            "name": "Yi-Ting Chiu",
+            "name": "Sebastian Martinez",
+            "role": "Marketing Officer",
+            "email": "sjmart28@asu.edu"
+        },
+        {
+            "name": "Anand Krishna Mishra",
+            "role": "Marketing Officer",
+            "email": "amishr87@asu.edu"
+        },
+        {
+            "name": "Chiran Raj",
+            "role": "Community Officer",
+            "email": "crajverm@asu.edu"
+        },
+        {
+            "name": "Gina Lee",
+            "role": "Community Officer",
+            "email": "glee62@asu.edu"
+        },
+        {
+            "name": "Shannon Boesch",
             "role": "Graphic Designer",
-            "email": "ychiu34@asu.edu"
+            "email": "sboesch@asu.edu"
         },
         {
             "name": "Shreyash Singh",
             "role": "Photographer/Videographer",
             "email": "ssing375@asu.edu"
-        },
-        {
-            "name": "William Bowden",
-            "role": "Community Manager",
-            "email": "wfbowden@asu.edu"
-        },
-        {
-            "name": "Allen Lin",
-            "role": "Community Development Director",
-            "email": "alin32@asu.edu"
-        },
-        {
-            "name": "Sean Nguyen",
-            "role": "Discord Manager",
-            "email": "stnguye8@asu.edu"
-        },
-        {
-            "name": "Teresa Tran",
-            "role": "Finance Intern",
-            "email": "tttran29@asu.edu"
-        },
-        {
-            "name": "Spencer Ozcur",
-            "role": "Industry Intern",
-            "email": "sozgur@asu.edu"
-        }
-        ,
-        {
-            "name": "Ilia Rubashkin",
-            "role": "Technical Intern",
-            "email": "irubashk@asu.edu"
-        },
-        {
-            "name": "Sebastian Martinez",
-            "role": "Marketing Intern",
-            "email": "sjmart28@asu.edu"
         }
     ]
 }
