@@ -10,13 +10,12 @@ const content =
 			]
 		},
 		{
-			"title": "SoDA Code Challenge VII",
+			"title": "SoDA Code Challenge VIII",
 			"content": [
-				<p>Every year, SoDA hosts a competitive programming challenge with a chance to win cool prizes (such as AirPods, Nintendo Switches, or Apple Watches) and network with industry sponsors. The challenge is hosted on HackerRank and is separated into different divisions based on school year, so feel free to participate regardless of experience!</p>,
-				<p>Congratulations to the the top scorers of the seventh annual SoDA Code Challenge! Here are the results:</p>,
-				<p>Upper Division+: #1 Monil Nisar | #2 Ujjval Patel | #3 Jalansh Munshi</p>,
-				<p>Lower Division: #1 Walker Kroubalkian | #2 Garrett Parzych | #3 Tanner Rackow</p>,
-				<p>Freshman: #1 Yang Husurianto | #2 Rishik Kolli | #3 Piyussh Singhal</p>,
+				<p>Every year, SoDA hosts a competitive programming challenge with a chance to win cool prizes (such as AirPods, Nintendo Switches, or Chromecast) and network with industry sponsors. The challenge is hosted on HackerRank and is separated into different divisions based on school year, so feel free to participate regardless of experience!</p>,
+				<p>Congratulations to the the top scorers of the eighth annual SoDA Code Challenge! Here are the results:</p>,
+				<p>Upper Division: #1 Aditya Jarodiya | #2 Logan Van Pelt | #3 Ujjval Patel</p>,
+				<p>Freshman: #1 Joshua Lubin | #2 Sathwik Reddy Mopuru</p>,
 			]
 		},
 		{
