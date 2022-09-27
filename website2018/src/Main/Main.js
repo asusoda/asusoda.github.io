@@ -99,23 +99,16 @@ class Main extends Component {
 				link: 'https://www.github.com/asusoda'
 			},
 			{
-				name: 'Newsletter',
-				color: 'black',
-				icon: 'mail',
-				description: 'Subscribe to our newsletter to be notified of upcoming events!',
-				link: 'https://www.tinyurl.com/sodanews'
-			},
-			{
-				name: 'SunDevilSync',
+				name: 'Sun Devil Sync',
 				color: 'green',
 				icon: 'redo',
-				description: 'Register as a SoDer on SunDevilSync!',
+				description: 'Register as a SoDer on Sun Devil Sync and to be notified of upcoming events!',
 				link: 'https://asu.campuslabs.com/engage/organization/soda'
 			},
 		];
 
 		const newsletterLink = socials.find(
-			({name}) => name === 'Newsletter').link;
+			({name}) => name === 'Sun Devil Sync').link;
 
 		return (
 			<div>

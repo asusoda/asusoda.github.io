@@ -12,7 +12,7 @@ class LearnMore extends Component {
 
 	constructor(props) {
 		super(props);
-		this._newsletterLink = props.newsletterLink;
+		this._newsletterLink = 'https://tinyurl.com/sodaasu';
 	}
 
 	render() {
@@ -24,18 +24,17 @@ class LearnMore extends Component {
 			},
 			{
 				question: 'When are the SoDA meetings?',
-				answer: 'Our meetings are usually on Tuesdays and Thursdays and start around 7pm.'
+				answer: 'Our meetings are usually on Tuesdays and start around 7:30 PM.'
 			},
 			{
-				question: 'I have a class that ends after 7pm. Can I be late for the meetings?',
+				question: 'I have a class that ends after 7:30 PM. Can I be late for the meetings?',
 				answer: 'It\'s okay to be late for our meetings. Though our meetings ' +
-					'officially start at 7pm, we try to account for members coming from ' +
+					'officially start at 7:30 PM, we try to account for members coming from ' +
 					'evening classes.'
 			},
 			{
 				question: 'Do I need to attend all of the meetings?',
-				answer: 'None of our meetings are required for any member to attend. Meeting ' +
-					'attendance counts for Distinguished Member points, though.'
+				answer: 'None of our meetings are required for any member to attend.'
 			}
 		];
 
@@ -55,8 +54,7 @@ class LearnMore extends Component {
 								meetings! Everyone who attends our
 								meetings is a SoDA member. The best way
 								to keep up with our meetings is to <a
-								href={this._newsletterLink}>sign up for our
-								newsletter</a>.
+								href={this._newsletterLink}>join our Sun Devil Sync</a>.
 							</p>
 							<Header>Frequently Asked Questions</Header>
 							<List>

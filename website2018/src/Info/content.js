@@ -6,7 +6,7 @@ const content =
 		{
 			"title": "How To Join SoDA",
 			"content": [
-				<p>Want to join SoDA? Just go to one of our meetings! Everyone who attends our meetings is a SoDA member. The best way to keep up with our meetings is to sign up for our newsletter at https://www.tinyurl.com/sodanews.</p>,
+				<p>Want to join SoDA? Just go to one of our meetings! Everyone who attends our meetings is a SoDA member. The best way to keep up with our meetings is to join our Sun Devil Sync at https://tinyurl.com/sodaasu.</p>,
 			]
 		},
 		{
@@ -35,7 +35,7 @@ const content =
 		{
 			"title": "Community",
 			"content": [
-				<p>One of SoDA's missions is to foster a sense of community and create a support network within its members. As part of this mission, Distinguished SoDA Membership was introduced. The Distinguished Membership program aligns with our goals of providing further career development opportunities for our members and encouraging more familiarity within the club.</p>
+				<p>One of SoDA's missions is to foster a sense of community and create a support network within its members. As part of this mission, we are available on almost all social medias where the members can join, meet and interact with each others! With the goals of providing further career development opportunities for our members and encouraging more familiarity within the club, we always make sure that our plans and meetings align with our members' interests both professionally and socially.</p>
 			]
 		}
 	];
