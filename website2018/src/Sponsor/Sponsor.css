@@ -11,7 +11,7 @@
 	margin: 3vh auto 3vh auto;
 }
 
-#sponsors #gold {
+#sponsors .sponsor-container {
 
 	flex-wrap: nowrap;
 	align-items: center;

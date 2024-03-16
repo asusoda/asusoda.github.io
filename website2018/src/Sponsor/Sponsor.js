@@ -13,7 +13,7 @@ class Sponsor extends Component {
 			<div id="sponsor">
 				<Divider horizontal id="title">Sponsors</Divider>
 				<div id="sponsors">
-					<div id="gold">
+					<div className="sponsor-container">
 						{gold.map(({name}) =>
 							<Image
 								key={name}
@@ -24,7 +24,7 @@ class Sponsor extends Component {
 							/>
 						)}
 					</div>
-					<div id="gold">
+					<div className="sponsor-container">
 						{silver.map(({name}) =>
 							<Image
 								key={name}
@@ -35,7 +35,7 @@ class Sponsor extends Component {
 							/>
 						)}
 					</div>
-					<div id="gold">
+					<div className="sponsor-container">
 						{bronze.map(({name}) =>
 							<Image
 								key={name}
