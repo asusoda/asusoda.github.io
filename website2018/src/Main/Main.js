@@ -9,7 +9,7 @@ import Particles from 'react-particles-js';
 
 import ParticleConfig from '../assets/particlesjs-config.json';
 import events from '../assets/events.json'; // this json file contains the events to be displayed on the website.
-import { advisors, teams } from '../assets/contacts.json';
+import { advisors, teams } from '../assets/teams.json';
 import Event from './Event.js';
 import AnimatedNumber from '../Components/AnimatedNumber';
 import LearnMore from '../LearnMore/LearnMore';

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Divider, Button, Modal, Popup } from 'semantic-ui-react';
 
-import contacts from '../assets/contacts.json';
+import contacts from '../assets/teams.json';
 import './Team.css';
 
 class Contact extends Component {

@@ -11,15 +11,6 @@
 	padding-bottom: 0vw;
 }
 
-.subteam-divider {
-	padding-inline: 3vw;
-}
-
-.contact #info {
-	background-color: black;
-	color: white;
-}
-
 .contact #content {
 	display: flex;
 	justify-content: center;
@@ -45,10 +36,6 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-}
-
-.contact #cards .Card {
-	margin: 5px 10px 5px 10px;
 }
 
 .contact #email .Modal {

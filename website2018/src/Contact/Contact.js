@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Card, Divider, Button, Modal, Popup } from 'semantic-ui-react';
+import { Divider, Button, Modal } from 'semantic-ui-react';
 
-import contacts from '../assets/contacts.json';
 import './Contact.css';
 
 class Contact extends Component {
@@ -19,8 +18,6 @@ class Contact extends Component {
 	}
 
 	render() {
-		const items = contacts.teams
-
 		return (
 			<div className="contact">
 				<Divider horizontal id="title">Contact</Divider><br/>
