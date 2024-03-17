@@ -34,18 +34,21 @@ class App extends Component {
 					<ul>
 						<li className={activeTab === 'main' ? 'active' : ''} onClick={() => this.handleScrollTo('main')}>Home</li>
 						<li className={activeTab === 'info' ? 'active' : ''} onClick={() => this.handleScrollTo('info')}>Info</li>
+						<li className={activeTab === 'sponsor' ? 'active' : ''} onClick={() => this.handleScrollTo('sponsor')}>Sponsors</li>
 						<li className={activeTab === 'team' ? 'active' : ''} onClick={() => this.handleScrollTo('team')}>Team</li>
 						<li className={activeTab === 'contact' ? 'active' : ''} onClick={() => this.handleScrollTo('contact')}>Contact</li>
-						<li className={activeTab === 'sponsor' ? 'active' : ''} onClick={() => this.handleScrollTo('sponsor')}>Sponsors</li>
 					</ul>
 				</nav>
 
 				<div id="main"><Main /></div>
 				{/* <div id="events"><Events /></div> */}
 				<div id="info"><Info /></div>
+				<div id="sponsor"><Sponsor /></div>
 				<div id="team"><Team /></div>
 				<div id="contact"><Contact /></div>
-				<div id="sponsor"><Sponsor /></div>
+				<div className='copyright'>
+					&copy; {new Date().getFullYear()} Software Developers Association @ ASU. All rights reserved.
+				</div>
 			</div>
 		);
 	}

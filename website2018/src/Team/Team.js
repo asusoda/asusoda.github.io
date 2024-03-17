@@ -19,7 +19,8 @@ class Contact extends Component {
 	}
 
 	render() {
-		const items = contacts.teams
+		const teams = contacts.teams
+        const advisors = contacts.advisors
 
 		return (
 			<div className="team">
@@ -28,11 +29,11 @@ class Contact extends Component {
 					The SoDA team are here to help you. Please feel free to reach out to any of us, we want to help and would be happy to answer any questions you have.
 				</div>
 
-				{Object.keys(items).map((team, i) =>
+				{Object.keys(teams).map((team, i) =>
 					<React.Fragment key={i}>
 						<Divider horizontal className="subteam-divider">{team}</Divider>
 						<div id="cards">
-							{items[team].map((member, j) => (
+							{teams[team].map((member, j) => (
 								<Card key={j} className="Card">
 								<Card.Content>
 									<Card.Header>{member.name}</Card.Header>
@@ -54,6 +55,29 @@ class Contact extends Component {
 						</div>
 					</React.Fragment>
 				)}
+
+                <Divider horizontal className="subteam-divider">Advisors</Divider>
+                <div id="cards">
+                    {advisors.map((advisor, j) => (
+                        <Card key={j} className="Card">
+                        <Card.Content>
+                            <Card.Header>{advisor.name}</Card.Header>
+                            <Card.Meta>
+                            {advisor.role}
+                            <br />
+                            <Popup
+                                key={advisor.name}
+                                position='bottom center'
+                                inverted
+                                trigger={<a href={'mailto:' + advisor.email}>{advisor.email}</a>}
+                                header='Open Mail Client'
+                                content={advisor.email}
+                            />
+                            </Card.Meta>
+                        </Card.Content>
+                        </Card>
+                    ))}
+                </div>
 
 			</div>
 		);

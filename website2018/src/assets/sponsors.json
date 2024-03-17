@@ -1,44 +1,5 @@
 {
-	"gold": [
-		{
-			"name": "starbucks"
-		},
-		{
-			"name": "goldmansachs"
-		}
-	],
-	"silver": [
-		{
-			"name": "amazon"
-		},
-		{
-			"name": "americanexpress"
-		},
-		{
-			"name": "deloitte"
-		},
-		{
-			"name": "statefarm"
-		}
-	],
-	"bronze": [
-		{
-			"name": "axosoft"
-		},
-		{
-			"name": "paypal"
-		},
-		{
-			"name": "godaddy"
-		},
-		{
-			"name": "workiva"
-		},
-		{
-			"name": "garmin"
-		},
-		{
-			"name": "generalmotors"
-		}
-	]
+	"gold": ["amazon", "statefarm"],
+	"silver": ["drivetime", "deloitte", "goldmansachs", "garmin", "starbucks"],
+	"bronze": ["paypal", "godaddy", "americanexpress", "axosoft", "workiva", "generalmotors"]
 }

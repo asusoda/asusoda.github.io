@@ -1,34 +1,43 @@
-.App {
-
-}
+.App {}
 
 .navbar {
-    font-family: 'RopaSansPro-Medium';
-    font-size: 18px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333; /* Change the background color as needed */
-    color: #fff; /* Change the text color as needed */
-    padding: 10px 20px; /* Adjust padding as needed */
-    z-index: 1000; /* Ensure it's above other elements */
-  }
-  
-  .navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar ul li {
-    display: inline;
-    margin-right: 20px; /* Adjust spacing between menu items */
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .navbar ul li:hover {
-    color: rgb(0, 0, 255);
-  }
+  font-family: 'RopaSansPro-Medium';
+  font-size: 18px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  /* Change the background color as needed */
+  color: #fff;
+  /* Change the text color as needed */
+  padding: 10px 20px;
+  /* Adjust padding as needed */
+  z-index: 1000;
+  /* Ensure it's above other elements */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-right: 20px;
+  /* Adjust spacing between menu items */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar ul li:hover {
+  color: rgb(0, 0, 255);
+}
+
+.copyright {
+  padding: 15px;
+  text-align: center;
+  opacity: 0.75;
+}
