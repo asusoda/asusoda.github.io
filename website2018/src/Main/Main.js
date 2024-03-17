@@ -48,7 +48,7 @@ class Main extends Component {
 			},
 			{
 				key: 'teams',
-				label: 'Teams',
+				label: 'Committees',
 				value: Object.keys(teams).length,
 				steps: 1,
 				formatter: x => x

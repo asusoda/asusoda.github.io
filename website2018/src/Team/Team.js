@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Divider, Button, Modal, Popup } from 'semantic-ui-react';
+import { Card, Divider, Popup } from 'semantic-ui-react';
 
 import contacts from '../assets/teams.json';
 import './Team.css';
