@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "merge": "^1.2.1",
+    "merge": "^2.1.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-particles-js": "^2.3.0",
