@@ -9,7 +9,7 @@ import Particles from 'react-particles-js';
 
 import ParticleConfig from '../assets/particlesjs-config.json';
 import events from '../assets/events.json'; // this json file contains the events to be displayed on the website.
-import { officers } from '../assets/contacts.json';
+import { advisors, teams } from '../assets/contacts.json';
 import Event from './Event.js';
 import AnimatedNumber from '../Components/AnimatedNumber';
 import LearnMore from '../LearnMore/LearnMore';
@@ -47,9 +47,25 @@ class Main extends Component {
 				formatter: x => x
 			},
 			{
+				key: 'teams',
+				label: 'Teams',
+				value: Object.keys(teams).length,
+				steps: 1,
+				formatter: x => x
+			},
+			{
 				key: 'officers',
 				label: 'Officers',
-				value: officers.length,
+				value: Object.values(teams).reduce((total, team) => {
+					return total + team.length;
+				}, 0),
+				steps: 1,
+				formatter: x => x
+			},
+			{
+				key: 'advisors',
+				label: 'Advisors',
+				value: Object.keys(advisors).length,
 				steps: 1,
 				formatter: x => x
 			}
@@ -77,13 +93,13 @@ class Main extends Component {
 				description: 'Follow us on Instagram!',
 				link: 'https://www.instagram.com/asu_soda/'
 			},
-			{
-				name: 'Slack',
-				color: 'purple',
-				icon: 'slack hash',
-				description: 'Join our slack team to talk with fellow members!',
-				link: 'https://tinyurl.com/joinSodaSlack'
-			},
+			// {
+			// 	name: 'Slack',
+			// 	color: 'purple',
+			// 	icon: 'slack hash',
+			// 	description: 'Join our slack team to talk with fellow members!',
+			// 	link: 'https://tinyurl.com/joinSodaSlack'
+			// },
 			{
 				name: 'Discord',
 				color: 'orange',
@@ -121,7 +137,7 @@ class Main extends Component {
 					<Image src="./assets/logo/soda.png" id='logo' centered/>
 					<div id="title">
 						<div id="bold">The Software Developers Association</div>
-						<div>is the premiere software development club for university students.</div>
+						<div>The premiere software development club for university students.</div>
 					</div>
 					<div id='statistic'>
 						{

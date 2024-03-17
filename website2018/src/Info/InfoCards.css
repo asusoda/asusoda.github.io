@@ -26,7 +26,7 @@
 }
 
 #cards {
-	max-width: 768px;
+	max-width: 1000px;
 	margin: 3vh auto 5vh auto;
 	display: flex;
 	flex-wrap: wrap;

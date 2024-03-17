@@ -9,7 +9,7 @@ class Info extends Component {
 	render() {
 
 			return (
-				<div id="info">
+				<div className="info">
 					<Divider horizontal id="title">Info</Divider>
 					<InfoCards/>
 				</div>

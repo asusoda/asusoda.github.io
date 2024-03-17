@@ -1,6 +1,6 @@
-#info {}
+.info {}
 
-#info #title {
+.info #title {
 	font-family: 'RopaSansPro-Medium';
 	font-size: 2em;
 	text-align: center;
@@ -8,7 +8,7 @@
 	padding-bottom: 0vw;
 }
 
-#info #terminal {
+.info #terminal {
 	margin: 5vh auto 5vh auto;
 	height: 50vh;
 	border: solid;

@@ -1,9 +1,9 @@
-.contact {
+.team {
 	display: flex;
 	flex-direction: column;
 }
 
-.contact #title {
+.team #title {
 	font-family: 'RopaSansPro-Medium';
 	font-size: 2em;
 	text-align: center;
@@ -15,12 +15,12 @@
 	padding-inline: 3vw;
 }
 
-.contact #info {
+.team #info {
 	background-color: black;
 	color: white;
 }
 
-.contact #content {
+.team #content {
 	display: flex;
 	justify-content: center;
 	font-family: 'RopaSansPro-Light';
@@ -29,7 +29,7 @@
 	padding-top: 0px;
 }
 
-.contact #cards {
+.team #cards {
 	max-width: 1000px;
 	margin: 3vh auto 5vh auto;
 	display: flex;
@@ -38,7 +38,7 @@
 	justify-content: center;
 }
 
-.contact #email {
+.team #email {
 	max-width: 1000px;
 	margin: 3vh auto 5vh auto;
 	display: flex;
@@ -47,11 +47,11 @@
 	justify-content: center;
 }
 
-.contact #cards .Card {
+.team #cards .Card {
 	margin: 5px 10px 5px 10px;
 }
 
-.contact #email .Modal {
+.team #email .Modal {
 	margin: 3vh auto 5vh auto;
 }
 

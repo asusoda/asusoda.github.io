@@ -19,43 +19,16 @@ class Contact extends Component {
 	}
 
 	render() {
-		const items = contacts.officers;
+		const items = contacts.teams
 
 		return (
-			<div id="contact">
-				<Divider horizontal id="title">Contact</Divider>
+			<div className="contact">
+				<Divider horizontal id="title">Contact</Divider><br/>
 				<div id="content">
-					<br/>
-					SoDA officers are here to help you. Please feel free to reach out to any of us by e-mail, slack, or social media. We want to help and would be happy to answer any questions you have.
-				</div>
-				<div id="cards">
-					{items.map((item, i) =>
-//                      <Card header={item.header} meta={item.meta} className="Card" key={i}/>
-						<Card key={i} className="Card">
-							<Card.Content>
-								<Card.Header>{item.name}</Card.Header>
-									<Card.Meta>
-									{item.role}
-									<br/>
-									<Popup
-										key={item.name}
-										position='bottom center'
-										inverted
-										trigger={<a href={'mailto:' + item.email}>{item.email}</a>}
-										header='Open Mail Client'
-										content={item.email}
-									/>
-								</Card.Meta>
-							</Card.Content>
-						</Card>
-
-					)}
-				</div>
-				<div id="content">
-						Also feel free to contact us through our SoDA e-mail addresses. We will do our best to get back with you as soon as possible.
+						Feel free to contact us through our SoDA e-mail addresses. We will do our best to get back with you as soon as possible.
 				</div>
 				<div id="email">
-				<Modal closeIcon size='tiny' trigger={<Button size='large' content='General' icon='mail' labelPosition='left'/>}>
+					<Modal closeIcon size='tiny' trigger={<Button size='large' content='asu@thesoda.io' icon='mail' labelPosition='left'/>}>
 						<Modal.Header>Contact Us</Modal.Header>
 						<Modal.Content>
 							<Modal.Description>
@@ -68,7 +41,8 @@ class Contact extends Component {
 							<Button onClick={this.onGClick} positive icon='arrow right' labelPosition='right' content='Open Mail Client'/>
 						</Modal.Actions>
 					</Modal>
-					<Modal closeIcon size='tiny' trigger={<Button size='large' content='Industry' icon='mail' labelPosition='left'/>}>
+
+					{/* <Modal closeIcon size='tiny' trigger={<Button size='large' content='Industry' icon='mail' labelPosition='left'/>}>
 						<Modal.Header>Contact Us</Modal.Header>
 						<Modal.Content>
 							<Modal.Description>
@@ -80,8 +54,7 @@ class Contact extends Component {
 						<Modal.Actions>
 							<Button onClick={this.onIClick} positive icon='arrow right' labelPosition='right' content='Open Mail Client'/>
 						</Modal.Actions>
-					</Modal>
-
+					</Modal> */}
 				</div>
 			</div>
 		);

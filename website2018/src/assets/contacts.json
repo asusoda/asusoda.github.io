@@ -1,94 +1,119 @@
 {
-    "officers": [
+    "advisors": [
+        {
+            "name": "Yoshihiro Kobayashi",
+            "role": "Faculty Advisor",
+            "email": "ykobaya@asu.edu"
+        },
         {
             "name": "Neel Madhav",
             "role": "Student Advisor",
             "email": "ndogra2@asu.edu"
-        },
-        {
-            "name": "Brightan Hsu",
-            "role": "Vice President of Operations",
-            "email": "bhsu4@asu.edu"
-        },
-        {
-            "name": "Teresa Tran",
-            "role": "Vice President of Finance",
-            "email": "tttran29@asu.edu"
-        },
-        {
-            "name": "Spencer Ozgur",
-            "role": "Industry Director",
-            "email": "sozgur@asu.edu"
-        },
-        {
-            "name": "Logan Van Pelt",
-            "role": "Industry Outreach",
-            "email": "lrvanpel@asu.edu"
-        },
-        {
-            "name": "Sathwik Reddy Mopuru",
-            "role": "Industry Outreach",
-            "email": "smopuru@asu.edu"
-        },
-        {
-            "name": "Harsh Kumar",
-            "role": "Technical Development Director",
-            "email": "hkumar30@asu.edu"
-        },
-        {
-            "name": "Jonathan Zhao",
-            "role": "Technical Officer",
-            "email": "jjzhao@asu.edu"
-        },
-        {
-            "name": "Nhut Nguyen",
-            "role": "Technical Officer",
-            "email": "nmnguye5@asu.edu"
-        },
-        {
-            "name": "Mahir Bose",
-            "role": "Technical Officer",
-            "email": "mbose4@asu.edu"
-        },
-        {
-            "name": "Ilia Rubashkin",
-            "role": "Technical Officer",
-            "email": "irubashk@asu.edu"
-        },
-        {
-            "name": "Tung Nguyen",
-            "role": "Marketing Director",
-            "email": "vnguye54@asu.edu"
-        },
-        {
-            "name": "Sebastian Martinez",
-            "role": "Marketing Officer",
-            "email": "sjmart28@asu.edu"
-        },
-        {
-            "name": "Anand Krishna Mishra",
-            "role": "Marketing Officer",
-            "email": "amishr87@asu.edu"
-        },
-        {
-            "name": "Chiran Raj",
-            "role": "Community Officer",
-            "email": "crajverm@asu.edu"
-        },
-        {
-            "name": "Gina Lee",
-            "role": "Community Officer",
-            "email": "glee62@asu.edu"
-        },
-        {
-            "name": "Shannon Boesch",
-            "role": "Graphic Designer",
-            "email": "sboesch@asu.edu"
-        },
-        {
-            "name": "Shreyash Singh",
-            "role": "Photographer/Videographer",
-            "email": "ssing375@asu.edu"
         }
-    ]
+    ],
+    "teams": {
+        "leadership": [
+            {
+                "name": "Palak Jain",
+                "role": "Interim President",
+                "email": "pjain89@asu.edu"
+            },
+            {
+                "name": "Ayush Shejwal",
+                "role": "Vice President, Operations",
+                "email": "ashejwal@asu.edu"
+            },
+            {
+                "name": "Anushka Singh",
+                "role": "Vice President, Finance",
+                "email": "asing534@asu.edu"
+            },
+            {
+                "name": "Nicklaus Lewis",
+                "role": "Director, Industry Relations",
+                "email": "nalewis3@asu.edu"
+            },
+            {
+                "name": "Ryan Woo",
+                "role": "Director, Technology",
+                "email": "rtwoo@asu.edu"
+            },
+            {
+                "name": "Nandini Singh",
+                "role": "Director, Community Outreach",
+                "email": "nsingh67@asu.edu"
+            }
+        ],
+        "industry relations": [
+            {
+                "name": "Nishant Dhongadi",
+                "role": "Assistant Director, Industry Relations",
+                "email": "ndhongad@asu.edu"
+            },
+            {
+                "name": "Elizabeth Pardhe",
+                "role": "Industry Relations Specialist",
+                "email": "epardhe@asu.edu"
+            },
+            {
+                "name": "Saharsh Goenka",
+                "role": "Industry Relations Specialist",
+                "email": "sgoenka1@asu.edu"
+            }
+        ],
+        "technology": [
+            {
+                "name": "Shubh Khandelwal",
+                "role": "Associate Director, Technology",
+                "email": "skhand15@asu.edu@asu.edu"
+            },
+            {
+                "name": "Aarya Mathreja",
+                "role": "Technology Officer",
+                "email": "amathrej@asu.edu"
+            },
+            {
+                "name": "Ben Juntilla",
+                "role": "Technology Officer",
+                "email": "cjuntill@asu.edu"
+            },
+            {
+                "name": "Avery Powers",
+                "role": "Technology Officer",
+                "email": "aapower3@asu.edu"
+            },
+            {
+                "name": "Tanay Upreti",
+                "role": "Technology Officer",
+                "email": "tupreti@asu.edu"
+            },
+            {
+                "name": "Dhanush Vardhan",
+                "role": "Technology Officer",
+                "email": "dkalaise@asu.edu"
+            },
+            {
+                "name": "Sri Ujjwal Reddy Beereddy",
+                "role": "Volunteer Contributor, Technology",
+                "email": "dkalaise@asu.edu"
+            }
+        ],
+        "community outreach": [
+            {
+                "name": "David Koplik",
+                "role": "Community Outreach Officer",
+                "email": "dkoplik@asu.edu"
+            },
+            {
+                "name": "Chelsea Lianne Gomez",
+                "role": "Community Outreach Officer",
+                "email": "ctgomez@asu.edu"
+            },
+            {
+                "name": "Navya Gangrade",
+                "role": "Community Outreach Officer",
+                "email": "ngangrad@asu.edu"
+            }
+        ]
+    }
 }
