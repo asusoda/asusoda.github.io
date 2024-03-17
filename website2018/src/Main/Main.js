@@ -5,11 +5,10 @@ import {
 	Icon,
 	Popup
 } from 'semantic-ui-react';
-import Particles from 'react-particles-js';
-
+import { Particles } from '@tsparticles/react'; // Importing from @tsparticles/react
 import ParticleConfig from '../assets/particlesjs-config.json';
 import events from '../assets/events.json'; // this json file contains the events to be displayed on the website.
-import { advisors, teams } from '../assets/teams.json';
+import teamsData from '../assets/teams.json';
 import Event from './Event.js';
 import AnimatedNumber from '../Components/AnimatedNumber';
 import LearnMore from '../LearnMore/LearnMore';
@@ -30,6 +29,8 @@ class Main extends Component {
 
 	render() {
 		const dollarFormatter = new Intl.NumberFormat('US',{ style: 'currency', currency: 'USD' })
+		const teams = teamsData.teams
+		const advisors = teamsData.advisors
 
 		const statistics = [
 			{
@@ -129,8 +130,7 @@ class Main extends Component {
 		return (
 			<div>
 				<div id='particles'>
-				<Particles params={ParticleConfig}
-					style={{position: 'absolute', top: 0, left: 0}}/>
+					<Particles options={ParticleConfig} style={{position: 'absolute', top: 0, left: 0}}/>
 				</div>
 				<div id="main">
 				<div>
@@ -166,7 +166,7 @@ class Main extends Component {
 
 					</div>
 				</div>
-				{events.events.map(event => ( <Event content={event}/> ))}
+				{/* {events.events.map(event => ( <Event content={event}/> ))} */}
 			</div>
 			</div>
 		);
