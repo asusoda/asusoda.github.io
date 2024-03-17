@@ -6,7 +6,6 @@ import Info from './Info/Info.js';
 import Contact from './Contact/Contact.js';
 import Team from './Team/Team.js';
 import Sponsor from './Sponsor/Sponsor.js';
-import MenuExampleSecondaryPointing from './MenuExampleSecondaryPointing.js';
 
 import './App.css';
 import 'semantic-ui-css/semantic.min.css';
@@ -41,8 +40,6 @@ class App extends Component {
 					</ul>
 				</nav>
 
-				{/* <MenuExampleSecondaryPointing/> */}
-				
 				<div id="main"><Main /></div>
 				{/* <div id="events"><Events /></div> */}
 				<div id="info"><Info /></div>
