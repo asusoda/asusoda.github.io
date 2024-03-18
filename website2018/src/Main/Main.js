@@ -113,13 +113,6 @@ class Main extends Component {
 				description: 'Follow us on Instagram!',
 				link: 'https://www.instagram.com/asu_soda/'
 			},
-			// {
-			// 	name: 'Slack',
-			// 	color: 'purple',
-			// 	icon: 'slack hash',
-			// 	description: 'Join our slack team to talk with fellow members!',
-			// 	link: 'https://tinyurl.com/joinSodaSlack'
-			// },
 			{
 				name: 'Discord',
 				color: 'orange',
