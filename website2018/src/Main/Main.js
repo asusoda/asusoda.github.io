@@ -5,7 +5,9 @@ import {
 	Icon,
 	Popup
 } from 'semantic-ui-react';
-import { Particles } from '@tsparticles/react'; // Importing from @tsparticles/react
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadLinksPreset } from "@tsparticles/preset-links";
+import { loadSlim } from "@tsparticles/slim";
 import ParticleConfig from '../assets/particlesjs-config.json';
 import events from '../assets/events.json'; // this json file contains the events to be displayed on the website.
 import teamsData from '../assets/teams.json';
@@ -20,7 +22,23 @@ class Main extends Component {
 	constructor(props) {
 		super(props);
 		this.link = this.link.bind(this);
+		this.state = {
+            init: false
+        };
 	}
+
+    componentDidMount() {
+        initParticlesEngine(async (engine) => {
+            // await loadSlim(engine);
+            await loadLinksPreset(engine);
+        }).then(() => {
+            this.setState({ init: true });
+        });
+    }
+
+    particlesLoaded = (container) => {
+        console.log(container);
+    };
 
 	link = (a, b) => {
 		window.open(a)
@@ -28,6 +46,7 @@ class Main extends Component {
 	}
 
 	render() {
+		const { init } = this.state;
 		const dollarFormatter = new Intl.NumberFormat('US',{ style: 'currency', currency: 'USD' })
 		const teams = teamsData.teams
 		const advisors = teamsData.advisors
@@ -129,45 +148,76 @@ class Main extends Component {
 
 		return (
 			<div>
-				<div id='particles'>
-					<Particles options={ParticleConfig} style={{position: 'absolute', top: 0, left: 0}}/>
-				</div>
 				<div id="main">
-				<div>
-					<Image src="./assets/logo/soda.png" id='logo' centered/>
-					<div id="title">
-						<div id="bold">The Software Developers Association</div>
-						<div>The premiere software development club for university students.</div>
-					</div>
-					<div id='statistic'>
-						{
-							statistics.map(({key, label, value, steps, formatter}) => {
-								return <Statistic key={key} size='small'>
-									<Statistic.Value>
-										<AnimatedNumber number={value} steps={steps} formatter={formatter}/>
-									</Statistic.Value>
-									<Statistic.Label>{label}</Statistic.Label>
-								</Statistic>
-							})
-						}
-					</div>
-					<LearnMore newsletterLink={newsletterLink}/>
-					<div id='social'>
-						{socials.map(social => (
-							<Popup
-								key={social.name}
-								position='bottom center'
-								inverted
-								trigger={<Icon link name={social.icon} onClick={(e) => this.link(social.link, e)} size='big'/>}
-								header={social.name}
-								content={social.description}
-							/>
-						))}
+					{init && (
+						<div id='particles'>
+							<Particles options={{
+								preset: 'links',
+								background: {
+									color: {
+										value: 'transparent'
+									}
+								},
+								particles: {
+									number: {
+										value: 25
+									},
+									links: {
+										color: '#333',
+										opacity: 0.4,
+										width: 1
+									},
+									color: {
+										value: '#333'
+									},
+									opacity: {
+										value: 0.4
+									},
+									shape: {
+									},
+									size: {
+										value: {min: 1, max: 3}
+									}
+								}
+							}} style={{position: 'absolute', top: 0, left: 0}}/>
+							{/* <Particles options={ParticleConfig} style={{position: 'absolute', top: 0, left: 0}}/> */}
+						</div>
+					)}
+					<div>
+						<Image src="./assets/logo/soda.png" id='logo' centered/>
+						<div id="title">
+							<div id="bold">The Software Developers Association</div>
+							<div>The premiere software development club for university students.</div>
+						</div>
+						<div id='statistic'>
+							{
+								statistics.map(({key, label, value, steps, formatter}) => {
+									return <Statistic key={key} size='small'>
+										<Statistic.Value>
+											<AnimatedNumber number={value} steps={steps} formatter={formatter}/>
+										</Statistic.Value>
+										<Statistic.Label>{label}</Statistic.Label>
+									</Statistic>
+								})
+							}
+						</div>
+						<LearnMore newsletterLink={newsletterLink}/>
+						<div id='social'>
+							{socials.map(social => (
+								<Popup
+									key={social.name}
+									position='bottom center'
+									inverted
+									trigger={<Icon link name={social.icon} onClick={(e) => this.link(social.link, e)} size='big'/>}
+									header={social.name}
+									content={social.description}
+								/>
+							))}
 
+						</div>
 					</div>
-				</div>
 				{/* {events.events.map(event => ( <Event content={event}/> ))} */}
-			</div>
+				</div>
 			</div>
 		);
 	}
