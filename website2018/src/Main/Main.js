@@ -109,9 +109,9 @@ class Main extends Component {
 			{
 				name: 'Instagram',
 				color: 'red',
-				icon: 'instagram',
+				icon: 'redo',
 				description: 'Follow us on Instagram!',
-				link: 'https://www.instagram.com/asu_soda/'
+				link: 'https://www.instagram.com/soda.asu/'
 			},
 			{
 				name: 'Discord',

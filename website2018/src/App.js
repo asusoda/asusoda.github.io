@@ -8,7 +8,7 @@ import Team from './Team/Team.js';
 import Sponsor from './Sponsor/Sponsor.js';
 
 import './App.css';
-import 'semantic-ui-css/semantic.min.css';
+import 'semantic-ui-css/semantic.min.css'
 
 class App extends Component {
 	constructor(props) {
