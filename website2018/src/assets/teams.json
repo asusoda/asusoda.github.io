@@ -15,7 +15,7 @@
         "leadership": [
             {
                 "name": "Palak Jain",
-                "role": "Interim President",
+                "role": "President",
                 "email": "pjain89@asu.edu"
             },
             {
@@ -29,22 +29,17 @@
                 "email": "asing534@asu.edu"
             },
             {
+                "name": "Naman Gandhi",
+                "role": "Treasurer",
+                "email": "ngandh14@asu.edu"
+            }
+        ],
+        "industry relations": [
+            {
                 "name": "Nicklaus Lewis",
                 "role": "Director, Industry Relations",
                 "email": "nalewis3@asu.edu"
             },
-            {
-                "name": "Ryan Woo",
-                "role": "Director, Technology",
-                "email": "rtwoo@asu.edu"
-            },
-            {
-                "name": "Nandini Singh",
-                "role": "Director, Community Outreach",
-                "email": "nsingh67@asu.edu"
-            }
-        ],
-        "industry relations": [
             {
                 "name": "Nishant Dhongadi",
                 "role": "Assistant Director, Industry Relations",
@@ -61,12 +56,17 @@
                 "email": "sgoenka1@asu.edu"
             },
             {
-                "name": "Prathyush Vasa",
-                "role": "Jr. Industry Relations Specialist",
-                "email": "vprathyu@asu.edu"
+                "name": "Apoorv Singh",
+                "role": "Industry Relations Specialist",
+                "email": "asing512@asu.edu"
             }
         ],
         "technology": [
+            {
+                "name": "Ryan Woo",
+                "role": "Director, Technology",
+                "email": "rtwoo@asu.edu"
+            },
             {
                 "name": "Shubh Khandelwal",
                 "role": "Associate Director, Technology",
@@ -96,14 +96,14 @@
                 "name": "Dhanush Vardhan",
                 "role": "Technology Officer",
                 "email": "dkalaise@asu.edu"
-            },
-            {
-                "name": "Sri Ujjwal Reddy Beereddy",
-                "role": "Volunteer Contributor, Technology",
-                "email": "dkalaise@asu.edu"
             }
         ],
         "community outreach": [
+            {
+                "name": "Nandini Singh",
+                "role": "Director, Community Outreach",
+                "email": "nsingh67@asu.edu"
+            },
             {
                 "name": "David Koplik",
                 "role": "Community Outreach Officer",
